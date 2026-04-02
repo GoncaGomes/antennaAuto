@@ -1,0 +1,4 @@
+{
+  "backend": "hash_embedding_v1",
+  "dim": 256
+}

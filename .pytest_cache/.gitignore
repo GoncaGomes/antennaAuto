@@ -1,0 +1,13 @@
+# Ambiente Virtual
+.venv/
+
+# Caches do Python e Pytest
+__pycache__/
+.pytest_cache/
+
+# Pastas de resultados gerados (crucial para o teu projeto!)
+runs/
+
+# Dados pesados (opcional, mas recomendado se os PDFs forem muito grandes)
+# data/raw/
+*.pdf

@@ -1,0 +1,21 @@
+{
+  "extracted_image_count": 11,
+  "extracted_table_count": 2,
+  "fulltext_generated": true,
+  "message": "PDF parsed successfully.",
+  "page_count": 11,
+  "parser_versions": {
+    "pdfplumber": "0.11.9",
+    "pymupdf": "1.27.2.2",
+    "pymupdf4llm": "1.27.2.2"
+  },
+  "sections_generated": true,
+  "status": "completed",
+  "table_candidates_deduplicated": 2,
+  "table_caption_candidates_found": 2,
+  "table_regions_cropped": 0,
+  "tables_extracted_structured": 2,
+  "tables_rejected_validation": 0,
+  "tables_saved_as_fallback_only": 0,
+  "warnings": []
+}

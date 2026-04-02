@@ -1,0 +1,15 @@
+{
+  "bm25_dir": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\antennaAuto\\runs\\run_20260402T085128009134Z\\indexes\\bm25",
+  "evidence_item_count": 57,
+  "faiss_dir": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\antennaAuto\\runs\\run_20260402T085128009134Z\\indexes\\faiss",
+  "graph_edge_count": 39,
+  "graph_node_count": 83,
+  "graph_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\antennaAuto\\runs\\run_20260402T085128009134Z\\indexes\\graph.json",
+  "source_counts": {
+    "chunk": 33,
+    "figure": 11,
+    "section": 11,
+    "table": 2
+  },
+  "status": "completed"
+}
