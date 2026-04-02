@@ -4,6 +4,7 @@ from pathlib import Path
 from typing import Any
 
 from .bundle import RunPaths, load_run_paths, prepare_run_bundle
+from .config import RetrievalConfig
 from .index import index_run
 from .parsers import (
     extract_images,
@@ -136,9 +137,11 @@ def run_pipeline(input_pdf: str | Path, base_dir: str | Path | None = None) -> t
     return run_paths, metadata, parse_report
 
 
-def run_index_stage(run_dir: str | Path) -> tuple[RunPaths, dict[str, Any]]:
+def run_index_stage(
+    run_dir: str | Path, config: RetrievalConfig | None = None
+) -> tuple[RunPaths, dict[str, Any]]:
     run_paths = load_run_paths(Path(run_dir))
-    report = index_run(run_paths)
+    report = index_run(run_paths, config=config)
     return run_paths, report
 
 

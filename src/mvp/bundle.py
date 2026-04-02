@@ -25,6 +25,7 @@ class RunPaths:
     parse_report_path: Path
     graph_path: Path
     index_report_path: Path
+    index_config_path: Path
 
 
 def validate_pdf_input(pdf_path: Path) -> Path:
@@ -73,6 +74,7 @@ def prepare_run_bundle(source_pdf: Path, base_dir: Path) -> RunPaths:
         parse_report_path=bundle_dir / "parse_report.json",
         graph_path=indexes_dir / "graph.json",
         index_report_path=indexes_dir / "index_report.json",
+        index_config_path=indexes_dir / "index_config.json",
     )
 
 
@@ -97,4 +99,5 @@ def load_run_paths(run_dir: Path) -> RunPaths:
         parse_report_path=bundle_dir / "parse_report.json",
         graph_path=indexes_dir / "graph.json",
         index_report_path=indexes_dir / "index_report.json",
+        index_config_path=indexes_dir / "index_config.json",
     )

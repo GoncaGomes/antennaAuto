@@ -8,6 +8,7 @@ try:
 except ImportError:  # pragma: no cover
     import fitz as pymupdf  # type: ignore[no-redef]
 
+from mvp.config import RetrievalConfig
 from mvp.index import index_run
 from mvp.pipeline import run_pipeline
 from mvp.retrieval import BundleRetriever
@@ -59,7 +60,10 @@ def test_retrieval_helpers_return_plausible_results(tmp_path: Path) -> None:
     create_index_fixture_pdf(source_pdf)
 
     run_paths, _, _ = run_pipeline(source_pdf, base_dir=tmp_path)
-    index_run(run_paths)
+    index_run(
+        run_paths,
+        config=RetrievalConfig(chunking_mode="paragraph", embedding_backend="hash", fusion_strategy="weighted"),
+    )
     retriever = BundleRetriever(run_paths.run_dir)
 
     text_results = retriever.search_text("substrate material", top_k=3)
@@ -87,3 +91,27 @@ def test_retrieval_helpers_return_plausible_results(tmp_path: Path) -> None:
     assert table["caption"] == "Table 1. Dimensions of proposed antenna"
     assert figure is not None
     assert figure["page_number"] == 1
+
+    assert "bm25_score" in text_results[0]
+    assert "dense_score" in text_results[0]
+    assert "weighted_score" in text_results[0]
+    assert text_results[0]["fusion_strategy"] == "weighted"
+    assert text_results[0]["chunking_mode"] == "paragraph"
+    assert text_results[0]["embedding_backend"] == "hash"
+
+
+def test_rrf_retrieval_returns_rank_diagnostics(tmp_path: Path) -> None:
+    source_pdf = tmp_path / "article.pdf"
+    create_index_fixture_pdf(source_pdf)
+
+    run_paths, _, _ = run_pipeline(source_pdf, base_dir=tmp_path)
+    config = RetrievalConfig(chunking_mode="paragraph", embedding_backend="hash", fusion_strategy="rrf")
+    index_run(run_paths, config=config)
+    retriever = BundleRetriever(run_paths.run_dir, config=config)
+
+    results = retriever.search_text("Rogers RT5880", top_k=3)
+
+    assert results
+    assert results[0]["fusion_strategy"] == "rrf"
+    assert "rrf_score" in results[0]
+    assert "final_rank" in results[0]

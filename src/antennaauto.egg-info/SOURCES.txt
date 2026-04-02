@@ -6,8 +6,10 @@ src/antennaauto.egg-info/dependency_links.txt
 src/antennaauto.egg-info/requires.txt
 src/antennaauto.egg-info/top_level.txt
 src/mvp/__init__.py
+src/mvp/benchmark.py
 src/mvp/bundle.py
 src/mvp/cli.py
+src/mvp/config.py
 src/mvp/index.py
 src/mvp/parsers.py
 src/mvp/pipeline.py

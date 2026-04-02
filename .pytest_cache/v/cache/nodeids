@@ -1,8 +1,10 @@
 [
+  "tests/test_indexing.py::test_default_retrieval_config_promotes_paragraph_real_embedding",
   "tests/test_indexing.py::test_index_stage_creates_expected_artifacts",
   "tests/test_ingestion.py::test_ingestion_creates_run_bundle",
   "tests/test_parsing.py::test_detect_table_caption_lines",
   "tests/test_parsing.py::test_full_pipeline_generates_bundle_outputs",
   "tests/test_parsing.py::test_validate_table_rows",
-  "tests/test_retrieval.py::test_retrieval_helpers_return_plausible_results"
+  "tests/test_retrieval.py::test_retrieval_helpers_return_plausible_results",
+  "tests/test_retrieval.py::test_rrf_retrieval_returns_rank_diagnostics"
 ]
