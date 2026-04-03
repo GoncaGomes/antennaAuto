@@ -11,3 +11,5 @@ runs/
 # Dados pesados (opcional, mas recomendado se os PDFs forem muito grandes)
 # data/raw/
 *.pdf
+
+.env
