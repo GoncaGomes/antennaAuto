@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -49,3 +50,18 @@ def read_json(path: Path) -> Any:
 def text_excerpt(text: str, limit: int = 800) -> str:
     compact = " ".join(text.split())
     return compact[:limit]
+
+
+def load_env_file(path: Path | None = None) -> None:
+    env_path = path or (project_root() / ".env")
+    if not env_path.exists():
+        return
+
+    for raw_line in env_path.read_text(encoding="utf-8").splitlines():
+        line = raw_line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        key = key.strip()
+        value = value.strip().strip("'").strip('"')
+        os.environ.setdefault(key, value)

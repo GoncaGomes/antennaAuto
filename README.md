@@ -62,3 +62,27 @@ Supported retrieval toggles:
 ## Migration Note
 
 The default dense backend is now `sentence_transformer` instead of `hash`. Existing runs indexed with the older hash default are still readable, but they should be re-indexed if you want the new default behavior, updated diagnostics, and directly comparable benchmark outputs.
+
+## Extraction Agent MVP
+
+The repository now includes a first extraction agent that works from an existing prepared `run_dir`.
+
+It uses the current retrieval layer, calls an LLM to produce `antenna_architecture_spec_mvp_v2`, validates the result with Pydantic, and writes:
+
+- `runs/<run_id>/outputs/antenna_architecture_spec_mvp_v2.json`
+- `runs/<run_id>/outputs/extraction_run_report.json`
+
+Manual run command:
+
+```powershell
+uv run python -m mvp.extract --run-dir runs/<run_id> --model gpt-4o
+```
+
+The extractor loads `.env` from the project root and requires:
+
+- `NEW_OPENAI_API_KEY` preferred, otherwise `OPENAI_API_KEY`
+- `OPENAI_API_KEY`
+- `OPENAI_BASE_URL`
+- `OPENAI_CHANNEL_ID`
+
+More detail is in `docs/extraction_agent_mvp.md`.

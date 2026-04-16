@@ -1,1 +1,0 @@
-Figure 5. Real part, imaginary part, magnitude of Z11 on the operating frequency

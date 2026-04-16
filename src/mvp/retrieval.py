@@ -84,6 +84,31 @@ class BundleRetriever:
         payload["image_path"] = str(artifact_dir / "image.png")
         return payload
 
+    def get_evidence_by_id(self, evidence_id: str) -> dict[str, Any] | None:
+        item = self.item_by_id.get(evidence_id)
+        if item is None:
+            return None
+
+        payload = {
+            "evidence_id": item["evidence_id"],
+            "source_type": item["source_type"],
+            "source_id": item["source_id"],
+            "page_number": item["page_number"],
+            "text": item["text"],
+            "metadata": item["metadata"],
+        }
+
+        if item["source_type"] == "section":
+            payload["source_payload"] = self.get_section(item["source_id"])
+        elif item["source_type"] == "table":
+            payload["source_payload"] = self.get_table(item["source_id"])
+        elif item["source_type"] == "figure":
+            payload["source_payload"] = self.get_figure(item["source_id"])
+        else:
+            payload["source_payload"] = {"text": item["text"], "metadata": item["metadata"]}
+
+        return payload
+
     def _hybrid_search(
         self,
         query: str,
@@ -196,6 +221,10 @@ def get_table(run_dir: str | Path, table_id: str) -> dict[str, Any] | None:
 
 def get_figure(run_dir: str | Path, figure_id: str) -> dict[str, Any] | None:
     return BundleRetriever(run_dir).get_figure(figure_id)
+
+
+def get_evidence_by_id(run_dir: str | Path, evidence_id: str) -> dict[str, Any] | None:
+    return BundleRetriever(run_dir).get_evidence_by_id(evidence_id)
 
 
 def _normalize_scores(scores: dict[str, float]) -> dict[str, float]:

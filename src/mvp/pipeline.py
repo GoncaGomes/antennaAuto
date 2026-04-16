@@ -32,6 +32,7 @@ def _initial_parse_report(page_count: int) -> dict[str, Any]:
         "extracted_table_count": 0,
         "fulltext_generated": False,
         "sections_generated": False,
+        "table_summaries": [],
         "parser_versions": parser_versions(),
         "warnings": [],
     }
@@ -73,6 +74,7 @@ def parse_run(run_paths: RunPaths) -> dict[str, Any]:
     tables_extracted_structured = 0
     tables_saved_as_fallback_only = 0
     tables_rejected_validation = 0
+    table_summaries: list[dict[str, Any]] = []
 
     try:
         markdown_text = extract_markdown(run_paths.article_pdf, run_paths.fulltext_path)
@@ -96,6 +98,7 @@ def parse_run(run_paths: RunPaths) -> dict[str, Any]:
         tables_extracted_structured = table_result["tables_extracted_structured"]
         tables_saved_as_fallback_only = table_result["tables_saved_as_fallback_only"]
         tables_rejected_validation = table_result["tables_rejected_validation"]
+        table_summaries = table_result.get("table_summaries", [])
         warnings.extend(table_result["warnings"])
     except Exception as exc:
         warnings.append(f"Table extraction failed: {exc}")
@@ -123,6 +126,7 @@ def parse_run(run_paths: RunPaths) -> dict[str, Any]:
         "extracted_table_count": extracted_table_count,
         "fulltext_generated": fulltext_generated,
         "sections_generated": sections_generated,
+        "table_summaries": table_summaries,
         "parser_versions": parser_versions(),
         "warnings": warnings,
     }

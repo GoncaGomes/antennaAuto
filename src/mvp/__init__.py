@@ -1,4 +1,5 @@
 from .config import DEFAULT_CONFIG_NAME, RetrievalConfig
+from .extraction import extract_run
 from .index import index_run
 from .pipeline import ingest_pdf, parse_run, run_index_stage, run_pipeline
 
@@ -8,6 +9,7 @@ __all__ = [
     "run_pipeline",
     "index_run",
     "run_index_stage",
+    "extract_run",
     "RetrievalConfig",
     "DEFAULT_CONFIG_NAME",
 ]

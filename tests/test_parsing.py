@@ -68,6 +68,23 @@ def test_detect_table_caption_lines() -> None:
     ]
 
 
+def test_detect_table_caption_lines_supports_roman_numerals() -> None:
+    text = (
+        "Introduction\n"
+        "As discussed in Table I, the patch is compact.\n"
+        "TABLE I\n"
+        "ANTENNA PARAMETERS\n"
+        "Table IV: Comparison of gain values\n"
+    )
+
+    captions = detect_table_caption_lines(text)
+
+    assert captions == [
+        "TABLE I ANTENNA PARAMETERS",
+        "Table IV: Comparison of gain values",
+    ]
+
+
 def test_validate_table_rows() -> None:
     assert validate_table_rows([["Parameter", "Value"], ["Width", "10 mm"]]) is True
     assert validate_table_rows([["Parameter", "Value"], ["This is just a paragraph", "text"]]) is False
@@ -94,10 +111,24 @@ def test_full_pipeline_generates_bundle_outputs(tmp_path: Path) -> None:
     table_002 = json.loads((run_paths.tables_dir / "table_002.json").read_text(encoding="utf-8"))
     fallback_dir = run_paths.tables_dir / "table_003"
 
+    assert table_001["structured"] is True
     assert table_001["extraction_method"] == "text_parameter_value"
+    assert isinstance(table_001["parse_score"], float)
+    assert table_001["parse_quality"] == "complete"
+    assert table_001["candidate_scores_summary"]
+    assert table_001["shape"] == {"rows": 4, "cols": 2}
     assert table_001["rows"][0] == ["Parameter", "Value(mm)"]
+    assert table_002["structured"] is True
     assert table_002["extraction_method"] == "text_axis_columns"
+    assert isinstance(table_002["parse_score"], float)
+    assert table_002["parse_quality"] == "complete"
+    assert table_002["candidate_scores_summary"]
+    assert table_002["shape"] == {"rows": 3, "cols": 4}
     assert table_002["rows"][0] == ["Parameter", "X-axis", "Y-axis", "Z-axis"]
+    assert (run_paths.tables_dir / "table_001.csv").exists()
+    assert (run_paths.tables_dir / "table_001.md").exists()
+    assert (run_paths.tables_dir / "table_002.csv").exists()
+    assert (run_paths.tables_dir / "table_002.md").exists()
     assert not (run_paths.tables_dir / "table_001").exists()
     assert not (run_paths.tables_dir / "table_002").exists()
     assert fallback_dir.exists()
@@ -105,6 +136,11 @@ def test_full_pipeline_generates_bundle_outputs(tmp_path: Path) -> None:
     assert (fallback_dir / "caption.txt").exists()
     assert (fallback_dir / "context.txt").exists()
     assert (fallback_dir / "crop.png").exists()
+    fallback_meta = json.loads((fallback_dir / "table.json").read_text(encoding="utf-8"))
+    assert fallback_meta["structured"] is False
+    assert fallback_meta["parse_quality"] in {"partial", "noisy", "weak"}
+    assert fallback_meta["candidate_scores_summary"]
+    assert isinstance(fallback_meta["parse_score"], float)
 
     expected_report_keys = {
         "status",
@@ -120,6 +156,7 @@ def test_full_pipeline_generates_bundle_outputs(tmp_path: Path) -> None:
         "extracted_table_count",
         "fulltext_generated",
         "sections_generated",
+        "table_summaries",
         "parser_versions",
         "warnings",
     }
@@ -127,10 +164,11 @@ def test_full_pipeline_generates_bundle_outputs(tmp_path: Path) -> None:
     assert parse_report["page_count"] == 3
     assert parse_report["table_caption_candidates_found"] == 3
     assert parse_report["table_candidates_deduplicated"] == 3
-    assert parse_report["table_regions_cropped"] == 1
+    assert parse_report["table_regions_cropped"] == 3
     assert parse_report["tables_extracted_structured"] == 2
     assert parse_report["tables_saved_as_fallback_only"] == 1
     assert parse_report["tables_rejected_validation"] == 0
     assert parse_report["extracted_table_count"] == 2
     assert parse_report["fulltext_generated"] is True
     assert parse_report["sections_generated"] is True
+    assert len(parse_report["table_summaries"]) == 3
