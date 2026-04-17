@@ -3,6 +3,8 @@ from __future__ import annotations
 import base64
 from pathlib import Path
 
+import pytest
+
 try:
     import pymupdf
 except ImportError:  # pragma: no cover
@@ -10,6 +12,7 @@ except ImportError:  # pragma: no cover
 
 from mvp.config import RetrievalConfig
 from mvp.index import index_run
+from mvp import parsers
 from mvp.pipeline import run_pipeline
 from mvp.retrieval import BundleRetriever
 
@@ -55,9 +58,47 @@ def create_index_fixture_pdf(path: Path) -> None:
     document.close()
 
 
-def test_retrieval_helpers_return_plausible_results(tmp_path: Path) -> None:
+def _install_markdown_stub(monkeypatch: pytest.MonkeyPatch) -> None:
+    def fake_to_markdown(path: str, **kwargs):
+        image_dir = Path(kwargs["image_path"])
+        image_dir.mkdir(parents=True, exist_ok=True)
+        (image_dir / "article.pdf-0001-01.png").write_bytes(TEST_PNG)
+        return [
+            {
+                "metadata": {"page_number": 1},
+                "text": "\n".join(
+                    [
+                        "# Materials and Design",
+                        "The substrate material is Rogers RT5880 and the operating frequency is 28 GHz.",
+                        "![Image](figures/article.pdf-0001-01.png)",
+                        "Figure 1. Operating frequency response",
+                        "This figure shows the operating frequency response near 28 GHz.",
+                    ]
+                ),
+            },
+            {
+                "metadata": {"page_number": 2},
+                "text": "\n".join(
+                    [
+                        "## Parameters",
+                        "Table 1. Dimensions of proposed antenna",
+                        "| Parameter | Value(mm) |",
+                        "| --- | --- |",
+                        "| Lgnd | 15 |",
+                        "| Wpat | 5.3 |",
+                        "| FeedWidth | 0.1 |",
+                    ]
+                ),
+            },
+        ]
+
+    monkeypatch.setattr(parsers.pymupdf4llm, "to_markdown", fake_to_markdown)
+
+
+def test_retrieval_helpers_return_plausible_results(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
     source_pdf = tmp_path / "article.pdf"
     create_index_fixture_pdf(source_pdf)
+    _install_markdown_stub(monkeypatch)
 
     run_paths, _, _ = run_pipeline(source_pdf, base_dir=tmp_path)
     index_run(
@@ -80,17 +121,19 @@ def test_retrieval_helpers_return_plausible_results(tmp_path: Path) -> None:
 
     assert figure_results
     assert figure_results[0]["source_type"] == "figure"
-    assert figure_results[0]["source_id"] == "fig_001"
+    figure_id = figure_results[0]["source_id"]
+    assert figure_id
 
-    section = retriever.get_section("page_001")
+    section = retriever.get_section("section_001")
     table = retriever.get_table("table_001")
-    figure = retriever.get_figure("fig_001")
+    figure = retriever.get_figure(figure_id)
 
     assert section is not None
     assert table is not None
     assert table["caption"] == "Table 1. Dimensions of proposed antenna"
     assert figure is not None
     assert figure["page_number"] == 1
+    assert figure["image_path"].endswith(".png")
 
     assert "bm25_score" in text_results[0]
     assert "dense_score" in text_results[0]
@@ -100,9 +143,10 @@ def test_retrieval_helpers_return_plausible_results(tmp_path: Path) -> None:
     assert text_results[0]["embedding_backend"] == "hash"
 
 
-def test_rrf_retrieval_returns_rank_diagnostics(tmp_path: Path) -> None:
+def test_rrf_retrieval_returns_rank_diagnostics(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
     source_pdf = tmp_path / "article.pdf"
     create_index_fixture_pdf(source_pdf)
+    _install_markdown_stub(monkeypatch)
 
     run_paths, _, _ = run_pipeline(source_pdf, base_dir=tmp_path)
     config = RetrievalConfig(chunking_mode="paragraph", embedding_backend="hash", fusion_strategy="rrf")

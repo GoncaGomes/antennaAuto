@@ -12,6 +12,11 @@ def make_payload() -> dict:
         "has_multiple_variants": True,
         "dominant_evidence_ids": ["table:table_001", "chunk:chunk_001"],
         "secondary_evidence_ids": ["chunk:chunk_002"],
+        "identified_antennas": [
+            "Initial rectangular patch reference geometry",
+            "Final rectangular microstrip patch antenna with inset feed",
+        ],
+        "proposed_final_antenna_rationale": "The paper explicitly centers the inset-fed rectangular patch as the proposed final design.",
         "final_design": {
             "classification": {
                 "primary_family": "microstrip_patch",
@@ -61,6 +66,8 @@ def test_canonical_design_record_validation_round_trip() -> None:
     clean = record.to_clean_dict()
 
     assert clean["selected_design_summary"].startswith("Rectangular")
+    assert clean["identified_antennas"][0].startswith("Initial")
+    assert clean["proposed_final_antenna_rationale"].startswith("The paper explicitly")
     assert clean["final_design"]["patch"]["dimensions"][0]["unit"] == "mm"
 
 

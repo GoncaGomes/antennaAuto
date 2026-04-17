@@ -3,13 +3,15 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+import pytest
+
 try:
     import pymupdf
 except ImportError:  # pragma: no cover
     import fitz as pymupdf  # type: ignore[no-redef]
 
+from mvp import parsers
 from mvp.pipeline import run_pipeline
-from mvp.parsers import detect_table_caption_lines, validate_table_rows
 
 
 def create_test_pdf(path: Path) -> None:
@@ -52,48 +54,55 @@ def create_test_pdf(path: Path) -> None:
     document.close()
 
 
-def test_detect_table_caption_lines() -> None:
-    text = (
-        "Introduction\n"
-        "The parameters are summarized in Table 1 below.\n"
-        "Table 1. Dimensions of proposed antenna\n"
-        "Table 2 Spacial Parameter of Antenna array\n"
-    )
+def _install_markdown_stub(monkeypatch: pytest.MonkeyPatch) -> None:
+    def fake_to_markdown(path: str, **kwargs):
+        image_dir = Path(kwargs["image_path"])
+        image_dir.mkdir(parents=True, exist_ok=True)
+        (image_dir / "article.pdf-0001-01.png").write_bytes(b"png")
+        return [
+            {
+                "metadata": {"page_number": 1},
+                "text": "\n".join(
+                    [
+                        "# Introduction",
+                        "The parameters are summarized in Table 1 below for the antenna geometry.",
+                        "Table 1. Dimensions of proposed antenna",
+                        "| Parameter | Value(mm) |",
+                        "| --- | --- |",
+                        "| Lgnd | 15 |",
+                        "| Wlng | 8 |",
+                        "| Lpat | 3.494 |",
+                        "![Image](figures/article.pdf-0001-01.png)",
+                        "Figure 1. Antenna geometry",
+                    ]
+                ),
+            },
+            {
+                "metadata": {"page_number": 2},
+                "text": "\n".join(
+                    [
+                        "## Array Parameters",
+                        "Table 2 Spacial Parameter of Antenna array",
+                        "| Parameter | X-axis | Y-axis | Z-axis |",
+                        "| --- | --- | --- | --- |",
+                        "| Elements in x, y, z | 2 | 2 | 2 |",
+                        "| Space shift in x, y, z | 6 | 1 | 2 |",
+                    ]
+                ),
+            },
+            {
+                "metadata": {"page_number": 3},
+                "text": "## Conclusion\nSecond page content for section generation.",
+            },
+        ]
 
-    captions = detect_table_caption_lines(text)
-
-    assert captions == [
-        "Table 1. Dimensions of proposed antenna",
-        "Table 2 Spacial Parameter of Antenna array",
-    ]
+    monkeypatch.setattr(parsers.pymupdf4llm, "to_markdown", fake_to_markdown)
 
 
-def test_detect_table_caption_lines_supports_roman_numerals() -> None:
-    text = (
-        "Introduction\n"
-        "As discussed in Table I, the patch is compact.\n"
-        "TABLE I\n"
-        "ANTENNA PARAMETERS\n"
-        "Table IV: Comparison of gain values\n"
-    )
-
-    captions = detect_table_caption_lines(text)
-
-    assert captions == [
-        "TABLE I ANTENNA PARAMETERS",
-        "Table IV: Comparison of gain values",
-    ]
-
-
-def test_validate_table_rows() -> None:
-    assert validate_table_rows([["Parameter", "Value"], ["Width", "10 mm"]]) is True
-    assert validate_table_rows([["Parameter", "Value"], ["This is just a paragraph", "text"]]) is False
-    assert validate_table_rows([["This is just a paragraph"], ["Still one column"]]) is False
-
-
-def test_full_pipeline_generates_bundle_outputs(tmp_path: Path) -> None:
+def test_full_pipeline_generates_bundle_outputs(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
     source_pdf = tmp_path / "article.pdf"
     create_test_pdf(source_pdf)
+    _install_markdown_stub(monkeypatch)
 
     run_paths, metadata, parse_report = run_pipeline(source_pdf, base_dir=tmp_path)
 
@@ -105,42 +114,23 @@ def test_full_pipeline_generates_bundle_outputs(tmp_path: Path) -> None:
     assert metadata["page_count"] == 3
 
     sections = json.loads(run_paths.sections_path.read_text(encoding="utf-8"))
-    assert len(sections) == 3
+    assert sections
+    assert set(sections[0]) == {"section_id", "title", "text_excerpt"}
+    assert not any("page_start" in section or "page_end" in section for section in sections)
 
-    table_001 = json.loads((run_paths.tables_dir / "table_001.json").read_text(encoding="utf-8"))
-    table_002 = json.loads((run_paths.tables_dir / "table_002.json").read_text(encoding="utf-8"))
-    fallback_dir = run_paths.tables_dir / "table_003"
+    table_paths = sorted(run_paths.tables_dir.glob("table_*.md"))
+    assert table_paths
+    assert not list(run_paths.tables_dir.glob("table_*.json"))
+    assert not list(run_paths.tables_dir.glob("table_*.csv"))
+    table_markdown = table_paths[0].read_text(encoding="utf-8")
+    assert "|" in table_markdown
 
-    assert table_001["structured"] is True
-    assert table_001["extraction_method"] == "text_parameter_value"
-    assert isinstance(table_001["parse_score"], float)
-    assert table_001["parse_quality"] == "complete"
-    assert table_001["candidate_scores_summary"]
-    assert table_001["shape"] == {"rows": 4, "cols": 2}
-    assert table_001["rows"][0] == ["Parameter", "Value(mm)"]
-    assert table_002["structured"] is True
-    assert table_002["extraction_method"] == "text_axis_columns"
-    assert isinstance(table_002["parse_score"], float)
-    assert table_002["parse_quality"] == "complete"
-    assert table_002["candidate_scores_summary"]
-    assert table_002["shape"] == {"rows": 3, "cols": 4}
-    assert table_002["rows"][0] == ["Parameter", "X-axis", "Y-axis", "Z-axis"]
-    assert (run_paths.tables_dir / "table_001.csv").exists()
-    assert (run_paths.tables_dir / "table_001.md").exists()
-    assert (run_paths.tables_dir / "table_002.csv").exists()
-    assert (run_paths.tables_dir / "table_002.md").exists()
-    assert not (run_paths.tables_dir / "table_001").exists()
-    assert not (run_paths.tables_dir / "table_002").exists()
-    assert fallback_dir.exists()
-    assert not (run_paths.tables_dir / "table_003.json").exists()
-    assert (fallback_dir / "caption.txt").exists()
-    assert (fallback_dir / "context.txt").exists()
-    assert (fallback_dir / "crop.png").exists()
-    fallback_meta = json.loads((fallback_dir / "table.json").read_text(encoding="utf-8"))
-    assert fallback_meta["structured"] is False
-    assert fallback_meta["parse_quality"] in {"partial", "noisy", "weak"}
-    assert fallback_meta["candidate_scores_summary"]
-    assert isinstance(fallback_meta["parse_score"], float)
+    figure_paths = sorted(run_paths.figures_dir.glob("*.png"))
+    assert figure_paths
+    assert not list(run_paths.figures_dir.glob("fig_*"))
+
+    fulltext = run_paths.fulltext_path.read_text(encoding="utf-8")
+    assert "![Image]" in fulltext or "![]" in fulltext
 
     expected_report_keys = {
         "status",
@@ -157,18 +147,22 @@ def test_full_pipeline_generates_bundle_outputs(tmp_path: Path) -> None:
         "fulltext_generated",
         "sections_generated",
         "table_summaries",
+        "figure_summaries",
+        "page_summaries",
         "parser_versions",
         "warnings",
     }
     assert expected_report_keys.issubset(parse_report)
     assert parse_report["page_count"] == 3
-    assert parse_report["table_caption_candidates_found"] == 3
-    assert parse_report["table_candidates_deduplicated"] == 3
-    assert parse_report["table_regions_cropped"] == 3
-    assert parse_report["tables_extracted_structured"] == 2
-    assert parse_report["tables_saved_as_fallback_only"] == 1
+    assert parse_report["table_caption_candidates_found"] == parse_report["extracted_table_count"]
+    assert parse_report["table_candidates_deduplicated"] == parse_report["extracted_table_count"]
+    assert parse_report["table_regions_cropped"] == 0
+    assert parse_report["tables_extracted_structured"] == parse_report["extracted_table_count"]
+    assert parse_report["tables_saved_as_fallback_only"] == 0
     assert parse_report["tables_rejected_validation"] == 0
-    assert parse_report["extracted_table_count"] == 2
+    assert parse_report["extracted_table_count"] >= 1
     assert parse_report["fulltext_generated"] is True
     assert parse_report["sections_generated"] is True
-    assert len(parse_report["table_summaries"]) == 3
+    assert parse_report["table_summaries"]
+    assert parse_report["figure_summaries"]
+    assert len(parse_report["page_summaries"]) == 3

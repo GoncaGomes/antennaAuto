@@ -1,0 +1,548 @@
+{
+  "classification": {
+    "confidence": 0.98,
+    "evidence_ids": [
+      "chunk:chunk_001",
+      "chunk:chunk_015",
+      "section:section_004",
+      "section:section_008",
+      "section:section_009",
+      "section:section_010",
+      "table:table_001"
+    ],
+    "primary_family": "microstrip patch antenna",
+    "status": "extracted",
+    "topology_tags": [
+      "triangular patch",
+      "circular-slotted",
+      "line-fed",
+      "full ground plane",
+      "single-layer",
+      "simulated"
+    ]
+  },
+  "document_context": {
+    "original_filename": "engproc-46-00010.pdf",
+    "page_count": 7,
+    "run_id": "run_20260417T104918429224Z"
+  },
+  "entities": [
+    {
+      "entity_id": "entity_cstpa",
+      "entity_type": "antenna_assembly",
+      "evidence_ids": [
+        "chunk:chunk_004",
+        "section:section_010",
+        "table:table_001"
+      ],
+      "geometry": {
+        "dimensions": [
+          {
+            "evidence_ids": [
+              "chunk:chunk_004",
+              "section:section_010",
+              "table:table_001"
+            ],
+            "name": "length",
+            "param_ref": "param_overall_length",
+            "status": "extracted",
+            "unit": "mm",
+            "value": 25.5
+          },
+          {
+            "evidence_ids": [
+              "chunk:chunk_004",
+              "section:section_010",
+              "table:table_001"
+            ],
+            "name": "width",
+            "param_ref": "param_overall_width",
+            "status": "extracted",
+            "unit": "mm",
+            "value": 22.5
+          },
+          {
+            "evidence_ids": [
+              "chunk:chunk_004",
+              "section:section_010",
+              "table:table_001"
+            ],
+            "name": "thickness",
+            "param_ref": "param_substrate_thickness",
+            "status": "extracted",
+            "unit": "mm",
+            "value": 1.6
+          }
+        ],
+        "outline_points": [],
+        "shape_mode": "rectangular"
+      },
+      "layer_ref": "layer_substrate",
+      "placement": {
+        "status": "assumed_local_origin"
+      },
+      "role": "overall_antenna"
+    },
+    {
+      "entity_id": "entity_patch",
+      "entity_type": "radiator",
+      "evidence_ids": [
+        "section:section_005",
+        "table:table_001"
+      ],
+      "geometry": {
+        "dimensions": [
+          {
+            "evidence_ids": [
+              "section:section_005",
+              "table:table_001"
+            ],
+            "name": "x",
+            "param_ref": "param_patch_x",
+            "status": "extracted",
+            "unit": "mm",
+            "value": 9.5
+          },
+          {
+            "evidence_ids": [
+              "section:section_005",
+              "table:table_001"
+            ],
+            "name": "y",
+            "param_ref": "param_patch_y",
+            "status": "extracted",
+            "unit": "mm",
+            "value": 16.08
+          }
+        ],
+        "outline_points": [],
+        "shape_mode": "triangular"
+      },
+      "layer_ref": "layer_substrate",
+      "placement": {
+        "status": "assumed_local_origin"
+      },
+      "role": "radiating_patch"
+    },
+    {
+      "entity_id": "entity_feedline",
+      "entity_type": "feedline",
+      "evidence_ids": [
+        "chunk:chunk_015",
+        "section:section_005",
+        "table:table_001"
+      ],
+      "geometry": {
+        "dimensions": [
+          {
+            "evidence_ids": [
+              "chunk:chunk_015",
+              "table:table_001"
+            ],
+            "name": "length",
+            "param_ref": "param_feed_length",
+            "status": "extracted",
+            "unit": "mm",
+            "value": 14
+          },
+          {
+            "evidence_ids": [
+              "chunk:chunk_015",
+              "table:table_001"
+            ],
+            "name": "width",
+            "param_ref": "param_feed_width",
+            "status": "extracted",
+            "unit": "mm",
+            "value": 3.11
+          }
+        ],
+        "outline_points": [],
+        "shape_mode": "rectangular"
+      },
+      "layer_ref": "layer_substrate",
+      "placement": {
+        "anchor": "patch_apex",
+        "status": "extracted"
+      },
+      "role": "feedline"
+    },
+    {
+      "entity_id": "entity_ground",
+      "entity_type": "ground_plane",
+      "evidence_ids": [
+        "chunk:chunk_004",
+        "section:section_005",
+        "table:table_001"
+      ],
+      "geometry": {
+        "dimensions": [
+          {
+            "evidence_ids": [
+              "chunk:chunk_004",
+              "section:section_005",
+              "table:table_001"
+            ],
+            "name": "length",
+            "param_ref": "param_overall_length",
+            "status": "extracted",
+            "unit": "mm",
+            "value": 25.5
+          },
+          {
+            "evidence_ids": [
+              "chunk:chunk_004",
+              "section:section_005",
+              "table:table_001"
+            ],
+            "name": "width",
+            "param_ref": "param_overall_width",
+            "status": "extracted",
+            "unit": "mm",
+            "value": 22.5
+          }
+        ],
+        "outline_points": [],
+        "shape_mode": "rectangular"
+      },
+      "layer_ref": "layer_substrate",
+      "placement": {
+        "status": "assumed_local_origin"
+      },
+      "role": "ground_plane"
+    },
+    {
+      "entity_id": "entity_slot",
+      "entity_type": "slot",
+      "evidence_ids": [
+        "section:section_008",
+        "section:section_009",
+        "table:table_001"
+      ],
+      "geometry": {
+        "dimensions": [
+          {
+            "evidence_ids": [
+              "section:section_008",
+              "section:section_009",
+              "table:table_001"
+            ],
+            "name": "radius",
+            "param_ref": "param_slot_radius",
+            "status": "extracted",
+            "unit": "mm",
+            "value": 3
+          }
+        ],
+        "outline_points": [],
+        "shape_mode": "circular"
+      },
+      "layer_ref": "layer_substrate",
+      "placement": {
+        "anchor": "patch_center",
+        "status": "extracted"
+      },
+      "role": "etched_slot"
+    }
+  ],
+  "evidence_used": [
+    "section:section_004",
+    "section:section_005",
+    "section:section_006",
+    "section:section_007",
+    "section:section_008",
+    "section:section_009",
+    "section:section_010",
+    "chunk:chunk_001",
+    "chunk:chunk_004",
+    "chunk:chunk_015",
+    "chunk:chunk_019",
+    "chunk:chunk_023",
+    "chunk:chunk_024",
+    "chunk:chunk_026",
+    "chunk:chunk_027",
+    "chunk:chunk_032",
+    "chunk:chunk_034",
+    "chunk:chunk_040",
+    "table:table_001",
+    "table:table_002",
+    "table:table_003"
+  ],
+  "feeds": [
+    {
+      "driven_entity_ref": "entity_patch",
+      "evidence_ids": [
+        "chunk:chunk_015",
+        "section:section_005",
+        "table:table_001"
+      ],
+      "feed_family": "microstrip line-fed",
+      "feed_id": "feed_main",
+      "matching_style": "line-fed",
+      "port_type": {
+        "status": "missing"
+      },
+      "reference_impedance": {
+        "evidence_ids": [],
+        "status": "missing"
+      }
+    }
+  ],
+  "instances": [
+    {
+      "count": 1,
+      "entity_ref": "entity_cstpa",
+      "evidence_ids": [
+        "chunk:chunk_001",
+        "section:section_008",
+        "section:section_009",
+        "table:table_001"
+      ],
+      "instance_id": "instance_cstpa",
+      "pattern": "",
+      "status": "extracted"
+    }
+  ],
+  "layers": [
+    {
+      "evidence_ids": [
+        "section:section_004",
+        "table:table_001"
+      ],
+      "layer_id": "layer_substrate",
+      "material_ref": "material_fr4_epoxy",
+      "role": "substrate",
+      "thickness": {
+        "evidence_ids": [
+          "chunk:chunk_019",
+          "section:section_004",
+          "table:table_001"
+        ],
+        "status": "extracted",
+        "unit": "mm",
+        "value": 1.6
+      },
+      "z_order": 0
+    }
+  ],
+  "materials": [
+    {
+      "category": "substrate",
+      "evidence_ids": [
+        "section:section_004",
+        "chunk:chunk_019",
+        "chunk:chunk_004"
+      ],
+      "material_id": "material_fr4_epoxy",
+      "name": "FR4 epoxy",
+      "name_raw": "FR4-exopy",
+      "roles": [
+        "substrate"
+      ],
+      "status": "extracted"
+    }
+  ],
+  "parameters": [
+    {
+      "evidence_ids": [
+        "chunk:chunk_019",
+        "section:section_004",
+        "table:table_001"
+      ],
+      "param_id": "param_epsr",
+      "semantic_name": "substrate relative permittivity",
+      "status": "extracted",
+      "symbol": "\u03b5r",
+      "value": 4.4
+    },
+    {
+      "evidence_ids": [
+        "chunk:chunk_019",
+        "section:section_004",
+        "table:table_001"
+      ],
+      "param_id": "param_substrate_thickness",
+      "semantic_name": "substrate thickness",
+      "status": "extracted",
+      "symbol": "t",
+      "unit": "mm",
+      "value": 1.6
+    },
+    {
+      "evidence_ids": [
+        "chunk:chunk_004",
+        "section:section_010",
+        "table:table_001"
+      ],
+      "param_id": "param_overall_length",
+      "semantic_name": "overall length",
+      "status": "extracted",
+      "symbol": "L",
+      "unit": "mm",
+      "value": 25.5
+    },
+    {
+      "evidence_ids": [
+        "chunk:chunk_004",
+        "section:section_010",
+        "table:table_001"
+      ],
+      "param_id": "param_overall_width",
+      "semantic_name": "overall width",
+      "status": "extracted",
+      "symbol": "W",
+      "unit": "mm",
+      "value": 22.5
+    },
+    {
+      "evidence_ids": [
+        "section:section_005",
+        "table:table_001"
+      ],
+      "param_id": "param_patch_x",
+      "semantic_name": "triangular patch x dimension",
+      "status": "extracted",
+      "symbol": "x",
+      "unit": "mm",
+      "value": 9.5
+    },
+    {
+      "evidence_ids": [
+        "section:section_005",
+        "table:table_001"
+      ],
+      "param_id": "param_patch_y",
+      "semantic_name": "triangular patch y dimension",
+      "status": "extracted",
+      "symbol": "y",
+      "unit": "mm",
+      "value": 16.08
+    },
+    {
+      "evidence_ids": [
+        "section:section_008",
+        "section:section_009",
+        "table:table_001"
+      ],
+      "param_id": "param_slot_radius",
+      "semantic_name": "central circular slot radius",
+      "status": "extracted",
+      "symbol": "cr",
+      "unit": "mm",
+      "value": 3
+    },
+    {
+      "evidence_ids": [
+        "chunk:chunk_015",
+        "table:table_001"
+      ],
+      "param_id": "param_feed_length",
+      "semantic_name": "feedline length",
+      "status": "extracted",
+      "symbol": "f",
+      "unit": "mm",
+      "value": 14
+    },
+    {
+      "evidence_ids": [
+        "chunk:chunk_015",
+        "table:table_001"
+      ],
+      "param_id": "param_feed_width",
+      "semantic_name": "feedline width",
+      "status": "extracted",
+      "symbol": "fw",
+      "unit": "mm",
+      "value": 3.11
+    },
+    {
+      "evidence_ids": [
+        "chunk:chunk_004",
+        "section:section_009",
+        "section:section_010"
+      ],
+      "param_id": "param_center_frequency",
+      "semantic_name": "center frequency",
+      "status": "extracted",
+      "symbol": "fc",
+      "unit": "GHz",
+      "value": 5.8
+    },
+    {
+      "evidence_ids": [
+        "chunk:chunk_004",
+        "section:section_010",
+        "table:table_002",
+        "table:table_003"
+      ],
+      "param_id": "param_bandwidth",
+      "semantic_name": "bandwidth",
+      "status": "partially_extracted",
+      "symbol": "BW",
+      "unit": "MHz",
+      "value": "100 (abstract/conclusion); 160 (Table 2 Step 4)"
+    },
+    {
+      "evidence_ids": [
+        "chunk:chunk_004",
+        "section:section_010"
+      ],
+      "param_id": "param_fractional_bandwidth",
+      "semantic_name": "fractional bandwidth",
+      "status": "extracted",
+      "symbol": "FBW",
+      "unit": "%",
+      "value": 3
+    },
+    {
+      "evidence_ids": [
+        "table:table_002",
+        "table:table_003"
+      ],
+      "param_id": "param_gain",
+      "semantic_name": "simulated gain",
+      "status": "extracted",
+      "symbol": "G",
+      "unit": "dBi",
+      "value": 1.49
+    }
+  ],
+  "quality": {
+    "ambiguities": [
+      "Reported bandwidth is inconsistent across the abstract, conclusion, Table 2, and Table 3; the final design is clearly the circular-slot variant, but the exact numeric bandwidth span is not fully consistent.",
+      "Validation appears simulation-only in the retrieved evidence; no separate measured prototype results are present.",
+      "The abstract refers to geometric radius changes, but the exact mapping of those terms to the final dimensional parameters is not fully explicit."
+    ],
+    "build_readiness": "partial",
+    "confidence": 0.89,
+    "missing_required_for_build": [
+      "exact conductor material",
+      "precise in-plane coordinates for feedline, patch, and slot placement",
+      "reference impedance"
+    ]
+  },
+  "schema_name": "antenna_architecture_spec_mvp_v2",
+  "schema_version": "2.0",
+  "units": {
+    "frequency": {
+      "evidence_ids": [
+        "chunk:chunk_004",
+        "section:section_010"
+      ],
+      "status": "extracted",
+      "value": "GHz"
+    },
+    "impedance": {
+      "evidence_ids": [],
+      "status": "missing"
+    },
+    "length": {
+      "evidence_ids": [
+        "chunk:chunk_004",
+        "table:table_001"
+      ],
+      "status": "extracted",
+      "value": "mm"
+    }
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "design_evolution_notes": [
+    {
+      "description": "The antenna dimensions are first derived through transmission-line formulas for patch width, effective dielectric constant, length extension, actual length, and finite ground-plane sizing.",
+      "evidence_ids": [
+        "section:section_005",
+        "section:section_007",
+        "section:section_008",
+        "chunk:chunk_024"
+      ],
+      "label": "Analytical sizing step"
+    },
+    {
+      "description": "The paper then reports the final patch obtained after simulation and summarizes the resulting impedance match, bandwidth, and radiation behavior at the operating frequency.",
+      "evidence_ids": [
+        "chunk:chunk_029",
+        "section:section_009",
+        "section:section_010"
+      ],
+      "label": "Final simulated patch"
+    }
+  ],
+  "dominant_evidence_ids": [
+    "section:section_002",
+    "section:section_004",
+    "section:section_008",
+    "chunk:chunk_029",
+    "section:section_009",
+    "section:section_010",
+    "chunk:chunk_018",
+    "chunk:chunk_016"
+  ],
+  "final_design": {
+    "classification": {
+      "primary_family": "rectangular microstrip patch antenna",
+      "topology_tags": [
+        "rectangular",
+        "coaxial probe-fed",
+        "partial ground plane",
+        "FR-4 substrate",
+        "simulated",
+        "S-band"
+      ]
+    },
+    "extra_parameters": [
+      {
+        "evidence_ids": [
+          "section:section_002",
+          "chunk:chunk_016"
+        ],
+        "semantic_name": "Relative permittivity",
+        "symbol": "\u03b5r",
+        "target_component": "substrate",
+        "value": 4.4
+      },
+      {
+        "evidence_ids": [
+          "section:section_002",
+          "chunk:chunk_016"
+        ],
+        "semantic_name": "Loss tangent",
+        "symbol": "tan\u03b4",
+        "target_component": "substrate",
+        "value": 0.002
+      },
+      {
+        "evidence_ids": [
+          "section:section_002",
+          "chunk:chunk_018"
+        ],
+        "semantic_name": "Substrate thickness",
+        "symbol": "h",
+        "target_component": "substrate",
+        "unit": "mm",
+        "value": 1.6
+      },
+      {
+        "evidence_ids": [
+          "section:section_002",
+          "chunk:chunk_015",
+          "section:section_010"
+        ],
+        "semantic_name": "Operating frequency range",
+        "target_component": "antenna",
+        "unit": "GHz",
+        "value": "2-2.5"
+      },
+      {
+        "evidence_ids": [
+          "section:section_004",
+          "chunk:chunk_026"
+        ],
+        "semantic_name": "Feed impedance target",
+        "target_component": "feed",
+        "unit": "\u03a9",
+        "value": 50
+      }
+    ],
+    "feed": {
+      "dimensions": [],
+      "driven_target": "50 \u03a9",
+      "evidence_ids": [
+        "section:section_004",
+        "section:section_008",
+        "chunk:chunk_013",
+        "chunk:chunk_024",
+        "chunk:chunk_026",
+        "table:table_001"
+      ],
+      "feed_family": "coaxial probe",
+      "location": {
+        "unit": "mm",
+        "x": 11.66,
+        "y": 20.29
+      },
+      "matching_style": "contacting probe feed"
+    },
+    "ground": {
+      "dimensions": [
+        {
+          "name": "Length",
+          "unit": "mm",
+          "value": 41.19
+        },
+        {
+          "name": "Width",
+          "unit": "mm",
+          "value": 50.32
+        }
+      ],
+      "evidence_ids": [
+        "section:section_002",
+        "section:section_004",
+        "section:section_007",
+        "section:section_008",
+        "table:table_001"
+      ],
+      "label": "Ground plane",
+      "layer_role": "partial ground plane",
+      "shape_mode": "rectangle"
+    },
+    "layers": [
+      {
+        "evidence_ids": [
+          "section:section_002",
+          "chunk:chunk_016",
+          "chunk:chunk_018"
+        ],
+        "material_name": "FR-4 Epoxy",
+        "role": "substrate",
+        "thickness_unit": "mm",
+        "thickness_value": 1.6
+      }
+    ],
+    "materials": [
+      {
+        "category": "dielectric substrate",
+        "evidence_ids": [
+          "section:section_002",
+          "chunk:chunk_016",
+          "chunk:chunk_018"
+        ],
+        "name": "FR-4 Epoxy",
+        "roles": [
+          "substrate"
+        ]
+      }
+    ],
+    "patch": {
+      "dimensions": [
+        {
+          "name": "Length",
+          "unit": "mm",
+          "value": 31.43
+        },
+        {
+          "name": "Width",
+          "unit": "mm",
+          "value": 40.57
+        }
+      ],
+      "evidence_ids": [
+        "section:section_004",
+        "section:section_008",
+        "table:table_001"
+      ],
+      "label": "Radiating patch",
+      "layer_role": "radiating patch",
+      "shape_mode": "rectangle"
+    },
+    "performance_targets": [
+      {
+        "evidence_ids": [
+          "chunk:chunk_015",
+          "section:section_009",
+          "chunk:chunk_030"
+        ],
+        "name": "Center frequency",
+        "unit": "GHz",
+        "value": 2.25
+      },
+      {
+        "evidence_ids": [
+          "section:section_009",
+          "chunk:chunk_030",
+          "section:section_010"
+        ],
+        "name": "Bandwidth",
+        "unit": "MHz",
+        "value": 46
+      },
+      {
+        "evidence_ids": [
+          "section:section_009",
+          "chunk:chunk_030"
+        ],
+        "name": "Return loss",
+        "unit": "dB",
+        "value": -23
+      },
+      {
+        "evidence_ids": [
+          "section:section_009",
+          "chunk:chunk_031",
+          "chunk:chunk_032"
+        ],
+        "name": "VSWR",
+        "value": "\u22481.1:1"
+      },
+      {
+        "evidence_ids": [
+          "section:section_009",
+          "chunk:chunk_032"
+        ],
+        "name": "Input impedance",
+        "unit": "\u03a9",
+        "value": 47.98
+      }
+    ],
+    "slots": []
+  },
+  "has_multiple_variants": false,
+  "identified_antennas": [
+    "Proposed rectangular microstrip patch antenna (Fig. 2)",
+    "Final patch obtained after simulation (Fig. 3)",
+    "Analytically sized rectangular patch geometry described in the transmission-line section"
+  ],
+  "proposed_final_antenna_rationale": "The dominant design is the final simulated rectangular microstrip patch antenna, because the paper explicitly says the antenna was simulated and the final patch obtained, then reports the operating results for that same structure. The earlier analytical dimensions are part of the design procedure, but Table I and the simulation-results section together define the canonical final antenna. Competing readings are limited to approximate wording and dimension ordering, not to distinct antenna variants.",
+  "secondary_evidence_ids": [
+    "section:section_003",
+    "chunk:chunk_011",
+    "chunk:chunk_013",
+    "chunk:chunk_015",
+    "section:section_005",
+    "section:section_007",
+    "chunk:chunk_032",
+    "chunk:chunk_034",
+    "chunk:chunk_039"
+  ],
+  "selected_design_rationale": "The paper consistently centers on one proposed rectangular microstrip patch antenna, with Fig. 2 showing the proposed structure and Fig. 3 / Section V presenting the final patch after simulation. Table I is the most authoritative source for the finalized parameter set, so its dimensions and feed coordinates are used as canonical values even though earlier prose gives rounded or differently ordered dimensions. No competing antenna family or comparison variant is evident in the retrieved context.",
+  "selected_design_summary": "Single dominant rectangular microstrip patch antenna for S-band operation, using coaxial probe feeding on an FR-4 substrate with a partial finite ground plane; the retrieved paper reports a simulated final patch.",
+  "unresolved_conflicts": [
+    {
+      "conflicting_evidence_ids": [
+        "section:section_004",
+        "chunk:chunk_013"
+      ],
+      "description": "Section IV prose gives an approximate patch size of 40.1 mm \u00d7 31 mm and a ground size of 50.32 mm \u00d7 41.19 mm, while Table I lists Length/Width = 31.43 mm/40.57 mm and Lg/Wg = 41.19 mm/50.32 mm. The table is preferred for canonical final values, but the ordering/rounding mismatch is not fully resolved.",
+      "preferred_evidence_ids": [
+        "section:section_008",
+        "table:table_001"
+      ],
+      "status": "partially_resolved",
+      "topic": "Patch and ground dimension wording/order"
+    },
+    {
+      "conflicting_evidence_ids": [
+        "chunk:chunk_009"
+      ],
+      "description": "The abstract and conclusion describe operation over 2 GHz\u20132.5 GHz, but one earlier summary line says 2 GHz\u20132.25 GHz. The broader 2\u20132.5 GHz span is preferred because it is repeated in the abstract and conclusion, yet the narrower span remains present in the retrieved text.",
+      "preferred_evidence_ids": [
+        "section:section_002",
+        "chunk:chunk_015",
+        "section:section_010"
+      ],
+      "status": "partially_resolved",
+      "topic": "Operating frequency span"
+    }
+  ]
+}

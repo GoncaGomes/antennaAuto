@@ -259,6 +259,11 @@ def _build_canonical_payload(retrieval_context: dict) -> dict:
         "has_multiple_variants": False,
         "dominant_evidence_ids": dominant,
         "secondary_evidence_ids": secondary,
+        "identified_antennas": [
+            "Rectangular microstrip patch reference geometry",
+            "Rectangular microstrip patch antenna with inset feed",
+        ],
+        "proposed_final_antenna_rationale": "The inset-fed rectangular microstrip patch is the only design treated as the proposed antenna in the retrieved evidence.",
         "final_design": {
             "classification": {
                 "primary_family": "microstrip_patch",

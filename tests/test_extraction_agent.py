@@ -3,6 +3,8 @@ from __future__ import annotations
 import base64
 from pathlib import Path
 
+import pytest
+
 try:
     import pymupdf
 except ImportError:  # pragma: no cover
@@ -11,6 +13,7 @@ except ImportError:  # pragma: no cover
 from mvp.config import RetrievalConfig
 from mvp.extraction.agent import RETRIEVAL_PLAN, gather_retrieval_context, gather_retrieval_context_with_phase1
 from mvp.index import index_run
+from mvp import parsers
 from mvp.pipeline import run_pipeline
 from mvp.retrieval import BundleRetriever
 
@@ -67,6 +70,56 @@ def create_agent_fixture_pdf(path: Path) -> None:
     document.close()
 
 
+def _install_markdown_stub(monkeypatch: pytest.MonkeyPatch) -> None:
+    def fake_to_markdown(path: str, **kwargs):
+        image_dir = Path(kwargs["image_path"])
+        image_dir.mkdir(parents=True, exist_ok=True)
+        (image_dir / "article.pdf-0001-01.png").write_bytes(TEST_PNG)
+        return [
+            {
+                "metadata": {"page_number": 1},
+                "text": "\n".join(
+                    [
+                        "# Abstract",
+                        "This proposed design is an antenna configuration with a radiating element over a ground plane.",
+                        "The substrate material is a dielectric material and the conductor material forms the radiating element.",
+                        "The feeding method and feed type use an input port, and the feed location is tuned for matching.",
+                        "Bandwidth, gain, return loss, and VSWR are reported.",
+                        "The layer stack includes substrate and metal layers.",
+                        "![Image](figures/article.pdf-0001-01.png)",
+                        "Figure 1. Antenna geometry",
+                        "The figure shows the radiating element and ground plane geometry.",
+                    ]
+                ),
+            },
+            {
+                "metadata": {"page_number": 2},
+                "text": "\n".join(
+                    [
+                        "## Parameters",
+                        "Table 1. Design parameters",
+                        "| Parameter | Value(mm) |",
+                        "| --- | --- |",
+                        "| Length | 10 |",
+                        "| Width | 8 |",
+                        "| Thickness | 1.6 |",
+                        "| OperatingFrequency | 28 |",
+                        "Feed type: microstrip feed.",
+                        "Feeding method: line feed.",
+                        "Feed location: edge location.",
+                        "Input port: standard feed connector.",
+                        "Bandwidth: 2.5 GHz.",
+                        "Gain: 6 dBi.",
+                        "Return loss: -18 dB.",
+                        "VSWR: 1.4.",
+                    ]
+                ),
+            },
+        ]
+
+    monkeypatch.setattr(parsers.pymupdf4llm, "to_markdown", fake_to_markdown)
+
+
 def test_retrieval_plan_uses_generic_queries() -> None:
     all_queries = {query for entries in RETRIEVAL_PLAN.values() for _, query in entries}
 
@@ -88,9 +141,10 @@ def test_retrieval_plan_uses_generic_queries() -> None:
     assert "return loss" in all_queries
 
 
-def test_gather_retrieval_context_runs_with_generic_plan(tmp_path: Path) -> None:
+def test_gather_retrieval_context_runs_with_generic_plan(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
     source_pdf = tmp_path / "article.pdf"
     create_agent_fixture_pdf(source_pdf)
+    _install_markdown_stub(monkeypatch)
 
     run_paths, _, _ = run_pipeline(source_pdf, base_dir=tmp_path)
     index_run(
@@ -112,9 +166,10 @@ def test_gather_retrieval_context_runs_with_generic_plan(tmp_path: Path) -> None
     assert retrieval_context["all_retrieved_evidence_ids"]
 
 
-def test_gather_retrieval_context_augments_each_block_with_phase1_queries(tmp_path: Path) -> None:
+def test_gather_retrieval_context_augments_each_block_with_phase1_queries(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
     source_pdf = tmp_path / "article.pdf"
     create_agent_fixture_pdf(source_pdf)
+    _install_markdown_stub(monkeypatch)
 
     run_paths, _, _ = run_pipeline(source_pdf, base_dir=tmp_path)
     index_run(

@@ -164,6 +164,33 @@ def test_schema_rejects_missing_evidence_used_subset() -> None:
         validate_spec_payload(payload)
 
 
+def test_schema_autocorrects_nested_evidence_ids_without_prefix() -> None:
+    payload = make_valid_payload()
+    payload["classification"]["evidence_ids"] = ["chunk_001"]
+    payload["units"]["length"]["evidence_ids"] = ["table_001"]
+
+    spec = validate_spec_payload(payload)
+
+    assert spec.classification.evidence_ids == ["chunk:chunk_001"]
+    assert spec.units.length.evidence_ids == ["table:table_001"]
+
+
+def test_schema_autocorrects_top_level_evidence_used_without_prefix() -> None:
+    payload = make_valid_payload()
+    payload["evidence_used"] = ["chunk_001", "chunk_002", "chunk_003", "table_001", "page_001", "fig_001"]
+
+    spec = validate_spec_payload(payload)
+
+    assert spec.evidence_used == [
+        "chunk:chunk_001",
+        "chunk:chunk_002",
+        "chunk:chunk_003",
+        "table:table_001",
+        "section:page_001",
+        "figure:fig_001",
+    ]
+
+
 def test_semantic_role_classifier_distinguishes_structural_and_global_parameters() -> None:
     assert classify_parameter_role("patch_length", "Lpat", "mm").role == "entity_geometry"
     assert classify_parameter_role("substrate_thickness", "h", "mm").role == "layer_property"

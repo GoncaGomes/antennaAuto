@@ -1,0 +1,62 @@
+[
+  {
+    "section_id": "section_001",
+    "text_excerpt": "_**International Journal of Engineering Trends and Technology (IJETT) - Volume4Issue4- April 2013**_",
+    "title": "Front Matter"
+  },
+  {
+    "section_id": "section_002",
+    "text_excerpt": "Alak Majumder _Department of ECE, NIT Agartala Jirania, West Tripura, India_ the antenna can be fed by a variety of methods. These methods can be classified into two categories- contacting _**Abstract -**_ **There are various types of microstrip antenna that can be used for many applications in communication systems. This paper presents the design of a rectangular microstrip patch antenna to operate at frequency range of 2 GHz to 2.5 GHz. This antenna, based on a thickness of 1.6mm Flame Retardant 4 (FR-4) substrate with a dielectric constant of approximately 4.4, is a probe feed and has a partial ground plane. After simulation, the antenna performance characteristics such as antenna input impedance, VSWR, Return Loss and current density are obtained.** _**Keywords \u2013**_ **Rectangular Microstrip Antenna, Coaxial Probe Feeding, Flame Retardant 4 (FR-4).**",
+    "title": "Rectangular Microstrip Patch Antenna Using Coaxial Probe Feeding Technique to Operate in S-Band"
+  },
+  {
+    "section_id": "section_003",
+    "text_excerpt": "Antennas play a very important role in the field of wireless communications. Some of them are parabolic reflectors, patch antennas, slot antennas, and folded dipole antennas with each type having their own properties and usage. It is perfect to classify antennas as the backbone and the driving force behind the recent advances in wireless communication technology. Microstrip antenna technology began its rapid development in the late 1970s. By the early 1980s basic microstrip antenna elements and arrays were fairly well establish in term of design and modeling. In the last decades printed antennas have been largely studied due to their advantages over other radiating systems, which include: light weightiness, reduced size, low cost, conformability and the ease of integration with active device (Pozar et al 1995). A Microstrip Patch antenna consists of a radiating patch on one side of a dielectric substrate which has a ground plane on the other side as shown in Figure 1. The patch is generally made of conducting material such as copper or gold. The radiating patch and the feed lines are usually photo etched on the dielectric substrate (Balanis, 2005). Microstrip patch antennas radiate",
+    "title": "I. INTRODUCTION"
+  },
+  {
+    "section_id": "section_004",
+    "text_excerpt": "patch is usually 0.3333 _o< L < 0.5 _o, where _o is the free-space wavelength. The patch is selected to be very thin such that t << _o (where t is the patch thickness). The height h of the dielectric is usually 0.003 _o <= h <= 0.05 _o (Balanis, 2005). Thus, a rectangular patch of dimension 40.1 mm\u00d731mm is designed on one side of an FR4 substrate of thickness 1.6mm and relative permittivity 4.4 and the ground plane is located on the other side of the substrate with dimension 50.32mm x 41.19mm. The antenna plate is fed by standard coaxial of 50_ at feeding location of 11.662mm by 20.286mm on the patch. This type of feeding scheme can be placed at any desired location inside the patch in order to match with the desire input impedance and has low spurious radiation. ![](figures/IJETT-V4I4P340.pdf-0002-02.png) Fig. 2 Proposed Rectangular Microstrip Patch Antenna III. DESIGN REQUIREMENT There are three essential parameters for design of a coaxial feed rectangular microstrip Patch Antenna. Firstly, the resonant frequency ( f0 ) of the antenna must be selected appropriately. The frequency range used is from 2GHz - 2.5GHz and the design antenna must be able to operate within this frequency",
+    "title": "_**International Journal of Engineering Trends and Technology (IJETT) - Volume4Issue4- April 2013**_"
+  },
+  {
+    "section_id": "section_005",
+    "text_excerpt": "The antenna parameters of this antenna can be calculated by the transmission line method (Balanis, 2005), as exemplified below. _Width of the Patch_ The width of the antenna can be determined by (James et al, 1989): ![](figures/IJETT-V4I4P340.pdf-0002-12.png) The effective constant can be obtained by (Pozar et al, 1995): ![](figures/IJETT-V4I4P340.pdf-0002-14.png) where \u03b5\ufffd\ufffd\ufffd\ufffd = Effective dielectric constant \u03b5\ufffd = Dielectric constant of substrate h = Height of dielectric substrate W = Width of the patch The dimensions of the patch along its length have now been extended on each end by a distance \u0394L, which is given empirically by (Ramesh et al, 2001): ![](figures/IJETT-V4I4P340.pdf-0002-20.png) The actual length _L_ of the patch is given as (Pozar et al, 1995): ![](figures/IJETT-V4I4P340.pdf-0002-22.png) ![](figures/IJETT-V4I4P340.pdf-0002-23.png) The position of the coaxial cable can be obtained by using (Dr. Max Ammnan): ISSN: 2231-5381 http://www.ijettjournal.org Page 1207",
+    "title": "IV. PHYSICAL PARAMETERS OF THE ANTENNA"
+  },
+  {
+    "section_id": "section_006",
+    "text_excerpt": "![](figures/IJETT-V4I4P340.pdf-0003-01.png) Where Xf is the desire input impedance to match the coaxial cable and \u03b5reff is the effective dielectric constant. ![](figures/IJETT-V4I4P340.pdf-0003-03.png)",
+    "title": "_**International Journal of Engineering Trends and Technology (IJETT) - Volume4Issue4- April 2013**_"
+  },
+  {
+    "section_id": "section_007",
+    "text_excerpt": "For practical considerations, it is essential to have a finite ground plane if the size of the ground plane is greater than the patch dimensions by approximately six times the substrate thickness all around the periphery. Hence, the ground plane dimensions would be given as (Huang, 1983) (Thomas, 2005): L \ufffd = 6h + L (7a) W \ufffd = 6h + W (7b)",
+    "title": "_C. Ground Dimension_"
+  },
+  {
+    "section_id": "section_008",
+    "text_excerpt": "|Length<br>Width<br>Xf<br>Yf<br>Lg<br>Wg|31.43 mm<br>40.57 mm<br>11.66 mm<br>20.29 mm<br>41.19 mm<br>50.32 mm| |---|---|",
+    "title": "ANTENNA PARAMETERS"
+  },
+  {
+    "section_id": "section_009",
+    "text_excerpt": "The antenna was simulated and the final patch obtained is shown in Fig. 3 below. ![](figures/IJETT-V4I4P340.pdf-0003-12.png) Fig. 3 The Final Patch Obtained after Simulation The return loss of the antenna obtained is -23 dB at the center frequency of 2.25 GHz as shown in Fig. 4. This indicates that 9.61% of power is reflected and 90.84% of power is transmitted. Thus, the bandwidth obtained from the return loss result is 2% which signifies 46MHz. ![](figures/IJETT-V4I4P340.pdf-0003-15.png) Fig. 4 The Return Loss Moreover, VSWR is a measure of how well matched antenna is to the cable impedance. A perfectly matched antenna would have a VSWR of 1:1. This indicates how much power is reflected back or transferred into a cable. VSWR obtained from the simulation is 1.13 dB which is approximately equals to 1.1:1 as shown in Fig. 5. This considers a good value as the level of mismatched is not very high because high VSWR implies that the port is not properly matched. ![](figures/IJETT-V4I4P340.pdf-0003-18.png) Fig. 5 VSWR vs Frequency Fig. 6 shows that the input impedance of the antenna at the center frequency 2.25 GHz is 47.98 \u03a9; this is very close to the expected 50 \u03a9. ISSN: 2231-5381 http",
+    "title": "V. SIMULATIONS AND RESULTS"
+  },
+  {
+    "section_id": "section_010",
+    "text_excerpt": "The 3D current distribution plot gives the relationship between the co-polarization (desired) and cross-polarization (undesired) components. Moreover, it gives a clear picture as to the nature of polarization of the fields propagating through the patch antenna. The average current density is shown clearly in figure 8 as different colors on the surface of the antenna which implies that the patch antenna is linearly polarized. In this paper, we presented the design of a rectangular _\u2212_ patch antenna covering the 2GHz 2.5 GHz frequency spectrum. It has been shown that this design of the rectangular patch antenna produces a bandwidth of approximately 2% with a stable radiation pattern within the frequency range. The design antenna exhibits a good impedance matching of approximately 50 Ohms at the center frequency. This antenna can be easily fabricated on substrate material due to its small size and thickness. The simple feeding technique used for the design of this antenna make this antenna a good choice in many communication systems. ISSN: 2231-5381 http://www.ijettjournal.org Page 1209 _**International Journal of Engineering Trends and Technology (IJETT) - Volume4Issue4- April 2013**",
+    "title": "VI. CONCLUSION"
+  },
+  {
+    "section_id": "section_011",
+    "text_excerpt": "The author would like to thank Mr. Joydeb Singha (BE, ETCE) (joysetce@gmail.com) for his support in this work.",
+    "title": "VII. ACKNOWLEDGEMENT"
+  },
+  {
+    "section_id": "section_012",
+    "text_excerpt": "- [1] Pozar D.M., and Schaubert D.H (1995) Microstrip Antennas, the Analysis and Design of Microstrip Antennas and Arrays, IEEE Press, New York, USA - [2] Balanis C.A. (2005) Antenna Theory: Analysis and Design, John Wiley & Sons - [3] Ramesh G, Prakash B, Inder B, and Ittipiboon A. (2001) Microstrip antenna design handbook, Artech House. - [4] James J. R. and Hall P. S. (1989) Handbook of microstrip antennas, Peter Peregrinus, London, UK. - [5] Dr. Max Ammnan, \u201cDesign of Rectangular Microstrip Patch Antennas for the 2.4 GHz Band\u201d Dublin Institute of Technology - [6] J. Huang (1983) The finite ground plane effect on the Microstrip Antenna radiation pattern _, IEEE Trans. Antennas Propagate_ , vol. AP-31, no. 7, pp. 649-653 - [7] Thomas A. Milligan, (2005) Modern Antenna Design, 2th edition, _IEEE Interscience_ Press New York, chpp. 2, 6. ISSN: 2231-5381 http://www.ijettjournal.org Page 1210",
+    "title": "REFERENCES"
+  }
+]

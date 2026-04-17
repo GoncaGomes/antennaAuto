@@ -1,0 +1,42 @@
+{
+  "has_final_design_signal": true,
+  "has_multiple_variants": true,
+  "open_uncertainties": [
+    "Which radiator stage is the final selected geometry: Radiator 2, the rectangular-slot stage, or the circular-slot stage.",
+    "Whether the paper includes any fabricated prototype or only simulated results.",
+    "Whether there are measured validation results beyond simulation.",
+    "How the slot-size and patch-radius parameter changes map to the final chosen dimensions."
+  ],
+  "search_queries": [
+    {
+      "priority": "high",
+      "query_id": "Q1",
+      "query_text": "Circular Slotted Triangular Patch Antenna for 5.8 GHz ISM Band Applications",
+      "why": "Target the paper title to retrieve the full article and confirm the selected design."
+    },
+    {
+      "priority": "high",
+      "query_id": "Q2",
+      "query_text": "proposed CSTPA design and geometric arrangement",
+      "why": "The paper map points to a proposed CSTPA design section and this should surface the main design description."
+    },
+    {
+      "priority": "high",
+      "query_id": "Q3",
+      "query_text": "optimized design produced by Radiator 2",
+      "why": "This wording indicates a design evolution and may identify the selected intermediate stage before the final slot insertion."
+    },
+    {
+      "priority": "medium",
+      "query_id": "Q4",
+      "query_text": "Step 4 inserting the circular slot into the triangle patch",
+      "why": "This is the clearest final-stage wording in the map and should help confirm the last design variant."
+    },
+    {
+      "priority": "medium",
+      "query_id": "Q5",
+      "query_text": "simulated results of various radiators",
+      "why": "The map suggests multiple radiator variants and this query can help distinguish the compared stages."
+    }
+  ]
+}

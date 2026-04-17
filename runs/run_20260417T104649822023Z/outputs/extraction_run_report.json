@@ -1,0 +1,3119 @@
+{
+  "attempt_count": 2,
+  "canonical_design_record_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260417T104649822023Z\\outputs\\canonical_design_record.json",
+  "evidence_ids_retrieved_per_block": {
+    "classification": [
+      "chunk:chunk_071",
+      "chunk:chunk_060",
+      "section:section_006",
+      "chunk:chunk_053",
+      "chunk:chunk_022",
+      "chunk:chunk_084",
+      "chunk:chunk_010",
+      "chunk:chunk_025",
+      "chunk:chunk_018",
+      "chunk:chunk_081",
+      "chunk:chunk_065",
+      "chunk:chunk_013",
+      "chunk:chunk_079",
+      "chunk:chunk_019",
+      "chunk:chunk_050",
+      "chunk:chunk_009",
+      "chunk:chunk_037",
+      "section:section_004",
+      "chunk:chunk_070",
+      "chunk:chunk_011",
+      "chunk:chunk_046",
+      "section:section_007",
+      "chunk:chunk_027",
+      "chunk:chunk_026",
+      "chunk:chunk_056",
+      "section:section_009"
+    ],
+    "entities": [
+      "chunk:chunk_010",
+      "chunk:chunk_029",
+      "chunk:chunk_022",
+      "chunk:chunk_028",
+      "chunk:chunk_071",
+      "chunk:chunk_064",
+      "chunk:chunk_046",
+      "chunk:chunk_027",
+      "chunk:chunk_026",
+      "chunk:chunk_012",
+      "section:section_005",
+      "section:section_006",
+      "chunk:chunk_009",
+      "chunk:chunk_037",
+      "section:section_004",
+      "chunk:chunk_070",
+      "chunk:chunk_011",
+      "section:section_007",
+      "chunk:chunk_056",
+      "chunk:chunk_025",
+      "section:section_009"
+    ],
+    "feeds": [
+      "chunk:chunk_037",
+      "chunk:chunk_044",
+      "chunk:chunk_013",
+      "chunk:chunk_036",
+      "chunk:chunk_076",
+      "chunk:chunk_016",
+      "chunk:chunk_075",
+      "chunk:chunk_033",
+      "chunk:chunk_045",
+      "chunk:chunk_058",
+      "section:section_007",
+      "chunk:chunk_054",
+      "chunk:chunk_023",
+      "chunk:chunk_057",
+      "chunk:chunk_043",
+      "chunk:chunk_009",
+      "section:section_004",
+      "chunk:chunk_070",
+      "chunk:chunk_011",
+      "chunk:chunk_046",
+      "chunk:chunk_010",
+      "section:section_006",
+      "chunk:chunk_027",
+      "chunk:chunk_026",
+      "chunk:chunk_056",
+      "chunk:chunk_025",
+      "section:section_009"
+    ],
+    "layers": [
+      "chunk:chunk_026",
+      "section:section_006",
+      "chunk:chunk_065",
+      "chunk:chunk_073",
+      "section:section_001",
+      "chunk:chunk_033",
+      "chunk:chunk_027",
+      "chunk:chunk_034",
+      "chunk:chunk_035",
+      "chunk:chunk_012",
+      "section:section_005",
+      "chunk:chunk_009",
+      "chunk:chunk_037",
+      "section:section_004",
+      "chunk:chunk_070",
+      "chunk:chunk_011",
+      "chunk:chunk_046",
+      "chunk:chunk_010",
+      "section:section_007",
+      "chunk:chunk_056",
+      "chunk:chunk_025",
+      "section:section_009",
+      "table:table_002"
+    ],
+    "materials": [
+      "chunk:chunk_027",
+      "chunk:chunk_026",
+      "section:section_006",
+      "chunk:chunk_073",
+      "chunk:chunk_034",
+      "chunk:chunk_035",
+      "chunk:chunk_032",
+      "chunk:chunk_009",
+      "chunk:chunk_037",
+      "section:section_004",
+      "chunk:chunk_070",
+      "chunk:chunk_011",
+      "chunk:chunk_046",
+      "chunk:chunk_010",
+      "section:section_007",
+      "chunk:chunk_056",
+      "chunk:chunk_025",
+      "section:section_009",
+      "table:table_002"
+    ],
+    "parameters": [
+      "table:table_001",
+      "chunk:chunk_028",
+      "chunk:chunk_022",
+      "section:section_006",
+      "chunk:chunk_066",
+      "chunk:chunk_069",
+      "chunk:chunk_034",
+      "chunk:chunk_035",
+      "chunk:chunk_050",
+      "chunk:chunk_059",
+      "chunk:chunk_053",
+      "chunk:chunk_058",
+      "chunk:chunk_049",
+      "chunk:chunk_009",
+      "chunk:chunk_037",
+      "section:section_004",
+      "chunk:chunk_070",
+      "chunk:chunk_011",
+      "chunk:chunk_046",
+      "chunk:chunk_010",
+      "section:section_007",
+      "chunk:chunk_027",
+      "chunk:chunk_026",
+      "chunk:chunk_056",
+      "table:table_002",
+      "chunk:chunk_025",
+      "section:section_009"
+    ],
+    "quality": [
+      "chunk:chunk_047",
+      "chunk:chunk_046",
+      "chunk:chunk_021",
+      "chunk:chunk_020",
+      "section:section_008",
+      "chunk:chunk_060",
+      "chunk:chunk_061",
+      "chunk:chunk_063",
+      "chunk:chunk_013",
+      "chunk:chunk_010",
+      "chunk:chunk_019",
+      "chunk:chunk_018",
+      "chunk:chunk_012",
+      "section:section_005",
+      "chunk:chunk_051",
+      "section:section_007",
+      "chunk:chunk_045",
+      "chunk:chunk_052",
+      "chunk:chunk_053",
+      "chunk:chunk_070",
+      "chunk:chunk_009",
+      "chunk:chunk_037",
+      "section:section_004",
+      "chunk:chunk_011",
+      "section:section_006",
+      "chunk:chunk_027",
+      "chunk:chunk_026",
+      "chunk:chunk_056",
+      "chunk:chunk_025",
+      "section:section_009"
+    ]
+  },
+  "extraction_path": "retrieval_llm2_llm3",
+  "extraction_status": "completed",
+  "final_evidence_ids_used": [
+    "chunk:chunk_009",
+    "chunk:chunk_010",
+    "chunk:chunk_022",
+    "chunk:chunk_025",
+    "chunk:chunk_027",
+    "chunk:chunk_029",
+    "chunk:chunk_035",
+    "chunk:chunk_037",
+    "chunk:chunk_045",
+    "chunk:chunk_046",
+    "chunk:chunk_050",
+    "chunk:chunk_052",
+    "chunk:chunk_053",
+    "chunk:chunk_056",
+    "chunk:chunk_057",
+    "chunk:chunk_058",
+    "chunk:chunk_061",
+    "chunk:chunk_063",
+    "chunk:chunk_064",
+    "chunk:chunk_065",
+    "chunk:chunk_070",
+    "chunk:chunk_071",
+    "section:section_004",
+    "section:section_006",
+    "section:section_007",
+    "section:section_008",
+    "table:table_001",
+    "table:table_002"
+  ],
+  "legacy_direct_path_available": true,
+  "legacy_direct_path_used": false,
+  "legacy_model_name": null,
+  "llm2_model_name": "gpt-5.4-mini",
+  "llm2_reasoning_effort": "medium",
+  "llm3_model_name": "gpt-5.4-mini",
+  "llm3_reasoning_effort": "medium",
+  "model_name": "gpt-5.4-mini",
+  "old_single_gpt4o_path_replaced": true,
+  "phase1": {
+    "errors": [],
+    "interpretation_map_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260417T104649822023Z\\outputs\\interpretation_map.json",
+    "interpretation_map_status": "completed",
+    "model_name": "gpt-5.4-mini",
+    "paper_map_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260417T104649822023Z\\outputs\\paper_map.json",
+    "paper_map_status": "completed",
+    "run": true,
+    "warnings": []
+  },
+  "prompt_budget": {},
+  "prompt_evidence_ids_per_block": {
+    "classification": [
+      "chunk:chunk_009",
+      "chunk:chunk_046",
+      "chunk:chunk_071",
+      "chunk:chunk_027",
+      "chunk:chunk_060",
+      "chunk:chunk_013",
+      "chunk:chunk_056",
+      "chunk:chunk_037",
+      "section:section_006",
+      "chunk:chunk_053",
+      "chunk:chunk_022",
+      "section:section_007",
+      "chunk:chunk_079",
+      "section:section_004",
+      "chunk:chunk_026",
+      "chunk:chunk_070",
+      "chunk:chunk_011",
+      "chunk:chunk_084",
+      "chunk:chunk_010",
+      "chunk:chunk_025",
+      "chunk:chunk_018",
+      "section:section_009",
+      "chunk:chunk_081",
+      "chunk:chunk_019",
+      "chunk:chunk_050",
+      "chunk:chunk_065"
+    ],
+    "entities": [
+      "chunk:chunk_009",
+      "chunk:chunk_025",
+      "chunk:chunk_012",
+      "chunk:chunk_064",
+      "chunk:chunk_056",
+      "chunk:chunk_037",
+      "section:section_005",
+      "section:section_007",
+      "section:section_004",
+      "chunk:chunk_070",
+      "chunk:chunk_011",
+      "chunk:chunk_010",
+      "section:section_006",
+      "chunk:chunk_029",
+      "section:section_009",
+      "chunk:chunk_046",
+      "chunk:chunk_022",
+      "chunk:chunk_027",
+      "chunk:chunk_026",
+      "chunk:chunk_028",
+      "chunk:chunk_071"
+    ],
+    "feeds": [
+      "chunk:chunk_009",
+      "chunk:chunk_025",
+      "chunk:chunk_046",
+      "section:section_006",
+      "chunk:chunk_010",
+      "chunk:chunk_037",
+      "chunk:chunk_027",
+      "chunk:chunk_044",
+      "chunk:chunk_013",
+      "chunk:chunk_045",
+      "chunk:chunk_056",
+      "chunk:chunk_036",
+      "section:section_004",
+      "chunk:chunk_057",
+      "chunk:chunk_076",
+      "chunk:chunk_026",
+      "chunk:chunk_043",
+      "chunk:chunk_070",
+      "chunk:chunk_011",
+      "chunk:chunk_016",
+      "chunk:chunk_075",
+      "chunk:chunk_033",
+      "section:section_009",
+      "chunk:chunk_058",
+      "section:section_007",
+      "chunk:chunk_054",
+      "chunk:chunk_023"
+    ],
+    "layers": [
+      "chunk:chunk_009",
+      "chunk:chunk_025",
+      "chunk:chunk_026",
+      "chunk:chunk_046",
+      "chunk:chunk_033",
+      "chunk:chunk_010",
+      "chunk:chunk_056",
+      "chunk:chunk_037",
+      "section:section_007",
+      "section:section_004",
+      "chunk:chunk_070",
+      "chunk:chunk_012",
+      "chunk:chunk_011",
+      "table:table_002",
+      "chunk:chunk_027",
+      "section:section_005",
+      "section:section_009",
+      "chunk:chunk_034",
+      "section:section_006",
+      "chunk:chunk_035",
+      "chunk:chunk_065",
+      "chunk:chunk_073",
+      "section:section_001"
+    ],
+    "materials": [
+      "chunk:chunk_009",
+      "chunk:chunk_025",
+      "chunk:chunk_046",
+      "chunk:chunk_027",
+      "chunk:chunk_010",
+      "chunk:chunk_056",
+      "chunk:chunk_037",
+      "section:section_007",
+      "section:section_004",
+      "chunk:chunk_026",
+      "section:section_006",
+      "chunk:chunk_035",
+      "chunk:chunk_070",
+      "chunk:chunk_011",
+      "table:table_002",
+      "section:section_009",
+      "chunk:chunk_073",
+      "chunk:chunk_032",
+      "chunk:chunk_034"
+    ],
+    "parameters": [
+      "chunk:chunk_009",
+      "chunk:chunk_025",
+      "chunk:chunk_046",
+      "chunk:chunk_028",
+      "chunk:chunk_050",
+      "chunk:chunk_010",
+      "chunk:chunk_059",
+      "chunk:chunk_053",
+      "chunk:chunk_027",
+      "chunk:chunk_056",
+      "chunk:chunk_037",
+      "section:section_007",
+      "section:section_004",
+      "chunk:chunk_058",
+      "chunk:chunk_026",
+      "chunk:chunk_049",
+      "chunk:chunk_070",
+      "chunk:chunk_011",
+      "chunk:chunk_022",
+      "table:table_002",
+      "section:section_009",
+      "table:table_001",
+      "section:section_006",
+      "chunk:chunk_066",
+      "chunk:chunk_069",
+      "chunk:chunk_034",
+      "chunk:chunk_035"
+    ],
+    "quality": [
+      "chunk:chunk_009",
+      "chunk:chunk_019",
+      "chunk:chunk_025",
+      "chunk:chunk_060",
+      "section:section_006",
+      "chunk:chunk_061",
+      "chunk:chunk_047",
+      "chunk:chunk_052",
+      "chunk:chunk_053",
+      "chunk:chunk_027",
+      "chunk:chunk_056",
+      "chunk:chunk_037",
+      "section:section_007",
+      "section:section_004",
+      "chunk:chunk_046",
+      "chunk:chunk_026",
+      "chunk:chunk_045",
+      "chunk:chunk_063",
+      "chunk:chunk_021",
+      "chunk:chunk_011",
+      "chunk:chunk_018",
+      "chunk:chunk_013",
+      "section:section_009",
+      "chunk:chunk_010",
+      "chunk:chunk_020",
+      "chunk:chunk_012",
+      "section:section_008",
+      "section:section_005",
+      "chunk:chunk_051",
+      "chunk:chunk_070"
+    ]
+  },
+  "query_usefulness_per_block": {
+    "classification": [
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 4,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_071",
+          "section:section_006",
+          "chunk:chunk_053",
+          "chunk:chunk_022"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_071",
+          "chunk:chunk_060",
+          "section:section_006",
+          "chunk:chunk_053",
+          "chunk:chunk_022"
+        ],
+        "query": "antenna type",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 3,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_053",
+          "chunk:chunk_010",
+          "chunk:chunk_025"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_053",
+          "chunk:chunk_084",
+          "chunk:chunk_010",
+          "chunk:chunk_025",
+          "chunk:chunk_018"
+        ],
+        "query": "proposed design",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 2,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_071",
+          "chunk:chunk_065"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_084",
+          "chunk:chunk_081",
+          "chunk:chunk_071",
+          "chunk:chunk_018",
+          "chunk:chunk_065"
+        ],
+        "query": "final design",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 2,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_050",
+          "chunk:chunk_053"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_013",
+          "chunk:chunk_079",
+          "chunk:chunk_019",
+          "chunk:chunk_050",
+          "chunk:chunk_053"
+        ],
+        "query": "configuration",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 4,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_009",
+          "chunk:chunk_037",
+          "section:section_004",
+          "chunk:chunk_070"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_009",
+          "chunk:chunk_037",
+          "section:section_004",
+          "chunk:chunk_070",
+          "chunk:chunk_011"
+        ],
+        "query": "rectangular microstrip patch antenna 28 GHz inset feed",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 5,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_046",
+          "chunk:chunk_010",
+          "section:section_007",
+          "section:section_004",
+          "chunk:chunk_009"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_046",
+          "chunk:chunk_010",
+          "section:section_007",
+          "section:section_004",
+          "chunk:chunk_009"
+        ],
+        "query": "proposed antenna 28 GHz reflection coefficient -24 dB",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 4,
+        "final_evidence_usage_ids": [
+          "section:section_006",
+          "chunk:chunk_027",
+          "section:section_004",
+          "chunk:chunk_010"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "section:section_006",
+          "chunk:chunk_027",
+          "section:section_004",
+          "chunk:chunk_026",
+          "chunk:chunk_010"
+        ],
+        "query": "Rogers RT5880 substrate 28 GHz microstrip patch antenna",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 4,
+        "final_evidence_usage_ids": [
+          "section:section_006",
+          "chunk:chunk_009",
+          "chunk:chunk_056",
+          "chunk:chunk_070"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_026",
+          "section:section_006",
+          "chunk:chunk_009",
+          "chunk:chunk_056",
+          "chunk:chunk_070"
+        ],
+        "query": "fabricated microstrip patch antenna 28 GHz",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 2,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_025",
+          "section:section_006"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_025",
+          "section:section_006",
+          "chunk:chunk_011",
+          "chunk:chunk_026",
+          "section:section_009"
+        ],
+        "query": "Figure 1 Proposed Microstrip Patch Antenna",
+        "retrieved_count": 5,
+        "search_type": "text"
+      }
+    ],
+    "entities": [
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 4,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_010",
+          "chunk:chunk_029",
+          "chunk:chunk_022",
+          "chunk:chunk_071"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_010",
+          "chunk:chunk_029",
+          "chunk:chunk_022",
+          "chunk:chunk_028",
+          "chunk:chunk_071"
+        ],
+        "query": "antenna geometry",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 4,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_064",
+          "chunk:chunk_022",
+          "chunk:chunk_046",
+          "chunk:chunk_027"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_064",
+          "chunk:chunk_022",
+          "chunk:chunk_046",
+          "chunk:chunk_027",
+          "chunk:chunk_026"
+        ],
+        "query": "radiating element",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 3,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_010",
+          "chunk:chunk_022",
+          "chunk:chunk_029"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_012",
+          "section:section_005",
+          "chunk:chunk_010",
+          "chunk:chunk_022",
+          "chunk:chunk_029"
+        ],
+        "query": "slot geometry",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 3,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_027",
+          "section:section_006",
+          "chunk:chunk_010"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_026",
+          "chunk:chunk_027",
+          "chunk:chunk_012",
+          "section:section_006",
+          "chunk:chunk_010"
+        ],
+        "query": "ground plane geometry",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 0,
+        "final_evidence_usage_ids": [],
+        "prompt_survival_count": 0,
+        "prompt_survival_evidence_ids": [],
+        "query": "antenna geometry",
+        "retrieved_count": 0,
+        "search_type": "figures"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 4,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_009",
+          "chunk:chunk_037",
+          "section:section_004",
+          "chunk:chunk_070"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_009",
+          "chunk:chunk_037",
+          "section:section_004",
+          "chunk:chunk_070",
+          "chunk:chunk_011"
+        ],
+        "query": "rectangular microstrip patch antenna 28 GHz inset feed",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 0,
+        "final_evidence_usage_ids": [],
+        "prompt_survival_count": 0,
+        "prompt_survival_evidence_ids": [],
+        "query": "rectangular microstrip patch antenna 28 GHz inset feed",
+        "retrieved_count": 0,
+        "search_type": "figures"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 5,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_046",
+          "chunk:chunk_010",
+          "section:section_007",
+          "section:section_004",
+          "chunk:chunk_009"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_046",
+          "chunk:chunk_010",
+          "section:section_007",
+          "section:section_004",
+          "chunk:chunk_009"
+        ],
+        "query": "proposed antenna 28 GHz reflection coefficient -24 dB",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 0,
+        "final_evidence_usage_ids": [],
+        "prompt_survival_count": 0,
+        "prompt_survival_evidence_ids": [],
+        "query": "proposed antenna 28 GHz reflection coefficient -24 dB",
+        "retrieved_count": 0,
+        "search_type": "figures"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 4,
+        "final_evidence_usage_ids": [
+          "section:section_006",
+          "chunk:chunk_027",
+          "section:section_004",
+          "chunk:chunk_010"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "section:section_006",
+          "chunk:chunk_027",
+          "section:section_004",
+          "chunk:chunk_026",
+          "chunk:chunk_010"
+        ],
+        "query": "Rogers RT5880 substrate 28 GHz microstrip patch antenna",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 0,
+        "final_evidence_usage_ids": [],
+        "prompt_survival_count": 0,
+        "prompt_survival_evidence_ids": [],
+        "query": "Rogers RT5880 substrate 28 GHz microstrip patch antenna",
+        "retrieved_count": 0,
+        "search_type": "figures"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 4,
+        "final_evidence_usage_ids": [
+          "section:section_006",
+          "chunk:chunk_009",
+          "chunk:chunk_056",
+          "chunk:chunk_070"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_026",
+          "section:section_006",
+          "chunk:chunk_009",
+          "chunk:chunk_056",
+          "chunk:chunk_070"
+        ],
+        "query": "fabricated microstrip patch antenna 28 GHz",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 0,
+        "final_evidence_usage_ids": [],
+        "prompt_survival_count": 0,
+        "prompt_survival_evidence_ids": [],
+        "query": "fabricated microstrip patch antenna 28 GHz",
+        "retrieved_count": 0,
+        "search_type": "figures"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 2,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_025",
+          "section:section_006"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_025",
+          "section:section_006",
+          "chunk:chunk_011",
+          "chunk:chunk_026",
+          "section:section_009"
+        ],
+        "query": "Figure 1 Proposed Microstrip Patch Antenna",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 0,
+        "final_evidence_usage_ids": [],
+        "prompt_survival_count": 0,
+        "prompt_survival_evidence_ids": [],
+        "query": "Figure 1 Proposed Microstrip Patch Antenna",
+        "retrieved_count": 0,
+        "search_type": "figures"
+      }
+    ],
+    "feeds": [
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 1,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_037"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_037",
+          "chunk:chunk_044",
+          "chunk:chunk_013",
+          "chunk:chunk_036",
+          "chunk:chunk_076"
+        ],
+        "query": "feeding method",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 1,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_037"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_037",
+          "chunk:chunk_036",
+          "chunk:chunk_016",
+          "chunk:chunk_075",
+          "chunk:chunk_044"
+        ],
+        "query": "feed type",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 1,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_037"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_037",
+          "chunk:chunk_036",
+          "chunk:chunk_075",
+          "chunk:chunk_033",
+          "chunk:chunk_044"
+        ],
+        "query": "feed location",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 3,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_045",
+          "chunk:chunk_058",
+          "section:section_007"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_045",
+          "chunk:chunk_058",
+          "section:section_007",
+          "chunk:chunk_054",
+          "chunk:chunk_023"
+        ],
+        "query": "input port",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 2,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_058",
+          "chunk:chunk_057"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_058",
+          "chunk:chunk_054",
+          "chunk:chunk_057",
+          "chunk:chunk_043",
+          "chunk:chunk_044"
+        ],
+        "query": "input impedance",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 4,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_009",
+          "chunk:chunk_037",
+          "section:section_004",
+          "chunk:chunk_070"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_009",
+          "chunk:chunk_037",
+          "section:section_004",
+          "chunk:chunk_070",
+          "chunk:chunk_011"
+        ],
+        "query": "rectangular microstrip patch antenna 28 GHz inset feed",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 5,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_046",
+          "chunk:chunk_010",
+          "section:section_007",
+          "section:section_004",
+          "chunk:chunk_009"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_046",
+          "chunk:chunk_010",
+          "section:section_007",
+          "section:section_004",
+          "chunk:chunk_009"
+        ],
+        "query": "proposed antenna 28 GHz reflection coefficient -24 dB",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 4,
+        "final_evidence_usage_ids": [
+          "section:section_006",
+          "chunk:chunk_027",
+          "section:section_004",
+          "chunk:chunk_010"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "section:section_006",
+          "chunk:chunk_027",
+          "section:section_004",
+          "chunk:chunk_026",
+          "chunk:chunk_010"
+        ],
+        "query": "Rogers RT5880 substrate 28 GHz microstrip patch antenna",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 4,
+        "final_evidence_usage_ids": [
+          "section:section_006",
+          "chunk:chunk_009",
+          "chunk:chunk_056",
+          "chunk:chunk_070"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_026",
+          "section:section_006",
+          "chunk:chunk_009",
+          "chunk:chunk_056",
+          "chunk:chunk_070"
+        ],
+        "query": "fabricated microstrip patch antenna 28 GHz",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 2,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_025",
+          "section:section_006"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_025",
+          "section:section_006",
+          "chunk:chunk_011",
+          "chunk:chunk_026",
+          "section:section_009"
+        ],
+        "query": "Figure 1 Proposed Microstrip Patch Antenna",
+        "retrieved_count": 5,
+        "search_type": "text"
+      }
+    ],
+    "layers": [
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 2,
+        "final_evidence_usage_ids": [
+          "section:section_006",
+          "chunk:chunk_065"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_026",
+          "section:section_006",
+          "chunk:chunk_065",
+          "chunk:chunk_073",
+          "section:section_001"
+        ],
+        "query": "layer stack",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 1,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_027"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_033",
+          "chunk:chunk_027",
+          "chunk:chunk_034",
+          "chunk:chunk_073",
+          "chunk:chunk_026"
+        ],
+        "query": "substrate thickness",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 2,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_035",
+          "section:section_006"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_033",
+          "chunk:chunk_035",
+          "section:section_006",
+          "chunk:chunk_034",
+          "chunk:chunk_026"
+        ],
+        "query": "metal thickness",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 2,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_027",
+          "section:section_006"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_026",
+          "chunk:chunk_027",
+          "chunk:chunk_012",
+          "section:section_006",
+          "section:section_005"
+        ],
+        "query": "ground plane",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 0,
+        "final_evidence_usage_ids": [],
+        "prompt_survival_count": 0,
+        "prompt_survival_evidence_ids": [],
+        "query": "thickness",
+        "retrieved_count": 0,
+        "search_type": "tables"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 4,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_009",
+          "chunk:chunk_037",
+          "section:section_004",
+          "chunk:chunk_070"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_009",
+          "chunk:chunk_037",
+          "section:section_004",
+          "chunk:chunk_070",
+          "chunk:chunk_011"
+        ],
+        "query": "rectangular microstrip patch antenna 28 GHz inset feed",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 0,
+        "final_evidence_usage_ids": [],
+        "prompt_survival_count": 0,
+        "prompt_survival_evidence_ids": [],
+        "query": "rectangular microstrip patch antenna 28 GHz inset feed",
+        "retrieved_count": 0,
+        "search_type": "tables"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 5,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_046",
+          "chunk:chunk_010",
+          "section:section_007",
+          "section:section_004",
+          "chunk:chunk_009"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_046",
+          "chunk:chunk_010",
+          "section:section_007",
+          "section:section_004",
+          "chunk:chunk_009"
+        ],
+        "query": "proposed antenna 28 GHz reflection coefficient -24 dB",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 0,
+        "final_evidence_usage_ids": [],
+        "prompt_survival_count": 0,
+        "prompt_survival_evidence_ids": [],
+        "query": "proposed antenna 28 GHz reflection coefficient -24 dB",
+        "retrieved_count": 0,
+        "search_type": "tables"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 4,
+        "final_evidence_usage_ids": [
+          "section:section_006",
+          "chunk:chunk_027",
+          "section:section_004",
+          "chunk:chunk_010"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "section:section_006",
+          "chunk:chunk_027",
+          "section:section_004",
+          "chunk:chunk_026",
+          "chunk:chunk_010"
+        ],
+        "query": "Rogers RT5880 substrate 28 GHz microstrip patch antenna",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 0,
+        "final_evidence_usage_ids": [],
+        "prompt_survival_count": 0,
+        "prompt_survival_evidence_ids": [],
+        "query": "Rogers RT5880 substrate 28 GHz microstrip patch antenna",
+        "retrieved_count": 0,
+        "search_type": "tables"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 4,
+        "final_evidence_usage_ids": [
+          "section:section_006",
+          "chunk:chunk_009",
+          "chunk:chunk_056",
+          "chunk:chunk_070"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_026",
+          "section:section_006",
+          "chunk:chunk_009",
+          "chunk:chunk_056",
+          "chunk:chunk_070"
+        ],
+        "query": "fabricated microstrip patch antenna 28 GHz",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 0,
+        "final_evidence_usage_ids": [],
+        "prompt_survival_count": 0,
+        "prompt_survival_evidence_ids": [],
+        "query": "fabricated microstrip patch antenna 28 GHz",
+        "retrieved_count": 0,
+        "search_type": "tables"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 2,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_025",
+          "section:section_006"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_025",
+          "section:section_006",
+          "chunk:chunk_011",
+          "chunk:chunk_026",
+          "section:section_009"
+        ],
+        "query": "Figure 1 Proposed Microstrip Patch Antenna",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 1,
+        "final_evidence_usage_ids": [
+          "table:table_002"
+        ],
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_ids": [
+          "table:table_002"
+        ],
+        "query": "Figure 1 Proposed Microstrip Patch Antenna",
+        "retrieved_count": 1,
+        "search_type": "tables"
+      }
+    ],
+    "materials": [
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 2,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_027",
+          "section:section_006"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_027",
+          "chunk:chunk_026",
+          "section:section_006",
+          "chunk:chunk_073",
+          "chunk:chunk_034"
+        ],
+        "query": "substrate material",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 3,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_027",
+          "chunk:chunk_035",
+          "section:section_006"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_027",
+          "chunk:chunk_035",
+          "section:section_006",
+          "chunk:chunk_034",
+          "chunk:chunk_032"
+        ],
+        "query": "dielectric material",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 3,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_027",
+          "section:section_006",
+          "chunk:chunk_035"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_027",
+          "chunk:chunk_026",
+          "section:section_006",
+          "chunk:chunk_073",
+          "chunk:chunk_035"
+        ],
+        "query": "conductor material",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 0,
+        "final_evidence_usage_ids": [],
+        "prompt_survival_count": 0,
+        "prompt_survival_evidence_ids": [],
+        "query": "material",
+        "retrieved_count": 0,
+        "search_type": "tables"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 4,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_009",
+          "chunk:chunk_037",
+          "section:section_004",
+          "chunk:chunk_070"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_009",
+          "chunk:chunk_037",
+          "section:section_004",
+          "chunk:chunk_070",
+          "chunk:chunk_011"
+        ],
+        "query": "rectangular microstrip patch antenna 28 GHz inset feed",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 0,
+        "final_evidence_usage_ids": [],
+        "prompt_survival_count": 0,
+        "prompt_survival_evidence_ids": [],
+        "query": "rectangular microstrip patch antenna 28 GHz inset feed",
+        "retrieved_count": 0,
+        "search_type": "tables"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 5,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_046",
+          "chunk:chunk_010",
+          "section:section_007",
+          "section:section_004",
+          "chunk:chunk_009"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_046",
+          "chunk:chunk_010",
+          "section:section_007",
+          "section:section_004",
+          "chunk:chunk_009"
+        ],
+        "query": "proposed antenna 28 GHz reflection coefficient -24 dB",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 0,
+        "final_evidence_usage_ids": [],
+        "prompt_survival_count": 0,
+        "prompt_survival_evidence_ids": [],
+        "query": "proposed antenna 28 GHz reflection coefficient -24 dB",
+        "retrieved_count": 0,
+        "search_type": "tables"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 4,
+        "final_evidence_usage_ids": [
+          "section:section_006",
+          "chunk:chunk_027",
+          "section:section_004",
+          "chunk:chunk_010"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "section:section_006",
+          "chunk:chunk_027",
+          "section:section_004",
+          "chunk:chunk_026",
+          "chunk:chunk_010"
+        ],
+        "query": "Rogers RT5880 substrate 28 GHz microstrip patch antenna",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 0,
+        "final_evidence_usage_ids": [],
+        "prompt_survival_count": 0,
+        "prompt_survival_evidence_ids": [],
+        "query": "Rogers RT5880 substrate 28 GHz microstrip patch antenna",
+        "retrieved_count": 0,
+        "search_type": "tables"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 4,
+        "final_evidence_usage_ids": [
+          "section:section_006",
+          "chunk:chunk_009",
+          "chunk:chunk_056",
+          "chunk:chunk_070"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_026",
+          "section:section_006",
+          "chunk:chunk_009",
+          "chunk:chunk_056",
+          "chunk:chunk_070"
+        ],
+        "query": "fabricated microstrip patch antenna 28 GHz",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 0,
+        "final_evidence_usage_ids": [],
+        "prompt_survival_count": 0,
+        "prompt_survival_evidence_ids": [],
+        "query": "fabricated microstrip patch antenna 28 GHz",
+        "retrieved_count": 0,
+        "search_type": "tables"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 2,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_025",
+          "section:section_006"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_025",
+          "section:section_006",
+          "chunk:chunk_011",
+          "chunk:chunk_026",
+          "section:section_009"
+        ],
+        "query": "Figure 1 Proposed Microstrip Patch Antenna",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 1,
+        "final_evidence_usage_ids": [
+          "table:table_002"
+        ],
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_ids": [
+          "table:table_002"
+        ],
+        "query": "Figure 1 Proposed Microstrip Patch Antenna",
+        "retrieved_count": 1,
+        "search_type": "tables"
+      }
+    ],
+    "parameters": [
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 0,
+        "final_evidence_usage_ids": [],
+        "prompt_survival_count": 0,
+        "prompt_survival_evidence_ids": [],
+        "query": "dimensions",
+        "retrieved_count": 0,
+        "search_type": "tables"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 1,
+        "final_evidence_usage_ids": [
+          "table:table_001"
+        ],
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_ids": [
+          "table:table_001"
+        ],
+        "query": "design parameters",
+        "retrieved_count": 1,
+        "search_type": "tables"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 2,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_022",
+          "section:section_006"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_028",
+          "chunk:chunk_022",
+          "section:section_006",
+          "chunk:chunk_066",
+          "chunk:chunk_069"
+        ],
+        "query": "geometrical parameters",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 2,
+        "final_evidence_usage_ids": [
+          "section:section_006",
+          "chunk:chunk_035"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_028",
+          "chunk:chunk_066",
+          "section:section_006",
+          "chunk:chunk_034",
+          "chunk:chunk_035"
+        ],
+        "query": "table of dimensions",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 3,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_050",
+          "chunk:chunk_053",
+          "chunk:chunk_058"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_050",
+          "chunk:chunk_059",
+          "chunk:chunk_053",
+          "chunk:chunk_058",
+          "chunk:chunk_049"
+        ],
+        "query": "operating frequency",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 0,
+        "final_evidence_usage_ids": [],
+        "prompt_survival_count": 0,
+        "prompt_survival_evidence_ids": [],
+        "query": "rectangular microstrip patch antenna 28 GHz inset feed",
+        "retrieved_count": 0,
+        "search_type": "tables"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 4,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_009",
+          "chunk:chunk_037",
+          "section:section_004",
+          "chunk:chunk_070"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_009",
+          "chunk:chunk_037",
+          "section:section_004",
+          "chunk:chunk_070",
+          "chunk:chunk_011"
+        ],
+        "query": "rectangular microstrip patch antenna 28 GHz inset feed",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 0,
+        "final_evidence_usage_ids": [],
+        "prompt_survival_count": 0,
+        "prompt_survival_evidence_ids": [],
+        "query": "proposed antenna 28 GHz reflection coefficient -24 dB",
+        "retrieved_count": 0,
+        "search_type": "tables"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 5,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_046",
+          "chunk:chunk_010",
+          "section:section_007",
+          "section:section_004",
+          "chunk:chunk_009"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_046",
+          "chunk:chunk_010",
+          "section:section_007",
+          "section:section_004",
+          "chunk:chunk_009"
+        ],
+        "query": "proposed antenna 28 GHz reflection coefficient -24 dB",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 0,
+        "final_evidence_usage_ids": [],
+        "prompt_survival_count": 0,
+        "prompt_survival_evidence_ids": [],
+        "query": "Rogers RT5880 substrate 28 GHz microstrip patch antenna",
+        "retrieved_count": 0,
+        "search_type": "tables"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 4,
+        "final_evidence_usage_ids": [
+          "section:section_006",
+          "chunk:chunk_027",
+          "section:section_004",
+          "chunk:chunk_010"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "section:section_006",
+          "chunk:chunk_027",
+          "section:section_004",
+          "chunk:chunk_026",
+          "chunk:chunk_010"
+        ],
+        "query": "Rogers RT5880 substrate 28 GHz microstrip patch antenna",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 0,
+        "final_evidence_usage_ids": [],
+        "prompt_survival_count": 0,
+        "prompt_survival_evidence_ids": [],
+        "query": "fabricated microstrip patch antenna 28 GHz",
+        "retrieved_count": 0,
+        "search_type": "tables"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 4,
+        "final_evidence_usage_ids": [
+          "section:section_006",
+          "chunk:chunk_009",
+          "chunk:chunk_056",
+          "chunk:chunk_070"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_026",
+          "section:section_006",
+          "chunk:chunk_009",
+          "chunk:chunk_056",
+          "chunk:chunk_070"
+        ],
+        "query": "fabricated microstrip patch antenna 28 GHz",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 1,
+        "final_evidence_usage_ids": [
+          "table:table_002"
+        ],
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_ids": [
+          "table:table_002"
+        ],
+        "query": "Figure 1 Proposed Microstrip Patch Antenna",
+        "retrieved_count": 1,
+        "search_type": "tables"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 2,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_025",
+          "section:section_006"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_025",
+          "section:section_006",
+          "chunk:chunk_011",
+          "chunk:chunk_026",
+          "section:section_009"
+        ],
+        "query": "Figure 1 Proposed Microstrip Patch Antenna",
+        "retrieved_count": 5,
+        "search_type": "text"
+      }
+    ],
+    "quality": [
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 2,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_046",
+          "section:section_008"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_047",
+          "chunk:chunk_046",
+          "chunk:chunk_021",
+          "chunk:chunk_020",
+          "section:section_008"
+        ],
+        "query": "bandwidth",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 3,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_061",
+          "chunk:chunk_063",
+          "chunk:chunk_010"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_060",
+          "chunk:chunk_061",
+          "chunk:chunk_063",
+          "chunk:chunk_013",
+          "chunk:chunk_010"
+        ],
+        "query": "gain",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 0,
+        "final_evidence_usage_ids": [],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_019",
+          "chunk:chunk_018",
+          "chunk:chunk_012",
+          "section:section_005",
+          "chunk:chunk_051"
+        ],
+        "query": "return loss",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 3,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_046",
+          "section:section_007",
+          "chunk:chunk_045"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_051",
+          "chunk:chunk_047",
+          "chunk:chunk_046",
+          "section:section_007",
+          "chunk:chunk_045"
+        ],
+        "query": "reflection coefficient",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 4,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_052",
+          "chunk:chunk_053",
+          "chunk:chunk_070",
+          "chunk:chunk_010"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_052",
+          "chunk:chunk_051",
+          "chunk:chunk_053",
+          "chunk:chunk_070",
+          "chunk:chunk_010"
+        ],
+        "query": "VSWR",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 4,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_009",
+          "chunk:chunk_037",
+          "section:section_004",
+          "chunk:chunk_070"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_009",
+          "chunk:chunk_037",
+          "section:section_004",
+          "chunk:chunk_070",
+          "chunk:chunk_011"
+        ],
+        "query": "rectangular microstrip patch antenna 28 GHz inset feed",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 5,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_046",
+          "chunk:chunk_010",
+          "section:section_007",
+          "section:section_004",
+          "chunk:chunk_009"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_046",
+          "chunk:chunk_010",
+          "section:section_007",
+          "section:section_004",
+          "chunk:chunk_009"
+        ],
+        "query": "proposed antenna 28 GHz reflection coefficient -24 dB",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 4,
+        "final_evidence_usage_ids": [
+          "section:section_006",
+          "chunk:chunk_027",
+          "section:section_004",
+          "chunk:chunk_010"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "section:section_006",
+          "chunk:chunk_027",
+          "section:section_004",
+          "chunk:chunk_026",
+          "chunk:chunk_010"
+        ],
+        "query": "Rogers RT5880 substrate 28 GHz microstrip patch antenna",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 4,
+        "final_evidence_usage_ids": [
+          "section:section_006",
+          "chunk:chunk_009",
+          "chunk:chunk_056",
+          "chunk:chunk_070"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_026",
+          "section:section_006",
+          "chunk:chunk_009",
+          "chunk:chunk_056",
+          "chunk:chunk_070"
+        ],
+        "query": "fabricated microstrip patch antenna 28 GHz",
+        "retrieved_count": 5,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_ids": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 2,
+        "final_evidence_usage_ids": [
+          "chunk:chunk_025",
+          "section:section_006"
+        ],
+        "prompt_survival_count": 5,
+        "prompt_survival_evidence_ids": [
+          "chunk:chunk_025",
+          "section:section_006",
+          "chunk:chunk_011",
+          "chunk:chunk_026",
+          "section:section_009"
+        ],
+        "query": "Figure 1 Proposed Microstrip Patch Antenna",
+        "retrieved_count": 5,
+        "search_type": "text"
+      }
+    ]
+  },
+  "retrieval_queries_used": {
+    "classification": [
+      {
+        "query": "antenna type",
+        "query_source": "base_plan",
+        "result_evidence_ids": [
+          "chunk:chunk_071",
+          "chunk:chunk_060",
+          "section:section_006",
+          "chunk:chunk_053",
+          "chunk:chunk_022"
+        ],
+        "search_type": "text"
+      },
+      {
+        "query": "proposed design",
+        "query_source": "base_plan",
+        "result_evidence_ids": [
+          "chunk:chunk_053",
+          "chunk:chunk_084",
+          "chunk:chunk_010",
+          "chunk:chunk_025",
+          "chunk:chunk_018"
+        ],
+        "search_type": "text"
+      },
+      {
+        "query": "final design",
+        "query_source": "base_plan",
+        "result_evidence_ids": [
+          "chunk:chunk_084",
+          "chunk:chunk_081",
+          "chunk:chunk_071",
+          "chunk:chunk_018",
+          "chunk:chunk_065"
+        ],
+        "search_type": "text"
+      },
+      {
+        "query": "configuration",
+        "query_source": "base_plan",
+        "result_evidence_ids": [
+          "chunk:chunk_013",
+          "chunk:chunk_079",
+          "chunk:chunk_019",
+          "chunk:chunk_050",
+          "chunk:chunk_053"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.HIGH",
+        "phase1_query_id": "Q1",
+        "query": "rectangular microstrip patch antenna 28 GHz inset feed",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "chunk:chunk_009",
+          "chunk:chunk_037",
+          "section:section_004",
+          "chunk:chunk_070",
+          "chunk:chunk_011"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.HIGH",
+        "phase1_query_id": "Q2",
+        "query": "proposed antenna 28 GHz reflection coefficient -24 dB",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "chunk:chunk_046",
+          "chunk:chunk_010",
+          "section:section_007",
+          "section:section_004",
+          "chunk:chunk_009"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.MEDIUM",
+        "phase1_query_id": "Q3",
+        "query": "Rogers RT5880 substrate 28 GHz microstrip patch antenna",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "section:section_006",
+          "chunk:chunk_027",
+          "section:section_004",
+          "chunk:chunk_026",
+          "chunk:chunk_010"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.MEDIUM",
+        "phase1_query_id": "Q4",
+        "query": "fabricated microstrip patch antenna 28 GHz",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "chunk:chunk_026",
+          "section:section_006",
+          "chunk:chunk_009",
+          "chunk:chunk_056",
+          "chunk:chunk_070"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.LOW",
+        "phase1_query_id": "Q5",
+        "query": "Figure 1 Proposed Microstrip Patch Antenna",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "chunk:chunk_025",
+          "section:section_006",
+          "chunk:chunk_011",
+          "chunk:chunk_026",
+          "section:section_009"
+        ],
+        "search_type": "text"
+      }
+    ],
+    "entities": [
+      {
+        "query": "antenna geometry",
+        "query_source": "base_plan",
+        "result_evidence_ids": [
+          "chunk:chunk_010",
+          "chunk:chunk_029",
+          "chunk:chunk_022",
+          "chunk:chunk_028",
+          "chunk:chunk_071"
+        ],
+        "search_type": "text"
+      },
+      {
+        "query": "radiating element",
+        "query_source": "base_plan",
+        "result_evidence_ids": [
+          "chunk:chunk_064",
+          "chunk:chunk_022",
+          "chunk:chunk_046",
+          "chunk:chunk_027",
+          "chunk:chunk_026"
+        ],
+        "search_type": "text"
+      },
+      {
+        "query": "slot geometry",
+        "query_source": "base_plan",
+        "result_evidence_ids": [
+          "chunk:chunk_012",
+          "section:section_005",
+          "chunk:chunk_010",
+          "chunk:chunk_022",
+          "chunk:chunk_029"
+        ],
+        "search_type": "text"
+      },
+      {
+        "query": "ground plane geometry",
+        "query_source": "base_plan",
+        "result_evidence_ids": [
+          "chunk:chunk_026",
+          "chunk:chunk_027",
+          "chunk:chunk_012",
+          "section:section_006",
+          "chunk:chunk_010"
+        ],
+        "search_type": "text"
+      },
+      {
+        "query": "antenna geometry",
+        "query_source": "base_plan",
+        "result_evidence_ids": [],
+        "search_type": "figures"
+      },
+      {
+        "phase1_priority": "SearchPriority.HIGH",
+        "phase1_query_id": "Q1",
+        "query": "rectangular microstrip patch antenna 28 GHz inset feed",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "chunk:chunk_009",
+          "chunk:chunk_037",
+          "section:section_004",
+          "chunk:chunk_070",
+          "chunk:chunk_011"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.HIGH",
+        "phase1_query_id": "Q1",
+        "query": "rectangular microstrip patch antenna 28 GHz inset feed",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [],
+        "search_type": "figures"
+      },
+      {
+        "phase1_priority": "SearchPriority.HIGH",
+        "phase1_query_id": "Q2",
+        "query": "proposed antenna 28 GHz reflection coefficient -24 dB",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "chunk:chunk_046",
+          "chunk:chunk_010",
+          "section:section_007",
+          "section:section_004",
+          "chunk:chunk_009"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.HIGH",
+        "phase1_query_id": "Q2",
+        "query": "proposed antenna 28 GHz reflection coefficient -24 dB",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [],
+        "search_type": "figures"
+      },
+      {
+        "phase1_priority": "SearchPriority.MEDIUM",
+        "phase1_query_id": "Q3",
+        "query": "Rogers RT5880 substrate 28 GHz microstrip patch antenna",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "section:section_006",
+          "chunk:chunk_027",
+          "section:section_004",
+          "chunk:chunk_026",
+          "chunk:chunk_010"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.MEDIUM",
+        "phase1_query_id": "Q3",
+        "query": "Rogers RT5880 substrate 28 GHz microstrip patch antenna",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [],
+        "search_type": "figures"
+      },
+      {
+        "phase1_priority": "SearchPriority.MEDIUM",
+        "phase1_query_id": "Q4",
+        "query": "fabricated microstrip patch antenna 28 GHz",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "chunk:chunk_026",
+          "section:section_006",
+          "chunk:chunk_009",
+          "chunk:chunk_056",
+          "chunk:chunk_070"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.MEDIUM",
+        "phase1_query_id": "Q4",
+        "query": "fabricated microstrip patch antenna 28 GHz",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [],
+        "search_type": "figures"
+      },
+      {
+        "phase1_priority": "SearchPriority.LOW",
+        "phase1_query_id": "Q5",
+        "query": "Figure 1 Proposed Microstrip Patch Antenna",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "chunk:chunk_025",
+          "section:section_006",
+          "chunk:chunk_011",
+          "chunk:chunk_026",
+          "section:section_009"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.LOW",
+        "phase1_query_id": "Q5",
+        "query": "Figure 1 Proposed Microstrip Patch Antenna",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [],
+        "search_type": "figures"
+      }
+    ],
+    "feeds": [
+      {
+        "query": "feeding method",
+        "query_source": "base_plan",
+        "result_evidence_ids": [
+          "chunk:chunk_037",
+          "chunk:chunk_044",
+          "chunk:chunk_013",
+          "chunk:chunk_036",
+          "chunk:chunk_076"
+        ],
+        "search_type": "text"
+      },
+      {
+        "query": "feed type",
+        "query_source": "base_plan",
+        "result_evidence_ids": [
+          "chunk:chunk_037",
+          "chunk:chunk_036",
+          "chunk:chunk_016",
+          "chunk:chunk_075",
+          "chunk:chunk_044"
+        ],
+        "search_type": "text"
+      },
+      {
+        "query": "feed location",
+        "query_source": "base_plan",
+        "result_evidence_ids": [
+          "chunk:chunk_037",
+          "chunk:chunk_036",
+          "chunk:chunk_075",
+          "chunk:chunk_033",
+          "chunk:chunk_044"
+        ],
+        "search_type": "text"
+      },
+      {
+        "query": "input port",
+        "query_source": "base_plan",
+        "result_evidence_ids": [
+          "chunk:chunk_045",
+          "chunk:chunk_058",
+          "section:section_007",
+          "chunk:chunk_054",
+          "chunk:chunk_023"
+        ],
+        "search_type": "text"
+      },
+      {
+        "query": "input impedance",
+        "query_source": "base_plan",
+        "result_evidence_ids": [
+          "chunk:chunk_058",
+          "chunk:chunk_054",
+          "chunk:chunk_057",
+          "chunk:chunk_043",
+          "chunk:chunk_044"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.HIGH",
+        "phase1_query_id": "Q1",
+        "query": "rectangular microstrip patch antenna 28 GHz inset feed",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "chunk:chunk_009",
+          "chunk:chunk_037",
+          "section:section_004",
+          "chunk:chunk_070",
+          "chunk:chunk_011"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.HIGH",
+        "phase1_query_id": "Q2",
+        "query": "proposed antenna 28 GHz reflection coefficient -24 dB",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "chunk:chunk_046",
+          "chunk:chunk_010",
+          "section:section_007",
+          "section:section_004",
+          "chunk:chunk_009"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.MEDIUM",
+        "phase1_query_id": "Q3",
+        "query": "Rogers RT5880 substrate 28 GHz microstrip patch antenna",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "section:section_006",
+          "chunk:chunk_027",
+          "section:section_004",
+          "chunk:chunk_026",
+          "chunk:chunk_010"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.MEDIUM",
+        "phase1_query_id": "Q4",
+        "query": "fabricated microstrip patch antenna 28 GHz",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "chunk:chunk_026",
+          "section:section_006",
+          "chunk:chunk_009",
+          "chunk:chunk_056",
+          "chunk:chunk_070"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.LOW",
+        "phase1_query_id": "Q5",
+        "query": "Figure 1 Proposed Microstrip Patch Antenna",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "chunk:chunk_025",
+          "section:section_006",
+          "chunk:chunk_011",
+          "chunk:chunk_026",
+          "section:section_009"
+        ],
+        "search_type": "text"
+      }
+    ],
+    "layers": [
+      {
+        "query": "layer stack",
+        "query_source": "base_plan",
+        "result_evidence_ids": [
+          "chunk:chunk_026",
+          "section:section_006",
+          "chunk:chunk_065",
+          "chunk:chunk_073",
+          "section:section_001"
+        ],
+        "search_type": "text"
+      },
+      {
+        "query": "substrate thickness",
+        "query_source": "base_plan",
+        "result_evidence_ids": [
+          "chunk:chunk_033",
+          "chunk:chunk_027",
+          "chunk:chunk_034",
+          "chunk:chunk_073",
+          "chunk:chunk_026"
+        ],
+        "search_type": "text"
+      },
+      {
+        "query": "metal thickness",
+        "query_source": "base_plan",
+        "result_evidence_ids": [
+          "chunk:chunk_033",
+          "chunk:chunk_035",
+          "section:section_006",
+          "chunk:chunk_034",
+          "chunk:chunk_026"
+        ],
+        "search_type": "text"
+      },
+      {
+        "query": "ground plane",
+        "query_source": "base_plan",
+        "result_evidence_ids": [
+          "chunk:chunk_026",
+          "chunk:chunk_027",
+          "chunk:chunk_012",
+          "section:section_006",
+          "section:section_005"
+        ],
+        "search_type": "text"
+      },
+      {
+        "query": "thickness",
+        "query_source": "base_plan",
+        "result_evidence_ids": [],
+        "search_type": "tables"
+      },
+      {
+        "phase1_priority": "SearchPriority.HIGH",
+        "phase1_query_id": "Q1",
+        "query": "rectangular microstrip patch antenna 28 GHz inset feed",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "chunk:chunk_009",
+          "chunk:chunk_037",
+          "section:section_004",
+          "chunk:chunk_070",
+          "chunk:chunk_011"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.HIGH",
+        "phase1_query_id": "Q1",
+        "query": "rectangular microstrip patch antenna 28 GHz inset feed",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [],
+        "search_type": "tables"
+      },
+      {
+        "phase1_priority": "SearchPriority.HIGH",
+        "phase1_query_id": "Q2",
+        "query": "proposed antenna 28 GHz reflection coefficient -24 dB",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "chunk:chunk_046",
+          "chunk:chunk_010",
+          "section:section_007",
+          "section:section_004",
+          "chunk:chunk_009"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.HIGH",
+        "phase1_query_id": "Q2",
+        "query": "proposed antenna 28 GHz reflection coefficient -24 dB",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [],
+        "search_type": "tables"
+      },
+      {
+        "phase1_priority": "SearchPriority.MEDIUM",
+        "phase1_query_id": "Q3",
+        "query": "Rogers RT5880 substrate 28 GHz microstrip patch antenna",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "section:section_006",
+          "chunk:chunk_027",
+          "section:section_004",
+          "chunk:chunk_026",
+          "chunk:chunk_010"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.MEDIUM",
+        "phase1_query_id": "Q3",
+        "query": "Rogers RT5880 substrate 28 GHz microstrip patch antenna",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [],
+        "search_type": "tables"
+      },
+      {
+        "phase1_priority": "SearchPriority.MEDIUM",
+        "phase1_query_id": "Q4",
+        "query": "fabricated microstrip patch antenna 28 GHz",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "chunk:chunk_026",
+          "section:section_006",
+          "chunk:chunk_009",
+          "chunk:chunk_056",
+          "chunk:chunk_070"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.MEDIUM",
+        "phase1_query_id": "Q4",
+        "query": "fabricated microstrip patch antenna 28 GHz",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [],
+        "search_type": "tables"
+      },
+      {
+        "phase1_priority": "SearchPriority.LOW",
+        "phase1_query_id": "Q5",
+        "query": "Figure 1 Proposed Microstrip Patch Antenna",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "chunk:chunk_025",
+          "section:section_006",
+          "chunk:chunk_011",
+          "chunk:chunk_026",
+          "section:section_009"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.LOW",
+        "phase1_query_id": "Q5",
+        "query": "Figure 1 Proposed Microstrip Patch Antenna",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "table:table_002"
+        ],
+        "search_type": "tables"
+      }
+    ],
+    "materials": [
+      {
+        "query": "substrate material",
+        "query_source": "base_plan",
+        "result_evidence_ids": [
+          "chunk:chunk_027",
+          "chunk:chunk_026",
+          "section:section_006",
+          "chunk:chunk_073",
+          "chunk:chunk_034"
+        ],
+        "search_type": "text"
+      },
+      {
+        "query": "dielectric material",
+        "query_source": "base_plan",
+        "result_evidence_ids": [
+          "chunk:chunk_027",
+          "chunk:chunk_035",
+          "section:section_006",
+          "chunk:chunk_034",
+          "chunk:chunk_032"
+        ],
+        "search_type": "text"
+      },
+      {
+        "query": "conductor material",
+        "query_source": "base_plan",
+        "result_evidence_ids": [
+          "chunk:chunk_027",
+          "chunk:chunk_026",
+          "section:section_006",
+          "chunk:chunk_073",
+          "chunk:chunk_035"
+        ],
+        "search_type": "text"
+      },
+      {
+        "query": "material",
+        "query_source": "base_plan",
+        "result_evidence_ids": [],
+        "search_type": "tables"
+      },
+      {
+        "phase1_priority": "SearchPriority.HIGH",
+        "phase1_query_id": "Q1",
+        "query": "rectangular microstrip patch antenna 28 GHz inset feed",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "chunk:chunk_009",
+          "chunk:chunk_037",
+          "section:section_004",
+          "chunk:chunk_070",
+          "chunk:chunk_011"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.HIGH",
+        "phase1_query_id": "Q1",
+        "query": "rectangular microstrip patch antenna 28 GHz inset feed",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [],
+        "search_type": "tables"
+      },
+      {
+        "phase1_priority": "SearchPriority.HIGH",
+        "phase1_query_id": "Q2",
+        "query": "proposed antenna 28 GHz reflection coefficient -24 dB",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "chunk:chunk_046",
+          "chunk:chunk_010",
+          "section:section_007",
+          "section:section_004",
+          "chunk:chunk_009"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.HIGH",
+        "phase1_query_id": "Q2",
+        "query": "proposed antenna 28 GHz reflection coefficient -24 dB",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [],
+        "search_type": "tables"
+      },
+      {
+        "phase1_priority": "SearchPriority.MEDIUM",
+        "phase1_query_id": "Q3",
+        "query": "Rogers RT5880 substrate 28 GHz microstrip patch antenna",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "section:section_006",
+          "chunk:chunk_027",
+          "section:section_004",
+          "chunk:chunk_026",
+          "chunk:chunk_010"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.MEDIUM",
+        "phase1_query_id": "Q3",
+        "query": "Rogers RT5880 substrate 28 GHz microstrip patch antenna",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [],
+        "search_type": "tables"
+      },
+      {
+        "phase1_priority": "SearchPriority.MEDIUM",
+        "phase1_query_id": "Q4",
+        "query": "fabricated microstrip patch antenna 28 GHz",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "chunk:chunk_026",
+          "section:section_006",
+          "chunk:chunk_009",
+          "chunk:chunk_056",
+          "chunk:chunk_070"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.MEDIUM",
+        "phase1_query_id": "Q4",
+        "query": "fabricated microstrip patch antenna 28 GHz",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [],
+        "search_type": "tables"
+      },
+      {
+        "phase1_priority": "SearchPriority.LOW",
+        "phase1_query_id": "Q5",
+        "query": "Figure 1 Proposed Microstrip Patch Antenna",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "chunk:chunk_025",
+          "section:section_006",
+          "chunk:chunk_011",
+          "chunk:chunk_026",
+          "section:section_009"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.LOW",
+        "phase1_query_id": "Q5",
+        "query": "Figure 1 Proposed Microstrip Patch Antenna",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "table:table_002"
+        ],
+        "search_type": "tables"
+      }
+    ],
+    "parameters": [
+      {
+        "query": "dimensions",
+        "query_source": "base_plan",
+        "result_evidence_ids": [],
+        "search_type": "tables"
+      },
+      {
+        "query": "design parameters",
+        "query_source": "base_plan",
+        "result_evidence_ids": [
+          "table:table_001"
+        ],
+        "search_type": "tables"
+      },
+      {
+        "query": "geometrical parameters",
+        "query_source": "base_plan",
+        "result_evidence_ids": [
+          "chunk:chunk_028",
+          "chunk:chunk_022",
+          "section:section_006",
+          "chunk:chunk_066",
+          "chunk:chunk_069"
+        ],
+        "search_type": "text"
+      },
+      {
+        "query": "table of dimensions",
+        "query_source": "base_plan",
+        "result_evidence_ids": [
+          "chunk:chunk_028",
+          "chunk:chunk_066",
+          "section:section_006",
+          "chunk:chunk_034",
+          "chunk:chunk_035"
+        ],
+        "search_type": "text"
+      },
+      {
+        "query": "operating frequency",
+        "query_source": "base_plan",
+        "result_evidence_ids": [
+          "chunk:chunk_050",
+          "chunk:chunk_059",
+          "chunk:chunk_053",
+          "chunk:chunk_058",
+          "chunk:chunk_049"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.HIGH",
+        "phase1_query_id": "Q1",
+        "query": "rectangular microstrip patch antenna 28 GHz inset feed",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [],
+        "search_type": "tables"
+      },
+      {
+        "phase1_priority": "SearchPriority.HIGH",
+        "phase1_query_id": "Q1",
+        "query": "rectangular microstrip patch antenna 28 GHz inset feed",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "chunk:chunk_009",
+          "chunk:chunk_037",
+          "section:section_004",
+          "chunk:chunk_070",
+          "chunk:chunk_011"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.HIGH",
+        "phase1_query_id": "Q2",
+        "query": "proposed antenna 28 GHz reflection coefficient -24 dB",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [],
+        "search_type": "tables"
+      },
+      {
+        "phase1_priority": "SearchPriority.HIGH",
+        "phase1_query_id": "Q2",
+        "query": "proposed antenna 28 GHz reflection coefficient -24 dB",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "chunk:chunk_046",
+          "chunk:chunk_010",
+          "section:section_007",
+          "section:section_004",
+          "chunk:chunk_009"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.MEDIUM",
+        "phase1_query_id": "Q3",
+        "query": "Rogers RT5880 substrate 28 GHz microstrip patch antenna",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [],
+        "search_type": "tables"
+      },
+      {
+        "phase1_priority": "SearchPriority.MEDIUM",
+        "phase1_query_id": "Q3",
+        "query": "Rogers RT5880 substrate 28 GHz microstrip patch antenna",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "section:section_006",
+          "chunk:chunk_027",
+          "section:section_004",
+          "chunk:chunk_026",
+          "chunk:chunk_010"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.MEDIUM",
+        "phase1_query_id": "Q4",
+        "query": "fabricated microstrip patch antenna 28 GHz",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [],
+        "search_type": "tables"
+      },
+      {
+        "phase1_priority": "SearchPriority.MEDIUM",
+        "phase1_query_id": "Q4",
+        "query": "fabricated microstrip patch antenna 28 GHz",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "chunk:chunk_026",
+          "section:section_006",
+          "chunk:chunk_009",
+          "chunk:chunk_056",
+          "chunk:chunk_070"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.LOW",
+        "phase1_query_id": "Q5",
+        "query": "Figure 1 Proposed Microstrip Patch Antenna",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "table:table_002"
+        ],
+        "search_type": "tables"
+      },
+      {
+        "phase1_priority": "SearchPriority.LOW",
+        "phase1_query_id": "Q5",
+        "query": "Figure 1 Proposed Microstrip Patch Antenna",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "chunk:chunk_025",
+          "section:section_006",
+          "chunk:chunk_011",
+          "chunk:chunk_026",
+          "section:section_009"
+        ],
+        "search_type": "text"
+      }
+    ],
+    "quality": [
+      {
+        "query": "bandwidth",
+        "query_source": "base_plan",
+        "result_evidence_ids": [
+          "chunk:chunk_047",
+          "chunk:chunk_046",
+          "chunk:chunk_021",
+          "chunk:chunk_020",
+          "section:section_008"
+        ],
+        "search_type": "text"
+      },
+      {
+        "query": "gain",
+        "query_source": "base_plan",
+        "result_evidence_ids": [
+          "chunk:chunk_060",
+          "chunk:chunk_061",
+          "chunk:chunk_063",
+          "chunk:chunk_013",
+          "chunk:chunk_010"
+        ],
+        "search_type": "text"
+      },
+      {
+        "query": "return loss",
+        "query_source": "base_plan",
+        "result_evidence_ids": [
+          "chunk:chunk_019",
+          "chunk:chunk_018",
+          "chunk:chunk_012",
+          "section:section_005",
+          "chunk:chunk_051"
+        ],
+        "search_type": "text"
+      },
+      {
+        "query": "reflection coefficient",
+        "query_source": "base_plan",
+        "result_evidence_ids": [
+          "chunk:chunk_051",
+          "chunk:chunk_047",
+          "chunk:chunk_046",
+          "section:section_007",
+          "chunk:chunk_045"
+        ],
+        "search_type": "text"
+      },
+      {
+        "query": "VSWR",
+        "query_source": "base_plan",
+        "result_evidence_ids": [
+          "chunk:chunk_052",
+          "chunk:chunk_051",
+          "chunk:chunk_053",
+          "chunk:chunk_070",
+          "chunk:chunk_010"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.HIGH",
+        "phase1_query_id": "Q1",
+        "query": "rectangular microstrip patch antenna 28 GHz inset feed",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "chunk:chunk_009",
+          "chunk:chunk_037",
+          "section:section_004",
+          "chunk:chunk_070",
+          "chunk:chunk_011"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.HIGH",
+        "phase1_query_id": "Q2",
+        "query": "proposed antenna 28 GHz reflection coefficient -24 dB",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "chunk:chunk_046",
+          "chunk:chunk_010",
+          "section:section_007",
+          "section:section_004",
+          "chunk:chunk_009"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.MEDIUM",
+        "phase1_query_id": "Q3",
+        "query": "Rogers RT5880 substrate 28 GHz microstrip patch antenna",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "section:section_006",
+          "chunk:chunk_027",
+          "section:section_004",
+          "chunk:chunk_026",
+          "chunk:chunk_010"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.MEDIUM",
+        "phase1_query_id": "Q4",
+        "query": "fabricated microstrip patch antenna 28 GHz",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "chunk:chunk_026",
+          "section:section_006",
+          "chunk:chunk_009",
+          "chunk:chunk_056",
+          "chunk:chunk_070"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.LOW",
+        "phase1_query_id": "Q5",
+        "query": "Figure 1 Proposed Microstrip Patch Antenna",
+        "query_source": "phase1_interpretation_map",
+        "result_evidence_ids": [
+          "chunk:chunk_025",
+          "section:section_006",
+          "chunk:chunk_011",
+          "chunk:chunk_026",
+          "section:section_009"
+        ],
+        "search_type": "text"
+      }
+    ]
+  },
+  "run_id": "run_20260417T104649822023Z",
+  "schema_errors": [],
+  "timestamp_utc": "2026-04-17T10:49:18Z",
+  "validation_success": true,
+  "warnings": []
+}

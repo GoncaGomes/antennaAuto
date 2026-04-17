@@ -27,6 +27,7 @@ class BundleRetriever:
         )
         self.item_by_id = {item["evidence_id"]: item for item in self.evidence_items}
         self.faiss_items = {item["evidence_id"]: item for item in faiss_items}
+        self.parse_report = read_json(self.run_paths.parse_report_path) if self.run_paths.parse_report_path.exists() else {}
 
     def search_text(
         self,
@@ -59,30 +60,33 @@ class BundleRetriever:
         return None
 
     def get_table(self, table_id: str) -> dict[str, Any] | None:
-        json_path = self.run_paths.tables_dir / f"{table_id}.json"
-        if json_path.exists():
-            return read_json(json_path)
-
-        artifact_dir = self.run_paths.tables_dir / table_id
-        metadata_path = artifact_dir / "table.json"
-        if metadata_path.exists():
-            payload = read_json(metadata_path)
-            payload["caption"] = _read_text_if_exists(artifact_dir / "caption.txt")
-            payload["context"] = _read_text_if_exists(artifact_dir / "context.txt")
-            return payload
-        return None
-
-    def get_figure(self, figure_id: str) -> dict[str, Any] | None:
-        artifact_dir = self.run_paths.figures_dir / figure_id
-        metadata_path = artifact_dir / "figure.json"
-        if not metadata_path.exists():
+        markdown_path = self.run_paths.tables_dir / f"{table_id}.md"
+        if not markdown_path.exists():
             return None
 
-        payload = read_json(metadata_path)
-        payload["caption"] = _read_text_if_exists(artifact_dir / "caption.txt")
-        payload["context"] = _read_text_if_exists(artifact_dir / "context.txt")
-        payload["image_path"] = str(artifact_dir / "image.png")
-        return payload
+        markdown = _read_text_if_exists(markdown_path)
+        caption, body = _split_table_markdown(markdown)
+        page_number = _lookup_page_number(self.parse_report.get("table_summaries", []), "table_id", table_id)
+        return {
+            "table_id": table_id,
+            "page_number": page_number,
+            "caption": caption,
+            "structured": True,
+            "rows": _markdown_table_rows(body),
+            "markdown": body,
+        }
+
+    def get_figure(self, figure_id: str) -> dict[str, Any] | None:
+        summary = _lookup_summary(self.parse_report.get("figure_summaries", []), "figure_id", figure_id)
+        if summary is None:
+            return None
+        return {
+            "figure_id": figure_id,
+            "page_number": summary.get("page_number"),
+            "caption": str(summary.get("caption", "")).strip(),
+            "context": str(summary.get("context", "")).strip(),
+            "image_path": str(summary.get("image_path", self.run_paths.figures_dir / f"{figure_id}.png")),
+        }
 
     def get_evidence_by_id(self, evidence_id: str) -> dict[str, Any] | None:
         item = self.item_by_id.get(evidence_id)
@@ -251,6 +255,52 @@ def _read_text_if_exists(path: Path) -> str:
     if not path.exists():
         return ""
     return path.read_text(encoding="utf-8").strip()
+
+
+def _lookup_summary(items: list[dict[str, Any]], key: str, value: str) -> dict[str, Any] | None:
+    for item in items:
+        if str(item.get(key, "")).strip() == value:
+            return item
+    return None
+
+
+def _lookup_page_number(items: list[dict[str, Any]], key: str, value: str) -> int | None:
+    summary = _lookup_summary(items, key, value)
+    if summary is None:
+        return None
+    page_number = summary.get("page_number")
+    return page_number if isinstance(page_number, int) else None
+
+
+def _split_table_markdown(markdown: str) -> tuple[str, str]:
+    lines = [line.rstrip() for line in markdown.splitlines()]
+    non_empty = [line for line in lines if line.strip()]
+    if not non_empty:
+        return "", ""
+    caption = non_empty[0] if non_empty[0].lower().startswith("table ") else ""
+    if caption:
+        body = "\n".join(line for line in lines if line.strip() and line.strip() != caption).strip()
+        return caption, body
+    return "", markdown.strip()
+
+
+def _markdown_table_rows(markdown: str) -> list[list[str]]:
+    rows: list[list[str]] = []
+    for line in markdown.splitlines():
+        stripped = line.strip()
+        if not stripped or "|" not in stripped:
+            continue
+        cells = [cell.strip() for cell in stripped.strip("|").split("|")]
+        if _is_separator_row(cells):
+            continue
+        rows.append(cells)
+    return rows
+
+
+def _is_separator_row(cells: list[str]) -> bool:
+    if not cells:
+        return False
+    return all(bool(re.match(r"^:?-{3,}:?$", cell.replace(" ", ""))) for cell in cells if cell)
 
 
 def _query_snippet(text: str, query: str, limit: int = 280) -> str:

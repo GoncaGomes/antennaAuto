@@ -1,0 +1,332 @@
+{
+  "design_evolution_notes": [
+    {
+      "description": "The paper fixes the dominant design as a rectangular 28 GHz patch with a three-layer stack and a final parameter table for ground, patch, feed width, inset slot length, substrate height, and metal thickness.",
+      "evidence_ids": [
+        "section:section_006",
+        "table:table_001",
+        "chunk:chunk_025"
+      ],
+      "label": "Final geometry definition"
+    },
+    {
+      "description": "The reported dominant design is characterized by simulated S11, VSWR, impedance, and gain around 28 GHz, with the best reflection coefficient reported near the resonance.",
+      "evidence_ids": [
+        "chunk:chunk_046",
+        "chunk:chunk_052",
+        "chunk:chunk_056",
+        "chunk:chunk_061"
+      ],
+      "label": "Performance characterization"
+    },
+    {
+      "description": "Later discussion extends the same antenna elements into a beam-shaped array for 3-sectorization and directional radiation; this is an application extension, not a competing antenna geometry.",
+      "evidence_ids": [
+        "chunk:chunk_063",
+        "chunk:chunk_064",
+        "chunk:chunk_065",
+        "chunk:chunk_071",
+        "table:table_002"
+      ],
+      "label": "Array / beam-shaping extension"
+    }
+  ],
+  "dominant_evidence_ids": [
+    "chunk:chunk_009",
+    "chunk:chunk_025",
+    "section:section_006",
+    "table:table_001",
+    "chunk:chunk_027",
+    "chunk:chunk_037",
+    "chunk:chunk_046",
+    "chunk:chunk_061",
+    "chunk:chunk_070"
+  ],
+  "final_design": {
+    "classification": {
+      "primary_family": "microstrip patch antenna",
+      "topology_tags": [
+        "rectangular",
+        "inset-fed",
+        "single-element",
+        "planar",
+        "mmWave",
+        "5G"
+      ]
+    },
+    "extra_parameters": [
+      {
+        "evidence_ids": [
+          "chunk:chunk_029"
+        ],
+        "semantic_name": "operating mode",
+        "symbol": "TM10",
+        "target_component": "patch",
+        "value": "TM10"
+      },
+      {
+        "evidence_ids": [
+          "section:section_006",
+          "chunk:chunk_009",
+          "chunk:chunk_010"
+        ],
+        "semantic_name": "design status",
+        "value": "designed and simulated"
+      },
+      {
+        "evidence_ids": [
+          "chunk:chunk_010",
+          "chunk:chunk_045"
+        ],
+        "semantic_name": "simulation tool",
+        "value": "Computer Simulation Technology Microwave Studio"
+      },
+      {
+        "evidence_ids": [
+          "chunk:chunk_057",
+          "chunk:chunk_058"
+        ],
+        "semantic_name": "operating band lower edge",
+        "unit": "GHz",
+        "value": 27.864
+      },
+      {
+        "evidence_ids": [
+          "chunk:chunk_057",
+          "chunk:chunk_058"
+        ],
+        "semantic_name": "operating band upper edge",
+        "unit": "GHz",
+        "value": 28.14
+      }
+    ],
+    "feed": {
+      "dimensions": [
+        {
+          "name": "microstrip line width",
+          "unit": "mm",
+          "value": 0.1
+        },
+        {
+          "name": "inset slot length",
+          "unit": "mm",
+          "value": 0.15
+        }
+      ],
+      "driven_target": "50 \u03a9 transmission line",
+      "evidence_ids": [
+        "chunk:chunk_009",
+        "chunk:chunk_037",
+        "table:table_001"
+      ],
+      "feed_family": "inset feed",
+      "matching_style": "50 \u03a9 impedance matching"
+    },
+    "ground": {
+      "dimensions": [
+        {
+          "name": "length",
+          "unit": "mm",
+          "value": 15
+        },
+        {
+          "name": "width",
+          "unit": "mm",
+          "value": 8
+        }
+      ],
+      "evidence_ids": [
+        "section:section_006",
+        "chunk:chunk_027",
+        "table:table_001"
+      ],
+      "label": "ground plane",
+      "layer_role": "bottom layer",
+      "material_name": "copper",
+      "shape_mode": "rectangular"
+    },
+    "layers": [
+      {
+        "evidence_ids": [
+          "section:section_006",
+          "chunk:chunk_027",
+          "table:table_001"
+        ],
+        "material_name": "copper",
+        "role": "ground",
+        "thickness_unit": "mm",
+        "thickness_value": 0.003
+      },
+      {
+        "evidence_ids": [
+          "section:section_006",
+          "chunk:chunk_027",
+          "table:table_001",
+          "chunk:chunk_035"
+        ],
+        "material_name": "Rogers RT5880(lossy)",
+        "role": "substrate",
+        "thickness_unit": "mm",
+        "thickness_value": 0.032
+      },
+      {
+        "evidence_ids": [
+          "section:section_006",
+          "chunk:chunk_027",
+          "table:table_001"
+        ],
+        "material_name": "copper",
+        "role": "patch",
+        "thickness_unit": "mm",
+        "thickness_value": 0.003
+      }
+    ],
+    "materials": [
+      {
+        "category": "conductor",
+        "evidence_ids": [
+          "chunk:chunk_027",
+          "section:section_006"
+        ],
+        "name": "copper",
+        "roles": [
+          "ground",
+          "patch",
+          "feed line"
+        ]
+      },
+      {
+        "category": "dielectric substrate",
+        "evidence_ids": [
+          "chunk:chunk_027",
+          "section:section_006"
+        ],
+        "name": "Rogers RT5880(lossy)",
+        "roles": [
+          "substrate"
+        ]
+      }
+    ],
+    "patch": {
+      "dimensions": [
+        {
+          "name": "length",
+          "unit": "mm",
+          "value": 3.494
+        },
+        {
+          "name": "width",
+          "unit": "mm",
+          "value": 5.3
+        },
+        {
+          "name": "thickness",
+          "unit": "mm",
+          "value": 0.003
+        }
+      ],
+      "evidence_ids": [
+        "chunk:chunk_009",
+        "section:section_006",
+        "table:table_001"
+      ],
+      "label": "radiating patch",
+      "layer_role": "top layer",
+      "material_name": "copper",
+      "shape_mode": "rectangular"
+    },
+    "performance_targets": [
+      {
+        "evidence_ids": [
+          "chunk:chunk_009",
+          "chunk:chunk_046"
+        ],
+        "name": "resonant frequency",
+        "unit": "GHz",
+        "value": 28
+      },
+      {
+        "evidence_ids": [
+          "chunk:chunk_009",
+          "chunk:chunk_046",
+          "section:section_008"
+        ],
+        "name": "reflection coefficient",
+        "unit": "dB",
+        "value": -24
+      },
+      {
+        "evidence_ids": [
+          "chunk:chunk_009",
+          "chunk:chunk_046",
+          "section:section_008"
+        ],
+        "name": "bandwidth",
+        "unit": "MHz",
+        "value": 280
+      },
+      {
+        "evidence_ids": [
+          "chunk:chunk_009",
+          "chunk:chunk_061",
+          "chunk:chunk_070"
+        ],
+        "name": "gain",
+        "unit": "dBi",
+        "value": 2.2
+      },
+      {
+        "evidence_ids": [
+          "section:section_008",
+          "chunk:chunk_052"
+        ],
+        "name": "VSWR",
+        "value": 1.24
+      },
+      {
+        "evidence_ids": [
+          "chunk:chunk_057",
+          "chunk:chunk_070"
+        ],
+        "name": "input impedance",
+        "unit": "\u03a9",
+        "value": 51.6
+      }
+    ],
+    "slots": []
+  },
+  "has_multiple_variants": false,
+  "identified_antennas": [
+    "Proposed 28 GHz rectangular inset-fed microstrip patch antenna (dominant)",
+    "Beam-shaped / beam-steered antenna array built from multiple instances of the proposed patch (secondary extension)",
+    "Cited coplanar-feed / edge-feed rectangular patch antenna concepts discussed in the literature review (context only)"
+  ],
+  "proposed_final_antenna_rationale": "The dominant final design is the single proposed rectangular microstrip patch antenna at 28 GHz with inset feed. It is the only geometry given a dedicated figure and dimension table, and its reported performance is repeated in the abstract, results, and conclusion. The array/beam-shaping material appears later and is framed as an extension for 3-sectorization rather than a separate competing antenna prototype.",
+  "secondary_evidence_ids": [
+    "chunk:chunk_022",
+    "chunk:chunk_063",
+    "chunk:chunk_064",
+    "chunk:chunk_065",
+    "chunk:chunk_071",
+    "table:table_002"
+  ],
+  "selected_design_rationale": "The paper consistently centers on one proposed antenna: a rectangular microstrip patch operating at 28 GHz. The abstract, Figure 1, Table 1, results, and conclusion all align on the same geometry and performance. The beam-shaping / beam-steering discussion is an application-level array extension, not a competing final antenna geometry, so the single rectangular inset-fed patch is the canonical dominant design.",
+  "selected_design_summary": "Single proposed 28 GHz rectangular inset-fed microstrip patch antenna for 5G, built on Rogers RT5880(lossy) with copper patch/ground, reported as a simulated CST design with main metrics S11 = -24 dB, bandwidth = 280 MHz, gain = 2.2 dBi, and VSWR = 1.24.",
+  "unresolved_conflicts": [
+    {
+      "conflicting_evidence_ids": [
+        "chunk:chunk_045",
+        "chunk:chunk_050",
+        "chunk:chunk_053"
+      ],
+      "description": "The paper repeatedly states that the antenna was designed and simulated, but the results section also uses VNA/DUT wording and measurement-style figure captions. No explicit fabrication step or measured prototype is clearly stated, so the realization status remains ambiguous.",
+      "preferred_evidence_ids": [
+        "chunk:chunk_009",
+        "section:section_004",
+        "section:section_007"
+      ],
+      "status": "partially_resolved",
+      "topic": "fabrication_and_measurement_status"
+    }
+  ]
+}

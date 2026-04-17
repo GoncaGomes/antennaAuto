@@ -1,0 +1,28 @@
+{
+  "bm25_dir": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260417T105158915842Z\\indexes\\bm25",
+  "config": {
+    "chunk_overlap_pct": 0.15,
+    "chunking_mode": "paragraph",
+    "embedding_backend": "sentence_transformer",
+    "embedding_model_name": "sentence-transformers/all-MiniLM-L6-v2",
+    "fusion_strategy": "weighted",
+    "paragraph_max_chars": 800,
+    "paragraph_min_chars": 120,
+    "rrf_k": 60,
+    "weighted_alpha": 0.7,
+    "weighted_beta": 0.3
+  },
+  "evidence_item_count": 76,
+  "faiss_dir": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260417T105158915842Z\\indexes\\faiss",
+  "graph_edge_count": 54,
+  "graph_node_count": 112,
+  "graph_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260417T105158915842Z\\indexes\\graph.json",
+  "index_config_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260417T105158915842Z\\indexes\\index_config.json",
+  "source_counts": {
+    "chunk": 46,
+    "figure": 17,
+    "section": 12,
+    "table": 1
+  },
+  "status": "completed"
+}

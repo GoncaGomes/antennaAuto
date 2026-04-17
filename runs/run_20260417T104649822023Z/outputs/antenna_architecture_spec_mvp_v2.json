@@ -1,0 +1,567 @@
+{
+  "classification": {
+    "confidence": 0.99,
+    "evidence_ids": [
+      "chunk:chunk_009",
+      "section:section_006",
+      "chunk:chunk_025",
+      "chunk:chunk_037",
+      "chunk:chunk_070"
+    ],
+    "primary_family": "microstrip patch antenna",
+    "status": "extracted",
+    "topology_tags": [
+      "rectangular",
+      "inset_fed",
+      "single_element",
+      "planar",
+      "mmwave",
+      "5g"
+    ]
+  },
+  "document_context": {
+    "original_filename": "article.pdf",
+    "page_count": 11,
+    "run_id": "run_20260417T104649822023Z"
+  },
+  "entities": [
+    {
+      "entity_id": "patch_entity",
+      "entity_type": "radiating_patch",
+      "evidence_ids": [
+        "chunk:chunk_009",
+        "section:section_006",
+        "table:table_001"
+      ],
+      "geometry": {
+        "dimensions": [
+          {
+            "evidence_ids": [
+              "chunk:chunk_009",
+              "section:section_006",
+              "table:table_001"
+            ],
+            "name": "length",
+            "param_ref": "param_patch_length",
+            "status": "extracted",
+            "unit": "mm",
+            "value": 3.494
+          },
+          {
+            "evidence_ids": [
+              "chunk:chunk_009",
+              "section:section_006",
+              "table:table_001"
+            ],
+            "name": "width",
+            "param_ref": "param_patch_width",
+            "status": "extracted",
+            "unit": "mm",
+            "value": 5.3
+          },
+          {
+            "evidence_ids": [
+              "section:section_006",
+              "table:table_001"
+            ],
+            "name": "thickness",
+            "param_ref": "param_metal_thickness",
+            "status": "extracted",
+            "unit": "mm",
+            "value": 0.003
+          }
+        ],
+        "outline_points": [],
+        "shape_mode": "rectangular"
+      },
+      "layer_ref": "patch_layer",
+      "material_ref": "copper",
+      "placement": {
+        "status": "assumed_local_origin"
+      },
+      "role": "radiator"
+    },
+    {
+      "entity_id": "ground_entity",
+      "entity_type": "ground_plane",
+      "evidence_ids": [
+        "section:section_006",
+        "chunk:chunk_027",
+        "table:table_001"
+      ],
+      "geometry": {
+        "dimensions": [
+          {
+            "evidence_ids": [
+              "section:section_006",
+              "chunk:chunk_027",
+              "table:table_001"
+            ],
+            "name": "length",
+            "param_ref": "param_ground_length",
+            "status": "extracted",
+            "unit": "mm",
+            "value": 15
+          },
+          {
+            "evidence_ids": [
+              "section:section_006",
+              "chunk:chunk_027",
+              "table:table_001"
+            ],
+            "name": "width",
+            "param_ref": "param_ground_width",
+            "status": "extracted",
+            "unit": "mm",
+            "value": 8
+          },
+          {
+            "evidence_ids": [
+              "section:section_006",
+              "chunk:chunk_027",
+              "table:table_001"
+            ],
+            "name": "thickness",
+            "param_ref": "param_metal_thickness",
+            "status": "extracted",
+            "unit": "mm",
+            "value": 0.003
+          }
+        ],
+        "outline_points": [],
+        "shape_mode": "rectangular"
+      },
+      "layer_ref": "ground_layer",
+      "material_ref": "copper",
+      "placement": {
+        "status": "assumed_local_origin"
+      },
+      "role": "ground"
+    }
+  ],
+  "evidence_used": [
+    "chunk:chunk_009",
+    "chunk:chunk_010",
+    "chunk:chunk_022",
+    "chunk:chunk_025",
+    "chunk:chunk_027",
+    "chunk:chunk_029",
+    "chunk:chunk_035",
+    "chunk:chunk_037",
+    "chunk:chunk_045",
+    "chunk:chunk_046",
+    "chunk:chunk_050",
+    "chunk:chunk_052",
+    "chunk:chunk_053",
+    "chunk:chunk_056",
+    "chunk:chunk_057",
+    "chunk:chunk_058",
+    "chunk:chunk_061",
+    "chunk:chunk_063",
+    "chunk:chunk_064",
+    "chunk:chunk_065",
+    "chunk:chunk_070",
+    "chunk:chunk_071",
+    "section:section_004",
+    "section:section_006",
+    "section:section_007",
+    "section:section_008",
+    "table:table_001",
+    "table:table_002"
+  ],
+  "feeds": [
+    {
+      "driven_entity_ref": "patch_entity",
+      "evidence_ids": [
+        "chunk:chunk_009",
+        "chunk:chunk_037",
+        "table:table_001"
+      ],
+      "feed_family": "inset_feed",
+      "feed_id": "feed_inset_main",
+      "matching_style": "50_ohm_impedance_matching",
+      "port_type": {
+        "status": "extracted",
+        "value": "microstrip_line"
+      },
+      "reference_impedance": {
+        "evidence_ids": [
+          "chunk:chunk_009",
+          "chunk:chunk_037"
+        ],
+        "status": "extracted",
+        "unit": "\u03a9",
+        "value": 50
+      }
+    }
+  ],
+  "instances": [],
+  "layers": [
+    {
+      "evidence_ids": [
+        "section:section_006",
+        "chunk:chunk_027",
+        "table:table_001"
+      ],
+      "layer_id": "ground_layer",
+      "material_ref": "copper",
+      "role": "ground",
+      "thickness": {
+        "evidence_ids": [
+          "section:section_006",
+          "chunk:chunk_027",
+          "table:table_001"
+        ],
+        "status": "extracted",
+        "unit": "mm",
+        "value": 0.003
+      },
+      "z_order": 0
+    },
+    {
+      "evidence_ids": [
+        "section:section_006",
+        "chunk:chunk_027",
+        "table:table_001",
+        "chunk:chunk_035"
+      ],
+      "layer_id": "substrate_layer",
+      "material_ref": "rogers_rt5880_lossy",
+      "role": "substrate",
+      "thickness": {
+        "evidence_ids": [
+          "section:section_006",
+          "chunk:chunk_027",
+          "table:table_001",
+          "chunk:chunk_035"
+        ],
+        "status": "extracted",
+        "unit": "mm",
+        "value": 0.032
+      },
+      "z_order": 1
+    },
+    {
+      "evidence_ids": [
+        "section:section_006",
+        "chunk:chunk_027",
+        "table:table_001"
+      ],
+      "layer_id": "patch_layer",
+      "material_ref": "copper",
+      "role": "patch",
+      "thickness": {
+        "evidence_ids": [
+          "section:section_006",
+          "chunk:chunk_027",
+          "table:table_001"
+        ],
+        "status": "extracted",
+        "unit": "mm",
+        "value": 0.003
+      },
+      "z_order": 2
+    }
+  ],
+  "materials": [
+    {
+      "category": "conductor",
+      "evidence_ids": [
+        "chunk:chunk_027",
+        "section:section_006"
+      ],
+      "material_id": "copper",
+      "name": "copper",
+      "name_raw": "copper",
+      "roles": [
+        "ground",
+        "patch",
+        "feed_line"
+      ],
+      "status": "extracted"
+    },
+    {
+      "category": "dielectric_substrate",
+      "evidence_ids": [
+        "chunk:chunk_027",
+        "section:section_006"
+      ],
+      "material_id": "rogers_rt5880_lossy",
+      "name": "Rogers RT5880",
+      "name_raw": "Rogers RT5880(lossy)",
+      "roles": [
+        "substrate"
+      ],
+      "status": "extracted"
+    }
+  ],
+  "parameters": [
+    {
+      "evidence_ids": [
+        "chunk:chunk_009",
+        "section:section_006",
+        "table:table_001"
+      ],
+      "param_id": "param_patch_length",
+      "semantic_name": "patch_length",
+      "status": "extracted",
+      "symbol": "Lpat",
+      "unit": "mm",
+      "value": 3.494
+    },
+    {
+      "evidence_ids": [
+        "chunk:chunk_009",
+        "section:section_006",
+        "table:table_001"
+      ],
+      "param_id": "param_patch_width",
+      "semantic_name": "patch_width",
+      "status": "extracted",
+      "symbol": "Wpat",
+      "unit": "mm",
+      "value": 5.3
+    },
+    {
+      "evidence_ids": [
+        "section:section_006",
+        "chunk:chunk_027",
+        "table:table_001"
+      ],
+      "param_id": "param_ground_length",
+      "semantic_name": "ground_length",
+      "status": "extracted",
+      "symbol": "Lgnd",
+      "unit": "mm",
+      "value": 15
+    },
+    {
+      "evidence_ids": [
+        "section:section_006",
+        "chunk:chunk_027",
+        "table:table_001"
+      ],
+      "param_id": "param_ground_width",
+      "semantic_name": "ground_width",
+      "status": "extracted",
+      "symbol": "Wlng",
+      "unit": "mm",
+      "value": 8
+    },
+    {
+      "evidence_ids": [
+        "chunk:chunk_009",
+        "chunk:chunk_037",
+        "table:table_001"
+      ],
+      "param_id": "param_feed_line_width",
+      "semantic_name": "feed_line_width",
+      "status": "extracted",
+      "symbol": "Wmic",
+      "unit": "mm",
+      "value": 0.1
+    },
+    {
+      "evidence_ids": [
+        "chunk:chunk_009",
+        "chunk:chunk_037",
+        "table:table_001"
+      ],
+      "param_id": "param_inset_slot_length",
+      "semantic_name": "inset_slot_length",
+      "status": "extracted",
+      "symbol": "Lslot",
+      "unit": "mm",
+      "value": 0.15
+    },
+    {
+      "evidence_ids": [
+        "section:section_006",
+        "chunk:chunk_027",
+        "table:table_001",
+        "chunk:chunk_035"
+      ],
+      "param_id": "param_substrate_height",
+      "semantic_name": "substrate_height",
+      "status": "extracted",
+      "symbol": "h",
+      "unit": "mm",
+      "value": 0.032
+    },
+    {
+      "evidence_ids": [
+        "section:section_006",
+        "chunk:chunk_027",
+        "table:table_001"
+      ],
+      "param_id": "param_metal_thickness",
+      "semantic_name": "metal_thickness",
+      "status": "extracted",
+      "symbol": "th",
+      "unit": "mm",
+      "value": 0.003
+    },
+    {
+      "evidence_ids": [
+        "chunk:chunk_029"
+      ],
+      "param_id": "param_operating_mode",
+      "semantic_name": "operating_mode",
+      "status": "extracted",
+      "symbol": "TM10",
+      "value": "TM10"
+    },
+    {
+      "evidence_ids": [
+        "section:section_006",
+        "chunk:chunk_009",
+        "chunk:chunk_010"
+      ],
+      "param_id": "param_design_status",
+      "semantic_name": "design_status",
+      "status": "extracted",
+      "value": "designed and simulated"
+    },
+    {
+      "evidence_ids": [
+        "chunk:chunk_010",
+        "chunk:chunk_045"
+      ],
+      "param_id": "param_simulation_tool",
+      "semantic_name": "simulation_tool",
+      "status": "extracted",
+      "value": "Computer Simulation Technology Microwave Studio"
+    },
+    {
+      "evidence_ids": [
+        "chunk:chunk_009",
+        "chunk:chunk_046"
+      ],
+      "param_id": "param_resonant_frequency",
+      "semantic_name": "resonant_frequency",
+      "status": "extracted",
+      "unit": "GHz",
+      "value": 28
+    },
+    {
+      "evidence_ids": [
+        "chunk:chunk_009",
+        "chunk:chunk_046",
+        "section:section_008"
+      ],
+      "param_id": "param_reflection_coefficient",
+      "semantic_name": "reflection_coefficient",
+      "status": "extracted",
+      "symbol": "S11",
+      "unit": "dB",
+      "value": -24
+    },
+    {
+      "evidence_ids": [
+        "chunk:chunk_009",
+        "chunk:chunk_046",
+        "section:section_008"
+      ],
+      "param_id": "param_bandwidth",
+      "semantic_name": "bandwidth",
+      "status": "extracted",
+      "unit": "MHz",
+      "value": 280
+    },
+    {
+      "evidence_ids": [
+        "chunk:chunk_009",
+        "chunk:chunk_061",
+        "chunk:chunk_070"
+      ],
+      "param_id": "param_gain",
+      "semantic_name": "gain",
+      "status": "extracted",
+      "unit": "dBi",
+      "value": 2.2
+    },
+    {
+      "evidence_ids": [
+        "section:section_008",
+        "chunk:chunk_052"
+      ],
+      "param_id": "param_vswr",
+      "semantic_name": "vswr",
+      "status": "extracted",
+      "value": 1.24
+    },
+    {
+      "evidence_ids": [
+        "chunk:chunk_057",
+        "chunk:chunk_070"
+      ],
+      "param_id": "param_input_impedance",
+      "semantic_name": "input_impedance",
+      "status": "extracted",
+      "unit": "\u03a9",
+      "value": 51.6
+    },
+    {
+      "evidence_ids": [
+        "chunk:chunk_057",
+        "chunk:chunk_058"
+      ],
+      "param_id": "param_operating_band_lower_edge",
+      "semantic_name": "operating_band_lower_edge",
+      "status": "extracted",
+      "unit": "GHz",
+      "value": 27.864
+    },
+    {
+      "evidence_ids": [
+        "chunk:chunk_057",
+        "chunk:chunk_058"
+      ],
+      "param_id": "param_operating_band_upper_edge",
+      "semantic_name": "operating_band_upper_edge",
+      "status": "extracted",
+      "unit": "GHz",
+      "value": 28.14
+    }
+  ],
+  "quality": {
+    "ambiguities": [
+      "The paper states the antenna was designed and simulated in CST Microwave Studio, but the results text also uses VNA and DUT wording, so fabrication and measurement status is not fully explicit.",
+      "Beam-shaping and 3-sector array material appears to be an application extension rather than the canonical single-element antenna geometry."
+    ],
+    "build_readiness": "partial",
+    "confidence": 0.93,
+    "missing_required_for_build": [
+      "feed_coordinates",
+      "substrate_footprint_dimensions",
+      "fabrication_status"
+    ]
+  },
+  "schema_name": "antenna_architecture_spec_mvp_v2",
+  "schema_version": "2.0",
+  "units": {
+    "frequency": {
+      "evidence_ids": [
+        "chunk:chunk_009",
+        "section:section_008"
+      ],
+      "status": "extracted",
+      "value": "GHz"
+    },
+    "impedance": {
+      "evidence_ids": [
+        "chunk:chunk_009",
+        "chunk:chunk_070"
+      ],
+      "status": "extracted",
+      "value": "\u03a9"
+    },
+    "length": {
+      "evidence_ids": [
+        "table:table_001"
+      ],
+      "status": "extracted",
+      "value": "mm"
+    }
+  }
+}

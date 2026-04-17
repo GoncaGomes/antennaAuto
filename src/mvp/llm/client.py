@@ -5,6 +5,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
+from tenacity import retry, stop_after_attempt, wait_exponential
+
 from ..utils import load_env_file, project_root
 
 
@@ -39,6 +41,7 @@ class OpenAIJsonClient:
         required = load_openai_env_config()
         return cls(api_key=required["OPENAI_API_KEY"])
 
+    @retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=2, max=10))
     def generate_structured(
         self,
         *,
@@ -82,6 +85,7 @@ class OpenAIAgentsStructuredClient:
         required = load_openai_env_config()
         return cls(api_key=required["OPENAI_API_KEY"])
 
+    @retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=2, max=10))
     def generate_structured_via_agent(
         self,
         *,

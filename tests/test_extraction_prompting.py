@@ -1,13 +1,14 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
-from mvp.extraction.prompting import (
+from pathlib import Path
+
+from mvp.extraction.legacy.prompting import (
     DEFAULT_PROMPT_MAX_ITEMS_PER_BLOCK,
-    build_canonicalization_input,
     build_extraction_messages,
     build_repair_messages,
-    build_schema_construction_input,
     prepare_prompt_evidence,
 )
+from mvp.extraction.prompting import build_canonicalization_input, build_schema_construction_input
 
 
 def test_prompt_builder_includes_extraction_rules() -> None:
@@ -26,6 +27,8 @@ def test_prompt_builder_includes_extraction_rules() -> None:
     assert "reasoning_scratchpad" in messages[0]["content"]
     assert "Interpretation guidance (advisory, not ground truth)" in messages[1]["content"]
     assert "Retrieved evidence by block" in messages[1]["content"]
+    prompt_path = Path(__file__).resolve().parents[1] / "src" / "mvp" / "prompts" / "legacy_direct_system.md"
+    assert messages[0]["content"] == prompt_path.read_text(encoding="utf-8").strip()
 
 
 def test_repair_prompt_includes_validation_errors() -> None:
@@ -114,6 +117,8 @@ def test_canonicalization_input_preserves_structured_table_rows() -> None:
     assert "Step 4" in payload["input_text"]
     assert "rows" in payload["input_text"]
     assert "final selected design" in payload["input_text"]
+    prompt_path = Path(__file__).resolve().parents[1] / "src" / "mvp" / "prompts" / "canonicalization_system.md"
+    assert payload["instructions"] == prompt_path.read_text(encoding="utf-8").strip()
 
 
 def test_schema_construction_input_includes_canonical_record_and_linked_evidence() -> None:
@@ -125,6 +130,8 @@ def test_schema_construction_input_includes_canonical_record_and_linked_evidence
             "has_multiple_variants": False,
             "dominant_evidence_ids": ["table:table_001"],
             "secondary_evidence_ids": [],
+            "identified_antennas": ["Rectangular patch with inset feed"],
+            "proposed_final_antenna_rationale": "Only one proposed antenna appears in the record.",
             "final_design": {
                 "classification": {"primary_family": "microstrip_patch", "topology_tags": ["rectangular_patch"]},
                 "patch": None,
@@ -145,6 +152,9 @@ def test_schema_construction_input_includes_canonical_record_and_linked_evidence
     assert "canonical_design_record" in payload["input_text"]
     assert "linked_evidence_records" in payload["input_text"]
     assert "table:table_001" in payload["input_text"]
+    assert "run_context" in payload["input_text"]
+    prompt_path = Path(__file__).resolve().parents[1] / "src" / "mvp" / "prompts" / "schema_construction_system.md"
+    assert payload["instructions"] == prompt_path.read_text(encoding="utf-8").strip()
 
 
 def test_prepare_prompt_evidence_uses_block_specific_caps() -> None:

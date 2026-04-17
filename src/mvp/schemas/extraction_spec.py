@@ -23,6 +23,11 @@ class StrictModel(BaseModel):
 class EvidenceBoundModel(StrictModel):
     evidence_ids: list[str] = Field(default_factory=list)
 
+    @field_validator("evidence_ids", mode="before")
+    @classmethod
+    def normalize_evidence_ids(cls, value: Any) -> Any:
+        return _normalize_evidence_id_values(value)
+
     @field_validator("evidence_ids")
     @classmethod
     def validate_evidence_ids(cls, value: list[str]) -> list[str]:
@@ -237,6 +242,11 @@ class AntennaArchitectureSpecMvpV2(StrictModel):
     quality: QualitySpec
     evidence_used: list[str] = Field(default_factory=list)
 
+    @field_validator("evidence_used", mode="before")
+    @classmethod
+    def normalize_evidence_used(cls, value: Any) -> Any:
+        return _normalize_evidence_id_values(value)
+
     @field_validator("evidence_used")
     @classmethod
     def validate_evidence_used(cls, value: list[str]) -> list[str]:
@@ -369,6 +379,34 @@ def _dedupe_preserve_order(values: list[str]) -> list[str]:
         seen.add(value)
         result.append(value)
     return result
+
+
+def _normalize_evidence_id_values(value: Any) -> Any:
+    if value is None:
+        return []
+    if isinstance(value, list):
+        return [_autocorrect_evidence_id(item) for item in value]
+    if isinstance(value, tuple):
+        return [_autocorrect_evidence_id(item) for item in value]
+    return value
+
+
+def _autocorrect_evidence_id(value: Any) -> Any:
+    if not isinstance(value, str):
+        return value
+    cleaned = value.strip()
+    if not cleaned or ":" in cleaned:
+        return cleaned
+    lowered = cleaned.lower()
+    if lowered.startswith("chunk"):
+        return f"chunk:{cleaned}"
+    if lowered.startswith("page"):
+        return f"section:{cleaned}"
+    if lowered.startswith("table"):
+        return f"table:{cleaned}"
+    if lowered.startswith("fig"):
+        return f"figure:{cleaned}"
+    return cleaned
 
 
 def _matching_entity_exists(model: AntennaArchitectureSpecMvpV2, target_hint: str | None) -> bool:

@@ -1,0 +1,97 @@
+{
+  "abstract": ". The advantages of microstrip patch antennas include small size, adaptable surface, ease of fabrication, and compatibility with integrated circuit technology. Numerous experiments have been done over the past few decades to enhance the performance of this antenna, and both military and commercial sectors have found many uses for it. This paper introduces a microstrip patch antenna with an operating frequency of 28GHz for 5G mobile communication. This research designed and simulated a rectangular microstrip patch antenna with 3.494 mm 5.3 mm 0.003 mm. The proposed antenna resonates at 28 GHz with a reflection coefficient of -24 dB, a bandwidth of 280 MHz, and a gain of 2.2 dBi. The inset feed technique matches the 50 \u03a9 transmission line impedance. In the design, Rogers RT5880 substrate and",
+  "candidate_design_mentions": [
+    {
+      "evidence_id": "chunk:chunk_025",
+      "page_number": 4,
+      "text": "## 2. Theoretical Analysis of Microstrip Patch Antenna ![](figures/article.pdf-0004-04.png) Figure 1. Proposed Microstrip Patch Antenna"
+    },
+    {
+      "evidence_id": "chunk:chunk_053",
+      "page_number": 7,
+      "text": "![](figures/article.pdf-0007-09.png) ![](figures/article.pdf-0007-10.png) Figure 4. VSWR of the proposed antenna on operating frequency"
+    },
+    {
+      "evidence_id": "chunk:chunk_013",
+      "page_number": 9,
+      "text": "Meanwhile, an array configuration can overcome the microstrip patch antenna\u2019s disadvantages, including lower gain and power handling capacity [4]. Also, by 2012, three feeding methods were"
+    },
+    {
+      "evidence_id": "chunk:chunk_071",
+      "page_number": 10,
+      "text": "By implementing beam-shaping, several antennas are put into an antenna array. This way, the antenna can be used in 3-sectorization as a directional antenna whose radiation angle is 120\u00b0. In total, the antenna\u2019s reflectio"
+    },
+    {
+      "evidence_id": "section:section_008",
+      "page_number": 2,
+      "text": "4. Conclusion This paper proposes a rectangular microstrip patch antenna for 5G mobile wireless communication at 28 GHz. The antenna resonates at 28 GHz with a reflection coefficient of -24 dB. The antenna\u2019s bandwidth is"
+    },
+    {
+      "evidence_id": "chunk:chunk_010",
+      "page_number": 2,
+      "text": "The proposed antenna resonates at 28 GHz with a reflection coefficient of -24 dB, a bandwidth of 280 MHz, and a gain of 2.2 dBi. The inset feed technique matches the 50 \u03a9 transmission line impedance. In the design, Roger"
+    },
+    {
+      "evidence_id": "chunk:chunk_023",
+      "page_number": 3,
+      "text": "Then introduce the way of feeding \u2013 inset feed, which also includes how to make impedance matching meet the requirement within the operating frequency band. This part tries to improve that only by making the antenna\u2019s in"
+    },
+    {
+      "evidence_id": "chunk:chunk_060",
+      "page_number": 6,
+      "text": "The antenna\u2019s gain is another parameter that must be considered when designing. The gain represents the ratio between the antenna\u2019s radiation power density and the reference antenna\u2019s radiation power density. Antenna gai"
+    }
+  ],
+  "key_design_signals": {
+    "fabricated": 2,
+    "final": 0,
+    "measured": 1,
+    "optimized": 0,
+    "proposed": 15,
+    "simulated": 5
+  },
+  "key_figure_refs": [
+    {
+      "caption": "![](figures/article.pdf-0001-01.png)",
+      "figure_id": "article.pdf-0001-01",
+      "figure_role_guess": "unknown",
+      "page_number": 1
+    },
+    {
+      "caption": "![](figures/article.pdf-0001-11.png)",
+      "figure_id": "article.pdf-0001-11",
+      "figure_role_guess": "unknown",
+      "page_number": 1
+    },
+    {
+      "caption": "![](figures/article.pdf-0004-04.png)",
+      "figure_id": "article.pdf-0004-04",
+      "figure_role_guess": "unknown",
+      "page_number": 4
+    },
+    {
+      "caption": "![](figures/article.pdf-0004-11.png)",
+      "figure_id": "article.pdf-0004-11",
+      "figure_role_guess": "unknown",
+      "page_number": 4
+    },
+    {
+      "caption": "![](figures/article.pdf-0005-01.png)",
+      "figure_id": "article.pdf-0005-01",
+      "figure_role_guess": "unknown",
+      "page_number": 5
+    }
+  ],
+  "key_table_refs": [],
+  "section_headings_top_level": [
+    "PAPER \u2022 OPEN ACCESS",
+    "A microstrip patch antenna for 5G mobile communications",
+    "Yitong Li[1 ]",
+    "1. Introduction",
+    "2. Theoretical Analysis of Microstrip Patch Antenna",
+    "3. Results and discussions",
+    "4. Conclusion",
+    "References"
+  ],
+  "title": "PAPER \u2022 OPEN ACCESS"
+}

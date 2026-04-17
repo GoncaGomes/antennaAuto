@@ -1,0 +1,83 @@
+{
+  "abstract": "-_ There are various types of microstrip antenna that can be used for many applications in communication systems. This paper presents the design of a rectangular microstrip patch antenna to operate at frequency range of 2 GHz to 2.5 GHz. This antenna, based on a thickness of 1.6mm Flame Retardant 4 (FR-4) substrate with a dielectric constant of approximately 4.4, is a probe feed and has a partial ground plane. After simulation, the antenna performance characteristics such as antenna input impedance, VSWR, Return Loss and current density are obtained. _Keywords \u2013_ Rectangular Microstrip Antenna, Coaxial Probe Feeding, Flame Retardant 4 (FR-4).",
+  "candidate_design_mentions": [
+    {
+      "evidence_id": "chunk:chunk_011",
+      "page_number": 2,
+      "text": "The structure of the proposed antenna is shown in Figure 2 below. For a rectangular patch, the length L of the ISSN: 2231-5381"
+    },
+    {
+      "evidence_id": "chunk:chunk_014",
+      "page_number": 2,
+      "text": "![](figures/IJETT-V4I4P340.pdf-0002-02.png) Fig. 2 Proposed Rectangular Microstrip Patch Antenna III. DESIGN REQUIREMENT"
+    },
+    {
+      "evidence_id": "chunk:chunk_019",
+      "page_number": 2,
+      "text": "## IV. PHYSICAL PARAMETERS OF THE ANTENNA The antenna parameters of this antenna can be calculated by the transmission line method (Balanis, 2005), as exemplified below."
+    },
+    {
+      "evidence_id": "chunk:chunk_015",
+      "page_number": 2,
+      "text": "There are three essential parameters for design of a coaxial feed rectangular microstrip Patch Antenna. Firstly, the resonant frequency ( f0 ) of the antenna must be selected appropriately. The frequency range used is fr"
+    },
+    {
+      "evidence_id": "chunk:chunk_016",
+      "page_number": 1,
+      "text": "Secondly, the dielectric material of the substrate ( \u03b5r ) selected for this design is FR-4 Epoxy which has a dielectric constant of 4.4 and loss tangent equal to 0.002. The dielectric constant of the substrate material i"
+    }
+  ],
+  "key_design_signals": {
+    "fabricated": 1,
+    "final": 2,
+    "measured": 0,
+    "optimized": 0,
+    "proposed": 3,
+    "simulated": 7
+  },
+  "key_figure_refs": [
+    {
+      "caption": "![](figures/IJETT-V4I4P340.pdf-0001-11.png)",
+      "figure_id": "IJETT-V4I4P340.pdf-0001-11",
+      "figure_role_guess": "unknown",
+      "page_number": 1
+    },
+    {
+      "caption": "![](figures/IJETT-V4I4P340.pdf-0001-12.png)",
+      "figure_id": "IJETT-V4I4P340.pdf-0001-12",
+      "figure_role_guess": "unknown",
+      "page_number": 1
+    },
+    {
+      "caption": "![](figures/IJETT-V4I4P340.pdf-0002-02.png)",
+      "figure_id": "IJETT-V4I4P340.pdf-0002-02",
+      "figure_role_guess": "unknown",
+      "page_number": 2
+    },
+    {
+      "caption": "![](figures/IJETT-V4I4P340.pdf-0002-12.png)",
+      "figure_id": "IJETT-V4I4P340.pdf-0002-12",
+      "figure_role_guess": "unknown",
+      "page_number": 2
+    },
+    {
+      "caption": "![](figures/IJETT-V4I4P340.pdf-0002-14.png)",
+      "figure_id": "IJETT-V4I4P340.pdf-0002-14",
+      "figure_role_guess": "unknown",
+      "page_number": 2
+    }
+  ],
+  "key_table_refs": [],
+  "section_headings_top_level": [
+    "I. INTRODUCTION",
+    "IV. PHYSICAL PARAMETERS OF THE ANTENNA",
+    "_C. Ground Dimension_",
+    "TABLE I",
+    "ANTENNA PARAMETERS",
+    "V. SIMULATIONS AND RESULTS",
+    "VI. CONCLUSION",
+    "VII. ACKNOWLEDGEMENT",
+    "REFERENCES"
+  ],
+  "title": "Rectangular Microstrip Patch Antenna Using Coaxial Probe Feeding Technique to Operate in S-Band"
+}

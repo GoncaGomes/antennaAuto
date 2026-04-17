@@ -16,6 +16,10 @@ from .utils import read_json, text_excerpt, utc_timestamp, write_json
 
 TOKEN_PATTERN = re.compile(r"[a-z0-9][a-z0-9_.%/-]*", re.IGNORECASE)
 SENTENCE_SPLIT_PATTERN = re.compile(r"(?<=[.!?])\s+")
+TABLE_CAPTION_PATTERN = re.compile(
+    r"^\s*table\s+(\d+|[IVXLCDM]+)\b\s*[:.\-]?\s*(.*)$",
+    re.IGNORECASE,
+)
 
 
 def index_run(run_paths: RunPaths, config: RetrievalConfig | None = None) -> dict[str, Any]:
@@ -46,11 +50,13 @@ def index_run(run_paths: RunPaths, config: RetrievalConfig | None = None) -> dic
 
 
 def build_evidence_items(run_paths: RunPaths, config: RetrievalConfig) -> list[dict[str, Any]]:
+    parse_report = read_json(run_paths.parse_report_path) if run_paths.parse_report_path.exists() else {}
+    page_summaries = list(parse_report.get("page_summaries", []))
     items: list[dict[str, Any]] = []
-    items.extend(_build_section_items(run_paths.sections_path))
-    items.extend(_build_table_items(run_paths.tables_dir))
-    items.extend(_build_figure_items(run_paths.figures_dir))
-    items.extend(_build_chunk_items(run_paths.fulltext_path, run_paths.sections_path, config))
+    items.extend(_build_section_items(run_paths.sections_path, page_summaries))
+    items.extend(_build_table_items(run_paths.tables_dir, parse_report))
+    items.extend(_build_figure_items(run_paths.figures_dir, parse_report))
+    items.extend(_build_chunk_items(run_paths.fulltext_path, parse_report, config))
     items.sort(
         key=lambda item: (
             item["source_type"],
@@ -131,9 +137,8 @@ def build_graph(evidence_items: list[dict[str, Any]]) -> dict[str, Any]:
         )
 
         if item["source_type"] == "section":
-            page_start = item["metadata"]["page_start"]
-            page_end = item["metadata"]["page_end"]
-            for page_number in range(page_start, page_end + 1):
+            page_number = item["page_number"]
+            if isinstance(page_number, int):
                 section_nodes_by_page[page_number] = source_node_id
 
         if item["source_type"] == "table":
@@ -335,15 +340,16 @@ def _make_embedding_backend_from_meta(meta: dict[str, Any]) -> Any:
     raise ValueError(f"Unsupported embedding backend in metadata: {backend_name}")
 
 
-def _build_section_items(sections_path: Path) -> list[dict[str, Any]]:
+def _build_section_items(sections_path: Path, page_summaries: list[dict[str, Any]]) -> list[dict[str, Any]]:
     items: list[dict[str, Any]] = []
     for section in read_json(sections_path):
         text = "\n".join(part for part in [section["title"], section["text_excerpt"]] if part)
+        page_number = _recover_page_number(text, page_summaries)
         items.append(
             _make_evidence_item(
                 source_type="section",
                 source_id=section["section_id"],
-                page_number=section["page_start"],
+                page_number=page_number,
                 text=text,
                 metadata=section,
             )
@@ -351,54 +357,26 @@ def _build_section_items(sections_path: Path) -> list[dict[str, Any]]:
     return items
 
 
-def _build_table_items(tables_dir: Path) -> list[dict[str, Any]]:
+def _build_table_items(tables_dir: Path, parse_report: dict[str, Any]) -> list[dict[str, Any]]:
     items: list[dict[str, Any]] = []
-    seen_table_ids: set[str] = set()
+    pages_by_table_id = _table_pages_by_id(parse_report)
 
-    for path in sorted(tables_dir.glob("table_*.json")):
-        table = read_json(path)
-        rows = table.get("rows", [])
-        row_lines = [" | ".join(row) for row in rows]
-        text = "\n".join([table.get("caption", ""), *row_lines]).strip()
-        table_id = table["table_id"]
-        seen_table_ids.add(table_id)
+    for path in sorted(tables_dir.glob("table_*.md")):
+        table_id = path.stem
+        markdown = _read_text_if_exists(path)
+        caption, grid = _split_table_markdown(markdown)
+        text = "\n".join(part for part in [caption, grid] if part).strip()
         items.append(
             _make_evidence_item(
                 source_type="table",
                 source_id=table_id,
-                page_number=table.get("page_number"),
+                page_number=pages_by_table_id.get(table_id),
                 text=text,
                 metadata={
-                    "caption": table.get("caption"),
-                    "structured": True,
-                    "row_count": len(rows),
-                    "extraction_method": table.get("extraction_method"),
-                },
-            )
-        )
-
-    for path in sorted(tables_dir.glob("table_*")):
-        if not path.is_dir():
-            continue
-        metadata_path = path / "table.json"
-        if not metadata_path.exists():
-            continue
-        metadata = read_json(metadata_path)
-        table_id = metadata["table_id"]
-        if table_id in seen_table_ids:
-            continue
-        caption = _read_text_if_exists(path / "caption.txt")
-        context = _read_text_if_exists(path / "context.txt")
-        items.append(
-            _make_evidence_item(
-                source_type="table",
-                source_id=table_id,
-                page_number=metadata.get("page_number"),
-                text="\n".join(part for part in [caption, context] if part),
-                metadata={
                     "caption": caption,
-                    "structured": False,
-                    "artifact_dir": str(path),
+                    "structured": True,
+                    "extraction_method": "pymupdf4llm_markdown",
+                    "artifact_path": str(path),
                 },
             )
         )
@@ -406,25 +384,25 @@ def _build_table_items(tables_dir: Path) -> list[dict[str, Any]]:
     return items
 
 
-def _build_figure_items(figures_dir: Path) -> list[dict[str, Any]]:
+def _build_figure_items(figures_dir: Path, parse_report: dict[str, Any]) -> list[dict[str, Any]]:
     items: list[dict[str, Any]] = []
-    for figure_dir in sorted(figures_dir.glob("fig_*")):
-        if not figure_dir.is_dir():
-            continue
-        metadata = read_json(figure_dir / "figure.json") if (figure_dir / "figure.json").exists() else {}
-        caption = _read_text_if_exists(figure_dir / "caption.txt")
-        context = _read_text_if_exists(figure_dir / "context.txt")
+    figures_by_id = _figure_summaries_by_id(parse_report)
+    for image_path in sorted(figures_dir.glob("*.png")):
+        figure_id = image_path.stem
+        metadata = figures_by_id.get(figure_id, {})
+        caption = str(metadata.get("caption", "")).strip()
+        context = str(metadata.get("context", "")).strip()
         text = "\n".join(part for part in [caption, context] if part).strip()
         items.append(
             _make_evidence_item(
                 source_type="figure",
-                source_id=metadata.get("figure_id", figure_dir.name),
+                source_id=figure_id,
                 page_number=metadata.get("page_number"),
                 text=text,
                 metadata={
                     "caption": caption,
                     "context": context,
-                    "artifact_dir": str(figure_dir),
+                    "image_path": str(image_path),
                 },
             )
         )
@@ -432,7 +410,7 @@ def _build_figure_items(figures_dir: Path) -> list[dict[str, Any]]:
 
 
 def _build_chunk_items(
-    fulltext_path: Path, sections_path: Path, config: RetrievalConfig
+    fulltext_path: Path, parse_report: dict[str, Any], config: RetrievalConfig
 ) -> list[dict[str, Any]]:
     markdown = fulltext_path.read_text(encoding="utf-8") if fulltext_path.exists() else ""
     if not markdown.strip():
@@ -440,7 +418,7 @@ def _build_chunk_items(
 
     raw_paragraphs = [_clean_block(paragraph) for paragraph in markdown.split("\n\n")]
     raw_paragraphs = [paragraph for paragraph in raw_paragraphs if paragraph]
-    sections = read_json(sections_path) if sections_path.exists() else []
+    page_summaries = list(parse_report.get("page_summaries", []))
 
     if config.chunking_mode == "fixed":
         chunk_records = _fixed_chunk_records(raw_paragraphs, config)
@@ -452,7 +430,7 @@ def _build_chunk_items(
     items: list[dict[str, Any]] = []
     for index, record in enumerate(chunk_records, start=1):
         chunk_id = f"chunk_{index:03d}"
-        page_number = _recover_page_number(record["text"], sections)
+        page_number = _recover_page_number(record["text"], page_summaries)
         metadata = {
             "chunk_id": chunk_id,
             "paragraph_id": record.get("paragraph_id"),
@@ -649,22 +627,20 @@ def _sentence_spans(paragraph: str) -> list[tuple[int, int, str]]:
     return spans
 
 
-def _recover_page_number(text: str, sections: list[dict[str, Any]]) -> int | None:
+def _recover_page_number(text: str, page_summaries: list[dict[str, Any]]) -> int | None:
     text_tokens = set(tokenize_text(text))
     if not text_tokens:
         return None
 
     best_score = 0
     best_page: int | None = None
-    for section in sections:
-        section_text = " ".join(
-            part for part in [section.get("title", ""), section.get("text_excerpt", "")] if part
-        )
-        section_tokens = set(tokenize_text(section_text))
+    for page in page_summaries:
+        summary_text = str(page.get("text_excerpt", ""))
+        section_tokens = set(tokenize_text(summary_text))
         overlap = len(text_tokens & section_tokens)
         if overlap > best_score:
             best_score = overlap
-            best_page = section.get("page_start")
+            best_page = page.get("page_number")
 
     if best_score == 0:
         return None
@@ -697,3 +673,36 @@ def _read_text_if_exists(path: Path) -> str:
     if not path.exists():
         return ""
     return path.read_text(encoding="utf-8").strip()
+
+
+def _table_pages_by_id(parse_report: dict[str, Any]) -> dict[str, int | None]:
+    pages: dict[str, int | None] = {}
+    for summary in parse_report.get("table_summaries", []):
+        table_id = str(summary.get("table_id", "")).strip()
+        if not table_id:
+            continue
+        page_number = summary.get("page_number")
+        pages[table_id] = page_number if isinstance(page_number, int) else None
+    return pages
+
+
+def _figure_summaries_by_id(parse_report: dict[str, Any]) -> dict[str, dict[str, Any]]:
+    result: dict[str, dict[str, Any]] = {}
+    for summary in parse_report.get("figure_summaries", []):
+        figure_id = str(summary.get("figure_id", "")).strip()
+        if not figure_id:
+            continue
+        result[figure_id] = summary
+    return result
+
+
+def _split_table_markdown(markdown: str) -> tuple[str, str]:
+    lines = [line.rstrip() for line in markdown.splitlines()]
+    non_empty = [line for line in lines if line.strip()]
+    if not non_empty:
+        return "", ""
+    first_line = non_empty[0]
+    if TABLE_CAPTION_PATTERN.match(first_line):
+        body = "\n".join(line for line in lines if line.strip() and line.strip() != first_line).strip()
+        return first_line.strip(), body
+    return "", markdown.strip()

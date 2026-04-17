@@ -1,5 +1,4 @@
 # Ignorar pastas de resultados e caches
-runs/
 old_runs/
 reports/
 .pytest_cache/

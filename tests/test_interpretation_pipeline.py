@@ -17,6 +17,7 @@ from mvp.interpretation import discovery as discovery_module
 from mvp.interpretation.discovery import build_paper_map
 from mvp.interpretation.pipeline import run_phase1
 from mvp.llm.client import StructuredGenerationResult
+from mvp import parsers
 from mvp.pipeline import run_pipeline
 from mvp.schemas.interpretation_map import InterpretationMap, validate_interpretation_map_payload
 
@@ -81,14 +82,55 @@ def create_interpretation_fixture_pdf(path: Path) -> None:
     document.close()
 
 
-def test_build_paper_map_is_lightweight_and_preserves_provenance(tmp_path: Path) -> None:
-    run_paths = _prepare_phase1_run(tmp_path)
+def _install_markdown_stub(monkeypatch: pytest.MonkeyPatch) -> None:
+    def fake_to_markdown(path: str, **kwargs):
+        image_dir = Path(kwargs["image_path"])
+        image_dir.mkdir(parents=True, exist_ok=True)
+        (image_dir / "article.pdf-0001-01.png").write_bytes(TEST_PNG)
+        return [
+            {
+                "metadata": {"page_number": 1},
+                "text": "\n".join(
+                    [
+                        "# A compact antenna configuration for dual-band operation",
+                        "Abstract. This proposed design studies two configurations.",
+                        "The final optimized design is fabricated and measured, while simulated results are used earlier in the paper.",
+                        "## Antenna Design",
+                        "The proposed design uses a radiating element above a ground plane.",
+                        "![Image](figures/article.pdf-0001-01.png)",
+                        "Figure 1. Antenna geometry",
+                        "Top view of the proposed antenna layout.",
+                    ]
+                ),
+            },
+            {
+                "metadata": {"page_number": 2},
+                "text": "\n".join(
+                    [
+                        "## Measured Results",
+                        "Table 1. Design parameters",
+                        "| Parameter | Value(mm) |",
+                        "| --- | --- |",
+                        "| Length | 10 |",
+                        "| Width | 8 |",
+                        "| Thickness | 1.6 |",
+                        "The fabricated prototype shows measured bandwidth and return loss.",
+                    ]
+                ),
+            },
+        ]
+
+    monkeypatch.setattr(parsers.pymupdf4llm, "to_markdown", fake_to_markdown)
+
+
+def test_build_paper_map_is_lightweight_and_preserves_provenance(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    run_paths = _prepare_phase1_run(tmp_path, monkeypatch)
 
     paper_map = build_paper_map(run_paths.run_dir)
     payload = paper_map.to_clean_dict()
 
     assert payload["title"]
-    assert payload["abstract"] is None or len(payload["abstract"]) >= 40
+    assert payload.get("abstract") is None or len(payload["abstract"]) >= 40
     assert len(payload["section_headings_top_level"]) <= 10
     assert payload["key_design_signals"]["proposed"] >= 1
     assert payload["key_design_signals"]["measured"] >= 1
@@ -102,7 +144,7 @@ def test_build_paper_map_is_lightweight_and_preserves_provenance(tmp_path: Path)
 
 
 def test_build_paper_map_uses_discovery_retrieval_for_candidate_mentions(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
-    run_paths = _prepare_phase1_run(tmp_path)
+    run_paths = _prepare_phase1_run(tmp_path, monkeypatch)
     calls: list[tuple[str, int, str]] = []
 
     class FakeBundleRetriever:
@@ -231,8 +273,8 @@ def test_build_paper_map_uses_discovery_retrieval_for_candidate_mentions(tmp_pat
     ]
 
 
-def test_run_phase1_writes_outputs_and_report(tmp_path: Path) -> None:
-    run_paths = _prepare_phase1_run(tmp_path)
+def test_run_phase1_writes_outputs_and_report(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    run_paths = _prepare_phase1_run(tmp_path, monkeypatch)
     client = FakeInterpretationClient([_valid_interpretation_payload()])
 
     paper_map, interpretation_map, report = run_phase1(
@@ -259,9 +301,10 @@ def test_run_phase1_writes_outputs_and_report(tmp_path: Path) -> None:
     assert saved_report["phase1"]["interpretation_map_path"].endswith("interpretation_map.json")
 
 
-def _prepare_phase1_run(tmp_path: Path):
+def _prepare_phase1_run(tmp_path: Path, monkeypatch: pytest.MonkeyPatch):
     source_pdf = tmp_path / "article.pdf"
     create_interpretation_fixture_pdf(source_pdf)
+    _install_markdown_stub(monkeypatch)
     run_paths, _, _ = run_pipeline(source_pdf, base_dir=tmp_path)
     index_run(
         run_paths,

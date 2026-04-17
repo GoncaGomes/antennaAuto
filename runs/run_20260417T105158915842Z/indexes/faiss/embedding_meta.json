@@ -1,0 +1,6 @@
+{
+  "backend": "sentence_transformer",
+  "dim": 384,
+  "index_build_timestamp_utc": "2026-04-17T10:52:03Z",
+  "model_name": "sentence-transformers/all-MiniLM-L6-v2"
+}

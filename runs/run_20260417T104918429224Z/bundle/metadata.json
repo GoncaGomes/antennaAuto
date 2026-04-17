@@ -1,0 +1,20 @@
+{
+  "file_size_bytes": 1875894,
+  "ingestion_timestamp_utc": "2026-04-17T10:49:18Z",
+  "original_filename": "engproc-46-00010.pdf",
+  "original_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\data\\raw\\paper_002\\engproc-46-00010.pdf",
+  "page_count": 7,
+  "pdf_metadata": {
+    "author": "Ashweena Atif, Alishba Majid, Muhammad Zahid and Yasar Amin",
+    "creationDate": "D:20230920131949+08'00'",
+    "creator": "LaTeX with hyperref",
+    "format": "PDF 1.7",
+    "keywords": "ISM band; circular slot; triangular patch; microstrip patch antenna",
+    "modDate": "D:20230920072158+02'00'",
+    "producer": "pdfTeX-1.40.21",
+    "subject": "The design of a circularly slotted triangular patch radiator with a full-ground structure for 5.8 GHz ISM band applications is the basis for this research. The working band of the suggested miniaturized patch radiator may be adjusted by adjusting the slot size. The practical reduction in size is calculated by comparing the size of the standard elliptical-shaped slot with the size of the circular slot. Changes in the practical radius of the triangular patch, the main axis radius of the circular slot, the ground plane length, and feed line width are investigated. The proposed radiator has the dimensions of 25.5 mm  22.5 mm  1.6 mm. This small construction has a broad bandwidth of 100 MHz (5.8 GHz), with a 3% fractional bandwidth (FBW).",
+    "title": "Circular Slotted Triangular Patch Antenna for 5.8 GHz ISM Band Applications \"2279"
+  },
+  "run_id": "run_20260417T104918429224Z",
+  "sha256": "647e96ce943f297dfa936fa68f90fc5e2b5048131e78eaf6797013b0a4d1dee6"
+}

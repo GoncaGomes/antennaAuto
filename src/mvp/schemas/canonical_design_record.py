@@ -131,11 +131,26 @@ class CanonicalDesignRecord(StrictModel):
     has_multiple_variants: bool
     dominant_evidence_ids: list[str] = Field(default_factory=list)
     secondary_evidence_ids: list[str] = Field(default_factory=list)
-    final_design: CanonicalFinalDesign
+    identified_antennas: list[str] = Field(
+        default_factory=list,
+        description=(
+            "List every distinct antenna, design iteration, reference antenna, comparison variant, or extension "
+            "that appears in the retrieved context before selecting the paper's dominant final design."
+        ),
+    )
+    proposed_final_antenna_rationale: str = Field(
+        description=(
+            "Explain which identified antenna is the main proposed final design of the paper and why competing "
+            "variants, intermediate steps, or reference antennas were not selected as the canonical final design."
+        )
+    )
+    final_design: CanonicalFinalDesign = Field(
+        description="Canonical representation of the single dominant final/proposed antenna design selected from the paper."
+    )
     design_evolution_notes: list[DesignEvolutionNote] = Field(default_factory=list)
     unresolved_conflicts: list[CanonicalConflict] = Field(default_factory=list)
 
-    @field_validator("selected_design_summary", "selected_design_rationale")
+    @field_validator("selected_design_summary", "selected_design_rationale", "proposed_final_antenna_rationale")
     @classmethod
     def validate_non_empty_text(cls, value: str) -> str:
         cleaned = " ".join(value.split())
