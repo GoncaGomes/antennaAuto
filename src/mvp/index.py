@@ -360,12 +360,15 @@ def _build_section_items(sections_path: Path, page_summaries: list[dict[str, Any
 def _build_table_items(tables_dir: Path, parse_report: dict[str, Any]) -> list[dict[str, Any]]:
     items: list[dict[str, Any]] = []
     pages_by_table_id = _table_pages_by_id(parse_report)
+    summaries_by_table_id = _table_summaries_by_id(parse_report)
 
     for path in sorted(tables_dir.glob("table_*.md")):
         table_id = path.stem
         markdown = _read_text_if_exists(path)
         caption, grid = _split_table_markdown(markdown)
-        text = "\n".join(part for part in [caption, grid] if part).strip()
+        summary = summaries_by_table_id.get(table_id, {})
+        context_before = str(summary.get("context_before", "")).strip() if not caption else ""
+        text = "\n".join(part for part in [caption, context_before, grid] if part).strip()
         items.append(
             _make_evidence_item(
                 source_type="table",
@@ -391,8 +394,9 @@ def _build_figure_items(figures_dir: Path, parse_report: dict[str, Any]) -> list
         figure_id = image_path.stem
         metadata = figures_by_id.get(figure_id, {})
         caption = str(metadata.get("caption", "")).strip()
+        local_text_window = str(metadata.get("local_text_window", "")).strip()
         context = str(metadata.get("context", "")).strip()
-        text = "\n".join(part for part in [caption, context] if part).strip()
+        text = "\n".join(part for part in [caption, local_text_window, context] if part).strip()
         items.append(
             _make_evidence_item(
                 source_type="figure",
@@ -401,7 +405,10 @@ def _build_figure_items(figures_dir: Path, parse_report: dict[str, Any]) -> list
                 text=text,
                 metadata={
                     "caption": caption,
+                    "local_text_window": local_text_window,
                     "context": context,
+                    "figure_kind": str(metadata.get("figure_kind", "")).strip(),
+                    "caption_source": str(metadata.get("caption_source", "")).strip(),
                     "image_path": str(image_path),
                 },
             )
@@ -684,6 +691,16 @@ def _table_pages_by_id(parse_report: dict[str, Any]) -> dict[str, int | None]:
         page_number = summary.get("page_number")
         pages[table_id] = page_number if isinstance(page_number, int) else None
     return pages
+
+
+def _table_summaries_by_id(parse_report: dict[str, Any]) -> dict[str, dict[str, Any]]:
+    result: dict[str, dict[str, Any]] = {}
+    for summary in parse_report.get("table_summaries", []):
+        table_id = str(summary.get("table_id", "")).strip()
+        if not table_id:
+            continue
+        result[table_id] = summary
+    return result
 
 
 def _figure_summaries_by_id(parse_report: dict[str, Any]) -> dict[str, dict[str, Any]]:

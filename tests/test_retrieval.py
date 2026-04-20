@@ -15,9 +15,16 @@ from mvp.index import index_run
 from mvp import parsers
 from mvp.pipeline import run_pipeline
 from mvp.retrieval import BundleRetriever
-
-TEST_PNG = base64.b64decode(
-    "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+X2ioAAAAASUVORK5CYII="
+from tests.docling_test_stubs import (
+    FakeDoc,
+    FakePictureItem,
+    FakeRef,
+    FakeSectionHeaderItem,
+    FakeTableCell,
+    FakeTableItem,
+    FakeTextItem,
+    TEST_PNG,
+    install_fake_docling,
 )
 
 
@@ -59,40 +66,103 @@ def create_index_fixture_pdf(path: Path) -> None:
 
 
 def _install_markdown_stub(monkeypatch: pytest.MonkeyPatch) -> None:
-    def fake_to_markdown(path: str, **kwargs):
-        image_dir = Path(kwargs["image_path"])
-        image_dir.mkdir(parents=True, exist_ok=True)
-        (image_dir / "article.pdf-0001-01.png").write_bytes(TEST_PNG)
-        return [
-            {
-                "metadata": {"page_number": 1},
-                "text": "\n".join(
-                    [
-                        "# Materials and Design",
-                        "The substrate material is Rogers RT5880 and the operating frequency is 28 GHz.",
-                        "![Image](figures/article.pdf-0001-01.png)",
-                        "Figure 1. Operating frequency response",
-                        "This figure shows the operating frequency response near 28 GHz.",
-                    ]
+    document = FakeDoc(
+        [
+            (
+                FakeSectionHeaderItem(
+                    self_ref="#/texts/1",
+                    label="section_header",
+                    text="Materials and Design",
+                    page_no=1,
+                    bbox=(40, 760, 240, 740),
                 ),
-            },
-            {
-                "metadata": {"page_number": 2},
-                "text": "\n".join(
-                    [
-                        "## Parameters",
-                        "Table 1. Dimensions of proposed antenna",
-                        "| Parameter | Value(mm) |",
-                        "| --- | --- |",
-                        "| Lgnd | 15 |",
-                        "| Wpat | 5.3 |",
-                        "| FeedWidth | 0.1 |",
-                    ]
+                0,
+            ),
+            (
+                FakeTextItem(
+                    self_ref="#/texts/2",
+                    label="text",
+                    text="The substrate material is Rogers RT5880 and the operating frequency is 28 GHz.",
+                    page_no=1,
+                    bbox=(40, 720, 480, 700),
                 ),
-            },
-        ]
-
-    monkeypatch.setattr(parsers.pymupdf4llm, "to_markdown", fake_to_markdown)
+                0,
+            ),
+            (
+                FakePictureItem(
+                    self_ref="#/pictures/1",
+                    label="picture",
+                    page_no=1,
+                    bbox=(40, 660, 220, 520),
+                    captions=[FakeRef("#/texts/3")],
+                ),
+                0,
+            ),
+            (
+                FakeTextItem(
+                    self_ref="#/texts/3",
+                    label="caption",
+                    text="Figure 1. Operating frequency response",
+                    page_no=1,
+                    bbox=(40, 500, 300, 485),
+                ),
+                0,
+            ),
+            (
+                FakeTextItem(
+                    self_ref="#/texts/4",
+                    label="text",
+                    text="This figure shows the operating frequency response near 28 GHz.",
+                    page_no=1,
+                    bbox=(40, 470, 420, 450),
+                ),
+                0,
+            ),
+            (
+                FakeSectionHeaderItem(
+                    self_ref="#/texts/5",
+                    label="section_header",
+                    text="Parameters",
+                    page_no=2,
+                    bbox=(40, 760, 180, 740),
+                ),
+                0,
+            ),
+            (
+                FakeTableItem(
+                    self_ref="#/tables/1",
+                    label="table",
+                    page_no=2,
+                    bbox=(40, 700, 340, 600),
+                    captions=[FakeRef("#/texts/6")],
+                    markdown="Table 1. Dimensions of proposed antenna\n\n| Parameter | Value(mm) |\n| --- | --- |\n| Lgnd | 15 |\n| Wpat | 5.3 |\n| FeedWidth | 0.1 |",
+                    table_cells=[
+                        FakeTableCell(0, 1, 0, 1, "Parameter"),
+                        FakeTableCell(0, 1, 1, 2, "Value(mm)"),
+                        FakeTableCell(1, 2, 0, 1, "Lgnd"),
+                        FakeTableCell(1, 2, 1, 2, "15"),
+                        FakeTableCell(2, 3, 0, 1, "Wpat"),
+                        FakeTableCell(2, 3, 1, 2, "5.3"),
+                        FakeTableCell(3, 4, 0, 1, "FeedWidth"),
+                        FakeTableCell(3, 4, 1, 2, "0.1"),
+                    ],
+                ),
+                0,
+            ),
+            (
+                FakeTextItem(
+                    self_ref="#/texts/6",
+                    label="caption",
+                    text="Table 1. Dimensions of proposed antenna",
+                    page_no=2,
+                    bbox=(40, 720, 320, 705),
+                ),
+                0,
+            ),
+        ],
+        page_count=2,
+    )
+    install_fake_docling(monkeypatch, parsers, document)
 
 
 def test_retrieval_helpers_return_plausible_results(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:

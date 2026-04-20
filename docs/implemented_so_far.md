@@ -1,5 +1,8 @@
 # Implemented So Far
 
+Last updated:
+- `2026-04-20`
+
 ## Purpose Of This Document
 
 This document is the current ground-truth project snapshot for the repository.
@@ -117,7 +120,7 @@ Main runtime modules:
 - `src/mvp/bundle.py`
   - run-folder creation and path resolution
 - `src/mvp/parsers.py`
-  - PDF parsing for text, sections, figures, and tables
+  - Docling-first PDF parsing into a structured page-object IR, then bundle exports
 - `src/mvp/index.py`
   - evidence construction and retrieval index building
 - `src/mvp/retrieval.py`
@@ -143,7 +146,9 @@ Extraction modules:
 - `src/mvp/extraction/agent.py`
   - deterministic retrieval-by-block plan plus Phase 1 query augmentation
 - `src/mvp/extraction/prompting.py`
-  - legacy direct-extraction prompt builders plus LLM2 and LLM3 prompt builders
+  - LLM2 and LLM3 multistage prompt builders
+- `src/mvp/extraction/legacy/prompting.py`
+  - isolated legacy direct-extraction prompt builders and prompt-budget rules
 - `src/mvp/extraction/pipeline.py`
   - current default multistage extraction path and isolated legacy path
 - `src/mvp/schemas/canonical_design_record.py`
@@ -174,9 +179,10 @@ Important bundle artifacts:
 - `bundle/metadata.json`
 - `bundle/fulltext.md`
 - `bundle/sections.json`
+- `bundle/page_objects.json`
 - `bundle/parse_report.json`
-- `bundle/figures/fig_XXX/...`
-- `bundle/tables/table_XXX.json|csv|md`
+- `bundle/figures/*.png`
+- `bundle/tables/table_XXX.md`
 
 Important index artifacts:
 
@@ -250,18 +256,23 @@ Main code area:
 - `src/mvp/parsers.py`
 
 Behavior:
-- produce `fulltext.md`
-- produce `sections.json`
-- extract figure artifacts and captions/context
-- attempt structured table extraction using `pdfplumber`
-- retain fallback evidence when a table cannot be accepted as a clean structured table
-- write `parse_report.json`
+- use Docling as the primary layout-aware PDF parser
+- produce a normalized per-page object IR in `page_objects.json`
+- derive `fulltext.md` from ordered non-noise page objects
+- derive `sections.json` from heading objects while preserving the exact lean shape
+- export figure PNG artifacts under `bundle/figures/`
+- export table markdown artifacts under `bundle/tables/`
+- write parser diagnostics and table/figure summaries into `parse_report.json`
+- optionally use GROBID only when `MVP_GROBID_URL` is set
 
 Current properties:
 - deterministic
 - PDF-native
 - no OCR
 - no vision model
+- no `pdfplumber` parser path
+- no parser-stage LLM calls
+- GROBID is enrichment-only and parsing succeeds without it
 
 ### 3. Index
 
@@ -432,7 +443,7 @@ Legacy direct path:
 5. build LLM2 request with `build_canonicalization_input(...)`
 6. call the Agents SDK structured client for LLM2
 7. validate the returned canonical record and write `canonical_design_record.json`
-8. collect linked evidence records from the canonical record’s evidence IDs
+8. collect linked evidence records from the canonical recordâ€™s evidence IDs
 9. build LLM3 request with `build_schema_construction_input(...)`
 10. call the Agents SDK structured client for LLM3
 11. validate the final schema
@@ -675,7 +686,7 @@ Current evidence IDs are not carried on:
 - `CanonicalDimension`
 - `CanonicalLocation`
 
-The canonical schema’s helper `collect_canonical_evidence_ids(...)` recursively collects:
+The canonical schemaâ€™s helper `collect_canonical_evidence_ids(...)` recursively collects:
 - `evidence_ids`
 - `dominant_evidence_ids`
 - `secondary_evidence_ids`
@@ -881,24 +892,26 @@ Current report records include:
 
 ## Current Prompting State
 
-Main prompt file:
+Main multistage prompt builder file:
 - `src/mvp/extraction/prompting.py`
 
-Current prompt constants in that file:
-- `SYSTEM_PROMPT`
-  - legacy direct path prompt
-- `CANONICALIZATION_SYSTEM_PROMPT`
-  - LLM2 prompt
-- `SCHEMA_CONSTRUCTION_SYSTEM_PROMPT`
-  - LLM3 prompt
+External prompt text files:
+- `src/mvp/prompts/canonicalization_system.md`
+- `src/mvp/prompts/schema_construction_system.md`
+- `src/mvp/prompts/legacy_direct_system.md`
 
-Current prompt-builder functions in that file:
-- `build_extraction_messages(...)`
-  - legacy direct path
+Current multistage prompt-builder functions:
 - `build_canonicalization_input(...)`
   - LLM2
 - `build_schema_construction_input(...)`
   - LLM3
+
+Legacy direct-extraction prompt file:
+- `src/mvp/extraction/legacy/prompting.py`
+
+Current legacy prompt-builder functions:
+- `build_extraction_messages(...)`
+- `build_repair_messages(...)`
 
 Current prompt design summary:
 - LLM2 is told to arbitrate dominant design identity and preserve structurally useful facts
@@ -1095,13 +1108,13 @@ Examples:
 - table extraction is still dependent on parser success and fallback quality
 - `candidate_design_mentions` remain text-led
 
-These are not new failures, but they remain part of the project’s current limitations.
+These are not new failures, but they remain part of the projectâ€™s current limitations.
 
 ---
 
 ## Current Strengths
 
-The current system’s strongest properties are:
+The current systemâ€™s strongest properties are:
 
 - local, auditable run-folder architecture
 - deterministic upstream ingest/parse/index/retrieval behavior
@@ -1297,8 +1310,12 @@ Here is the paper_map.json:
 
 ### Exact implemented default-path prompt texts
 
-Prompt file:
+Prompt builder file:
 - `src/mvp/extraction/prompting.py`
+
+External prompt text files:
+- `src/mvp/prompts/canonicalization_system.md`
+- `src/mvp/prompts/schema_construction_system.md`
 
 #### LLM2 system prompt
 
@@ -1689,8 +1706,8 @@ Exact duplicate-parameter cleanup behavior:
 
 ### Exact legacy prompt-compaction rules that still exist in the codebase
 
-Prompt file:
-- `src/mvp/extraction/prompting.py`
+Legacy prompt file:
+- `src/mvp/extraction/legacy/prompting.py`
 
 Exact constants:
 - `DEFAULT_PROMPT_MAX_ITEMS_PER_BLOCK`
@@ -1734,3 +1751,177 @@ For current development and evaluation, the authoritative path is:
 - retrieval round 2 -> LLM2 canonicalization -> LLM3 schema construction -> minimal cleanup/validation
 
 The legacy prompt-compaction and prompt-priority scoring logic remains relevant only because it still exists in the repository, not because it is the main extraction architecture.
+
+---
+
+## Authoritative Parser Update - 2026-04-20
+
+This section supersedes older parser descriptions elsewhere in this document.
+
+### Current parser architecture
+
+The parser is now Docling-first and structured-IR-first.
+
+Primary parser file:
+- `src/mvp/parsers.py`
+
+Parse orchestration file:
+- `src/mvp/pipeline.py`
+
+Current parser dependencies:
+- `docling`
+- `grobid-client-python`
+- `pymupdf`
+
+Docling is the primary parser backbone.
+It is used for:
+- layout-aware reading order
+- text objects
+- headings
+- tables
+- figures
+- formulas
+- page-object provenance when available
+
+GROBID is optional enrichment only.
+It is enabled only when `MVP_GROBID_URL` is set.
+If `MVP_GROBID_URL` is unset, the parser records `grobid_status = "disabled"` and continues with Docling alone.
+If GROBID is configured but fails, parsing still succeeds with Docling and records a warning.
+
+The parser remains deterministic.
+It does not use OCR, image understanding, LLM calls, retrieval, or prompt logic.
+
+### Internal page-object IR
+
+The new internal source of truth is:
+- `bundle/page_objects.json`
+
+The IR is an ordered per-page object list.
+Each object carries:
+- `page_number`
+- `object_id`
+- `object_type`
+- `order_index`
+- `text`
+- `bbox`
+- `source_artifact_id`
+- `meta`
+
+Current normalized object types:
+- `heading`
+- `paragraph`
+- `table`
+- `figure`
+- `caption`
+- `formula`
+- `list_item`
+- `footer_or_header_noise`
+
+Markdown is now a derived export, not the parser's authoritative substrate.
+
+### Current bundle contract
+
+The outward bundle contract is still compatible with downstream indexing and retrieval:
+- `bundle/fulltext.md`
+- `bundle/sections.json`
+- `bundle/page_objects.json`
+- `bundle/parse_report.json`
+- `bundle/figures/*.png`
+- `bundle/tables/table_XXX.md`
+
+`sections.json` still contains exactly:
+- `section_id`
+- `title`
+- `text_excerpt`
+
+Tables are exported as Markdown files from Docling structured table output when available.
+If a table cannot be rendered cleanly from structure, the parser writes a readable fallback table representation.
+
+Figures are exported as flat PNG files under `bundle/figures/`.
+Figure captions are associated from Docling objects and nearby caption objects, not from local Markdown line scans.
+Grouped figures can share one caption object.
+Figures are allowed to remain captionless when no reliable caption exists.
+
+Formulas are preserved explicitly in `page_objects.json` as `object_type = "formula"`.
+
+### Current parse-report diagnostics
+
+`parse_report.json` keeps the existing compatibility fields and now also includes structured-parser diagnostics:
+- `captionless_figure_count`
+- `figure_kind_counts`
+- `table_with_caption_count`
+- `table_without_caption_count`
+- `page_object_count`
+- `object_counts_by_type`
+- `tables_using_structured_export_count`
+- `figures_with_explicit_caption_count`
+- `figures_with_group_caption_count`
+- `figures_with_missing_caption_count`
+- `grobid_status`
+
+`src/mvp/pipeline.py` initializes and persists these fields in `_initial_parse_report(...)` and `parse_run(...)`.
+
+### Latest parse-only validation runs
+
+These runs were generated with parse-only CLI commands.
+Indexing, Phase 1, and extraction were not run for this validation.
+
+Commands:
+- `uv run python -m mvp.cli --input data/raw/paper_001/article.pdf`
+- `uv run python -m mvp.cli --input data/raw/paper_002/engproc-46-00010.pdf`
+- `uv run python -m mvp.cli --input data/raw/paper_003/IJETT-V4I4P340.pdf`
+
+Run for `article.pdf`:
+- `runs/run_20260417T201556516557Z`
+- `extracted_image_count = 11`
+- `extracted_table_count = 2`
+- `captionless_figure_count = 3`
+- `figure_kind_counts = {"labeled_figure": 8, "unknown": 3, "decorative_or_editorial": 0, "equation_like": 0}`
+- `table_with_caption_count = 2`
+- `table_without_caption_count = 0`
+- `page_object_count = 107`
+- `object_counts_by_type = {"caption": 10, "figure": 11, "footer_or_header_noise": 9, "formula": 10, "heading": 8, "list_item": 20, "paragraph": 37, "table": 2}`
+- `grobid_status = "disabled"`
+
+Run for `engproc-46-00010.pdf`:
+- `runs/run_20260417T201626222854Z`
+- `extracted_image_count = 10`
+- `extracted_table_count = 3`
+- `captionless_figure_count = 6`
+- `figure_kind_counts = {"labeled_figure": 4, "unknown": 6, "decorative_or_editorial": 0, "equation_like": 0}`
+- `table_with_caption_count = 3`
+- `table_without_caption_count = 0`
+- `page_object_count = 173`
+- `object_counts_by_type = {"caption": 7, "figure": 10, "footer_or_header_noise": 26, "formula": 1, "heading": 9, "list_item": 34, "paragraph": 83, "table": 3}`
+- `grobid_status = "disabled"`
+
+Run for `IJETT-V4I4P340.pdf`:
+- `runs/run_20260417T201656482602Z`
+- `extracted_image_count = 9`
+- `extracted_table_count = 1`
+- `captionless_figure_count = 0`
+- `figure_kind_counts = {"labeled_figure": 9, "unknown": 0, "decorative_or_editorial": 0, "equation_like": 0}`
+- `table_with_caption_count = 0`
+- `table_without_caption_count = 1`
+- `page_object_count = 80`
+- `object_counts_by_type = {"caption": 9, "figure": 9, "formula": 8, "heading": 12, "list_item": 7, "paragraph": 34, "table": 1}`
+- `grobid_status = "disabled"`
+
+### Current parser quality notes
+
+Reading order is materially better than the previous Markdown-line-first parser.
+The parser now uses layout objects and page provenance instead of local Markdown caption heuristics.
+
+Known parser strengths:
+- better multi-column reading order
+- real `page_objects.json` audit surface
+- explicit formula preservation
+- structured table export where Docling succeeds
+- object-level figure/caption association
+- grouped figure-caption support
+
+Known parser weaknesses:
+- first-page editorial/front-matter noise is reduced but not fully eliminated
+- some author/contact/front-matter headings can still appear as section headings
+- the `IJETT` table is detected, but its caption is not populated in the latest run
+- GROBID enrichment has been wired but has not been exercised in the latest validation runs because `MVP_GROBID_URL` was not set

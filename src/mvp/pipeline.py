@@ -25,6 +25,17 @@ def _initial_parse_report(page_count: int) -> dict[str, Any]:
         "extracted_table_count": 0,
         "fulltext_generated": False,
         "sections_generated": False,
+        "captionless_figure_count": 0,
+        "figure_kind_counts": {},
+        "table_with_caption_count": 0,
+        "table_without_caption_count": 0,
+        "page_object_count": 0,
+        "object_counts_by_type": {},
+        "tables_using_structured_export_count": 0,
+        "figures_with_explicit_caption_count": 0,
+        "figures_with_group_caption_count": 0,
+        "figures_with_missing_caption_count": 0,
+        "grobid_status": "disabled",
         "table_summaries": [],
         "figure_summaries": [],
         "page_summaries": [],
@@ -68,6 +79,17 @@ def parse_run(run_paths: RunPaths) -> dict[str, Any]:
     tables_extracted_structured = 0
     tables_saved_as_fallback_only = 0
     tables_rejected_validation = 0
+    captionless_figure_count = 0
+    figure_kind_counts: dict[str, int] = {}
+    table_with_caption_count = 0
+    table_without_caption_count = 0
+    page_object_count = 0
+    object_counts_by_type: dict[str, int] = {}
+    tables_using_structured_export_count = 0
+    figures_with_explicit_caption_count = 0
+    figures_with_group_caption_count = 0
+    figures_with_missing_caption_count = 0
+    grobid_status = "disabled"
     table_summaries: list[dict[str, Any]] = []
     figure_summaries: list[dict[str, Any]] = []
     page_summaries: list[dict[str, Any]] = []
@@ -84,6 +106,17 @@ def parse_run(run_paths: RunPaths) -> dict[str, Any]:
         tables_extracted_structured = extracted_table_count
         tables_saved_as_fallback_only = 0
         tables_rejected_validation = 0
+        captionless_figure_count = int(extraction.get("captionless_figure_count", 0))
+        figure_kind_counts = dict(extraction.get("figure_kind_counts", {}))
+        table_with_caption_count = int(extraction.get("table_with_caption_count", 0))
+        table_without_caption_count = int(extraction.get("table_without_caption_count", 0))
+        page_object_count = int(extraction.get("page_object_count", 0))
+        object_counts_by_type = dict(extraction.get("object_counts_by_type", {}))
+        tables_using_structured_export_count = int(extraction.get("tables_using_structured_export_count", 0))
+        figures_with_explicit_caption_count = int(extraction.get("figures_with_explicit_caption_count", 0))
+        figures_with_group_caption_count = int(extraction.get("figures_with_group_caption_count", 0))
+        figures_with_missing_caption_count = int(extraction.get("figures_with_missing_caption_count", 0))
+        grobid_status = str(extraction.get("grobid_status", "disabled"))
         table_summaries = list(extraction.get("table_summaries", []))
         figure_summaries = list(extraction.get("figure_summaries", []))
         page_summaries = list(extraction.get("page_summaries", []))
@@ -108,6 +141,17 @@ def parse_run(run_paths: RunPaths) -> dict[str, Any]:
         "extracted_table_count": extracted_table_count,
         "fulltext_generated": fulltext_generated,
         "sections_generated": sections_generated,
+        "captionless_figure_count": captionless_figure_count,
+        "figure_kind_counts": figure_kind_counts,
+        "table_with_caption_count": table_with_caption_count,
+        "table_without_caption_count": table_without_caption_count,
+        "page_object_count": page_object_count,
+        "object_counts_by_type": object_counts_by_type,
+        "tables_using_structured_export_count": tables_using_structured_export_count,
+        "figures_with_explicit_caption_count": figures_with_explicit_caption_count,
+        "figures_with_group_caption_count": figures_with_group_caption_count,
+        "figures_with_missing_caption_count": figures_with_missing_caption_count,
+        "grobid_status": grobid_status,
         "table_summaries": table_summaries,
         "figure_summaries": figure_summaries,
         "page_summaries": page_summaries,

@@ -16,9 +16,16 @@ from mvp.index import index_run
 from mvp import parsers
 from mvp.pipeline import run_pipeline
 from mvp.retrieval import BundleRetriever
-
-TEST_PNG = base64.b64decode(
-    "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+X2ioAAAAASUVORK5CYII="
+from tests.docling_test_stubs import (
+    FakeDoc,
+    FakePictureItem,
+    FakeRef,
+    FakeSectionHeaderItem,
+    FakeTableCell,
+    FakeTableItem,
+    FakeTextItem,
+    TEST_PNG,
+    install_fake_docling,
 )
 
 
@@ -71,53 +78,225 @@ def create_agent_fixture_pdf(path: Path) -> None:
 
 
 def _install_markdown_stub(monkeypatch: pytest.MonkeyPatch) -> None:
-    def fake_to_markdown(path: str, **kwargs):
-        image_dir = Path(kwargs["image_path"])
-        image_dir.mkdir(parents=True, exist_ok=True)
-        (image_dir / "article.pdf-0001-01.png").write_bytes(TEST_PNG)
-        return [
-            {
-                "metadata": {"page_number": 1},
-                "text": "\n".join(
-                    [
-                        "# Abstract",
-                        "This proposed design is an antenna configuration with a radiating element over a ground plane.",
-                        "The substrate material is a dielectric material and the conductor material forms the radiating element.",
-                        "The feeding method and feed type use an input port, and the feed location is tuned for matching.",
-                        "Bandwidth, gain, return loss, and VSWR are reported.",
-                        "The layer stack includes substrate and metal layers.",
-                        "![Image](figures/article.pdf-0001-01.png)",
-                        "Figure 1. Antenna geometry",
-                        "The figure shows the radiating element and ground plane geometry.",
-                    ]
+    document = FakeDoc(
+        [
+            (
+                FakeSectionHeaderItem(
+                    self_ref="#/texts/1",
+                    label="section_header",
+                    text="Abstract",
+                    page_no=1,
+                    bbox=(40, 760, 140, 740),
                 ),
-            },
-            {
-                "metadata": {"page_number": 2},
-                "text": "\n".join(
-                    [
-                        "## Parameters",
-                        "Table 1. Design parameters",
-                        "| Parameter | Value(mm) |",
-                        "| --- | --- |",
-                        "| Length | 10 |",
-                        "| Width | 8 |",
-                        "| Thickness | 1.6 |",
-                        "| OperatingFrequency | 28 |",
-                        "Feed type: microstrip feed.",
-                        "Feeding method: line feed.",
-                        "Feed location: edge location.",
-                        "Input port: standard feed connector.",
-                        "Bandwidth: 2.5 GHz.",
-                        "Gain: 6 dBi.",
-                        "Return loss: -18 dB.",
-                        "VSWR: 1.4.",
-                    ]
+                0,
+            ),
+            (
+                FakeTextItem(
+                    self_ref="#/texts/2",
+                    label="text",
+                    text="This proposed design is an antenna configuration with a radiating element over a ground plane.",
+                    page_no=1,
+                    bbox=(40, 720, 520, 700),
                 ),
-            },
-        ]
-
-    monkeypatch.setattr(parsers.pymupdf4llm, "to_markdown", fake_to_markdown)
+                0,
+            ),
+            (
+                FakeTextItem(
+                    self_ref="#/texts/3",
+                    label="text",
+                    text="The substrate material is a dielectric material and the conductor material forms the radiating element.",
+                    page_no=1,
+                    bbox=(40, 690, 520, 670),
+                ),
+                0,
+            ),
+            (
+                FakeTextItem(
+                    self_ref="#/texts/4",
+                    label="text",
+                    text="The feeding method and feed type use an input port, and the feed location is tuned for matching.",
+                    page_no=1,
+                    bbox=(40, 660, 520, 640),
+                ),
+                0,
+            ),
+            (
+                FakeTextItem(
+                    self_ref="#/texts/5",
+                    label="text",
+                    text="Bandwidth, gain, return loss, and VSWR are reported.",
+                    page_no=1,
+                    bbox=(40, 630, 420, 610),
+                ),
+                0,
+            ),
+            (
+                FakeTextItem(
+                    self_ref="#/texts/6",
+                    label="text",
+                    text="The layer stack includes substrate and metal layers.",
+                    page_no=1,
+                    bbox=(40, 600, 360, 580),
+                ),
+                0,
+            ),
+            (
+                FakePictureItem(
+                    self_ref="#/pictures/1",
+                    label="picture",
+                    page_no=1,
+                    bbox=(40, 560, 220, 420),
+                    captions=[FakeRef("#/texts/7")],
+                ),
+                0,
+            ),
+            (
+                FakeTextItem(
+                    self_ref="#/texts/7",
+                    label="caption",
+                    text="Figure 1. Antenna geometry",
+                    page_no=1,
+                    bbox=(40, 400, 260, 385),
+                ),
+                0,
+            ),
+            (
+                FakeTextItem(
+                    self_ref="#/texts/8",
+                    label="text",
+                    text="The figure shows the radiating element and ground plane geometry.",
+                    page_no=1,
+                    bbox=(40, 370, 460, 350),
+                ),
+                0,
+            ),
+            (
+                FakeSectionHeaderItem(
+                    self_ref="#/texts/9",
+                    label="section_header",
+                    text="Parameters",
+                    page_no=2,
+                    bbox=(40, 760, 180, 740),
+                ),
+                0,
+            ),
+            (
+                FakeTableItem(
+                    self_ref="#/tables/1",
+                    label="table",
+                    page_no=2,
+                    bbox=(40, 700, 360, 580),
+                    captions=[FakeRef("#/texts/10")],
+                    markdown="Table 1. Design parameters\n\n| Parameter | Value(mm) |\n| --- | --- |\n| Length | 10 |\n| Width | 8 |\n| Thickness | 1.6 |\n| OperatingFrequency | 28 |",
+                    table_cells=[
+                        FakeTableCell(0, 1, 0, 1, "Parameter"),
+                        FakeTableCell(0, 1, 1, 2, "Value(mm)"),
+                        FakeTableCell(1, 2, 0, 1, "Length"),
+                        FakeTableCell(1, 2, 1, 2, "10"),
+                        FakeTableCell(2, 3, 0, 1, "Width"),
+                        FakeTableCell(2, 3, 1, 2, "8"),
+                        FakeTableCell(3, 4, 0, 1, "Thickness"),
+                        FakeTableCell(3, 4, 1, 2, "1.6"),
+                        FakeTableCell(4, 5, 0, 1, "OperatingFrequency"),
+                        FakeTableCell(4, 5, 1, 2, "28"),
+                    ],
+                ),
+                0,
+            ),
+            (
+                FakeTextItem(
+                    self_ref="#/texts/10",
+                    label="caption",
+                    text="Table 1. Design parameters",
+                    page_no=2,
+                    bbox=(40, 720, 240, 705),
+                ),
+                0,
+            ),
+            (
+                FakeTextItem(
+                    self_ref="#/texts/11",
+                    label="text",
+                    text="Feed type: microstrip feed.",
+                    page_no=2,
+                    bbox=(40, 540, 280, 520),
+                ),
+                0,
+            ),
+            (
+                FakeTextItem(
+                    self_ref="#/texts/12",
+                    label="text",
+                    text="Feeding method: line feed.",
+                    page_no=2,
+                    bbox=(40, 510, 280, 490),
+                ),
+                0,
+            ),
+            (
+                FakeTextItem(
+                    self_ref="#/texts/13",
+                    label="text",
+                    text="Feed location: edge location.",
+                    page_no=2,
+                    bbox=(40, 480, 280, 460),
+                ),
+                0,
+            ),
+            (
+                FakeTextItem(
+                    self_ref="#/texts/14",
+                    label="text",
+                    text="Input port: standard feed connector.",
+                    page_no=2,
+                    bbox=(40, 450, 320, 430),
+                ),
+                0,
+            ),
+            (
+                FakeTextItem(
+                    self_ref="#/texts/15",
+                    label="text",
+                    text="Bandwidth: 2.5 GHz.",
+                    page_no=2,
+                    bbox=(40, 420, 200, 400),
+                ),
+                0,
+            ),
+            (
+                FakeTextItem(
+                    self_ref="#/texts/16",
+                    label="text",
+                    text="Gain: 6 dBi.",
+                    page_no=2,
+                    bbox=(40, 390, 160, 370),
+                ),
+                0,
+            ),
+            (
+                FakeTextItem(
+                    self_ref="#/texts/17",
+                    label="text",
+                    text="Return loss: -18 dB.",
+                    page_no=2,
+                    bbox=(40, 360, 220, 340),
+                ),
+                0,
+            ),
+            (
+                FakeTextItem(
+                    self_ref="#/texts/18",
+                    label="text",
+                    text="VSWR: 1.4.",
+                    page_no=2,
+                    bbox=(40, 330, 140, 310),
+                ),
+                0,
+            ),
+        ],
+        page_count=2,
+    )
+    install_fake_docling(monkeypatch, parsers, document)
 
 
 def test_retrieval_plan_uses_generic_queries() -> None:

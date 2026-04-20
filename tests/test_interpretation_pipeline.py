@@ -20,9 +20,16 @@ from mvp.llm.client import StructuredGenerationResult
 from mvp import parsers
 from mvp.pipeline import run_pipeline
 from mvp.schemas.interpretation_map import InterpretationMap, validate_interpretation_map_payload
-
-TEST_PNG = base64.b64decode(
-    "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+X2ioAAAAASUVORK5CYII="
+from tests.docling_test_stubs import (
+    FakeDoc,
+    FakePictureItem,
+    FakeRef,
+    FakeSectionHeaderItem,
+    FakeTableCell,
+    FakeTableItem,
+    FakeTextItem,
+    TEST_PNG,
+    install_fake_docling,
 )
 
 
@@ -83,44 +90,143 @@ def create_interpretation_fixture_pdf(path: Path) -> None:
 
 
 def _install_markdown_stub(monkeypatch: pytest.MonkeyPatch) -> None:
-    def fake_to_markdown(path: str, **kwargs):
-        image_dir = Path(kwargs["image_path"])
-        image_dir.mkdir(parents=True, exist_ok=True)
-        (image_dir / "article.pdf-0001-01.png").write_bytes(TEST_PNG)
-        return [
-            {
-                "metadata": {"page_number": 1},
-                "text": "\n".join(
-                    [
-                        "# A compact antenna configuration for dual-band operation",
-                        "Abstract. This proposed design studies two configurations.",
-                        "The final optimized design is fabricated and measured, while simulated results are used earlier in the paper.",
-                        "## Antenna Design",
-                        "The proposed design uses a radiating element above a ground plane.",
-                        "![Image](figures/article.pdf-0001-01.png)",
-                        "Figure 1. Antenna geometry",
-                        "Top view of the proposed antenna layout.",
-                    ]
+    document = FakeDoc(
+        [
+            (
+                FakeSectionHeaderItem(
+                    self_ref="#/texts/1",
+                    label="section_header",
+                    text="A compact antenna configuration for dual-band operation",
+                    page_no=1,
+                    bbox=(40, 760, 420, 740),
                 ),
-            },
-            {
-                "metadata": {"page_number": 2},
-                "text": "\n".join(
-                    [
-                        "## Measured Results",
-                        "Table 1. Design parameters",
-                        "| Parameter | Value(mm) |",
-                        "| --- | --- |",
-                        "| Length | 10 |",
-                        "| Width | 8 |",
-                        "| Thickness | 1.6 |",
-                        "The fabricated prototype shows measured bandwidth and return loss.",
-                    ]
+                0,
+            ),
+            (
+                FakeTextItem(
+                    self_ref="#/texts/2",
+                    label="text",
+                    text="Abstract. This proposed design studies two configurations.",
+                    page_no=1,
+                    bbox=(40, 720, 420, 700),
                 ),
-            },
-        ]
-
-    monkeypatch.setattr(parsers.pymupdf4llm, "to_markdown", fake_to_markdown)
+                0,
+            ),
+            (
+                FakeTextItem(
+                    self_ref="#/texts/3",
+                    label="text",
+                    text="The final optimized design is fabricated and measured, while simulated results are used earlier in the paper.",
+                    page_no=1,
+                    bbox=(40, 690, 520, 670),
+                ),
+                0,
+            ),
+            (
+                FakeSectionHeaderItem(
+                    self_ref="#/texts/4",
+                    label="section_header",
+                    text="Antenna Design",
+                    page_no=1,
+                    bbox=(40, 650, 220, 630),
+                ),
+                0,
+            ),
+            (
+                FakeTextItem(
+                    self_ref="#/texts/5",
+                    label="text",
+                    text="The proposed design uses a radiating element above a ground plane.",
+                    page_no=1,
+                    bbox=(40, 620, 420, 600),
+                ),
+                0,
+            ),
+            (
+                FakePictureItem(
+                    self_ref="#/pictures/1",
+                    label="picture",
+                    page_no=1,
+                    bbox=(40, 560, 220, 420),
+                    captions=[FakeRef("#/texts/6")],
+                ),
+                0,
+            ),
+            (
+                FakeTextItem(
+                    self_ref="#/texts/6",
+                    label="caption",
+                    text="Figure 1. Antenna geometry",
+                    page_no=1,
+                    bbox=(40, 400, 260, 385),
+                ),
+                0,
+            ),
+            (
+                FakeTextItem(
+                    self_ref="#/texts/7",
+                    label="text",
+                    text="Top view of the proposed antenna layout.",
+                    page_no=1,
+                    bbox=(40, 370, 320, 350),
+                ),
+                0,
+            ),
+            (
+                FakeSectionHeaderItem(
+                    self_ref="#/texts/8",
+                    label="section_header",
+                    text="Measured Results",
+                    page_no=2,
+                    bbox=(40, 760, 220, 740),
+                ),
+                0,
+            ),
+            (
+                FakeTableItem(
+                    self_ref="#/tables/1",
+                    label="table",
+                    page_no=2,
+                    bbox=(40, 700, 340, 600),
+                    captions=[FakeRef("#/texts/9")],
+                    markdown="Table 1. Design parameters\n\n| Parameter | Value(mm) |\n| --- | --- |\n| Length | 10 |\n| Width | 8 |\n| Thickness | 1.6 |",
+                    table_cells=[
+                        FakeTableCell(0, 1, 0, 1, "Parameter"),
+                        FakeTableCell(0, 1, 1, 2, "Value(mm)"),
+                        FakeTableCell(1, 2, 0, 1, "Length"),
+                        FakeTableCell(1, 2, 1, 2, "10"),
+                        FakeTableCell(2, 3, 0, 1, "Width"),
+                        FakeTableCell(2, 3, 1, 2, "8"),
+                        FakeTableCell(3, 4, 0, 1, "Thickness"),
+                        FakeTableCell(3, 4, 1, 2, "1.6"),
+                    ],
+                ),
+                0,
+            ),
+            (
+                FakeTextItem(
+                    self_ref="#/texts/9",
+                    label="caption",
+                    text="Table 1. Design parameters",
+                    page_no=2,
+                    bbox=(40, 720, 220, 705),
+                ),
+                0,
+            ),
+            (
+                FakeTextItem(
+                    self_ref="#/texts/10",
+                    label="text",
+                    text="The fabricated prototype shows measured bandwidth and return loss.",
+                    page_no=2,
+                    bbox=(40, 560, 420, 540),
+                ),
+                0,
+            ),
+        ],
+        page_count=2,
+    )
+    install_fake_docling(monkeypatch, parsers, document)
 
 
 def test_build_paper_map_is_lightweight_and_preserves_provenance(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:

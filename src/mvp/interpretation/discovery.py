@@ -469,7 +469,9 @@ def _select_key_table_refs(parse_report: dict[str, Any]) -> list[dict[str, Any]]
     scored: list[dict[str, Any]] = []
     for summary in summaries:
         caption = _clean_text(str(summary.get("caption", "")))
-        role = _guess_table_role(caption)
+        context_before = _clean_text(str(summary.get("context_before", "")))
+        display_text = caption or context_before
+        role = _guess_table_role(display_text)
         score = float(summary.get("parse_score", 0.0))
         if role in {"dimensions", "parameters", "materials"}:
             score += 15.0
@@ -481,7 +483,7 @@ def _select_key_table_refs(parse_report: dict[str, Any]) -> list[dict[str, Any]]
             {
                 "score": score,
                 "table_id": summary.get("table_id", ""),
-                "caption": caption,
+                "caption": display_text,
                 "page_number": summary.get("page_number"),
                 "table_role_guess": role,
             }
@@ -507,14 +509,23 @@ def _select_key_figure_refs(evidence_items: list[dict[str, Any]]) -> list[dict[s
             continue
         metadata = item.get("metadata") or {}
         caption = _clean_text(str(metadata.get("caption", "")).strip())
+        local_text_window = _clean_text(_strip_markdown_image_tags(str(metadata.get("local_text_window", "")).strip()))
         context = _clean_text(str(metadata.get("context", "")).strip())
-        display_caption = caption if caption and caption.lower() != "caption extraction not implemented." else context
+        display_caption = next(
+            (value for value in (caption, local_text_window, context) if value),
+            "",
+        )
         if not display_caption:
             continue
-        role = _guess_figure_role(f"{caption} {context}")
+        role = _guess_figure_role(f"{caption} {local_text_window} {context}")
+        figure_kind = str(metadata.get("figure_kind", "")).strip()
         score = 0.0
         if role != "unknown":
             score += 5.0
+        if figure_kind == "labeled_figure":
+            score += 8.0
+        elif figure_kind == "decorative_or_editorial":
+            score -= 12.0
         page_number = item.get("page_number")
         if isinstance(page_number, int) and page_number <= 4:
             score += 1.0
@@ -608,3 +619,7 @@ def _clean_text(text: str) -> str:
     cleaned = re.sub(r"\*+", "", text)
     cleaned = re.sub(r"\s+", " ", cleaned)
     return cleaned.strip()
+
+
+def _strip_markdown_image_tags(text: str) -> str:
+    return re.sub(r"!\[[^\]]*\]\([^)]+\)", " ", text).strip()
