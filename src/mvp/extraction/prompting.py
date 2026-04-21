@@ -17,7 +17,7 @@ def build_canonicalization_input(
     payload = {
         "run_context": run_context,
         "phase1_guidance": _compact_phase1_guidance_for_llm2(phase1_guidance),
-        "retrieved_evidence_by_block": evidence_by_block,
+        "retrieved_evidence_by_block": _compact_evidence_for_llm2(evidence_by_block),
     }
     input_text = "\n".join(
         [
@@ -64,6 +64,25 @@ def build_schema_construction_input(
 
 def _json_pretty_block(payload: Any) -> str:
     return json.dumps(payload, sort_keys=True, ensure_ascii=False, indent=2)
+
+
+def _compact_evidence_for_llm2(evidence_by_block: dict[str, list[dict[str, Any]]]) -> dict[str, list[dict[str, Any]]]:
+    compact: dict[str, list[dict[str, Any]]] = {}
+    for block, records in evidence_by_block.items():
+        compact_records: list[dict[str, Any]] = []
+        for record in records:
+            compact_records.append(
+                {
+                    "evidence_id": record.get("evidence_id"),
+                    "source_type": record.get("source_type"),
+                    "source_id": record.get("source_id"),
+                    "page_number": record.get("page_number"),
+                    "content": record.get("content", ""),
+                    "source_payload": record.get("source_payload", {}),
+                }
+            )
+        compact[block] = compact_records
+    return compact
 
 
 def _compact_phase1_guidance_for_llm2(phase1_guidance: dict[str, Any] | None) -> dict[str, Any] | None:

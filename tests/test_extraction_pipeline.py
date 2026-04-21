@@ -137,6 +137,17 @@ def test_extract_run_multistage_writes_outputs_and_uses_agents_models(tmp_path: 
     assert phase2_artifact["llm2_model_name"] == "gpt-5.4-mini"
     assert phase2_artifact["llm3_model_name"] == "gpt-5.4-mini"
     assert phase2_artifact["default_path_replaced_old_single_call"] is True
+    classification_query = phase2_artifact["retrieval_queries_executed_per_block"]["classification"][0]
+    assert "result_evidence_ids" not in classification_query
+    assert {"retrieved_count", "sample_result_evidence_ids"} <= set(classification_query)
+    classification_ids = phase2_artifact["retrieved_evidence_ids_per_block"]["classification"]
+    assert {"count", "sample_evidence_ids"} <= set(classification_ids)
+    assert len(classification_ids["sample_evidence_ids"]) <= 10
+    llm2_ids = phase2_artifact["llm2_input_evidence_ids_per_block"]["classification"]
+    assert {"count", "sample_evidence_ids"} <= set(llm2_ids)
+    usefulness = report["query_usefulness_per_block"]["classification"][0]
+    assert "prompt_survival_evidence_ids" not in usefulness
+    assert "prompt_survival_evidence_id_samples" in usefulness
 
 
 def test_extract_run_multistage_uses_phase1_queries_and_writes_artifact(tmp_path: Path) -> None:

@@ -6,6 +6,24 @@ from typing import Any
 from ..retrieval import BundleRetriever
 from ..utils import read_json, text_excerpt
 
+PHASE1_TABLE_QUERY_CUES = (
+    "table",
+    "parameter",
+    "parameters",
+    "dimension",
+    "dimensions",
+    "thickness",
+    "material",
+)
+PHASE1_FIGURE_QUERY_CUES = (
+    "figure",
+    "fig",
+    "diagram",
+    "schematic",
+    "layout",
+    "geometry",
+)
+
 RETRIEVAL_PLAN: dict[str, list[tuple[str, str]]] = {
     "classification": [
         ("text", "antenna type"),
@@ -88,7 +106,8 @@ def gather_retrieval_context_with_phase1(
             search_type = query_entry["search_type"]
             query = query_entry["query"]
             search_fn = _dispatch_search(retriever, search_type)
-            results = search_fn(query, top_k=top_k)
+            effective_top_k = min(3, top_k) if query_entry["query_source"] == "phase1_interpretation_map" else top_k
+            results = search_fn(query, top_k=effective_top_k)
             query_log = {
                 "search_type": search_type,
                 "query": query,
@@ -164,7 +183,7 @@ def _block_query_entries(
         query_text = str(phase1_query.get("query_text", "")).strip()
         if not query_text:
             continue
-        for search_type in block_search_types:
+        for search_type in _phase1_search_types_for_block(block_search_types, query_text):
             key = ("phase1_interpretation_map", search_type, query_text)
             if key in seen:
                 continue
@@ -179,6 +198,27 @@ def _block_query_entries(
                 }
             )
     return entries
+
+
+def _phase1_search_types_for_block(block_search_types: list[str], query_text: str) -> list[str]:
+    search_types: list[str] = []
+    if "text" in block_search_types:
+        search_types.append("text")
+    if "tables" in block_search_types and _phase1_query_supports_tables(query_text):
+        search_types.append("tables")
+    if "figures" in block_search_types and _phase1_query_supports_figures(query_text):
+        search_types.append("figures")
+    return search_types
+
+
+def _phase1_query_supports_tables(query_text: str) -> bool:
+    normalized = query_text.lower()
+    return any(cue in normalized for cue in PHASE1_TABLE_QUERY_CUES)
+
+
+def _phase1_query_supports_figures(query_text: str) -> bool:
+    normalized = query_text.lower()
+    return any(cue in normalized for cue in PHASE1_FIGURE_QUERY_CUES)
 
 
 def _normalize_phase1_search_queries(phase1_search_queries: list[dict[str, Any]] | None) -> list[dict[str, Any]]:
@@ -218,13 +258,13 @@ def _build_prompt_record(result: dict[str, Any], evidence: dict[str, Any]) -> di
 
 
 def _summarize_evidence_content(evidence: dict[str, Any]) -> str:
-    return text_excerpt(evidence.get("text", ""), limit=1600)
+    return text_excerpt(evidence.get("text", ""), limit=700)
 
 
 def _compact_source_payload(source_type: str, payload: dict[str, Any]) -> dict[str, Any]:
     if source_type == "table":
         rows = payload.get("rows", [])
-        compact_rows = rows[:12] if isinstance(rows, list) else []
+        compact_rows = rows[:6] if isinstance(rows, list) else []
         return {
             "table_id": payload.get("table_id", ""),
             "caption": payload.get("caption", ""),
@@ -236,7 +276,7 @@ def _compact_source_payload(source_type: str, payload: dict[str, Any]) -> dict[s
         return {
             "figure_id": payload.get("figure_id", ""),
             "caption": payload.get("caption", ""),
-            "context": text_excerpt(payload.get("context", ""), limit=1200),
+            "context": text_excerpt(payload.get("context", ""), limit=350),
             "page_number": payload.get("page_number"),
         }
     if source_type == "section":
@@ -245,10 +285,10 @@ def _compact_source_payload(source_type: str, payload: dict[str, Any]) -> dict[s
             "title": payload.get("title", ""),
             "page_start": payload.get("page_start"),
             "page_end": payload.get("page_end"),
-            "text_excerpt": text_excerpt(payload.get("text_excerpt", ""), limit=1200),
+            "text_excerpt": text_excerpt(payload.get("text_excerpt", ""), limit=500),
         }
     return {
-        "text": text_excerpt(payload.get("text", ""), limit=1200),
+        "text": text_excerpt(payload.get("text", ""), limit=500),
         "metadata": payload.get("metadata", {}),
     }
 

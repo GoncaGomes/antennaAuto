@@ -345,7 +345,7 @@ def test_gather_retrieval_context_runs_with_generic_plan(tmp_path: Path, monkeyp
     assert retrieval_context["all_retrieved_evidence_ids"]
 
 
-def test_gather_retrieval_context_augments_each_block_with_phase1_queries(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+def test_gather_retrieval_context_routes_phase1_queries_by_modality(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
     source_pdf = tmp_path / "article.pdf"
     create_agent_fixture_pdf(source_pdf)
     _install_markdown_stub(monkeypatch)
@@ -359,22 +359,39 @@ def test_gather_retrieval_context_augments_each_block_with_phase1_queries(tmp_pa
 
     retrieval_context = gather_retrieval_context_with_phase1(
         retriever,
-        top_k=2,
+        top_k=5,
         phase1_search_queries=[
             {
                 "query_id": "Q1",
-                "query_text": "proposed antenna geometry",
+                "query_text": "final selected design",
                 "priority": "high",
                 "why": "Phase 1 guidance",
-            }
+            },
+            {
+                "query_id": "Q2",
+                "query_text": "parameter dimensions table",
+                "priority": "medium",
+                "why": "Phase 1 guidance",
+            },
+            {
+                "query_id": "Q3",
+                "query_text": "geometry figure layout",
+                "priority": "high",
+                "why": "Phase 1 guidance",
+            },
         ],
     )
 
     assert retrieval_context["phase1_guidance_found"] is True
-    assert retrieval_context["phase1_search_queries_used"][0]["query_text"] == "proposed antenna geometry"
+    assert retrieval_context["phase1_search_queries_used"][0]["query_text"] == "final selected design"
     for block, entries in retrieval_context["retrieval_queries_used"].items():
         assert any(entry["query_source"] == "base_plan" for entry in entries)
-        assert any(
-            entry["query_source"] == "phase1_interpretation_map" and entry["query"] == "proposed antenna geometry"
-            for entry in entries
-        ), block
+        phase1_entries = [entry for entry in entries if entry["query_source"] == "phase1_interpretation_map"]
+        block_search_types = {search_type for search_type, _ in RETRIEVAL_PLAN[block]}
+        assert any(entry["query"] == "final selected design" and entry["search_type"] == "text" for entry in phase1_entries)
+        assert not any(entry["query"] == "final selected design" and entry["search_type"] != "text" for entry in phase1_entries)
+        if "tables" in block_search_types:
+            assert any(entry["query"] == "parameter dimensions table" and entry["search_type"] == "tables" for entry in phase1_entries)
+        if "figures" in block_search_types:
+            assert any(entry["query"] == "geometry figure layout" and entry["search_type"] == "figures" for entry in phase1_entries)
+        assert all(len(entry["result_evidence_ids"]) <= 3 for entry in phase1_entries)

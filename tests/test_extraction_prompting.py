@@ -117,6 +117,10 @@ def test_canonicalization_input_preserves_structured_table_rows() -> None:
     assert "Step 4" in payload["input_text"]
     assert "rows" in payload["input_text"]
     assert "final selected design" in payload["input_text"]
+    assert '"score"' not in payload["input_text"]
+    assert '"snippet"' not in payload["input_text"]
+    assert '"evidence_id": "table:table_001"' in payload["input_text"]
+    assert '"source_payload"' in payload["input_text"]
     prompt_path = Path(__file__).resolve().parents[1] / "src" / "mvp" / "prompts" / "canonicalization_system.md"
     assert payload["instructions"] == prompt_path.read_text(encoding="utf-8").strip()
 

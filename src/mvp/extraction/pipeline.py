@@ -23,6 +23,24 @@ DEFAULT_LEGACY_MODEL = "gpt-4o"
 DEFAULT_LLM2_MODEL = "gpt-5.4-mini"
 DEFAULT_LLM3_MODEL = "gpt-5.4-mini"
 DEFAULT_AGENTS_REASONING_EFFORT = "medium"
+LLM2_BLOCK_CAPS = {
+    "classification": 8,
+    "materials": 8,
+    "layers": 8,
+    "feeds": 8,
+    "quality": 8,
+    "parameters": 10,
+    "entities": 10,
+}
+LLM2_SOURCE_TYPE_CAPS = {
+    "classification": {"section": 2, "table": 2, "figure": 1},
+    "materials": {"section": 2, "table": 2, "figure": 1},
+    "layers": {"section": 2, "table": 2, "figure": 1},
+    "feeds": {"section": 2, "table": 2, "figure": 1},
+    "quality": {"section": 2, "table": 2, "figure": 1},
+    "parameters": {"section": 2, "table": 3, "figure": 1},
+    "entities": {"section": 2, "table": 1, "figure": 3},
+}
 DEFAULT_STRUCTURED_MAX_ATTEMPTS = 3
 
 
@@ -202,6 +220,8 @@ def _extract_run_multistage(
         legacy_direct_path_used=False,
         legacy_model_name=None,
     )
+    if debug_dir is not None:
+        write_json(debug_dir / "phase2_retrieval_context_verbose.json", retrieval_context)
     report = _build_report(
         run_paths=run_paths,
         extraction_path="retrieval_llm2_llm3",
@@ -277,12 +297,17 @@ def _write_phase2_retrieval_context(
             }
             for query in retrieval_context.get("phase1_search_queries_used", [])
         ],
-        "retrieval_queries_executed_per_block": retrieval_context["retrieval_queries_used"],
-        "retrieved_evidence_ids_per_block": retrieval_context["evidence_ids_by_block"],
-        "llm2_input_evidence_ids_per_block": {
-            block: [record["evidence_id"] for record in records]
-            for block, records in llm2_input_evidence_by_block.items()
-        },
+        "retrieval_queries_executed_per_block": _compact_retrieval_queries_by_block(
+            retrieval_context["retrieval_queries_used"]
+        ),
+        "retrieved_evidence_ids_per_block": _compact_id_map(retrieval_context["evidence_ids_by_block"], sample_size=10),
+        "llm2_input_evidence_ids_per_block": _compact_id_map(
+            {
+                block: [record["evidence_id"] for record in records]
+                for block, records in llm2_input_evidence_by_block.items()
+            },
+            sample_size=10,
+        ),
         "canonical_design_record_path": canonical_design_record_path,
         "llm2_model_name": llm2_model_name,
         "llm3_model_name": llm3_model_name,
@@ -295,6 +320,40 @@ def _write_phase2_retrieval_context(
         "extraction_path": extraction_path,
     }
     write_json(phase2_artifact_path, payload)
+
+
+def _compact_retrieval_queries_by_block(
+    retrieval_queries_used: dict[str, list[dict[str, Any]]],
+) -> dict[str, list[dict[str, Any]]]:
+    compact: dict[str, list[dict[str, Any]]] = {}
+    for block, entries in retrieval_queries_used.items():
+        compact_entries: list[dict[str, Any]] = []
+        for entry in entries:
+            result_ids = list(entry.get("result_evidence_ids", []))
+            compact_entry = {
+                "search_type": entry.get("search_type"),
+                "query": entry.get("query"),
+                "query_source": entry.get("query_source"),
+                "retrieved_count": len(result_ids),
+                "sample_result_evidence_ids": result_ids[:3],
+            }
+            if entry.get("phase1_query_id"):
+                compact_entry["phase1_query_id"] = entry["phase1_query_id"]
+            if entry.get("phase1_priority"):
+                compact_entry["phase1_priority"] = entry["phase1_priority"]
+            compact_entries.append(compact_entry)
+        compact[block] = compact_entries
+    return compact
+
+
+def _compact_id_map(id_map: dict[str, list[str]], *, sample_size: int) -> dict[str, dict[str, Any]]:
+    return {
+        block: {
+            "count": len(ids),
+            "sample_evidence_ids": list(ids)[:sample_size],
+        }
+        for block, ids in id_map.items()
+    }
 
 
 def _validate_run_inputs(run_paths) -> None:
@@ -341,9 +400,46 @@ def _generate_agents_structured(
 
 def _prepare_llm2_evidence_by_block(evidence_by_block: dict[str, list[dict[str, Any]]]) -> dict[str, list[dict[str, Any]]]:
     return {
-        block: [deepcopy(record) for record in sorted(records, key=_llm2_record_sort_key)]
+        block: _select_llm2_evidence_for_block(block, records)
         for block, records in evidence_by_block.items()
     }
+
+
+def _select_llm2_evidence_for_block(block: str, records: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    sorted_records = sorted(records, key=_llm2_record_sort_key)
+    block_cap = LLM2_BLOCK_CAPS.get(block, 8)
+    source_caps = LLM2_SOURCE_TYPE_CAPS.get(block, {"section": 2, "table": 2, "figure": 1})
+    selected: list[dict[str, Any]] = []
+    selected_ids: set[str] = set()
+    source_counts = {"section": 0, "table": 0, "figure": 0, "chunk": 0}
+
+    for record in sorted_records:
+        if len(selected) >= block_cap:
+            break
+        source_type = _llm2_source_type_bucket(record)
+        if source_type in source_caps and source_counts[source_type] >= source_caps[source_type]:
+            continue
+        selected.append(record)
+        selected_ids.add(str(record.get("evidence_id", "")))
+        source_counts[source_type] = source_counts.get(source_type, 0) + 1
+
+    for record in sorted_records:
+        if len(selected) >= block_cap:
+            break
+        evidence_id = str(record.get("evidence_id", ""))
+        if evidence_id in selected_ids:
+            continue
+        selected.append(record)
+        selected_ids.add(evidence_id)
+
+    return [deepcopy(record) for record in selected]
+
+
+def _llm2_source_type_bucket(record: dict[str, Any]) -> str:
+    source_type = str(record.get("source_type", "chunk"))
+    if source_type in {"section", "table", "figure", "chunk"}:
+        return source_type
+    return "chunk"
 
 
 def _llm2_record_sort_key(record: dict[str, Any]) -> tuple[float, int, str]:
@@ -579,9 +675,9 @@ def _build_query_usefulness_by_block(
                     "prompt_survival_count": len(prompt_hits),
                     "final_evidence_usage_count": len(final_hits),
                     "contributed_to_bound_structural_field": bool(structural_hits),
-                    "prompt_survival_evidence_ids": prompt_hits,
-                    "final_evidence_usage_ids": final_hits,
-                    "bound_structural_evidence_ids": structural_hits,
+                    "prompt_survival_evidence_id_samples": prompt_hits[:3],
+                    "final_evidence_usage_id_samples": final_hits[:3],
+                    "bound_structural_evidence_id_samples": structural_hits[:3],
                 }
             )
         usefulness[block] = block_entries
