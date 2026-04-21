@@ -6,247 +6,101 @@
   "legacy_direct_path_used": false,
   "legacy_model_name": null,
   "llm2_input_evidence_ids_per_block": {
-    "classification": [
-      "chunk:chunk_020",
-      "section:section_005",
-      "chunk:chunk_014",
-      "chunk:chunk_027",
-      "chunk:chunk_022",
-      "chunk:chunk_033",
-      "chunk:chunk_032",
-      "chunk:chunk_034",
-      "section:section_009",
-      "chunk:chunk_008",
-      "chunk:chunk_005",
-      "chunk:chunk_013",
-      "chunk:chunk_015",
-      "chunk:chunk_045",
-      "chunk:chunk_025",
-      "chunk:chunk_068",
-      "chunk:chunk_030",
-      "chunk:chunk_018",
-      "chunk:chunk_024",
-      "chunk:chunk_037",
-      "chunk:chunk_029",
-      "chunk:chunk_040",
-      "section:section_006",
-      "section:section_003",
-      "section:section_002",
-      "chunk:chunk_004",
-      "chunk:chunk_019",
-      "section:section_004",
-      "chunk:chunk_021",
-      "chunk:chunk_031"
-    ],
-    "entities": [
-      "chunk:chunk_031",
-      "section:section_005",
-      "chunk:chunk_027",
-      "chunk:chunk_022",
-      "chunk:chunk_015",
-      "figure:figure_009",
-      "chunk:chunk_007",
-      "figure:figure_008",
-      "figure:figure_002",
-      "chunk:chunk_010",
-      "chunk:chunk_008",
-      "section:section_009",
-      "section:section_003",
-      "chunk:chunk_005",
-      "chunk:chunk_013",
-      "figure:figure_010",
-      "figure:figure_001",
-      "figure:figure_004",
-      "chunk:chunk_030",
-      "chunk:chunk_021",
-      "section:section_004",
-      "figure:figure_005",
-      "figure:figure_006",
-      "chunk:chunk_020",
-      "chunk:chunk_024",
-      "chunk:chunk_029",
-      "chunk:chunk_012",
-      "chunk:chunk_018",
-      "chunk:chunk_033",
-      "chunk:chunk_014",
-      "section:section_002",
-      "chunk:chunk_034",
-      "chunk:chunk_032",
-      "chunk:chunk_025",
-      "chunk:chunk_004",
-      "section:section_006",
-      "chunk:chunk_036"
-    ],
-    "feeds": [
-      "chunk:chunk_020",
-      "chunk:chunk_031",
-      "section:section_005",
-      "chunk:chunk_027",
-      "chunk:chunk_022",
-      "chunk:chunk_006",
-      "chunk:chunk_024",
-      "chunk:chunk_005",
-      "section:section_009",
-      "chunk:chunk_013",
-      "section:section_002",
-      "chunk:chunk_007",
-      "chunk:chunk_030",
-      "chunk:chunk_018",
-      "chunk:chunk_004",
-      "chunk:chunk_011",
-      "chunk:chunk_029",
-      "chunk:chunk_015",
-      "section:section_003",
-      "chunk:chunk_014",
-      "chunk:chunk_025",
-      "chunk:chunk_032",
-      "section:section_006",
-      "chunk:chunk_034",
-      "chunk:chunk_057",
-      "chunk:chunk_021",
-      "chunk:chunk_016",
-      "section:section_004",
-      "chunk:chunk_064",
-      "chunk:chunk_012",
-      "chunk:chunk_035",
-      "chunk:chunk_019",
-      "chunk:chunk_073"
-    ],
-    "layers": [
-      "chunk:chunk_031",
-      "section:section_005",
-      "table:table_001",
-      "chunk:chunk_027",
-      "chunk:chunk_022",
-      "chunk:chunk_008",
-      "chunk:chunk_024",
-      "chunk:chunk_010",
-      "section:section_009",
-      "chunk:chunk_005",
-      "chunk:chunk_013",
-      "chunk:chunk_015",
-      "table:table_002",
-      "chunk:chunk_030",
-      "chunk:chunk_018",
-      "chunk:chunk_007",
-      "section:section_003",
-      "chunk:chunk_029",
-      "chunk:chunk_012",
-      "chunk:chunk_055",
-      "chunk:chunk_017",
-      "section:section_002",
-      "chunk:chunk_025",
-      "chunk:chunk_004",
-      "chunk:chunk_032",
-      "section:section_006",
-      "chunk:chunk_014",
-      "chunk:chunk_016",
-      "chunk:chunk_035",
-      "chunk:chunk_020",
-      "chunk:chunk_036",
-      "table:table_003"
-    ],
-    "materials": [
-      "chunk:chunk_031",
-      "section:section_005",
-      "chunk:chunk_027",
-      "chunk:chunk_022",
-      "chunk:chunk_020",
-      "chunk:chunk_039",
-      "chunk:chunk_024",
-      "section:section_009",
-      "chunk:chunk_005",
-      "chunk:chunk_013",
-      "chunk:chunk_015",
-      "table:table_002",
-      "chunk:chunk_030",
-      "chunk:chunk_018",
-      "section:section_003",
-      "chunk:chunk_029",
-      "chunk:chunk_014",
-      "section:section_002",
-      "chunk:chunk_025",
-      "chunk:chunk_004",
-      "section:section_006",
-      "table:table_001",
-      "chunk:chunk_055",
-      "chunk:chunk_068",
-      "chunk:chunk_003",
-      "chunk:chunk_032",
-      "chunk:chunk_007",
-      "chunk:chunk_006",
-      "table:table_003"
-    ],
-    "parameters": [
-      "chunk:chunk_023",
-      "chunk:chunk_031",
-      "section:section_005",
-      "table:table_001",
-      "chunk:chunk_027",
-      "chunk:chunk_022",
-      "chunk:chunk_020",
-      "chunk:chunk_024",
-      "section:section_009",
-      "chunk:chunk_005",
-      "chunk:chunk_013",
-      "chunk:chunk_041",
-      "chunk:chunk_030",
-      "chunk:chunk_060",
-      "section:section_008",
-      "chunk:chunk_019",
-      "chunk:chunk_029",
-      "chunk:chunk_015",
-      "chunk:chunk_014",
-      "section:section_002",
-      "chunk:chunk_039",
-      "chunk:chunk_025",
-      "chunk:chunk_004",
-      "chunk:chunk_032",
-      "section:section_006",
-      "chunk:chunk_016",
-      "chunk:chunk_018",
-      "chunk:chunk_036",
-      "section:section_003",
-      "table:table_003",
-      "table:table_002"
-    ],
-    "quality": [
-      "chunk:chunk_020",
-      "chunk:chunk_031",
-      "chunk:chunk_027",
-      "chunk:chunk_022",
-      "chunk:chunk_040",
-      "chunk:chunk_023",
-      "chunk:chunk_030",
-      "chunk:chunk_024",
-      "chunk:chunk_026",
-      "chunk:chunk_034",
-      "chunk:chunk_025",
-      "chunk:chunk_028",
-      "chunk:chunk_038",
-      "section:section_009",
-      "chunk:chunk_005",
-      "chunk:chunk_013",
-      "section:section_005",
-      "chunk:chunk_018",
-      "chunk:chunk_029",
-      "chunk:chunk_015",
-      "section:section_003",
-      "chunk:chunk_014",
-      "section:section_002",
-      "chunk:chunk_004",
-      "section:section_006",
-      "chunk:chunk_068",
-      "chunk:chunk_054",
-      "chunk:chunk_039",
-      "chunk:chunk_042",
-      "chunk:chunk_032",
-      "chunk:chunk_036",
-      "chunk:chunk_073",
-      "chunk:chunk_019",
-      "chunk:chunk_058",
-      "chunk:chunk_059"
-    ]
+    "classification": {
+      "count": 8,
+      "sample_evidence_ids": [
+        "chunk:chunk_020",
+        "section:section_005",
+        "chunk:chunk_014",
+        "chunk:chunk_027",
+        "chunk:chunk_022",
+        "chunk:chunk_033",
+        "chunk:chunk_032",
+        "chunk:chunk_018"
+      ]
+    },
+    "entities": {
+      "count": 10,
+      "sample_evidence_ids": [
+        "chunk:chunk_031",
+        "section:section_005",
+        "chunk:chunk_027",
+        "chunk:chunk_022",
+        "chunk:chunk_015",
+        "figure:figure_009",
+        "chunk:chunk_007",
+        "chunk:chunk_010",
+        "chunk:chunk_008",
+        "section:section_009"
+      ]
+    },
+    "feeds": {
+      "count": 8,
+      "sample_evidence_ids": [
+        "chunk:chunk_020",
+        "chunk:chunk_031",
+        "section:section_005",
+        "chunk:chunk_027",
+        "chunk:chunk_022",
+        "chunk:chunk_006",
+        "chunk:chunk_018",
+        "chunk:chunk_024"
+      ]
+    },
+    "layers": {
+      "count": 8,
+      "sample_evidence_ids": [
+        "chunk:chunk_031",
+        "section:section_005",
+        "table:table_001",
+        "chunk:chunk_027",
+        "chunk:chunk_022",
+        "chunk:chunk_018",
+        "chunk:chunk_008",
+        "chunk:chunk_024"
+      ]
+    },
+    "materials": {
+      "count": 8,
+      "sample_evidence_ids": [
+        "chunk:chunk_031",
+        "section:section_005",
+        "chunk:chunk_027",
+        "chunk:chunk_022",
+        "chunk:chunk_020",
+        "chunk:chunk_039",
+        "chunk:chunk_018",
+        "chunk:chunk_024"
+      ]
+    },
+    "parameters": {
+      "count": 10,
+      "sample_evidence_ids": [
+        "chunk:chunk_023",
+        "chunk:chunk_031",
+        "section:section_005",
+        "table:table_001",
+        "chunk:chunk_027",
+        "chunk:chunk_022",
+        "chunk:chunk_020",
+        "chunk:chunk_024",
+        "section:section_009",
+        "chunk:chunk_041"
+      ]
+    },
+    "quality": {
+      "count": 8,
+      "sample_evidence_ids": [
+        "chunk:chunk_020",
+        "chunk:chunk_031",
+        "chunk:chunk_027",
+        "chunk:chunk_022",
+        "chunk:chunk_040",
+        "chunk:chunk_018",
+        "chunk:chunk_023",
+        "chunk:chunk_030"
+      ]
+    }
   },
   "llm2_model_name": "gpt-5.4-mini",
   "llm2_reasoning_effort": "medium",
@@ -286,48 +140,44 @@
       {
         "query": "antenna type",
         "query_source": "base_plan",
-        "result_evidence_ids": [
+        "retrieved_count": 5,
+        "sample_result_evidence_ids": [
           "chunk:chunk_033",
           "chunk:chunk_032",
-          "chunk:chunk_034",
-          "chunk:chunk_008",
-          "chunk:chunk_013"
+          "chunk:chunk_034"
         ],
         "search_type": "text"
       },
       {
         "query": "proposed design",
         "query_source": "base_plan",
-        "result_evidence_ids": [
+        "retrieved_count": 5,
+        "sample_result_evidence_ids": [
           "chunk:chunk_014",
           "chunk:chunk_024",
-          "chunk:chunk_037",
-          "chunk:chunk_040",
-          "section:section_006"
+          "chunk:chunk_037"
         ],
         "search_type": "text"
       },
       {
         "query": "final design",
         "query_source": "base_plan",
-        "result_evidence_ids": [
+        "retrieved_count": 5,
+        "sample_result_evidence_ids": [
           "chunk:chunk_014",
           "chunk:chunk_015",
-          "chunk:chunk_045",
-          "chunk:chunk_025",
-          "chunk:chunk_068"
+          "chunk:chunk_045"
         ],
         "search_type": "text"
       },
       {
         "query": "configuration",
         "query_source": "base_plan",
-        "result_evidence_ids": [
+        "retrieved_count": 5,
+        "sample_result_evidence_ids": [
           "chunk:chunk_019",
           "section:section_004",
-          "chunk:chunk_021",
-          "chunk:chunk_031",
-          "chunk:chunk_014"
+          "chunk:chunk_021"
         ],
         "search_type": "text"
       },
@@ -336,12 +186,11 @@
         "phase1_query_id": "Q1",
         "query": "optimized design produced by Radiator 2",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "section:section_005",
           "chunk:chunk_022",
-          "chunk:chunk_025",
-          "chunk:chunk_004",
-          "section:section_006"
+          "chunk:chunk_025"
         ],
         "search_type": "text"
       },
@@ -350,12 +199,11 @@
         "phase1_query_id": "Q2",
         "query": "Step 4 circularly slotted triangular patch antenna",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "chunk:chunk_024",
           "section:section_009",
-          "section:section_006",
-          "chunk:chunk_005",
-          "chunk:chunk_013"
+          "section:section_006"
         ],
         "search_type": "text"
       },
@@ -364,12 +212,11 @@
         "phase1_query_id": "Q3",
         "query": "various radiators",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "chunk:chunk_027",
           "chunk:chunk_025",
-          "chunk:chunk_030",
-          "chunk:chunk_018",
-          "chunk:chunk_029"
+          "chunk:chunk_030"
         ],
         "search_type": "text"
       },
@@ -378,12 +225,11 @@
         "phase1_query_id": "Q4",
         "query": "various radii of circular slots of the CSTPA",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "chunk:chunk_031",
           "chunk:chunk_015",
-          "section:section_003",
-          "chunk:chunk_014",
-          "section:section_002"
+          "section:section_003"
         ],
         "search_type": "text"
       },
@@ -392,12 +238,11 @@
         "phase1_query_id": "Q5",
         "query": "simulated dimensions of various configurations",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "chunk:chunk_020",
           "chunk:chunk_018",
-          "chunk:chunk_014",
-          "section:section_003",
-          "chunk:chunk_032"
+          "chunk:chunk_014"
         ],
         "search_type": "text"
       }
@@ -406,60 +251,55 @@
       {
         "query": "antenna geometry",
         "query_source": "base_plan",
-        "result_evidence_ids": [
+        "retrieved_count": 5,
+        "sample_result_evidence_ids": [
           "chunk:chunk_015",
           "section:section_003",
-          "chunk:chunk_033",
-          "chunk:chunk_034",
-          "chunk:chunk_032"
+          "chunk:chunk_033"
         ],
         "search_type": "text"
       },
       {
         "query": "radiating element",
         "query_source": "base_plan",
-        "result_evidence_ids": [
+        "retrieved_count": 5,
+        "sample_result_evidence_ids": [
           "chunk:chunk_007",
           "chunk:chunk_034",
-          "chunk:chunk_036",
-          "chunk:chunk_032",
-          "chunk:chunk_033"
+          "chunk:chunk_036"
         ],
         "search_type": "text"
       },
       {
         "query": "slot geometry",
         "query_source": "base_plan",
-        "result_evidence_ids": [
+        "retrieved_count": 5,
+        "sample_result_evidence_ids": [
           "chunk:chunk_015",
           "chunk:chunk_021",
-          "section:section_004",
-          "chunk:chunk_020",
-          "chunk:chunk_024"
+          "section:section_004"
         ],
         "search_type": "text"
       },
       {
         "query": "ground plane geometry",
         "query_source": "base_plan",
-        "result_evidence_ids": [
+        "retrieved_count": 5,
+        "sample_result_evidence_ids": [
           "chunk:chunk_010",
           "chunk:chunk_008",
-          "section:section_003",
-          "chunk:chunk_012",
-          "chunk:chunk_018"
+          "section:section_003"
         ],
         "search_type": "text"
       },
       {
         "query": "antenna geometry",
         "query_source": "base_plan",
-        "result_evidence_ids": [
+        "retrieved_count": 5,
+        "sample_result_evidence_ids": [
           "figure:figure_009",
           "figure:figure_010",
-          "figure:figure_001",
-          "figure:figure_006",
-          "figure:figure_005"
+          "figure:figure_001"
         ],
         "search_type": "figures"
       },
@@ -468,124 +308,63 @@
         "phase1_query_id": "Q1",
         "query": "optimized design produced by Radiator 2",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "section:section_005",
           "chunk:chunk_022",
-          "chunk:chunk_025",
-          "chunk:chunk_004",
+          "chunk:chunk_025"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.HIGH",
+        "phase1_query_id": "Q2",
+        "query": "Step 4 circularly slotted triangular patch antenna",
+        "query_source": "phase1_interpretation_map",
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
+          "chunk:chunk_024",
+          "section:section_009",
           "section:section_006"
         ],
         "search_type": "text"
       },
       {
-        "phase1_priority": "SearchPriority.HIGH",
-        "phase1_query_id": "Q1",
-        "query": "optimized design produced by Radiator 2",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "figure:figure_008",
-          "figure:figure_006",
-          "figure:figure_005",
-          "figure:figure_004",
-          "figure:figure_009"
-        ],
-        "search_type": "figures"
-      },
-      {
-        "phase1_priority": "SearchPriority.HIGH",
-        "phase1_query_id": "Q2",
-        "query": "Step 4 circularly slotted triangular patch antenna",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "chunk:chunk_024",
-          "section:section_009",
-          "section:section_006",
-          "chunk:chunk_005",
-          "chunk:chunk_013"
-        ],
-        "search_type": "text"
-      },
-      {
-        "phase1_priority": "SearchPriority.HIGH",
-        "phase1_query_id": "Q2",
-        "query": "Step 4 circularly slotted triangular patch antenna",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "figure:figure_001",
-          "figure:figure_002",
-          "figure:figure_006",
-          "figure:figure_005",
-          "figure:figure_004"
-        ],
-        "search_type": "figures"
-      },
-      {
         "phase1_priority": "SearchPriority.MEDIUM",
         "phase1_query_id": "Q3",
         "query": "various radiators",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "chunk:chunk_027",
           "chunk:chunk_025",
-          "chunk:chunk_030",
-          "chunk:chunk_018",
-          "chunk:chunk_029"
+          "chunk:chunk_030"
         ],
         "search_type": "text"
-      },
-      {
-        "phase1_priority": "SearchPriority.MEDIUM",
-        "phase1_query_id": "Q3",
-        "query": "various radiators",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "figure:figure_009",
-          "figure:figure_008",
-          "figure:figure_006",
-          "figure:figure_005",
-          "figure:figure_004"
-        ],
-        "search_type": "figures"
       },
       {
         "phase1_priority": "SearchPriority.MEDIUM",
         "phase1_query_id": "Q4",
         "query": "various radii of circular slots of the CSTPA",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "chunk:chunk_031",
           "chunk:chunk_015",
-          "section:section_003",
-          "chunk:chunk_014",
-          "section:section_002"
+          "section:section_003"
         ],
         "search_type": "text"
-      },
-      {
-        "phase1_priority": "SearchPriority.MEDIUM",
-        "phase1_query_id": "Q4",
-        "query": "various radii of circular slots of the CSTPA",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "figure:figure_008",
-          "figure:figure_006",
-          "figure:figure_005",
-          "figure:figure_004",
-          "figure:figure_010"
-        ],
-        "search_type": "figures"
       },
       {
         "phase1_priority": "SearchPriority.LOW",
         "phase1_query_id": "Q5",
         "query": "simulated dimensions of various configurations",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "chunk:chunk_020",
           "chunk:chunk_018",
-          "chunk:chunk_014",
-          "section:section_003",
-          "chunk:chunk_032"
+          "chunk:chunk_014"
         ],
         "search_type": "text"
       },
@@ -594,12 +373,11 @@
         "phase1_query_id": "Q5",
         "query": "simulated dimensions of various configurations",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "figure:figure_009",
           "figure:figure_008",
-          "figure:figure_006",
-          "figure:figure_005",
-          "figure:figure_004"
+          "figure:figure_006"
         ],
         "search_type": "figures"
       }
@@ -608,60 +386,55 @@
       {
         "query": "feeding method",
         "query_source": "base_plan",
-        "result_evidence_ids": [
+        "retrieved_count": 5,
+        "sample_result_evidence_ids": [
           "chunk:chunk_007",
           "chunk:chunk_034",
-          "chunk:chunk_016",
-          "chunk:chunk_019",
-          "chunk:chunk_073"
+          "chunk:chunk_016"
         ],
         "search_type": "text"
       },
       {
         "query": "feed type",
         "query_source": "base_plan",
-        "result_evidence_ids": [
+        "retrieved_count": 5,
+        "sample_result_evidence_ids": [
           "chunk:chunk_006",
           "chunk:chunk_005",
-          "section:section_002",
-          "chunk:chunk_004",
-          "chunk:chunk_011"
+          "section:section_002"
         ],
         "search_type": "text"
       },
       {
         "query": "feed location",
         "query_source": "base_plan",
-        "result_evidence_ids": [
+        "retrieved_count": 5,
+        "sample_result_evidence_ids": [
           "chunk:chunk_006",
           "chunk:chunk_005",
-          "section:section_002",
-          "chunk:chunk_004",
-          "chunk:chunk_011"
+          "section:section_002"
         ],
         "search_type": "text"
       },
       {
         "query": "input port",
         "query_source": "base_plan",
-        "result_evidence_ids": [
+        "retrieved_count": 5,
+        "sample_result_evidence_ids": [
           "chunk:chunk_006",
           "chunk:chunk_021",
-          "section:section_004",
-          "chunk:chunk_064",
-          "chunk:chunk_012"
+          "section:section_004"
         ],
         "search_type": "text"
       },
       {
         "query": "input impedance",
         "query_source": "base_plan",
-        "result_evidence_ids": [
+        "retrieved_count": 5,
+        "sample_result_evidence_ids": [
           "section:section_004",
           "chunk:chunk_021",
-          "chunk:chunk_007",
-          "chunk:chunk_057",
-          "chunk:chunk_035"
+          "chunk:chunk_007"
         ],
         "search_type": "text"
       },
@@ -670,12 +443,11 @@
         "phase1_query_id": "Q1",
         "query": "optimized design produced by Radiator 2",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "section:section_005",
           "chunk:chunk_022",
-          "chunk:chunk_025",
-          "chunk:chunk_004",
-          "section:section_006"
+          "chunk:chunk_025"
         ],
         "search_type": "text"
       },
@@ -684,12 +456,11 @@
         "phase1_query_id": "Q2",
         "query": "Step 4 circularly slotted triangular patch antenna",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "chunk:chunk_024",
           "section:section_009",
-          "section:section_006",
-          "chunk:chunk_005",
-          "chunk:chunk_013"
+          "section:section_006"
         ],
         "search_type": "text"
       },
@@ -698,12 +469,11 @@
         "phase1_query_id": "Q3",
         "query": "various radiators",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "chunk:chunk_027",
           "chunk:chunk_025",
-          "chunk:chunk_030",
-          "chunk:chunk_018",
-          "chunk:chunk_029"
+          "chunk:chunk_030"
         ],
         "search_type": "text"
       },
@@ -712,12 +482,11 @@
         "phase1_query_id": "Q4",
         "query": "various radii of circular slots of the CSTPA",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "chunk:chunk_031",
           "chunk:chunk_015",
-          "section:section_003",
-          "chunk:chunk_014",
-          "section:section_002"
+          "section:section_003"
         ],
         "search_type": "text"
       },
@@ -726,12 +495,11 @@
         "phase1_query_id": "Q5",
         "query": "simulated dimensions of various configurations",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "chunk:chunk_020",
           "chunk:chunk_018",
-          "chunk:chunk_014",
-          "section:section_003",
-          "chunk:chunk_032"
+          "chunk:chunk_014"
         ],
         "search_type": "text"
       }
@@ -740,55 +508,52 @@
       {
         "query": "layer stack",
         "query_source": "base_plan",
-        "result_evidence_ids": [
+        "retrieved_count": 5,
+        "sample_result_evidence_ids": [
           "chunk:chunk_008",
           "chunk:chunk_007",
-          "chunk:chunk_014",
-          "chunk:chunk_016",
-          "chunk:chunk_020"
+          "chunk:chunk_014"
         ],
         "search_type": "text"
       },
       {
         "query": "substrate thickness",
         "query_source": "base_plan",
-        "result_evidence_ids": [
+        "retrieved_count": 5,
+        "sample_result_evidence_ids": [
           "chunk:chunk_020",
           "chunk:chunk_015",
-          "section:section_003",
-          "chunk:chunk_035",
-          "chunk:chunk_036"
+          "section:section_003"
         ],
         "search_type": "text"
       },
       {
         "query": "metal thickness",
         "query_source": "base_plan",
-        "result_evidence_ids": [
+        "retrieved_count": 5,
+        "sample_result_evidence_ids": [
           "chunk:chunk_015",
           "chunk:chunk_020",
-          "section:section_003",
-          "chunk:chunk_036",
-          "chunk:chunk_035"
+          "section:section_003"
         ],
         "search_type": "text"
       },
       {
         "query": "ground plane",
         "query_source": "base_plan",
-        "result_evidence_ids": [
+        "retrieved_count": 5,
+        "sample_result_evidence_ids": [
           "chunk:chunk_008",
           "chunk:chunk_010",
-          "chunk:chunk_012",
-          "chunk:chunk_055",
-          "chunk:chunk_017"
+          "chunk:chunk_012"
         ],
         "search_type": "text"
       },
       {
         "query": "thickness",
         "query_source": "base_plan",
-        "result_evidence_ids": [
+        "retrieved_count": 2,
+        "sample_result_evidence_ids": [
           "table:table_001",
           "table:table_003"
         ],
@@ -799,111 +564,63 @@
         "phase1_query_id": "Q1",
         "query": "optimized design produced by Radiator 2",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "section:section_005",
           "chunk:chunk_022",
-          "chunk:chunk_025",
-          "chunk:chunk_004",
+          "chunk:chunk_025"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.HIGH",
+        "phase1_query_id": "Q2",
+        "query": "Step 4 circularly slotted triangular patch antenna",
+        "query_source": "phase1_interpretation_map",
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
+          "chunk:chunk_024",
+          "section:section_009",
           "section:section_006"
         ],
         "search_type": "text"
       },
       {
-        "phase1_priority": "SearchPriority.HIGH",
-        "phase1_query_id": "Q1",
-        "query": "optimized design produced by Radiator 2",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "table:table_002",
-          "table:table_001"
-        ],
-        "search_type": "tables"
-      },
-      {
-        "phase1_priority": "SearchPriority.HIGH",
-        "phase1_query_id": "Q2",
-        "query": "Step 4 circularly slotted triangular patch antenna",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "chunk:chunk_024",
-          "section:section_009",
-          "section:section_006",
-          "chunk:chunk_005",
-          "chunk:chunk_013"
-        ],
-        "search_type": "text"
-      },
-      {
-        "phase1_priority": "SearchPriority.HIGH",
-        "phase1_query_id": "Q2",
-        "query": "Step 4 circularly slotted triangular patch antenna",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "table:table_002",
-          "table:table_001",
-          "table:table_003"
-        ],
-        "search_type": "tables"
-      },
-      {
         "phase1_priority": "SearchPriority.MEDIUM",
         "phase1_query_id": "Q3",
         "query": "various radiators",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "chunk:chunk_027",
           "chunk:chunk_025",
-          "chunk:chunk_030",
-          "chunk:chunk_018",
-          "chunk:chunk_029"
+          "chunk:chunk_030"
         ],
         "search_type": "text"
-      },
-      {
-        "phase1_priority": "SearchPriority.MEDIUM",
-        "phase1_query_id": "Q3",
-        "query": "various radiators",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "table:table_001"
-        ],
-        "search_type": "tables"
       },
       {
         "phase1_priority": "SearchPriority.MEDIUM",
         "phase1_query_id": "Q4",
         "query": "various radii of circular slots of the CSTPA",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "chunk:chunk_031",
           "chunk:chunk_015",
-          "section:section_003",
-          "chunk:chunk_014",
-          "section:section_002"
+          "section:section_003"
         ],
         "search_type": "text"
-      },
-      {
-        "phase1_priority": "SearchPriority.MEDIUM",
-        "phase1_query_id": "Q4",
-        "query": "various radii of circular slots of the CSTPA",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "table:table_001"
-        ],
-        "search_type": "tables"
       },
       {
         "phase1_priority": "SearchPriority.LOW",
         "phase1_query_id": "Q5",
         "query": "simulated dimensions of various configurations",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "chunk:chunk_020",
           "chunk:chunk_018",
-          "chunk:chunk_014",
-          "section:section_003",
-          "chunk:chunk_032"
+          "chunk:chunk_014"
         ],
         "search_type": "text"
       },
@@ -912,7 +629,8 @@
         "phase1_query_id": "Q5",
         "query": "simulated dimensions of various configurations",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "table:table_001",
           "table:table_002",
           "table:table_003"
@@ -924,43 +642,41 @@
       {
         "query": "substrate material",
         "query_source": "base_plan",
-        "result_evidence_ids": [
+        "retrieved_count": 5,
+        "sample_result_evidence_ids": [
           "chunk:chunk_020",
           "chunk:chunk_015",
-          "section:section_003",
-          "chunk:chunk_055",
-          "chunk:chunk_068"
+          "section:section_003"
         ],
         "search_type": "text"
       },
       {
         "query": "dielectric material",
         "query_source": "base_plan",
-        "result_evidence_ids": [
+        "retrieved_count": 5,
+        "sample_result_evidence_ids": [
           "chunk:chunk_039",
           "chunk:chunk_055",
-          "chunk:chunk_015",
-          "chunk:chunk_003",
-          "chunk:chunk_032"
+          "chunk:chunk_015"
         ],
         "search_type": "text"
       },
       {
         "query": "conductor material",
         "query_source": "base_plan",
-        "result_evidence_ids": [
+        "retrieved_count": 5,
+        "sample_result_evidence_ids": [
           "chunk:chunk_055",
           "chunk:chunk_003",
-          "chunk:chunk_015",
-          "chunk:chunk_007",
-          "chunk:chunk_006"
+          "chunk:chunk_015"
         ],
         "search_type": "text"
       },
       {
         "query": "material",
         "query_source": "base_plan",
-        "result_evidence_ids": [
+        "retrieved_count": 1,
+        "sample_result_evidence_ids": [
           "table:table_001"
         ],
         "search_type": "tables"
@@ -970,111 +686,63 @@
         "phase1_query_id": "Q1",
         "query": "optimized design produced by Radiator 2",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "section:section_005",
           "chunk:chunk_022",
-          "chunk:chunk_025",
-          "chunk:chunk_004",
+          "chunk:chunk_025"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.HIGH",
+        "phase1_query_id": "Q2",
+        "query": "Step 4 circularly slotted triangular patch antenna",
+        "query_source": "phase1_interpretation_map",
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
+          "chunk:chunk_024",
+          "section:section_009",
           "section:section_006"
         ],
         "search_type": "text"
       },
       {
-        "phase1_priority": "SearchPriority.HIGH",
-        "phase1_query_id": "Q1",
-        "query": "optimized design produced by Radiator 2",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "table:table_002",
-          "table:table_001"
-        ],
-        "search_type": "tables"
-      },
-      {
-        "phase1_priority": "SearchPriority.HIGH",
-        "phase1_query_id": "Q2",
-        "query": "Step 4 circularly slotted triangular patch antenna",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "chunk:chunk_024",
-          "section:section_009",
-          "section:section_006",
-          "chunk:chunk_005",
-          "chunk:chunk_013"
-        ],
-        "search_type": "text"
-      },
-      {
-        "phase1_priority": "SearchPriority.HIGH",
-        "phase1_query_id": "Q2",
-        "query": "Step 4 circularly slotted triangular patch antenna",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "table:table_002",
-          "table:table_001",
-          "table:table_003"
-        ],
-        "search_type": "tables"
-      },
-      {
         "phase1_priority": "SearchPriority.MEDIUM",
         "phase1_query_id": "Q3",
         "query": "various radiators",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "chunk:chunk_027",
           "chunk:chunk_025",
-          "chunk:chunk_030",
-          "chunk:chunk_018",
-          "chunk:chunk_029"
+          "chunk:chunk_030"
         ],
         "search_type": "text"
-      },
-      {
-        "phase1_priority": "SearchPriority.MEDIUM",
-        "phase1_query_id": "Q3",
-        "query": "various radiators",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "table:table_001"
-        ],
-        "search_type": "tables"
       },
       {
         "phase1_priority": "SearchPriority.MEDIUM",
         "phase1_query_id": "Q4",
         "query": "various radii of circular slots of the CSTPA",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "chunk:chunk_031",
           "chunk:chunk_015",
-          "section:section_003",
-          "chunk:chunk_014",
-          "section:section_002"
+          "section:section_003"
         ],
         "search_type": "text"
-      },
-      {
-        "phase1_priority": "SearchPriority.MEDIUM",
-        "phase1_query_id": "Q4",
-        "query": "various radii of circular slots of the CSTPA",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "table:table_001"
-        ],
-        "search_type": "tables"
       },
       {
         "phase1_priority": "SearchPriority.LOW",
         "phase1_query_id": "Q5",
         "query": "simulated dimensions of various configurations",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "chunk:chunk_020",
           "chunk:chunk_018",
-          "chunk:chunk_014",
-          "section:section_003",
-          "chunk:chunk_032"
+          "chunk:chunk_014"
         ],
         "search_type": "text"
       },
@@ -1083,7 +751,8 @@
         "phase1_query_id": "Q5",
         "query": "simulated dimensions of various configurations",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "table:table_001",
           "table:table_002",
           "table:table_003"
@@ -1095,7 +764,8 @@
       {
         "query": "dimensions",
         "query_source": "base_plan",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "table:table_001",
           "table:table_003",
           "table:table_002"
@@ -1105,7 +775,8 @@
       {
         "query": "design parameters",
         "query_source": "base_plan",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "table:table_001",
           "table:table_002",
           "table:table_003"
@@ -1115,36 +786,33 @@
       {
         "query": "geometrical parameters",
         "query_source": "base_plan",
-        "result_evidence_ids": [
+        "retrieved_count": 5,
+        "sample_result_evidence_ids": [
           "chunk:chunk_020",
           "chunk:chunk_016",
-          "chunk:chunk_018",
-          "chunk:chunk_036",
-          "section:section_003"
+          "chunk:chunk_018"
         ],
         "search_type": "text"
       },
       {
         "query": "table of dimensions",
         "query_source": "base_plan",
-        "result_evidence_ids": [
+        "retrieved_count": 5,
+        "sample_result_evidence_ids": [
           "chunk:chunk_018",
           "chunk:chunk_019",
-          "section:section_003",
-          "chunk:chunk_020",
-          "chunk:chunk_039"
+          "section:section_003"
         ],
         "search_type": "text"
       },
       {
         "query": "operating frequency",
         "query_source": "base_plan",
-        "result_evidence_ids": [
+        "retrieved_count": 5,
+        "sample_result_evidence_ids": [
           "chunk:chunk_023",
           "chunk:chunk_039",
-          "chunk:chunk_041",
-          "chunk:chunk_060",
-          "section:section_008"
+          "chunk:chunk_041"
         ],
         "search_type": "text"
       },
@@ -1153,73 +821,37 @@
         "phase1_query_id": "Q1",
         "query": "optimized design produced by Radiator 2",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "table:table_002",
-          "table:table_001"
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
+          "section:section_005",
+          "chunk:chunk_022",
+          "chunk:chunk_025"
         ],
-        "search_type": "tables"
+        "search_type": "text"
       },
       {
         "phase1_priority": "SearchPriority.HIGH",
-        "phase1_query_id": "Q1",
-        "query": "optimized design produced by Radiator 2",
+        "phase1_query_id": "Q2",
+        "query": "Step 4 circularly slotted triangular patch antenna",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "section:section_005",
-          "chunk:chunk_022",
-          "chunk:chunk_025",
-          "chunk:chunk_004",
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
+          "chunk:chunk_024",
+          "section:section_009",
           "section:section_006"
         ],
         "search_type": "text"
       },
       {
-        "phase1_priority": "SearchPriority.HIGH",
-        "phase1_query_id": "Q2",
-        "query": "Step 4 circularly slotted triangular patch antenna",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "table:table_002",
-          "table:table_001",
-          "table:table_003"
-        ],
-        "search_type": "tables"
-      },
-      {
-        "phase1_priority": "SearchPriority.HIGH",
-        "phase1_query_id": "Q2",
-        "query": "Step 4 circularly slotted triangular patch antenna",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "chunk:chunk_024",
-          "section:section_009",
-          "section:section_006",
-          "chunk:chunk_005",
-          "chunk:chunk_013"
-        ],
-        "search_type": "text"
-      },
-      {
         "phase1_priority": "SearchPriority.MEDIUM",
         "phase1_query_id": "Q3",
         "query": "various radiators",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "table:table_001"
-        ],
-        "search_type": "tables"
-      },
-      {
-        "phase1_priority": "SearchPriority.MEDIUM",
-        "phase1_query_id": "Q3",
-        "query": "various radiators",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "chunk:chunk_027",
           "chunk:chunk_025",
-          "chunk:chunk_030",
-          "chunk:chunk_018",
-          "chunk:chunk_029"
+          "chunk:chunk_030"
         ],
         "search_type": "text"
       },
@@ -1228,22 +860,11 @@
         "phase1_query_id": "Q4",
         "query": "various radii of circular slots of the CSTPA",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "table:table_001"
-        ],
-        "search_type": "tables"
-      },
-      {
-        "phase1_priority": "SearchPriority.MEDIUM",
-        "phase1_query_id": "Q4",
-        "query": "various radii of circular slots of the CSTPA",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "chunk:chunk_031",
           "chunk:chunk_015",
-          "section:section_003",
-          "chunk:chunk_014",
-          "section:section_002"
+          "section:section_003"
         ],
         "search_type": "text"
       },
@@ -1252,86 +873,81 @@
         "phase1_query_id": "Q5",
         "query": "simulated dimensions of various configurations",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
+          "chunk:chunk_020",
+          "chunk:chunk_018",
+          "chunk:chunk_014"
+        ],
+        "search_type": "text"
+      },
+      {
+        "phase1_priority": "SearchPriority.LOW",
+        "phase1_query_id": "Q5",
+        "query": "simulated dimensions of various configurations",
+        "query_source": "phase1_interpretation_map",
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "table:table_001",
           "table:table_002",
           "table:table_003"
         ],
         "search_type": "tables"
-      },
-      {
-        "phase1_priority": "SearchPriority.LOW",
-        "phase1_query_id": "Q5",
-        "query": "simulated dimensions of various configurations",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "chunk:chunk_020",
-          "chunk:chunk_018",
-          "chunk:chunk_014",
-          "section:section_003",
-          "chunk:chunk_032"
-        ],
-        "search_type": "text"
       }
     ],
     "quality": [
       {
         "query": "bandwidth",
         "query_source": "base_plan",
-        "result_evidence_ids": [
+        "retrieved_count": 5,
+        "sample_result_evidence_ids": [
           "chunk:chunk_023",
           "chunk:chunk_030",
-          "chunk:chunk_026",
-          "chunk:chunk_025",
-          "chunk:chunk_028"
+          "chunk:chunk_026"
         ],
         "search_type": "text"
       },
       {
         "query": "gain",
         "query_source": "base_plan",
-        "result_evidence_ids": [
+        "retrieved_count": 5,
+        "sample_result_evidence_ids": [
           "chunk:chunk_040",
           "chunk:chunk_023",
-          "chunk:chunk_034",
-          "chunk:chunk_038",
-          "section:section_005"
+          "chunk:chunk_034"
         ],
         "search_type": "text"
       },
       {
         "query": "return loss",
         "query_source": "base_plan",
-        "result_evidence_ids": [
+        "retrieved_count": 5,
+        "sample_result_evidence_ids": [
           "chunk:chunk_040",
           "chunk:chunk_038",
-          "chunk:chunk_019",
-          "chunk:chunk_058",
-          "chunk:chunk_059"
+          "chunk:chunk_019"
         ],
         "search_type": "text"
       },
       {
         "query": "reflection coefficient",
         "query_source": "base_plan",
-        "result_evidence_ids": [
+        "retrieved_count": 5,
+        "sample_result_evidence_ids": [
           "chunk:chunk_038",
           "chunk:chunk_039",
-          "chunk:chunk_040",
-          "chunk:chunk_032",
-          "chunk:chunk_036"
+          "chunk:chunk_040"
         ],
         "search_type": "text"
       },
       {
         "query": "VSWR",
         "query_source": "base_plan",
-        "result_evidence_ids": [
+        "retrieved_count": 5,
+        "sample_result_evidence_ids": [
           "chunk:chunk_068",
           "chunk:chunk_054",
-          "chunk:chunk_042",
-          "chunk:chunk_073",
-          "chunk:chunk_019"
+          "chunk:chunk_042"
         ],
         "search_type": "text"
       },
@@ -1340,12 +956,11 @@
         "phase1_query_id": "Q1",
         "query": "optimized design produced by Radiator 2",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "section:section_005",
           "chunk:chunk_022",
-          "chunk:chunk_025",
-          "chunk:chunk_004",
-          "section:section_006"
+          "chunk:chunk_025"
         ],
         "search_type": "text"
       },
@@ -1354,12 +969,11 @@
         "phase1_query_id": "Q2",
         "query": "Step 4 circularly slotted triangular patch antenna",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "chunk:chunk_024",
           "section:section_009",
-          "section:section_006",
-          "chunk:chunk_005",
-          "chunk:chunk_013"
+          "section:section_006"
         ],
         "search_type": "text"
       },
@@ -1368,12 +982,11 @@
         "phase1_query_id": "Q3",
         "query": "various radiators",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "chunk:chunk_027",
           "chunk:chunk_025",
-          "chunk:chunk_030",
-          "chunk:chunk_018",
-          "chunk:chunk_029"
+          "chunk:chunk_030"
         ],
         "search_type": "text"
       },
@@ -1382,12 +995,11 @@
         "phase1_query_id": "Q4",
         "query": "various radii of circular slots of the CSTPA",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "chunk:chunk_031",
           "chunk:chunk_015",
-          "section:section_003",
-          "chunk:chunk_014",
-          "section:section_002"
+          "section:section_003"
         ],
         "search_type": "text"
       },
@@ -1396,258 +1008,121 @@
         "phase1_query_id": "Q5",
         "query": "simulated dimensions of various configurations",
         "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
+        "retrieved_count": 3,
+        "sample_result_evidence_ids": [
           "chunk:chunk_020",
           "chunk:chunk_018",
-          "chunk:chunk_014",
-          "section:section_003",
-          "chunk:chunk_032"
+          "chunk:chunk_014"
         ],
         "search_type": "text"
       }
     ]
   },
   "retrieved_evidence_ids_per_block": {
-    "classification": [
-      "chunk:chunk_033",
-      "chunk:chunk_032",
-      "chunk:chunk_034",
-      "chunk:chunk_008",
-      "chunk:chunk_013",
-      "chunk:chunk_014",
-      "chunk:chunk_024",
-      "chunk:chunk_037",
-      "chunk:chunk_040",
-      "section:section_006",
-      "chunk:chunk_015",
-      "chunk:chunk_045",
-      "chunk:chunk_025",
-      "chunk:chunk_068",
-      "chunk:chunk_019",
-      "section:section_004",
-      "chunk:chunk_021",
-      "chunk:chunk_031",
-      "section:section_005",
-      "chunk:chunk_022",
-      "chunk:chunk_004",
-      "section:section_009",
-      "chunk:chunk_005",
-      "chunk:chunk_027",
-      "chunk:chunk_030",
-      "chunk:chunk_018",
-      "chunk:chunk_029",
-      "section:section_003",
-      "section:section_002",
-      "chunk:chunk_020"
-    ],
-    "entities": [
-      "chunk:chunk_015",
-      "section:section_003",
-      "chunk:chunk_033",
-      "chunk:chunk_034",
-      "chunk:chunk_032",
-      "chunk:chunk_007",
-      "chunk:chunk_036",
-      "chunk:chunk_021",
-      "section:section_004",
-      "chunk:chunk_020",
-      "chunk:chunk_024",
-      "chunk:chunk_010",
-      "chunk:chunk_008",
-      "chunk:chunk_012",
-      "chunk:chunk_018",
-      "figure:figure_009",
-      "figure:figure_010",
-      "figure:figure_001",
-      "figure:figure_006",
-      "figure:figure_005",
-      "section:section_005",
-      "chunk:chunk_022",
-      "chunk:chunk_025",
-      "chunk:chunk_004",
-      "section:section_006",
-      "figure:figure_008",
-      "figure:figure_004",
-      "section:section_009",
-      "chunk:chunk_005",
-      "chunk:chunk_013",
-      "figure:figure_002",
-      "chunk:chunk_027",
-      "chunk:chunk_030",
-      "chunk:chunk_029",
-      "chunk:chunk_031",
-      "chunk:chunk_014",
-      "section:section_002"
-    ],
-    "feeds": [
-      "chunk:chunk_007",
-      "chunk:chunk_034",
-      "chunk:chunk_016",
-      "chunk:chunk_019",
-      "chunk:chunk_073",
-      "chunk:chunk_006",
-      "chunk:chunk_005",
-      "section:section_002",
-      "chunk:chunk_004",
-      "chunk:chunk_011",
-      "chunk:chunk_021",
-      "section:section_004",
-      "chunk:chunk_064",
-      "chunk:chunk_012",
-      "chunk:chunk_057",
-      "chunk:chunk_035",
-      "section:section_005",
-      "chunk:chunk_022",
-      "chunk:chunk_025",
-      "section:section_006",
-      "chunk:chunk_024",
-      "section:section_009",
-      "chunk:chunk_013",
-      "chunk:chunk_027",
-      "chunk:chunk_030",
-      "chunk:chunk_018",
-      "chunk:chunk_029",
-      "chunk:chunk_031",
-      "chunk:chunk_015",
-      "section:section_003",
-      "chunk:chunk_014",
-      "chunk:chunk_020",
-      "chunk:chunk_032"
-    ],
-    "layers": [
-      "chunk:chunk_008",
-      "chunk:chunk_007",
-      "chunk:chunk_014",
-      "chunk:chunk_016",
-      "chunk:chunk_020",
-      "chunk:chunk_015",
-      "section:section_003",
-      "chunk:chunk_035",
-      "chunk:chunk_036",
-      "chunk:chunk_010",
-      "chunk:chunk_012",
-      "chunk:chunk_055",
-      "chunk:chunk_017",
-      "table:table_001",
-      "table:table_003",
-      "section:section_005",
-      "chunk:chunk_022",
-      "chunk:chunk_025",
-      "chunk:chunk_004",
-      "section:section_006",
-      "table:table_002",
-      "chunk:chunk_024",
-      "section:section_009",
-      "chunk:chunk_005",
-      "chunk:chunk_013",
-      "chunk:chunk_027",
-      "chunk:chunk_030",
-      "chunk:chunk_018",
-      "chunk:chunk_029",
-      "chunk:chunk_031",
-      "section:section_002",
-      "chunk:chunk_032"
-    ],
-    "materials": [
-      "chunk:chunk_020",
-      "chunk:chunk_015",
-      "section:section_003",
-      "chunk:chunk_055",
-      "chunk:chunk_068",
-      "chunk:chunk_039",
-      "chunk:chunk_003",
-      "chunk:chunk_032",
-      "chunk:chunk_007",
-      "chunk:chunk_006",
-      "table:table_001",
-      "section:section_005",
-      "chunk:chunk_022",
-      "chunk:chunk_025",
-      "chunk:chunk_004",
-      "section:section_006",
-      "table:table_002",
-      "chunk:chunk_024",
-      "section:section_009",
-      "chunk:chunk_005",
-      "chunk:chunk_013",
-      "table:table_003",
-      "chunk:chunk_027",
-      "chunk:chunk_030",
-      "chunk:chunk_018",
-      "chunk:chunk_029",
-      "chunk:chunk_031",
-      "chunk:chunk_014",
-      "section:section_002"
-    ],
-    "parameters": [
-      "table:table_001",
-      "table:table_003",
-      "table:table_002",
-      "chunk:chunk_020",
-      "chunk:chunk_016",
-      "chunk:chunk_018",
-      "chunk:chunk_036",
-      "section:section_003",
-      "chunk:chunk_019",
-      "chunk:chunk_039",
-      "chunk:chunk_023",
-      "chunk:chunk_041",
-      "chunk:chunk_060",
-      "section:section_008",
-      "section:section_005",
-      "chunk:chunk_022",
-      "chunk:chunk_025",
-      "chunk:chunk_004",
-      "section:section_006",
-      "chunk:chunk_024",
-      "section:section_009",
-      "chunk:chunk_005",
-      "chunk:chunk_013",
-      "chunk:chunk_027",
-      "chunk:chunk_030",
-      "chunk:chunk_029",
-      "chunk:chunk_031",
-      "chunk:chunk_015",
-      "chunk:chunk_014",
-      "section:section_002",
-      "chunk:chunk_032"
-    ],
-    "quality": [
-      "chunk:chunk_023",
-      "chunk:chunk_030",
-      "chunk:chunk_026",
-      "chunk:chunk_025",
-      "chunk:chunk_028",
-      "chunk:chunk_040",
-      "chunk:chunk_034",
-      "chunk:chunk_038",
-      "section:section_005",
-      "chunk:chunk_019",
-      "chunk:chunk_058",
-      "chunk:chunk_059",
-      "chunk:chunk_039",
-      "chunk:chunk_032",
-      "chunk:chunk_036",
-      "chunk:chunk_068",
-      "chunk:chunk_054",
-      "chunk:chunk_042",
-      "chunk:chunk_073",
-      "chunk:chunk_022",
-      "chunk:chunk_004",
-      "section:section_006",
-      "chunk:chunk_024",
-      "section:section_009",
-      "chunk:chunk_005",
-      "chunk:chunk_013",
-      "chunk:chunk_027",
-      "chunk:chunk_018",
-      "chunk:chunk_029",
-      "chunk:chunk_031",
-      "chunk:chunk_015",
-      "section:section_003",
-      "chunk:chunk_014",
-      "section:section_002",
-      "chunk:chunk_020"
-    ]
+    "classification": {
+      "count": 26,
+      "sample_evidence_ids": [
+        "chunk:chunk_033",
+        "chunk:chunk_032",
+        "chunk:chunk_034",
+        "chunk:chunk_008",
+        "chunk:chunk_013",
+        "chunk:chunk_014",
+        "chunk:chunk_024",
+        "chunk:chunk_037",
+        "chunk:chunk_040",
+        "section:section_006"
+      ]
+    },
+    "entities": {
+      "count": 30,
+      "sample_evidence_ids": [
+        "chunk:chunk_015",
+        "section:section_003",
+        "chunk:chunk_033",
+        "chunk:chunk_034",
+        "chunk:chunk_032",
+        "chunk:chunk_007",
+        "chunk:chunk_036",
+        "chunk:chunk_021",
+        "section:section_004",
+        "chunk:chunk_020"
+      ]
+    },
+    "feeds": {
+      "count": 30,
+      "sample_evidence_ids": [
+        "chunk:chunk_007",
+        "chunk:chunk_034",
+        "chunk:chunk_016",
+        "chunk:chunk_019",
+        "chunk:chunk_073",
+        "chunk:chunk_006",
+        "chunk:chunk_005",
+        "section:section_002",
+        "chunk:chunk_004",
+        "chunk:chunk_011"
+      ]
+    },
+    "layers": {
+      "count": 26,
+      "sample_evidence_ids": [
+        "chunk:chunk_008",
+        "chunk:chunk_007",
+        "chunk:chunk_014",
+        "chunk:chunk_016",
+        "chunk:chunk_020",
+        "chunk:chunk_015",
+        "section:section_003",
+        "chunk:chunk_035",
+        "chunk:chunk_036",
+        "chunk:chunk_010"
+      ]
+    },
+    "materials": {
+      "count": 24,
+      "sample_evidence_ids": [
+        "chunk:chunk_020",
+        "chunk:chunk_015",
+        "section:section_003",
+        "chunk:chunk_055",
+        "chunk:chunk_068",
+        "chunk:chunk_039",
+        "chunk:chunk_003",
+        "chunk:chunk_032",
+        "chunk:chunk_007",
+        "chunk:chunk_006"
+      ]
+    },
+    "parameters": {
+      "count": 25,
+      "sample_evidence_ids": [
+        "table:table_001",
+        "table:table_003",
+        "table:table_002",
+        "chunk:chunk_020",
+        "chunk:chunk_016",
+        "chunk:chunk_018",
+        "chunk:chunk_036",
+        "section:section_003",
+        "chunk:chunk_019",
+        "chunk:chunk_039"
+      ]
+    },
+    "quality": {
+      "count": 30,
+      "sample_evidence_ids": [
+        "chunk:chunk_023",
+        "chunk:chunk_030",
+        "chunk:chunk_026",
+        "chunk:chunk_025",
+        "chunk:chunk_028",
+        "chunk:chunk_040",
+        "chunk:chunk_034",
+        "chunk:chunk_038",
+        "section:section_005",
+        "chunk:chunk_019"
+      ]
+    }
   }
 }

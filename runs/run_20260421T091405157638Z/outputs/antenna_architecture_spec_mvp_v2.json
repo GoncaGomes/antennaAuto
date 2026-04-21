@@ -1,21 +1,23 @@
 {
   "classification": {
-    "confidence": 0.98,
+    "confidence": 0.99,
     "evidence_ids": [
-      "section:section_002",
-      "section:section_004",
-      "table:table_001",
-      "chunk:chunk_022",
-      "chunk:chunk_034"
+      "section:section_006",
+      "chunk:chunk_018",
+      "chunk:chunk_021",
+      "chunk:chunk_028",
+      "chunk:chunk_029",
+      "chunk:chunk_034",
+      "chunk:chunk_019",
+      "chunk:chunk_020"
     ],
-    "primary_family": "rectangular microstrip patch antenna",
+    "primary_family": "microstrip patch antenna",
     "status": "extracted",
     "topology_tags": [
+      "rectangular",
       "inset-fed",
-      "planar",
-      "single-element",
-      "mmWave",
-      "5G"
+      "microstrip-line-fed",
+      "single-element"
     ]
   },
   "document_context": {
@@ -25,61 +27,18 @@
   },
   "entities": [
     {
-      "entity_id": "entity_patch",
-      "entity_type": "patch",
-      "evidence_ids": [
-        "section:section_002",
-        "section:section_004",
-        "table:table_001"
-      ],
-      "geometry": {
-        "dimensions": [
-          {
-            "evidence_ids": [
-              "section:section_002",
-              "section:section_004",
-              "table:table_001"
-            ],
-            "name": "Lpat",
-            "status": "extracted",
-            "unit": "mm",
-            "value": 3.494
-          },
-          {
-            "evidence_ids": [
-              "section:section_002",
-              "section:section_004",
-              "table:table_001"
-            ],
-            "name": "Wpat",
-            "status": "extracted",
-            "unit": "mm",
-            "value": 5.3
-          }
-        ],
-        "outline_points": [],
-        "shape_mode": "rectangular"
-      },
-      "layer_ref": "layer_patch",
-      "material_ref": "material_copper",
-      "placement": {
-        "status": "assumed_local_origin"
-      },
-      "role": "radiating_patch"
-    },
-    {
-      "entity_id": "entity_ground",
+      "entity_id": "ent_ground",
       "entity_type": "ground_plane",
       "evidence_ids": [
-        "section:section_004",
-        "table:table_001"
+        "chunk:chunk_019",
+        "chunk:chunk_020",
+        "chunk:chunk_021"
       ],
       "geometry": {
         "dimensions": [
           {
             "evidence_ids": [
-              "section:section_004",
-              "table:table_001"
+              "chunk:chunk_021"
             ],
             "name": "Lgnd",
             "status": "extracted",
@@ -88,8 +47,7 @@
           },
           {
             "evidence_ids": [
-              "section:section_004",
-              "table:table_001"
+              "chunk:chunk_021"
             ],
             "name": "Wlng",
             "status": "extracted",
@@ -98,29 +56,72 @@
           }
         ],
         "outline_points": [],
-        "shape_mode": "rectangular"
+        "shape_mode": "rectangle"
       },
       "layer_ref": "layer_ground",
-      "material_ref": "material_copper",
+      "material_ref": "mat_copper",
       "placement": {
+        "anchor": "local_origin",
         "status": "assumed_local_origin"
       },
-      "role": "ground"
+      "role": "ground plane"
     },
     {
-      "entity_id": "entity_feed_line",
-      "entity_type": "feed_line",
+      "entity_id": "ent_patch",
+      "entity_type": "rectangular_patch",
       "evidence_ids": [
-        "chunk:chunk_034",
-        "chunk:chunk_029",
-        "table:table_001"
+        "chunk:chunk_018",
+        "chunk:chunk_019",
+        "chunk:chunk_021"
       ],
       "geometry": {
         "dimensions": [
           {
             "evidence_ids": [
-              "chunk:chunk_034",
-              "table:table_001"
+              "chunk:chunk_021"
+            ],
+            "name": "Lpat",
+            "status": "extracted",
+            "unit": "mm",
+            "value": 3.494
+          },
+          {
+            "evidence_ids": [
+              "chunk:chunk_021"
+            ],
+            "name": "Wpat",
+            "status": "extracted",
+            "unit": "mm",
+            "value": 5.3
+          }
+        ],
+        "outline_points": [],
+        "shape_mode": "rectangle"
+      },
+      "layer_ref": "layer_patch",
+      "material_ref": "mat_copper",
+      "placement": {
+        "anchor": "local_origin",
+        "status": "assumed_local_origin"
+      },
+      "role": "radiating patch"
+    },
+    {
+      "entity_id": "ent_feedline",
+      "entity_type": "microstrip_line",
+      "evidence_ids": [
+        "chunk:chunk_028",
+        "chunk:chunk_029",
+        "chunk:chunk_021",
+        "chunk:chunk_034"
+      ],
+      "geometry": {
+        "dimensions": [
+          {
+            "evidence_ids": [
+              "chunk:chunk_021",
+              "chunk:chunk_028",
+              "chunk:chunk_029"
             ],
             "name": "Wmic",
             "status": "extracted",
@@ -129,27 +130,28 @@
           }
         ],
         "outline_points": [],
-        "shape_mode": "strip"
+        "shape_mode": "microstrip_line"
       },
       "layer_ref": "layer_patch",
-      "material_ref": "material_copper",
+      "material_ref": "mat_copper",
       "placement": {
+        "anchor": "local_origin",
         "status": "assumed_local_origin"
       },
-      "role": "feed_line"
+      "role": "feed line"
     },
     {
-      "entity_id": "entity_slot",
-      "entity_type": "slot_cutout",
+      "entity_id": "ent_slot",
+      "entity_type": "inset_slot",
       "evidence_ids": [
-        "table:table_001",
+        "chunk:chunk_021",
         "chunk:chunk_034"
       ],
       "geometry": {
         "dimensions": [
           {
             "evidence_ids": [
-              "table:table_001",
+              "chunk:chunk_021",
               "chunk:chunk_034"
             ],
             "name": "Lslot",
@@ -159,61 +161,55 @@
           }
         ],
         "outline_points": [],
-        "shape_mode": "inset_slot"
+        "shape_mode": "rectangular_slot"
       },
       "layer_ref": "layer_patch",
       "placement": {
+        "anchor": "local_origin",
         "status": "assumed_local_origin"
       },
-      "role": "feed_cutout"
+      "role": "patch inset cutout"
     }
   ],
   "evidence_used": [
-    "section:section_002",
-    "section:section_004",
-    "table:table_001",
-    "chunk:chunk_022",
+    "section:section_006",
+    "chunk:chunk_018",
+    "chunk:chunk_019",
+    "chunk:chunk_020",
+    "chunk:chunk_021",
+    "chunk:chunk_028",
     "chunk:chunk_029",
     "chunk:chunk_034",
-    "chunk:chunk_035",
-    "chunk:chunk_036",
-    "chunk:chunk_040",
     "chunk:chunk_041",
-    "chunk:chunk_042",
+    "chunk:chunk_045",
     "chunk:chunk_047",
-    "section:section_005",
-    "section:section_006",
-    "chunk:chunk_005",
-    "chunk:chunk_006",
-    "chunk:chunk_020",
     "chunk:chunk_049",
     "chunk:chunk_050",
-    "table:table_002",
-    "chunk:chunk_052",
-    "chunk:chunk_053",
     "chunk:chunk_055",
-    "figure:figure_006",
-    "figure:figure_007"
+    "figure:figure_011"
   ],
   "feeds": [
     {
-      "driven_entity_ref": "entity_patch",
+      "driven_entity_ref": "ent_patch",
       "evidence_ids": [
-        "chunk:chunk_034",
+        "chunk:chunk_028",
         "chunk:chunk_029",
-        "table:table_001",
-        "chunk:chunk_042"
+        "chunk:chunk_034",
+        "chunk:chunk_021",
+        "section:section_006"
       ],
-      "feed_family": "microstrip line feed",
+      "feed_family": "microstrip line",
       "feed_id": "feed_main",
-      "matching_style": "inset-fed",
+      "matching_style": "inset feed",
       "port_type": {
-        "status": "missing"
+        "status": "extracted",
+        "value": "microstrip line"
       },
       "reference_impedance": {
         "evidence_ids": [
-          "chunk:chunk_034",
-          "chunk:chunk_042"
+          "section:section_006",
+          "chunk:chunk_055",
+          "chunk:chunk_045"
         ],
         "status": "extracted",
         "unit": "\u03a9",
@@ -221,20 +217,31 @@
       }
     }
   ],
-  "instances": [],
+  "instances": [
+    {
+      "count": 1,
+      "entity_ref": "ent_patch",
+      "evidence_ids": [
+        "chunk:chunk_018",
+        "chunk:chunk_021"
+      ],
+      "instance_id": "inst_single_element",
+      "status": "extracted"
+    }
+  ],
   "layers": [
     {
       "evidence_ids": [
-        "section:section_004",
-        "table:table_001"
+        "chunk:chunk_019",
+        "chunk:chunk_020",
+        "chunk:chunk_021"
       ],
       "layer_id": "layer_ground",
-      "material_ref": "material_copper",
-      "role": "ground",
+      "material_ref": "mat_copper",
+      "role": "ground layer",
       "thickness": {
         "evidence_ids": [
-          "section:section_004",
-          "table:table_001"
+          "chunk:chunk_021"
         ],
         "status": "extracted",
         "unit": "mm",
@@ -244,16 +251,16 @@
     },
     {
       "evidence_ids": [
-        "section:section_004",
-        "table:table_001"
+        "chunk:chunk_019",
+        "chunk:chunk_020",
+        "chunk:chunk_021"
       ],
       "layer_id": "layer_substrate",
-      "material_ref": "material_rogers_rt5880",
-      "role": "substrate",
+      "material_ref": "mat_rogers_rt5880_lossy",
+      "role": "substrate layer",
       "thickness": {
         "evidence_ids": [
-          "section:section_004",
-          "table:table_001"
+          "chunk:chunk_021"
         ],
         "status": "extracted",
         "unit": "mm",
@@ -263,16 +270,16 @@
     },
     {
       "evidence_ids": [
-        "section:section_004",
-        "table:table_001"
+        "chunk:chunk_019",
+        "chunk:chunk_020",
+        "chunk:chunk_021"
       ],
       "layer_id": "layer_patch",
-      "material_ref": "material_copper",
-      "role": "patch",
+      "material_ref": "mat_copper",
+      "role": "patch layer",
       "thickness": {
         "evidence_ids": [
-          "section:section_004",
-          "table:table_001"
+          "chunk:chunk_021"
         ],
         "status": "extracted",
         "unit": "mm",
@@ -285,29 +292,30 @@
     {
       "category": "conductor",
       "evidence_ids": [
-        "section:section_004",
+        "chunk:chunk_019",
         "chunk:chunk_020"
       ],
-      "material_id": "material_copper",
+      "material_id": "mat_copper",
       "name": "copper",
       "name_raw": "copper",
       "roles": [
-        "patch",
-        "ground"
+        "ground plane",
+        "radiating patch",
+        "feed line"
       ],
       "status": "extracted"
     },
     {
       "category": "substrate",
       "evidence_ids": [
-        "section:section_004",
+        "chunk:chunk_019",
         "chunk:chunk_020"
       ],
-      "material_id": "material_rogers_rt5880",
-      "name": "Rogers RT5880(lossy)",
+      "material_id": "mat_rogers_rt5880_lossy",
+      "name": "Rogers RT5880 lossy",
       "name_raw": "Rogers RT5880(lossy)",
       "roles": [
-        "substrate"
+        "dielectric substrate"
       ],
       "status": "extracted"
     }
@@ -315,52 +323,21 @@
   "parameters": [
     {
       "evidence_ids": [
-        "section:section_002",
-        "section:section_004"
+        "section:section_006",
+        "chunk:chunk_041"
       ],
-      "param_id": "design_frequency",
-      "semantic_name": "design frequency",
+      "param_id": "param_operating_frequency",
+      "semantic_name": "operating frequency",
       "status": "extracted",
       "unit": "GHz",
       "value": 28
     },
     {
       "evidence_ids": [
-        "chunk:chunk_022"
+        "section:section_006",
+        "chunk:chunk_041"
       ],
-      "param_id": "operating_mode",
-      "semantic_name": "operating mode",
-      "status": "extracted",
-      "value": "TM10"
-    },
-    {
-      "evidence_ids": [
-        "chunk:chunk_034",
-        "chunk:chunk_042"
-      ],
-      "param_id": "reference_impedance",
-      "semantic_name": "reference impedance",
-      "status": "extracted",
-      "unit": "\u03a9",
-      "value": 50
-    },
-    {
-      "evidence_ids": [
-        "section:section_002",
-        "chunk:chunk_036"
-      ],
-      "param_id": "resonant_frequency",
-      "semantic_name": "resonant frequency",
-      "status": "extracted",
-      "unit": "GHz",
-      "value": 28
-    },
-    {
-      "evidence_ids": [
-        "section:section_002",
-        "chunk:chunk_036"
-      ],
-      "param_id": "reflection_coefficient",
+      "param_id": "param_reflection_coefficient",
       "semantic_name": "reflection coefficient",
       "status": "extracted",
       "unit": "dB",
@@ -368,11 +345,10 @@
     },
     {
       "evidence_ids": [
-        "section:section_002",
-        "chunk:chunk_036",
-        "section:section_006"
+        "section:section_006",
+        "chunk:chunk_041"
       ],
-      "param_id": "bandwidth",
+      "param_id": "param_bandwidth",
       "semantic_name": "bandwidth",
       "status": "extracted",
       "unit": "MHz",
@@ -380,10 +356,10 @@
     },
     {
       "evidence_ids": [
-        "chunk:chunk_036",
-        "section:section_006"
+        "section:section_006",
+        "chunk:chunk_041"
       ],
-      "param_id": "lower_operating_frequency",
+      "param_id": "param_lower_operating_frequency",
       "semantic_name": "lower operating frequency",
       "status": "extracted",
       "unit": "GHz",
@@ -391,10 +367,10 @@
     },
     {
       "evidence_ids": [
-        "chunk:chunk_036",
-        "section:section_006"
+        "section:section_006",
+        "chunk:chunk_041"
       ],
-      "param_id": "upper_operating_frequency",
+      "param_id": "param_upper_operating_frequency",
       "semantic_name": "upper operating frequency",
       "status": "extracted",
       "unit": "GHz",
@@ -402,20 +378,20 @@
     },
     {
       "evidence_ids": [
-        "chunk:chunk_040",
-        "section:section_006"
+        "section:section_006",
+        "chunk:chunk_047"
       ],
-      "param_id": "vswr",
-      "semantic_name": "VSWR",
+      "param_id": "param_vswr",
+      "semantic_name": "vswr",
       "status": "extracted",
       "value": 1.24
     },
     {
       "evidence_ids": [
-        "section:section_002",
+        "section:section_006",
         "chunk:chunk_047"
       ],
-      "param_id": "gain",
+      "param_id": "param_gain",
       "semantic_name": "gain",
       "status": "extracted",
       "unit": "dBi",
@@ -423,9 +399,11 @@
     },
     {
       "evidence_ids": [
+        "section:section_006",
+        "chunk:chunk_045",
         "chunk:chunk_055"
       ],
-      "param_id": "input_impedance",
+      "param_id": "param_input_impedance",
       "semantic_name": "input impedance",
       "status": "extracted",
       "unit": "\u03a9",
@@ -434,16 +412,14 @@
   ],
   "quality": {
     "ambiguities": [
-      "The paper is simulation-centric: CST Microwave Studio modeling is explicit, while the VNA/DUT language does not clearly establish a separate fabricated measurement campaign.",
-      "Beam-shaping and 3-sector array behavior are discussed later as a secondary extension, not as the canonical single-element geometry.",
-      "Feed geometry is only partially specified; Wmic and Lslot are tabulated, but exact feed coordinates are not explicitly given."
+      "Simulation versus fabricated/measurement provenance is unresolved in the retrieved evidence.",
+      "Beam-shaping array extension is secondary and not part of the canonical single-element geometry."
     ],
     "build_readiness": "partial",
-    "confidence": 0.94,
+    "confidence": 0.92,
     "missing_required_for_build": [
-      "feed_coordinates",
-      "port_type",
-      "feed_placement"
+      "exact_feed_coordinates",
+      "exact_entity_placement_coordinates"
     ]
   },
   "schema_name": "antenna_architecture_spec_mvp_v2",
@@ -451,16 +427,17 @@
   "units": {
     "frequency": {
       "evidence_ids": [
-        "section:section_002",
-        "section:section_006"
+        "section:section_006",
+        "chunk:chunk_041",
+        "chunk:chunk_045"
       ],
       "status": "extracted",
       "value": "GHz"
     },
     "impedance": {
       "evidence_ids": [
-        "section:section_002",
-        "chunk:chunk_042",
+        "section:section_006",
+        "chunk:chunk_045",
         "chunk:chunk_055"
       ],
       "status": "extracted",
@@ -468,7 +445,7 @@
     },
     "length": {
       "evidence_ids": [
-        "table:table_001"
+        "chunk:chunk_021"
       ],
       "status": "extracted",
       "value": "mm"

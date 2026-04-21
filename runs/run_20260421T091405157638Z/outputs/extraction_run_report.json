@@ -19,20 +19,14 @@
       "section:section_003",
       "chunk:chunk_018",
       "chunk:chunk_007",
-      "section:section_002",
-      "chunk:chunk_005",
       "chunk:chunk_021",
       "chunk:chunk_040",
-      "chunk:chunk_022",
       "chunk:chunk_034",
       "chunk:chunk_029",
       "chunk:chunk_017",
-      "chunk:chunk_028",
       "chunk:chunk_050",
       "chunk:chunk_049",
-      "chunk:chunk_053",
-      "chunk:chunk_048",
-      "chunk:chunk_052"
+      "chunk:chunk_053"
     ],
     "entities": [
       "chunk:chunk_022",
@@ -54,24 +48,17 @@
       "chunk:chunk_018",
       "chunk:chunk_007",
       "chunk:chunk_012",
-      "chunk:chunk_005",
-      "figure:figure_007",
-      "figure:figure_001",
       "chunk:chunk_040",
-      "figure:figure_006",
       "chunk:chunk_034",
       "chunk:chunk_029",
       "chunk:chunk_017",
-      "chunk:chunk_028",
       "figure:figure_005",
+      "figure:figure_006",
       "chunk:chunk_055",
       "section:section_007",
       "section:section_004",
-      "chunk:chunk_067",
       "chunk:chunk_050",
-      "chunk:chunk_053",
-      "chunk:chunk_048",
-      "chunk:chunk_052"
+      "chunk:chunk_053"
     ],
     "feeds": [
       "chunk:chunk_029",
@@ -92,22 +79,14 @@
       "chunk:chunk_018",
       "chunk:chunk_007",
       "chunk:chunk_012",
-      "section:section_002",
-      "chunk:chunk_005",
       "chunk:chunk_021",
       "chunk:chunk_040",
-      "chunk:chunk_006",
-      "chunk:chunk_022",
-      "chunk:chunk_016",
       "chunk:chunk_055",
       "section:section_007",
       "section:section_004",
-      "chunk:chunk_067",
       "chunk:chunk_050",
       "chunk:chunk_049",
-      "chunk:chunk_053",
-      "chunk:chunk_048",
-      "chunk:chunk_052"
+      "chunk:chunk_053"
     ],
     "layers": [
       "chunk:chunk_019",
@@ -125,25 +104,16 @@
       "chunk:chunk_018",
       "chunk:chunk_007",
       "chunk:chunk_012",
-      "section:section_002",
-      "chunk:chunk_005",
-      "table:table_002",
       "chunk:chunk_021",
       "chunk:chunk_040",
-      "chunk:chunk_006",
-      "chunk:chunk_022",
+      "table:table_002",
       "chunk:chunk_034",
       "chunk:chunk_029",
       "chunk:chunk_017",
-      "chunk:chunk_016",
-      "chunk:chunk_028",
       "chunk:chunk_055",
-      "chunk:chunk_067",
       "chunk:chunk_050",
       "chunk:chunk_049",
-      "chunk:chunk_053",
-      "chunk:chunk_048",
-      "chunk:chunk_052"
+      "chunk:chunk_053"
     ],
     "materials": [
       "chunk:chunk_020",
@@ -156,27 +126,18 @@
       "chunk:chunk_018",
       "chunk:chunk_007",
       "chunk:chunk_012",
-      "section:section_002",
-      "chunk:chunk_005",
-      "table:table_001",
-      "table:table_002",
       "chunk:chunk_021",
       "chunk:chunk_040",
-      "chunk:chunk_006",
-      "chunk:chunk_022",
+      "table:table_001",
+      "table:table_002",
       "chunk:chunk_034",
       "chunk:chunk_029",
       "chunk:chunk_017",
-      "chunk:chunk_016",
-      "chunk:chunk_028",
       "chunk:chunk_055",
       "section:section_007",
-      "chunk:chunk_067",
       "chunk:chunk_050",
       "chunk:chunk_049",
-      "chunk:chunk_053",
-      "chunk:chunk_048",
-      "chunk:chunk_052"
+      "chunk:chunk_053"
     ],
     "parameters": [
       "table:table_001",
@@ -196,20 +157,12 @@
       "chunk:chunk_018",
       "chunk:chunk_007",
       "chunk:chunk_012",
-      "section:section_002",
-      "chunk:chunk_005",
       "chunk:chunk_040",
-      "chunk:chunk_006",
-      "chunk:chunk_022",
       "chunk:chunk_034",
       "chunk:chunk_029",
       "chunk:chunk_017",
-      "chunk:chunk_028",
       "section:section_007",
-      "chunk:chunk_067",
-      "chunk:chunk_053",
-      "chunk:chunk_048",
-      "chunk:chunk_052"
+      "chunk:chunk_053"
     ],
     "quality": [
       "chunk:chunk_037",
@@ -234,53 +187,36 @@
       "chunk:chunk_042",
       "chunk:chunk_018",
       "chunk:chunk_007",
-      "section:section_002",
-      "chunk:chunk_005",
       "chunk:chunk_021",
-      "chunk:chunk_022",
       "chunk:chunk_034",
       "chunk:chunk_029",
       "chunk:chunk_017",
-      "chunk:chunk_016",
-      "chunk:chunk_028",
       "chunk:chunk_055",
       "section:section_007",
       "section:section_004",
-      "chunk:chunk_067",
       "chunk:chunk_050",
       "chunk:chunk_049",
-      "chunk:chunk_053",
-      "chunk:chunk_052"
+      "chunk:chunk_053"
     ]
   },
   "extraction_path": "retrieval_llm2_llm3",
   "extraction_status": "completed",
   "final_evidence_ids_used": [
-    "section:section_002",
-    "section:section_004",
-    "table:table_001",
-    "chunk:chunk_022",
+    "section:section_006",
+    "chunk:chunk_018",
+    "chunk:chunk_019",
+    "chunk:chunk_020",
+    "chunk:chunk_021",
+    "chunk:chunk_028",
     "chunk:chunk_029",
     "chunk:chunk_034",
-    "chunk:chunk_035",
-    "chunk:chunk_036",
-    "chunk:chunk_040",
     "chunk:chunk_041",
-    "chunk:chunk_042",
+    "chunk:chunk_045",
     "chunk:chunk_047",
-    "section:section_005",
-    "section:section_006",
-    "chunk:chunk_005",
-    "chunk:chunk_006",
-    "chunk:chunk_020",
     "chunk:chunk_049",
     "chunk:chunk_050",
-    "table:table_002",
-    "chunk:chunk_052",
-    "chunk:chunk_053",
     "chunk:chunk_055",
-    "figure:figure_006",
-    "figure:figure_007"
+    "figure:figure_011"
   ],
   "legacy_direct_path_available": true,
   "legacy_direct_path_used": false,
@@ -311,29 +247,7 @@
       "chunk:chunk_055",
       "section:section_006",
       "chunk:chunk_046",
-      "chunk:chunk_009",
-      "chunk:chunk_016",
-      "section:section_004",
-      "chunk:chunk_062",
-      "chunk:chunk_007",
-      "chunk:chunk_049",
-      "section:section_002",
-      "chunk:chunk_005",
-      "chunk:chunk_006",
-      "chunk:chunk_053",
-      "chunk:chunk_012",
-      "chunk:chunk_063",
-      "chunk:chunk_067",
-      "chunk:chunk_048",
-      "chunk:chunk_052",
-      "chunk:chunk_029",
-      "chunk:chunk_040",
-      "chunk:chunk_013",
-      "chunk:chunk_017",
-      "chunk:chunk_022",
-      "section:section_007",
-      "section:section_003",
-      "chunk:chunk_028"
+      "chunk:chunk_009"
     ],
     "entities": [
       "chunk:chunk_034",
@@ -345,34 +259,7 @@
       "section:section_007",
       "chunk:chunk_049",
       "chunk:chunk_008",
-      "section:section_004",
-      "chunk:chunk_067",
-      "figure:figure_003",
-      "chunk:chunk_007",
-      "section:section_003",
-      "chunk:chunk_012",
-      "figure:figure_009",
-      "chunk:chunk_005",
-      "chunk:chunk_022",
-      "figure:figure_010",
-      "chunk:chunk_053",
-      "chunk:chunk_006",
-      "figure:figure_004",
-      "chunk:chunk_048",
-      "chunk:chunk_036",
-      "chunk:chunk_052",
-      "chunk:chunk_016",
-      "chunk:chunk_020",
-      "chunk:chunk_019",
-      "chunk:chunk_029",
-      "chunk:chunk_040",
-      "figure:figure_006",
-      "section:section_002",
-      "chunk:chunk_017",
-      "chunk:chunk_021",
-      "chunk:chunk_028",
-      "figure:figure_007",
-      "figure:figure_001"
+      "section:section_004"
     ],
     "feeds": [
       "chunk:chunk_021",
@@ -382,33 +269,7 @@
       "chunk:chunk_029",
       "chunk:chunk_034",
       "section:section_007",
-      "chunk:chunk_028",
-      "chunk:chunk_009",
-      "chunk:chunk_035",
-      "chunk:chunk_042",
-      "section:section_004",
-      "chunk:chunk_067",
-      "chunk:chunk_044",
-      "chunk:chunk_007",
-      "chunk:chunk_049",
-      "chunk:chunk_059",
-      "chunk:chunk_033",
-      "chunk:chunk_012",
-      "section:section_002",
-      "chunk:chunk_005",
-      "chunk:chunk_058",
-      "chunk:chunk_053",
-      "chunk:chunk_025",
-      "chunk:chunk_010",
-      "chunk:chunk_048",
-      "chunk:chunk_052",
-      "section:section_005",
-      "chunk:chunk_045",
-      "chunk:chunk_017",
-      "chunk:chunk_040",
-      "chunk:chunk_006",
-      "chunk:chunk_022",
-      "chunk:chunk_016"
+      "chunk:chunk_028"
     ],
     "layers": [
       "chunk:chunk_019",
@@ -418,66 +279,17 @@
       "chunk:chunk_050",
       "chunk:chunk_025",
       "chunk:chunk_055",
-      "chunk:chunk_067",
-      "chunk:chunk_007",
-      "chunk:chunk_049",
-      "chunk:chunk_008",
-      "chunk:chunk_012",
-      "section:section_002",
-      "chunk:chunk_005",
-      "chunk:chunk_053",
-      "section:section_003",
-      "chunk:chunk_048",
-      "chunk:chunk_052",
-      "section:section_004",
-      "chunk:chunk_020",
-      "chunk:chunk_026",
-      "chunk:chunk_061",
-      "chunk:chunk_029",
-      "chunk:chunk_040",
-      "chunk:chunk_006",
-      "chunk:chunk_017",
-      "chunk:chunk_022",
-      "chunk:chunk_016",
-      "table:table_001",
-      "chunk:chunk_057",
-      "chunk:chunk_028",
-      "chunk:chunk_051",
-      "section:section_007",
-      "table:table_002"
+      "chunk:chunk_007"
     ],
     "materials": [
       "chunk:chunk_021",
       "chunk:chunk_034",
+      "table:table_001",
       "chunk:chunk_018",
       "chunk:chunk_050",
       "chunk:chunk_020",
       "chunk:chunk_055",
-      "section:section_007",
-      "chunk:chunk_067",
-      "chunk:chunk_007",
-      "chunk:chunk_019",
-      "chunk:chunk_049",
-      "section:section_004",
-      "chunk:chunk_012",
-      "section:section_002",
-      "chunk:chunk_005",
-      "chunk:chunk_053",
-      "table:table_001",
-      "chunk:chunk_027",
-      "chunk:chunk_048",
-      "chunk:chunk_052",
-      "chunk:chunk_057",
-      "chunk:chunk_024",
-      "chunk:chunk_029",
-      "chunk:chunk_026",
-      "chunk:chunk_040",
-      "chunk:chunk_006",
-      "chunk:chunk_017",
-      "chunk:chunk_022",
-      "chunk:chunk_016",
-      "chunk:chunk_028",
-      "table:table_002"
+      "section:section_007"
     ],
     "parameters": [
       "chunk:chunk_034",
@@ -489,28 +301,7 @@
       "section:section_007",
       "chunk:chunk_027",
       "chunk:chunk_042",
-      "chunk:chunk_067",
-      "chunk:chunk_041",
-      "chunk:chunk_007",
-      "chunk:chunk_012",
-      "section:section_002",
-      "chunk:chunk_005",
-      "chunk:chunk_053",
-      "chunk:chunk_016",
-      "chunk:chunk_048",
-      "chunk:chunk_052",
-      "chunk:chunk_029",
-      "chunk:chunk_040",
-      "chunk:chunk_006",
-      "chunk:chunk_017",
-      "chunk:chunk_022",
-      "section:section_004",
-      "chunk:chunk_050",
-      "chunk:chunk_051",
-      "chunk:chunk_028",
-      "chunk:chunk_026",
-      "chunk:chunk_049",
-      "table:table_002"
+      "chunk:chunk_041"
     ],
     "quality": [
       "chunk:chunk_021",
@@ -520,77 +311,38 @@
       "chunk:chunk_041",
       "chunk:chunk_018",
       "chunk:chunk_050",
-      "chunk:chunk_046",
-      "chunk:chunk_055",
-      "chunk:chunk_037",
-      "section:section_007",
-      "chunk:chunk_040",
-      "section:section_005",
-      "section:section_004",
-      "chunk:chunk_067",
-      "chunk:chunk_048",
-      "chunk:chunk_036",
-      "chunk:chunk_039",
-      "chunk:chunk_007",
-      "chunk:chunk_015",
-      "chunk:chunk_049",
-      "section:section_002",
-      "chunk:chunk_042",
-      "chunk:chunk_005",
-      "chunk:chunk_053",
-      "chunk:chunk_012",
-      "chunk:chunk_009",
-      "chunk:chunk_052",
-      "chunk:chunk_006",
-      "chunk:chunk_014",
-      "chunk:chunk_029",
-      "chunk:chunk_008",
-      "chunk:chunk_017",
-      "chunk:chunk_054",
-      "section:section_003",
-      "chunk:chunk_022",
-      "chunk:chunk_016",
-      "chunk:chunk_020",
-      "chunk:chunk_028"
+      "chunk:chunk_046"
     ]
   },
   "query_usefulness_per_block": {
     "classification": [
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 3,
-        "final_evidence_usage_ids": [
+        "final_evidence_usage_count": 2,
+        "final_evidence_usage_id_samples": [
           "chunk:chunk_055",
-          "section:section_006",
-          "section:section_004"
+          "section:section_006"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
+        "prompt_survival_count": 3,
+        "prompt_survival_evidence_id_samples": [
           "chunk:chunk_055",
           "section:section_006",
-          "chunk:chunk_046",
-          "chunk:chunk_016",
-          "section:section_004"
+          "chunk:chunk_046"
         ],
         "query": "antenna type",
         "retrieved_count": 5,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "chunk:chunk_006",
+        "final_evidence_usage_count": 1,
+        "final_evidence_usage_id_samples": [
           "chunk:chunk_055"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_006",
-          "chunk:chunk_012",
-          "chunk:chunk_063",
-          "chunk:chunk_067",
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
           "chunk:chunk_055"
         ],
         "query": "proposed design",
@@ -598,20 +350,16 @@
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 3,
-        "final_evidence_usage_ids": [
+        "final_evidence_usage_count": 2,
+        "final_evidence_usage_id_samples": [
           "chunk:chunk_055",
-          "chunk:chunk_006",
           "section:section_006"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_067",
+        "prompt_survival_count": 2,
+        "prompt_survival_evidence_id_samples": [
           "chunk:chunk_055",
-          "chunk:chunk_063",
-          "chunk:chunk_006",
           "section:section_006"
         ],
         "query": "final design",
@@ -619,515 +367,350 @@
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
         "final_evidence_usage_count": 0,
-        "final_evidence_usage_ids": [],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_009",
-          "chunk:chunk_062",
-          "chunk:chunk_013",
-          "section:section_007",
-          "section:section_003"
+        "final_evidence_usage_id_samples": [],
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_009"
         ],
         "query": "configuration",
         "retrieved_count": 5,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "section:section_002",
-          "chunk:chunk_005"
+        "final_evidence_usage_count": 1,
+        "final_evidence_usage_id_samples": [
+          "chunk:chunk_018"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_018",
-          "chunk:chunk_007",
-          "chunk:chunk_012",
-          "section:section_002",
-          "chunk:chunk_005"
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_018"
         ],
         "query": "proposed microstrip patch antenna",
-        "retrieved_count": 5,
+        "retrieved_count": 3,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
-        "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 3,
-        "final_evidence_usage_ids": [
-          "chunk:chunk_040",
-          "chunk:chunk_006",
-          "chunk:chunk_022"
-        ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_021",
-          "chunk:chunk_018",
-          "chunk:chunk_040",
-          "chunk:chunk_006",
-          "chunk:chunk_022"
-        ],
-        "query": "dimensions of proposed antenna",
-        "retrieved_count": 5,
-        "search_type": "text"
-      },
-      {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
         "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
+        "final_evidence_usage_id_samples": [
+          "chunk:chunk_021",
+          "chunk:chunk_018"
+        ],
+        "prompt_survival_count": 2,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_021",
+          "chunk:chunk_018"
+        ],
+        "query": "dimensions of proposed antenna",
+        "retrieved_count": 3,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_id_samples": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 2,
+        "final_evidence_usage_id_samples": [
           "chunk:chunk_034",
           "chunk:chunk_029"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_034",
-          "chunk:chunk_029",
-          "chunk:chunk_017",
-          "chunk:chunk_016",
-          "chunk:chunk_028"
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_034"
         ],
         "query": "inset feeding schematic diagram",
-        "retrieved_count": 5,
+        "retrieved_count": 3,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "chunk:chunk_055",
-          "section:section_004"
+        "final_evidence_usage_count": 1,
+        "final_evidence_usage_id_samples": [
+          "chunk:chunk_055"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_055",
-          "section:section_007",
-          "section:section_004",
-          "chunk:chunk_067",
-          "chunk:chunk_016"
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_055"
         ],
         "query": "fabricated antenna",
-        "retrieved_count": 5,
+        "retrieved_count": 3,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 4,
-        "final_evidence_usage_ids": [
+        "final_evidence_usage_count": 2,
+        "final_evidence_usage_id_samples": [
           "chunk:chunk_050",
-          "chunk:chunk_049",
-          "chunk:chunk_053",
-          "chunk:chunk_052"
+          "chunk:chunk_049"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_050",
-          "chunk:chunk_049",
-          "chunk:chunk_053",
-          "chunk:chunk_048",
-          "chunk:chunk_052"
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_050"
         ],
         "query": "beam-shaping antenna array",
-        "retrieved_count": 5,
+        "retrieved_count": 3,
         "search_type": "text"
       }
     ],
     "entities": [
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 3,
-        "final_evidence_usage_ids": [
-          "chunk:chunk_022",
-          "chunk:chunk_006",
-          "section:section_002"
-        ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_022",
-          "chunk:chunk_006",
-          "chunk:chunk_016",
-          "section:section_002",
+        "final_evidence_usage_count": 1,
+        "final_evidence_usage_id_samples": [
           "chunk:chunk_021"
         ],
+        "prompt_survival_count": 0,
+        "prompt_survival_evidence_id_samples": [],
         "query": "antenna geometry",
         "retrieved_count": 5,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
         "final_evidence_usage_count": 3,
-        "final_evidence_usage_ids": [
+        "final_evidence_usage_id_samples": [
           "chunk:chunk_049",
-          "chunk:chunk_036",
-          "chunk:chunk_020"
-        ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_049",
-          "chunk:chunk_016",
-          "chunk:chunk_036",
           "chunk:chunk_020",
           "chunk:chunk_019"
+        ],
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_049"
         ],
         "query": "radiating element",
         "retrieved_count": 5,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "chunk:chunk_006",
-          "chunk:chunk_022"
-        ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_008",
-          "section:section_003",
-          "chunk:chunk_006",
-          "chunk:chunk_016",
-          "chunk:chunk_022"
+        "final_evidence_usage_count": 0,
+        "final_evidence_usage_id_samples": [],
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_008"
         ],
         "query": "slot geometry",
         "retrieved_count": 5,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
         "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "chunk:chunk_006",
+        "final_evidence_usage_id_samples": [
+          "chunk:chunk_019",
           "chunk:chunk_020"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_019",
-          "chunk:chunk_008",
-          "chunk:chunk_006",
-          "section:section_003",
-          "chunk:chunk_020"
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_008"
         ],
         "query": "ground plane geometry",
         "retrieved_count": 5,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 0,
-        "final_evidence_usage_ids": [],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "figure:figure_011",
-          "figure:figure_003",
-          "figure:figure_009",
-          "figure:figure_010",
-          "figure:figure_004"
+        "final_evidence_usage_count": 1,
+        "final_evidence_usage_id_samples": [
+          "figure:figure_011"
+        ],
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "figure:figure_011"
         ],
         "query": "antenna geometry",
         "retrieved_count": 5,
         "search_type": "figures"
       },
       {
-        "bound_structural_evidence_ids": [],
-        "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "section:section_002",
-          "chunk:chunk_005"
-        ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_018",
-          "chunk:chunk_007",
-          "chunk:chunk_012",
-          "section:section_002",
-          "chunk:chunk_005"
-        ],
-        "query": "proposed microstrip patch antenna",
-        "retrieved_count": 5,
-        "search_type": "text"
-      },
-      {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
         "final_evidence_usage_count": 1,
-        "final_evidence_usage_ids": [
-          "figure:figure_007"
+        "final_evidence_usage_id_samples": [
+          "chunk:chunk_018"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "figure:figure_004",
-          "figure:figure_003",
-          "figure:figure_011",
-          "figure:figure_007",
-          "figure:figure_001"
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_018"
         ],
         "query": "proposed microstrip patch antenna",
-        "retrieved_count": 5,
-        "search_type": "figures"
-      },
-      {
-        "bound_structural_evidence_ids": [],
-        "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 3,
-        "final_evidence_usage_ids": [
-          "chunk:chunk_040",
-          "chunk:chunk_006",
-          "chunk:chunk_022"
-        ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_021",
-          "chunk:chunk_018",
-          "chunk:chunk_040",
-          "chunk:chunk_006",
-          "chunk:chunk_022"
-        ],
-        "query": "dimensions of proposed antenna",
-        "retrieved_count": 5,
+        "retrieved_count": 3,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
         "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "figure:figure_007",
-          "figure:figure_006"
+        "final_evidence_usage_id_samples": [
+          "chunk:chunk_021",
+          "chunk:chunk_018"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "figure:figure_011",
-          "figure:figure_007",
-          "figure:figure_004",
-          "figure:figure_003",
-          "figure:figure_006"
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_018"
         ],
         "query": "dimensions of proposed antenna",
-        "retrieved_count": 5,
-        "search_type": "figures"
+        "retrieved_count": 3,
+        "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
         "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
+        "final_evidence_usage_id_samples": [
           "chunk:chunk_034",
           "chunk:chunk_029"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_034",
-          "chunk:chunk_029",
-          "chunk:chunk_017",
-          "chunk:chunk_016",
-          "chunk:chunk_028"
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_034"
         ],
         "query": "inset feeding schematic diagram",
-        "retrieved_count": 5,
+        "retrieved_count": 3,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 1,
-        "final_evidence_usage_ids": [
-          "figure:figure_006"
-        ],
-        "prompt_survival_count": 3,
-        "prompt_survival_evidence_ids": [
-          "figure:figure_005",
-          "figure:figure_003",
-          "figure:figure_006"
+        "final_evidence_usage_count": 0,
+        "final_evidence_usage_id_samples": [],
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "figure:figure_005"
         ],
         "query": "inset feeding schematic diagram",
         "retrieved_count": 3,
         "search_type": "figures"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "chunk:chunk_055",
-          "section:section_004"
+        "final_evidence_usage_count": 1,
+        "final_evidence_usage_id_samples": [
+          "chunk:chunk_055"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
+        "prompt_survival_count": 3,
+        "prompt_survival_evidence_id_samples": [
           "chunk:chunk_055",
           "section:section_007",
-          "section:section_004",
-          "chunk:chunk_067",
-          "chunk:chunk_016"
+          "section:section_004"
         ],
         "query": "fabricated antenna",
-        "retrieved_count": 5,
+        "retrieved_count": 3,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 0,
-        "final_evidence_usage_ids": [],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "figure:figure_004",
-          "figure:figure_003",
-          "figure:figure_009",
-          "figure:figure_011",
-          "figure:figure_001"
-        ],
-        "query": "fabricated antenna",
-        "retrieved_count": 5,
-        "search_type": "figures"
-      },
-      {
-        "bound_structural_evidence_ids": [],
-        "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 4,
-        "final_evidence_usage_ids": [
+        "final_evidence_usage_count": 2,
+        "final_evidence_usage_id_samples": [
           "chunk:chunk_050",
-          "chunk:chunk_049",
-          "chunk:chunk_053",
-          "chunk:chunk_052"
+          "chunk:chunk_049"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
+        "prompt_survival_count": 2,
+        "prompt_survival_evidence_id_samples": [
           "chunk:chunk_050",
-          "chunk:chunk_049",
-          "chunk:chunk_053",
-          "chunk:chunk_048",
-          "chunk:chunk_052"
+          "chunk:chunk_049"
         ],
         "query": "beam-shaping antenna array",
-        "retrieved_count": 5,
+        "retrieved_count": 3,
         "search_type": "text"
-      },
-      {
-        "bound_structural_evidence_ids": [],
-        "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 0,
-        "final_evidence_usage_ids": [],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "figure:figure_010",
-          "figure:figure_009",
-          "figure:figure_011",
-          "figure:figure_003",
-          "figure:figure_004"
-        ],
-        "query": "beam-shaping antenna array",
-        "retrieved_count": 5,
-        "search_type": "figures"
       }
     ],
     "feeds": [
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "chunk:chunk_029",
-          "chunk:chunk_034"
-        ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
+        "final_evidence_usage_count": 3,
+        "final_evidence_usage_id_samples": [
           "chunk:chunk_029",
           "chunk:chunk_034",
-          "chunk:chunk_028",
-          "chunk:chunk_009",
-          "chunk:chunk_059"
+          "chunk:chunk_028"
+        ],
+        "prompt_survival_count": 3,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_029",
+          "chunk:chunk_034",
+          "chunk:chunk_028"
         ],
         "query": "feeding method",
         "retrieved_count": 5,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 1,
-        "final_evidence_usage_ids": [
-          "chunk:chunk_029"
-        ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
+        "final_evidence_usage_count": 2,
+        "final_evidence_usage_id_samples": [
           "chunk:chunk_029",
-          "chunk:chunk_028",
-          "chunk:chunk_058",
-          "chunk:chunk_025",
-          "chunk:chunk_010"
+          "chunk:chunk_028"
+        ],
+        "prompt_survival_count": 2,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_029",
+          "chunk:chunk_028"
         ],
         "query": "feed type",
         "retrieved_count": 5,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "chunk:chunk_029",
-          "chunk:chunk_034"
-        ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
+        "final_evidence_usage_count": 3,
+        "final_evidence_usage_id_samples": [
           "chunk:chunk_029",
           "chunk:chunk_028",
-          "chunk:chunk_025",
-          "chunk:chunk_034",
-          "chunk:chunk_058"
+          "chunk:chunk_034"
+        ],
+        "prompt_survival_count": 3,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_029",
+          "chunk:chunk_028",
+          "chunk:chunk_034"
         ],
         "query": "feed location",
         "retrieved_count": 5,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 3,
-        "final_evidence_usage_ids": [
-          "chunk:chunk_035",
-          "section:section_005",
+        "final_evidence_usage_count": 2,
+        "final_evidence_usage_id_samples": [
+          "chunk:chunk_045",
           "chunk:chunk_034"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_035",
-          "section:section_005",
-          "chunk:chunk_045",
-          "chunk:chunk_034",
-          "chunk:chunk_017"
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_034"
         ],
         "query": "input port",
         "retrieved_count": 5,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
         "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "chunk:chunk_042",
+        "final_evidence_usage_id_samples": [
+          "chunk:chunk_045",
           "chunk:chunk_034"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_045",
-          "chunk:chunk_042",
-          "chunk:chunk_044",
-          "chunk:chunk_033",
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
           "chunk:chunk_034"
         ],
         "query": "input impedance",
@@ -1135,1133 +718,724 @@
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "section:section_002",
-          "chunk:chunk_005"
+        "final_evidence_usage_count": 1,
+        "final_evidence_usage_id_samples": [
+          "chunk:chunk_018"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_018",
-          "chunk:chunk_007",
-          "chunk:chunk_012",
-          "section:section_002",
-          "chunk:chunk_005"
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_018"
         ],
         "query": "proposed microstrip patch antenna",
-        "retrieved_count": 5,
+        "retrieved_count": 3,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
-        "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 3,
-        "final_evidence_usage_ids": [
-          "chunk:chunk_040",
-          "chunk:chunk_006",
-          "chunk:chunk_022"
-        ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_021",
-          "chunk:chunk_018",
-          "chunk:chunk_040",
-          "chunk:chunk_006",
-          "chunk:chunk_022"
-        ],
-        "query": "dimensions of proposed antenna",
-        "retrieved_count": 5,
-        "search_type": "text"
-      },
-      {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
         "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
+        "final_evidence_usage_id_samples": [
+          "chunk:chunk_021",
+          "chunk:chunk_018"
+        ],
+        "prompt_survival_count": 2,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_021",
+          "chunk:chunk_018"
+        ],
+        "query": "dimensions of proposed antenna",
+        "retrieved_count": 3,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_id_samples": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 2,
+        "final_evidence_usage_id_samples": [
           "chunk:chunk_034",
           "chunk:chunk_029"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
+        "prompt_survival_count": 2,
+        "prompt_survival_evidence_id_samples": [
           "chunk:chunk_034",
-          "chunk:chunk_029",
-          "chunk:chunk_017",
-          "chunk:chunk_016",
-          "chunk:chunk_028"
+          "chunk:chunk_029"
         ],
         "query": "inset feeding schematic diagram",
-        "retrieved_count": 5,
+        "retrieved_count": 3,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "chunk:chunk_055",
-          "section:section_004"
+        "final_evidence_usage_count": 1,
+        "final_evidence_usage_id_samples": [
+          "chunk:chunk_055"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
+        "prompt_survival_count": 2,
+        "prompt_survival_evidence_id_samples": [
           "chunk:chunk_055",
-          "section:section_007",
-          "section:section_004",
-          "chunk:chunk_067",
-          "chunk:chunk_016"
+          "section:section_007"
         ],
         "query": "fabricated antenna",
-        "retrieved_count": 5,
+        "retrieved_count": 3,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 4,
-        "final_evidence_usage_ids": [
+        "final_evidence_usage_count": 2,
+        "final_evidence_usage_id_samples": [
           "chunk:chunk_050",
-          "chunk:chunk_049",
-          "chunk:chunk_053",
-          "chunk:chunk_052"
+          "chunk:chunk_049"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_050",
-          "chunk:chunk_049",
-          "chunk:chunk_053",
-          "chunk:chunk_048",
-          "chunk:chunk_052"
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_050"
         ],
         "query": "beam-shaping antenna array",
-        "retrieved_count": 5,
+        "retrieved_count": 3,
         "search_type": "text"
       }
     ],
     "layers": [
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
         "final_evidence_usage_count": 1,
-        "final_evidence_usage_ids": [
-          "section:section_004"
+        "final_evidence_usage_id_samples": [
+          "chunk:chunk_019"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_019",
-          "section:section_004",
-          "chunk:chunk_057",
-          "chunk:chunk_051",
-          "section:section_007"
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_019"
         ],
         "query": "layer stack",
         "retrieved_count": 5,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 1,
-        "final_evidence_usage_ids": [
-          "chunk:chunk_020"
-        ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_025",
+        "final_evidence_usage_count": 2,
+        "final_evidence_usage_id_samples": [
           "chunk:chunk_020",
-          "chunk:chunk_026",
-          "chunk:chunk_019",
-          "chunk:chunk_057"
+          "chunk:chunk_019"
+        ],
+        "prompt_survival_count": 2,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_025",
+          "chunk:chunk_019"
         ],
         "query": "substrate thickness",
         "retrieved_count": 5,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
         "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "section:section_004",
+        "final_evidence_usage_id_samples": [
+          "chunk:chunk_019",
           "chunk:chunk_020"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
+        "prompt_survival_count": 2,
+        "prompt_survival_evidence_id_samples": [
           "chunk:chunk_025",
-          "chunk:chunk_026",
-          "chunk:chunk_019",
-          "section:section_004",
-          "chunk:chunk_020"
+          "chunk:chunk_019"
         ],
         "query": "metal thickness",
         "retrieved_count": 5,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 1,
-        "final_evidence_usage_ids": [
+        "final_evidence_usage_count": 2,
+        "final_evidence_usage_id_samples": [
+          "chunk:chunk_019",
           "chunk:chunk_020"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_019",
-          "chunk:chunk_020",
-          "chunk:chunk_008",
-          "section:section_003",
-          "chunk:chunk_061"
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_019"
         ],
         "query": "ground plane",
         "retrieved_count": 5,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 1,
-        "final_evidence_usage_ids": [
-          "table:table_001"
-        ],
-        "prompt_survival_count": 1,
-        "prompt_survival_evidence_ids": [
-          "table:table_001"
-        ],
+        "final_evidence_usage_count": 0,
+        "final_evidence_usage_id_samples": [],
+        "prompt_survival_count": 0,
+        "prompt_survival_evidence_id_samples": [],
         "query": "thickness",
         "retrieved_count": 1,
         "search_type": "tables"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "section:section_002",
-          "chunk:chunk_005"
+        "final_evidence_usage_count": 1,
+        "final_evidence_usage_id_samples": [
+          "chunk:chunk_018"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
+        "prompt_survival_count": 2,
+        "prompt_survival_evidence_id_samples": [
           "chunk:chunk_018",
-          "chunk:chunk_007",
-          "chunk:chunk_012",
-          "section:section_002",
-          "chunk:chunk_005"
+          "chunk:chunk_007"
         ],
         "query": "proposed microstrip patch antenna",
-        "retrieved_count": 5,
+        "retrieved_count": 3,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
         "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "table:table_001",
-          "table:table_002"
-        ],
-        "prompt_survival_count": 2,
-        "prompt_survival_evidence_ids": [
-          "table:table_001",
-          "table:table_002"
-        ],
-        "query": "proposed microstrip patch antenna",
-        "retrieved_count": 2,
-        "search_type": "tables"
-      },
-      {
-        "bound_structural_evidence_ids": [],
-        "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 3,
-        "final_evidence_usage_ids": [
-          "chunk:chunk_040",
-          "chunk:chunk_006",
-          "chunk:chunk_022"
-        ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
+        "final_evidence_usage_id_samples": [
           "chunk:chunk_021",
-          "chunk:chunk_018",
-          "chunk:chunk_040",
-          "chunk:chunk_006",
-          "chunk:chunk_022"
+          "chunk:chunk_018"
+        ],
+        "prompt_survival_count": 2,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_021",
+          "chunk:chunk_018"
         ],
         "query": "dimensions of proposed antenna",
-        "retrieved_count": 5,
+        "retrieved_count": 3,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "table:table_001",
-          "table:table_002"
-        ],
-        "prompt_survival_count": 2,
-        "prompt_survival_evidence_ids": [
-          "table:table_001",
-          "table:table_002"
-        ],
+        "final_evidence_usage_count": 0,
+        "final_evidence_usage_id_samples": [],
+        "prompt_survival_count": 0,
+        "prompt_survival_evidence_id_samples": [],
         "query": "dimensions of proposed antenna",
         "retrieved_count": 2,
         "search_type": "tables"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
         "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
+        "final_evidence_usage_id_samples": [
           "chunk:chunk_034",
           "chunk:chunk_029"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_034",
-          "chunk:chunk_029",
-          "chunk:chunk_017",
-          "chunk:chunk_016",
-          "chunk:chunk_028"
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_034"
         ],
         "query": "inset feeding schematic diagram",
-        "retrieved_count": 5,
+        "retrieved_count": 3,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
         "final_evidence_usage_count": 1,
-        "final_evidence_usage_ids": [
-          "table:table_002"
+        "final_evidence_usage_id_samples": [
+          "chunk:chunk_055"
         ],
         "prompt_survival_count": 1,
-        "prompt_survival_evidence_ids": [
-          "table:table_002"
-        ],
-        "query": "inset feeding schematic diagram",
-        "retrieved_count": 1,
-        "search_type": "tables"
-      },
-      {
-        "bound_structural_evidence_ids": [],
-        "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "chunk:chunk_055",
-          "section:section_004"
-        ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_055",
-          "section:section_007",
-          "section:section_004",
-          "chunk:chunk_067",
-          "chunk:chunk_016"
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_055"
         ],
         "query": "fabricated antenna",
-        "retrieved_count": 5,
+        "retrieved_count": 3,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
         "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "table:table_001",
-          "table:table_002"
-        ],
-        "prompt_survival_count": 2,
-        "prompt_survival_evidence_ids": [
-          "table:table_001",
-          "table:table_002"
-        ],
-        "query": "fabricated antenna",
-        "retrieved_count": 2,
-        "search_type": "tables"
-      },
-      {
-        "bound_structural_evidence_ids": [],
-        "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 4,
-        "final_evidence_usage_ids": [
+        "final_evidence_usage_id_samples": [
           "chunk:chunk_050",
-          "chunk:chunk_049",
-          "chunk:chunk_053",
-          "chunk:chunk_052"
+          "chunk:chunk_049"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_050",
-          "chunk:chunk_049",
-          "chunk:chunk_053",
-          "chunk:chunk_048",
-          "chunk:chunk_052"
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_050"
         ],
         "query": "beam-shaping antenna array",
-        "retrieved_count": 5,
+        "retrieved_count": 3,
         "search_type": "text"
-      },
-      {
-        "bound_structural_evidence_ids": [],
-        "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "table:table_002",
-          "table:table_001"
-        ],
-        "prompt_survival_count": 2,
-        "prompt_survival_evidence_ids": [
-          "table:table_002",
-          "table:table_001"
-        ],
-        "query": "beam-shaping antenna array",
-        "retrieved_count": 2,
-        "search_type": "tables"
       }
     ],
     "materials": [
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
         "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
+        "final_evidence_usage_id_samples": [
           "chunk:chunk_020",
-          "section:section_004"
+          "chunk:chunk_019"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_020",
-          "chunk:chunk_019",
-          "section:section_004",
-          "chunk:chunk_057",
-          "chunk:chunk_026"
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_020"
         ],
         "query": "substrate material",
         "retrieved_count": 5,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "chunk:chunk_020",
-          "section:section_004"
+        "final_evidence_usage_count": 1,
+        "final_evidence_usage_id_samples": [
+          "chunk:chunk_020"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_020",
-          "section:section_004",
-          "chunk:chunk_027",
-          "chunk:chunk_026",
-          "chunk:chunk_024"
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_020"
         ],
         "query": "dielectric material",
         "retrieved_count": 5,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
         "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
+        "final_evidence_usage_id_samples": [
           "chunk:chunk_020",
-          "section:section_004"
+          "chunk:chunk_019"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_020",
-          "chunk:chunk_019",
-          "section:section_004",
-          "chunk:chunk_057",
-          "chunk:chunk_026"
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_020"
         ],
         "query": "conductor material",
         "retrieved_count": 5,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
         "final_evidence_usage_count": 0,
-        "final_evidence_usage_ids": [],
+        "final_evidence_usage_id_samples": [],
         "prompt_survival_count": 0,
-        "prompt_survival_evidence_ids": [],
+        "prompt_survival_evidence_id_samples": [],
         "query": "material",
         "retrieved_count": 0,
         "search_type": "tables"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "section:section_002",
-          "chunk:chunk_005"
+        "final_evidence_usage_count": 1,
+        "final_evidence_usage_id_samples": [
+          "chunk:chunk_018"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_018",
-          "chunk:chunk_007",
-          "chunk:chunk_012",
-          "section:section_002",
-          "chunk:chunk_005"
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_018"
         ],
         "query": "proposed microstrip patch antenna",
-        "retrieved_count": 5,
+        "retrieved_count": 3,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
         "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "table:table_001",
-          "table:table_002"
-        ],
-        "prompt_survival_count": 2,
-        "prompt_survival_evidence_ids": [
-          "table:table_001",
-          "table:table_002"
-        ],
-        "query": "proposed microstrip patch antenna",
-        "retrieved_count": 2,
-        "search_type": "tables"
-      },
-      {
-        "bound_structural_evidence_ids": [],
-        "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 3,
-        "final_evidence_usage_ids": [
-          "chunk:chunk_040",
-          "chunk:chunk_006",
-          "chunk:chunk_022"
-        ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
+        "final_evidence_usage_id_samples": [
           "chunk:chunk_021",
-          "chunk:chunk_018",
-          "chunk:chunk_040",
-          "chunk:chunk_006",
-          "chunk:chunk_022"
+          "chunk:chunk_018"
+        ],
+        "prompt_survival_count": 2,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_021",
+          "chunk:chunk_018"
         ],
         "query": "dimensions of proposed antenna",
-        "retrieved_count": 5,
+        "retrieved_count": 3,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "table:table_001",
-          "table:table_002"
-        ],
-        "prompt_survival_count": 2,
-        "prompt_survival_evidence_ids": [
-          "table:table_001",
-          "table:table_002"
+        "final_evidence_usage_count": 0,
+        "final_evidence_usage_id_samples": [],
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "table:table_001"
         ],
         "query": "dimensions of proposed antenna",
         "retrieved_count": 2,
         "search_type": "tables"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
         "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
+        "final_evidence_usage_id_samples": [
           "chunk:chunk_034",
           "chunk:chunk_029"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_034",
-          "chunk:chunk_029",
-          "chunk:chunk_017",
-          "chunk:chunk_016",
-          "chunk:chunk_028"
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_034"
         ],
         "query": "inset feeding schematic diagram",
-        "retrieved_count": 5,
+        "retrieved_count": 3,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
         "final_evidence_usage_count": 1,
-        "final_evidence_usage_ids": [
-          "table:table_002"
+        "final_evidence_usage_id_samples": [
+          "chunk:chunk_055"
+        ],
+        "prompt_survival_count": 2,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_055",
+          "section:section_007"
+        ],
+        "query": "fabricated antenna",
+        "retrieved_count": 3,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_id_samples": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 2,
+        "final_evidence_usage_id_samples": [
+          "chunk:chunk_050",
+          "chunk:chunk_049"
         ],
         "prompt_survival_count": 1,
-        "prompt_survival_evidence_ids": [
-          "table:table_002"
-        ],
-        "query": "inset feeding schematic diagram",
-        "retrieved_count": 1,
-        "search_type": "tables"
-      },
-      {
-        "bound_structural_evidence_ids": [],
-        "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "chunk:chunk_055",
-          "section:section_004"
-        ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_055",
-          "section:section_007",
-          "section:section_004",
-          "chunk:chunk_067",
-          "chunk:chunk_016"
-        ],
-        "query": "fabricated antenna",
-        "retrieved_count": 5,
-        "search_type": "text"
-      },
-      {
-        "bound_structural_evidence_ids": [],
-        "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "table:table_001",
-          "table:table_002"
-        ],
-        "prompt_survival_count": 2,
-        "prompt_survival_evidence_ids": [
-          "table:table_001",
-          "table:table_002"
-        ],
-        "query": "fabricated antenna",
-        "retrieved_count": 2,
-        "search_type": "tables"
-      },
-      {
-        "bound_structural_evidence_ids": [],
-        "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 4,
-        "final_evidence_usage_ids": [
-          "chunk:chunk_050",
-          "chunk:chunk_049",
-          "chunk:chunk_053",
-          "chunk:chunk_052"
-        ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_050",
-          "chunk:chunk_049",
-          "chunk:chunk_053",
-          "chunk:chunk_048",
-          "chunk:chunk_052"
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_050"
         ],
         "query": "beam-shaping antenna array",
-        "retrieved_count": 5,
+        "retrieved_count": 3,
         "search_type": "text"
-      },
-      {
-        "bound_structural_evidence_ids": [],
-        "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "table:table_002",
-          "table:table_001"
-        ],
-        "prompt_survival_count": 2,
-        "prompt_survival_evidence_ids": [
-          "table:table_002",
-          "table:table_001"
-        ],
-        "query": "beam-shaping antenna array",
-        "retrieved_count": 2,
-        "search_type": "tables"
       }
     ],
     "parameters": [
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "table:table_001",
-          "table:table_002"
-        ],
-        "prompt_survival_count": 2,
-        "prompt_survival_evidence_ids": [
-          "table:table_001",
-          "table:table_002"
+        "final_evidence_usage_count": 0,
+        "final_evidence_usage_id_samples": [],
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "table:table_001"
         ],
         "query": "dimensions",
         "retrieved_count": 2,
         "search_type": "tables"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "table:table_001",
-          "table:table_002"
-        ],
-        "prompt_survival_count": 2,
-        "prompt_survival_evidence_ids": [
-          "table:table_001",
-          "table:table_002"
+        "final_evidence_usage_count": 0,
+        "final_evidence_usage_id_samples": [],
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "table:table_001"
         ],
         "query": "design parameters",
         "retrieved_count": 2,
         "search_type": "tables"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
         "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "section:section_004",
+        "final_evidence_usage_id_samples": [
+          "chunk:chunk_021",
           "chunk:chunk_050"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_021",
-          "chunk:chunk_016",
-          "section:section_004",
-          "chunk:chunk_050",
-          "chunk:chunk_026"
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_021"
         ],
         "query": "geometrical parameters",
         "retrieved_count": 5,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
+        "final_evidence_usage_count": 3,
+        "final_evidence_usage_id_samples": [
+          "chunk:chunk_021",
           "chunk:chunk_050",
           "chunk:chunk_049"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_021",
-          "chunk:chunk_050",
-          "chunk:chunk_051",
-          "chunk:chunk_026",
-          "chunk:chunk_049"
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_021"
         ],
         "query": "table of dimensions",
         "retrieved_count": 5,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
         "final_evidence_usage_count": 3,
-        "final_evidence_usage_ids": [
+        "final_evidence_usage_id_samples": [
+          "chunk:chunk_045",
           "chunk:chunk_055",
-          "chunk:chunk_042",
           "chunk:chunk_041"
         ],
         "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
+        "prompt_survival_evidence_id_samples": [
           "chunk:chunk_045",
           "chunk:chunk_055",
-          "chunk:chunk_027",
-          "chunk:chunk_042",
-          "chunk:chunk_041"
+          "chunk:chunk_027"
         ],
         "query": "operating frequency",
         "retrieved_count": 5,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
-        "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "table:table_001",
-          "table:table_002"
-        ],
-        "prompt_survival_count": 2,
-        "prompt_survival_evidence_ids": [
-          "table:table_001",
-          "table:table_002"
-        ],
-        "query": "proposed microstrip patch antenna",
-        "retrieved_count": 2,
-        "search_type": "tables"
-      },
-      {
-        "bound_structural_evidence_ids": [],
-        "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "section:section_002",
-          "chunk:chunk_005"
-        ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_018",
-          "chunk:chunk_007",
-          "chunk:chunk_012",
-          "section:section_002",
-          "chunk:chunk_005"
-        ],
-        "query": "proposed microstrip patch antenna",
-        "retrieved_count": 5,
-        "search_type": "text"
-      },
-      {
-        "bound_structural_evidence_ids": [],
-        "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "table:table_001",
-          "table:table_002"
-        ],
-        "prompt_survival_count": 2,
-        "prompt_survival_evidence_ids": [
-          "table:table_001",
-          "table:table_002"
-        ],
-        "query": "dimensions of proposed antenna",
-        "retrieved_count": 2,
-        "search_type": "tables"
-      },
-      {
-        "bound_structural_evidence_ids": [],
-        "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 3,
-        "final_evidence_usage_ids": [
-          "chunk:chunk_040",
-          "chunk:chunk_006",
-          "chunk:chunk_022"
-        ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_021",
-          "chunk:chunk_018",
-          "chunk:chunk_040",
-          "chunk:chunk_006",
-          "chunk:chunk_022"
-        ],
-        "query": "dimensions of proposed antenna",
-        "retrieved_count": 5,
-        "search_type": "text"
-      },
-      {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
         "final_evidence_usage_count": 1,
-        "final_evidence_usage_ids": [
-          "table:table_002"
+        "final_evidence_usage_id_samples": [
+          "chunk:chunk_018"
         ],
         "prompt_survival_count": 1,
-        "prompt_survival_evidence_ids": [
-          "table:table_002"
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_018"
         ],
-        "query": "inset feeding schematic diagram",
-        "retrieved_count": 1,
+        "query": "proposed microstrip patch antenna",
+        "retrieved_count": 3,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_id_samples": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 2,
+        "final_evidence_usage_id_samples": [
+          "chunk:chunk_021",
+          "chunk:chunk_018"
+        ],
+        "prompt_survival_count": 2,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_021",
+          "chunk:chunk_018"
+        ],
+        "query": "dimensions of proposed antenna",
+        "retrieved_count": 3,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_id_samples": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 0,
+        "final_evidence_usage_id_samples": [],
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "table:table_001"
+        ],
+        "query": "dimensions of proposed antenna",
+        "retrieved_count": 2,
         "search_type": "tables"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
         "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
+        "final_evidence_usage_id_samples": [
           "chunk:chunk_034",
           "chunk:chunk_029"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_034",
-          "chunk:chunk_029",
-          "chunk:chunk_017",
-          "chunk:chunk_016",
-          "chunk:chunk_028"
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_034"
         ],
         "query": "inset feeding schematic diagram",
-        "retrieved_count": 5,
+        "retrieved_count": 3,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "table:table_001",
-          "table:table_002"
+        "final_evidence_usage_count": 1,
+        "final_evidence_usage_id_samples": [
+          "chunk:chunk_055"
         ],
         "prompt_survival_count": 2,
-        "prompt_survival_evidence_ids": [
-          "table:table_001",
-          "table:table_002"
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_055",
+          "section:section_007"
         ],
         "query": "fabricated antenna",
-        "retrieved_count": 2,
-        "search_type": "tables"
-      },
-      {
-        "bound_structural_evidence_ids": [],
-        "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "chunk:chunk_055",
-          "section:section_004"
-        ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_055",
-          "section:section_007",
-          "section:section_004",
-          "chunk:chunk_067",
-          "chunk:chunk_016"
-        ],
-        "query": "fabricated antenna",
-        "retrieved_count": 5,
+        "retrieved_count": 3,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
         "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "table:table_002",
-          "table:table_001"
-        ],
-        "prompt_survival_count": 2,
-        "prompt_survival_evidence_ids": [
-          "table:table_002",
-          "table:table_001"
-        ],
-        "query": "beam-shaping antenna array",
-        "retrieved_count": 2,
-        "search_type": "tables"
-      },
-      {
-        "bound_structural_evidence_ids": [],
-        "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 4,
-        "final_evidence_usage_ids": [
+        "final_evidence_usage_id_samples": [
           "chunk:chunk_050",
-          "chunk:chunk_049",
-          "chunk:chunk_053",
-          "chunk:chunk_052"
+          "chunk:chunk_049"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_050",
-          "chunk:chunk_049",
-          "chunk:chunk_053",
-          "chunk:chunk_048",
-          "chunk:chunk_052"
-        ],
+        "prompt_survival_count": 0,
+        "prompt_survival_evidence_id_samples": [],
         "query": "beam-shaping antenna array",
-        "retrieved_count": 5,
+        "retrieved_count": 3,
         "search_type": "text"
       }
     ],
     "quality": [
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 1,
-        "final_evidence_usage_ids": [
-          "chunk:chunk_036"
-        ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_037",
-          "chunk:chunk_036",
-          "chunk:chunk_015",
-          "chunk:chunk_014",
-          "chunk:chunk_054"
-        ],
+        "final_evidence_usage_count": 0,
+        "final_evidence_usage_id_samples": [],
+        "prompt_survival_count": 0,
+        "prompt_survival_evidence_id_samples": [],
         "query": "bandwidth",
         "retrieved_count": 5,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "chunk:chunk_047",
-          "chunk:chunk_006"
+        "final_evidence_usage_count": 1,
+        "final_evidence_usage_id_samples": [
+          "chunk:chunk_047"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
+        "prompt_survival_count": 2,
+        "prompt_survival_evidence_id_samples": [
           "chunk:chunk_047",
-          "chunk:chunk_046",
-          "chunk:chunk_048",
-          "chunk:chunk_009",
-          "chunk:chunk_006"
+          "chunk:chunk_046"
         ],
         "query": "gain",
         "retrieved_count": 5,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
         "final_evidence_usage_count": 1,
-        "final_evidence_usage_ids": [
+        "final_evidence_usage_id_samples": [
           "chunk:chunk_020"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_013",
-          "chunk:chunk_012",
-          "chunk:chunk_008",
-          "section:section_003",
-          "chunk:chunk_020"
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_013"
         ],
         "query": "return loss",
         "retrieved_count": 5,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 3,
-        "final_evidence_usage_ids": [
-          "chunk:chunk_040",
-          "section:section_005",
-          "chunk:chunk_036"
-        ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_040",
-          "section:section_005",
-          "chunk:chunk_037",
-          "chunk:chunk_036",
-          "chunk:chunk_039"
-        ],
+        "final_evidence_usage_count": 0,
+        "final_evidence_usage_id_samples": [],
+        "prompt_survival_count": 0,
+        "prompt_survival_evidence_id_samples": [],
         "query": "reflection coefficient",
         "retrieved_count": 5,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 3,
-        "final_evidence_usage_ids": [
-          "chunk:chunk_041",
-          "chunk:chunk_040",
-          "chunk:chunk_042"
+        "final_evidence_usage_count": 1,
+        "final_evidence_usage_id_samples": [
+          "chunk:chunk_041"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_041",
-          "chunk:chunk_040",
-          "chunk:chunk_039",
-          "chunk:chunk_042",
-          "chunk:chunk_054"
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_041"
         ],
         "query": "VSWR",
         "retrieved_count": 5,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "section:section_002",
-          "chunk:chunk_005"
+        "final_evidence_usage_count": 1,
+        "final_evidence_usage_id_samples": [
+          "chunk:chunk_018"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_018",
-          "chunk:chunk_007",
-          "chunk:chunk_012",
-          "section:section_002",
-          "chunk:chunk_005"
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_018"
         ],
         "query": "proposed microstrip patch antenna",
-        "retrieved_count": 5,
+        "retrieved_count": 3,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
-        "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 3,
-        "final_evidence_usage_ids": [
-          "chunk:chunk_040",
-          "chunk:chunk_006",
-          "chunk:chunk_022"
-        ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_021",
-          "chunk:chunk_018",
-          "chunk:chunk_040",
-          "chunk:chunk_006",
-          "chunk:chunk_022"
-        ],
-        "query": "dimensions of proposed antenna",
-        "retrieved_count": 5,
-        "search_type": "text"
-      },
-      {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
         "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
+        "final_evidence_usage_id_samples": [
+          "chunk:chunk_021",
+          "chunk:chunk_018"
+        ],
+        "prompt_survival_count": 2,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_021",
+          "chunk:chunk_018"
+        ],
+        "query": "dimensions of proposed antenna",
+        "retrieved_count": 3,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_id_samples": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 2,
+        "final_evidence_usage_id_samples": [
           "chunk:chunk_034",
           "chunk:chunk_029"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_034",
-          "chunk:chunk_029",
-          "chunk:chunk_017",
-          "chunk:chunk_016",
-          "chunk:chunk_028"
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_034"
         ],
         "query": "inset feeding schematic diagram",
-        "retrieved_count": 5,
+        "retrieved_count": 3,
         "search_type": "text"
       },
       {
-        "bound_structural_evidence_ids": [],
+        "bound_structural_evidence_id_samples": [],
+        "contributed_to_bound_structural_field": false,
+        "final_evidence_usage_count": 1,
+        "final_evidence_usage_id_samples": [
+          "chunk:chunk_055"
+        ],
+        "prompt_survival_count": 0,
+        "prompt_survival_evidence_id_samples": [],
+        "query": "fabricated antenna",
+        "retrieved_count": 3,
+        "search_type": "text"
+      },
+      {
+        "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
         "final_evidence_usage_count": 2,
-        "final_evidence_usage_ids": [
-          "chunk:chunk_055",
-          "section:section_004"
-        ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_055",
-          "section:section_007",
-          "section:section_004",
-          "chunk:chunk_067",
-          "chunk:chunk_016"
-        ],
-        "query": "fabricated antenna",
-        "retrieved_count": 5,
-        "search_type": "text"
-      },
-      {
-        "bound_structural_evidence_ids": [],
-        "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 4,
-        "final_evidence_usage_ids": [
+        "final_evidence_usage_id_samples": [
           "chunk:chunk_050",
-          "chunk:chunk_049",
-          "chunk:chunk_053",
-          "chunk:chunk_052"
+          "chunk:chunk_049"
         ],
-        "prompt_survival_count": 5,
-        "prompt_survival_evidence_ids": [
-          "chunk:chunk_050",
-          "chunk:chunk_049",
-          "chunk:chunk_053",
-          "chunk:chunk_048",
-          "chunk:chunk_052"
+        "prompt_survival_count": 1,
+        "prompt_survival_evidence_id_samples": [
+          "chunk:chunk_050"
         ],
         "query": "beam-shaping antenna array",
-        "retrieved_count": 5,
+        "retrieved_count": 3,
         "search_type": "text"
       }
     ]
@@ -2324,9 +1498,7 @@
         "result_evidence_ids": [
           "chunk:chunk_018",
           "chunk:chunk_007",
-          "chunk:chunk_012",
-          "section:section_002",
-          "chunk:chunk_005"
+          "chunk:chunk_012"
         ],
         "search_type": "text"
       },
@@ -2338,9 +1510,7 @@
         "result_evidence_ids": [
           "chunk:chunk_021",
           "chunk:chunk_018",
-          "chunk:chunk_040",
-          "chunk:chunk_006",
-          "chunk:chunk_022"
+          "chunk:chunk_040"
         ],
         "search_type": "text"
       },
@@ -2352,9 +1522,7 @@
         "result_evidence_ids": [
           "chunk:chunk_034",
           "chunk:chunk_029",
-          "chunk:chunk_017",
-          "chunk:chunk_016",
-          "chunk:chunk_028"
+          "chunk:chunk_017"
         ],
         "search_type": "text"
       },
@@ -2366,9 +1534,7 @@
         "result_evidence_ids": [
           "chunk:chunk_055",
           "section:section_007",
-          "section:section_004",
-          "chunk:chunk_067",
-          "chunk:chunk_016"
+          "section:section_004"
         ],
         "search_type": "text"
       },
@@ -2380,9 +1546,7 @@
         "result_evidence_ids": [
           "chunk:chunk_050",
           "chunk:chunk_049",
-          "chunk:chunk_053",
-          "chunk:chunk_048",
-          "chunk:chunk_052"
+          "chunk:chunk_053"
         ],
         "search_type": "text"
       }
@@ -2456,25 +1620,9 @@
         "result_evidence_ids": [
           "chunk:chunk_018",
           "chunk:chunk_007",
-          "chunk:chunk_012",
-          "section:section_002",
-          "chunk:chunk_005"
+          "chunk:chunk_012"
         ],
         "search_type": "text"
-      },
-      {
-        "phase1_priority": "SearchPriority.HIGH",
-        "phase1_query_id": "Q1",
-        "query": "proposed microstrip patch antenna",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "figure:figure_004",
-          "figure:figure_003",
-          "figure:figure_011",
-          "figure:figure_007",
-          "figure:figure_001"
-        ],
-        "search_type": "figures"
       },
       {
         "phase1_priority": "SearchPriority.HIGH",
@@ -2484,25 +1632,9 @@
         "result_evidence_ids": [
           "chunk:chunk_021",
           "chunk:chunk_018",
-          "chunk:chunk_040",
-          "chunk:chunk_006",
-          "chunk:chunk_022"
+          "chunk:chunk_040"
         ],
         "search_type": "text"
-      },
-      {
-        "phase1_priority": "SearchPriority.HIGH",
-        "phase1_query_id": "Q2",
-        "query": "dimensions of proposed antenna",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "figure:figure_011",
-          "figure:figure_007",
-          "figure:figure_004",
-          "figure:figure_003",
-          "figure:figure_006"
-        ],
-        "search_type": "figures"
       },
       {
         "phase1_priority": "SearchPriority.MEDIUM",
@@ -2512,9 +1644,7 @@
         "result_evidence_ids": [
           "chunk:chunk_034",
           "chunk:chunk_029",
-          "chunk:chunk_017",
-          "chunk:chunk_016",
-          "chunk:chunk_028"
+          "chunk:chunk_017"
         ],
         "search_type": "text"
       },
@@ -2538,25 +1668,9 @@
         "result_evidence_ids": [
           "chunk:chunk_055",
           "section:section_007",
-          "section:section_004",
-          "chunk:chunk_067",
-          "chunk:chunk_016"
+          "section:section_004"
         ],
         "search_type": "text"
-      },
-      {
-        "phase1_priority": "SearchPriority.MEDIUM",
-        "phase1_query_id": "Q4",
-        "query": "fabricated antenna",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "figure:figure_004",
-          "figure:figure_003",
-          "figure:figure_009",
-          "figure:figure_011",
-          "figure:figure_001"
-        ],
-        "search_type": "figures"
       },
       {
         "phase1_priority": "SearchPriority.LOW",
@@ -2566,25 +1680,9 @@
         "result_evidence_ids": [
           "chunk:chunk_050",
           "chunk:chunk_049",
-          "chunk:chunk_053",
-          "chunk:chunk_048",
-          "chunk:chunk_052"
+          "chunk:chunk_053"
         ],
         "search_type": "text"
-      },
-      {
-        "phase1_priority": "SearchPriority.LOW",
-        "phase1_query_id": "Q5",
-        "query": "beam-shaping antenna array",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "figure:figure_010",
-          "figure:figure_009",
-          "figure:figure_011",
-          "figure:figure_003",
-          "figure:figure_004"
-        ],
-        "search_type": "figures"
       }
     ],
     "feeds": [
@@ -2656,9 +1754,7 @@
         "result_evidence_ids": [
           "chunk:chunk_018",
           "chunk:chunk_007",
-          "chunk:chunk_012",
-          "section:section_002",
-          "chunk:chunk_005"
+          "chunk:chunk_012"
         ],
         "search_type": "text"
       },
@@ -2670,9 +1766,7 @@
         "result_evidence_ids": [
           "chunk:chunk_021",
           "chunk:chunk_018",
-          "chunk:chunk_040",
-          "chunk:chunk_006",
-          "chunk:chunk_022"
+          "chunk:chunk_040"
         ],
         "search_type": "text"
       },
@@ -2684,9 +1778,7 @@
         "result_evidence_ids": [
           "chunk:chunk_034",
           "chunk:chunk_029",
-          "chunk:chunk_017",
-          "chunk:chunk_016",
-          "chunk:chunk_028"
+          "chunk:chunk_017"
         ],
         "search_type": "text"
       },
@@ -2698,9 +1790,7 @@
         "result_evidence_ids": [
           "chunk:chunk_055",
           "section:section_007",
-          "section:section_004",
-          "chunk:chunk_067",
-          "chunk:chunk_016"
+          "section:section_004"
         ],
         "search_type": "text"
       },
@@ -2712,9 +1802,7 @@
         "result_evidence_ids": [
           "chunk:chunk_050",
           "chunk:chunk_049",
-          "chunk:chunk_053",
-          "chunk:chunk_048",
-          "chunk:chunk_052"
+          "chunk:chunk_053"
         ],
         "search_type": "text"
       }
@@ -2784,22 +1872,9 @@
         "result_evidence_ids": [
           "chunk:chunk_018",
           "chunk:chunk_007",
-          "chunk:chunk_012",
-          "section:section_002",
-          "chunk:chunk_005"
+          "chunk:chunk_012"
         ],
         "search_type": "text"
-      },
-      {
-        "phase1_priority": "SearchPriority.HIGH",
-        "phase1_query_id": "Q1",
-        "query": "proposed microstrip patch antenna",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "table:table_001",
-          "table:table_002"
-        ],
-        "search_type": "tables"
       },
       {
         "phase1_priority": "SearchPriority.HIGH",
@@ -2809,9 +1884,7 @@
         "result_evidence_ids": [
           "chunk:chunk_021",
           "chunk:chunk_018",
-          "chunk:chunk_040",
-          "chunk:chunk_006",
-          "chunk:chunk_022"
+          "chunk:chunk_040"
         ],
         "search_type": "text"
       },
@@ -2834,21 +1907,9 @@
         "result_evidence_ids": [
           "chunk:chunk_034",
           "chunk:chunk_029",
-          "chunk:chunk_017",
-          "chunk:chunk_016",
-          "chunk:chunk_028"
+          "chunk:chunk_017"
         ],
         "search_type": "text"
-      },
-      {
-        "phase1_priority": "SearchPriority.MEDIUM",
-        "phase1_query_id": "Q3",
-        "query": "inset feeding schematic diagram",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "table:table_002"
-        ],
-        "search_type": "tables"
       },
       {
         "phase1_priority": "SearchPriority.MEDIUM",
@@ -2858,22 +1919,9 @@
         "result_evidence_ids": [
           "chunk:chunk_055",
           "section:section_007",
-          "section:section_004",
-          "chunk:chunk_067",
-          "chunk:chunk_016"
+          "section:section_004"
         ],
         "search_type": "text"
-      },
-      {
-        "phase1_priority": "SearchPriority.MEDIUM",
-        "phase1_query_id": "Q4",
-        "query": "fabricated antenna",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "table:table_001",
-          "table:table_002"
-        ],
-        "search_type": "tables"
       },
       {
         "phase1_priority": "SearchPriority.LOW",
@@ -2883,22 +1931,9 @@
         "result_evidence_ids": [
           "chunk:chunk_050",
           "chunk:chunk_049",
-          "chunk:chunk_053",
-          "chunk:chunk_048",
-          "chunk:chunk_052"
+          "chunk:chunk_053"
         ],
         "search_type": "text"
-      },
-      {
-        "phase1_priority": "SearchPriority.LOW",
-        "phase1_query_id": "Q5",
-        "query": "beam-shaping antenna array",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "table:table_002",
-          "table:table_001"
-        ],
-        "search_type": "tables"
       }
     ],
     "materials": [
@@ -2952,22 +1987,9 @@
         "result_evidence_ids": [
           "chunk:chunk_018",
           "chunk:chunk_007",
-          "chunk:chunk_012",
-          "section:section_002",
-          "chunk:chunk_005"
+          "chunk:chunk_012"
         ],
         "search_type": "text"
-      },
-      {
-        "phase1_priority": "SearchPriority.HIGH",
-        "phase1_query_id": "Q1",
-        "query": "proposed microstrip patch antenna",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "table:table_001",
-          "table:table_002"
-        ],
-        "search_type": "tables"
       },
       {
         "phase1_priority": "SearchPriority.HIGH",
@@ -2977,9 +1999,7 @@
         "result_evidence_ids": [
           "chunk:chunk_021",
           "chunk:chunk_018",
-          "chunk:chunk_040",
-          "chunk:chunk_006",
-          "chunk:chunk_022"
+          "chunk:chunk_040"
         ],
         "search_type": "text"
       },
@@ -3002,21 +2022,9 @@
         "result_evidence_ids": [
           "chunk:chunk_034",
           "chunk:chunk_029",
-          "chunk:chunk_017",
-          "chunk:chunk_016",
-          "chunk:chunk_028"
+          "chunk:chunk_017"
         ],
         "search_type": "text"
-      },
-      {
-        "phase1_priority": "SearchPriority.MEDIUM",
-        "phase1_query_id": "Q3",
-        "query": "inset feeding schematic diagram",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "table:table_002"
-        ],
-        "search_type": "tables"
       },
       {
         "phase1_priority": "SearchPriority.MEDIUM",
@@ -3026,22 +2034,9 @@
         "result_evidence_ids": [
           "chunk:chunk_055",
           "section:section_007",
-          "section:section_004",
-          "chunk:chunk_067",
-          "chunk:chunk_016"
+          "section:section_004"
         ],
         "search_type": "text"
-      },
-      {
-        "phase1_priority": "SearchPriority.MEDIUM",
-        "phase1_query_id": "Q4",
-        "query": "fabricated antenna",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "table:table_001",
-          "table:table_002"
-        ],
-        "search_type": "tables"
       },
       {
         "phase1_priority": "SearchPriority.LOW",
@@ -3051,22 +2046,9 @@
         "result_evidence_ids": [
           "chunk:chunk_050",
           "chunk:chunk_049",
-          "chunk:chunk_053",
-          "chunk:chunk_048",
-          "chunk:chunk_052"
+          "chunk:chunk_053"
         ],
         "search_type": "text"
-      },
-      {
-        "phase1_priority": "SearchPriority.LOW",
-        "phase1_query_id": "Q5",
-        "query": "beam-shaping antenna array",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "table:table_002",
-          "table:table_001"
-        ],
-        "search_type": "tables"
       }
     ],
     "parameters": [
@@ -3130,35 +2112,11 @@
         "query": "proposed microstrip patch antenna",
         "query_source": "phase1_interpretation_map",
         "result_evidence_ids": [
-          "table:table_001",
-          "table:table_002"
-        ],
-        "search_type": "tables"
-      },
-      {
-        "phase1_priority": "SearchPriority.HIGH",
-        "phase1_query_id": "Q1",
-        "query": "proposed microstrip patch antenna",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
           "chunk:chunk_018",
           "chunk:chunk_007",
-          "chunk:chunk_012",
-          "section:section_002",
-          "chunk:chunk_005"
+          "chunk:chunk_012"
         ],
         "search_type": "text"
-      },
-      {
-        "phase1_priority": "SearchPriority.HIGH",
-        "phase1_query_id": "Q2",
-        "query": "dimensions of proposed antenna",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "table:table_001",
-          "table:table_002"
-        ],
-        "search_type": "tables"
       },
       {
         "phase1_priority": "SearchPriority.HIGH",
@@ -3168,18 +2126,17 @@
         "result_evidence_ids": [
           "chunk:chunk_021",
           "chunk:chunk_018",
-          "chunk:chunk_040",
-          "chunk:chunk_006",
-          "chunk:chunk_022"
+          "chunk:chunk_040"
         ],
         "search_type": "text"
       },
       {
-        "phase1_priority": "SearchPriority.MEDIUM",
-        "phase1_query_id": "Q3",
-        "query": "inset feeding schematic diagram",
+        "phase1_priority": "SearchPriority.HIGH",
+        "phase1_query_id": "Q2",
+        "query": "dimensions of proposed antenna",
         "query_source": "phase1_interpretation_map",
         "result_evidence_ids": [
+          "table:table_001",
           "table:table_002"
         ],
         "search_type": "tables"
@@ -3192,22 +2149,9 @@
         "result_evidence_ids": [
           "chunk:chunk_034",
           "chunk:chunk_029",
-          "chunk:chunk_017",
-          "chunk:chunk_016",
-          "chunk:chunk_028"
+          "chunk:chunk_017"
         ],
         "search_type": "text"
-      },
-      {
-        "phase1_priority": "SearchPriority.MEDIUM",
-        "phase1_query_id": "Q4",
-        "query": "fabricated antenna",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
-          "table:table_001",
-          "table:table_002"
-        ],
-        "search_type": "tables"
       },
       {
         "phase1_priority": "SearchPriority.MEDIUM",
@@ -3217,9 +2161,7 @@
         "result_evidence_ids": [
           "chunk:chunk_055",
           "section:section_007",
-          "section:section_004",
-          "chunk:chunk_067",
-          "chunk:chunk_016"
+          "section:section_004"
         ],
         "search_type": "text"
       },
@@ -3229,22 +2171,9 @@
         "query": "beam-shaping antenna array",
         "query_source": "phase1_interpretation_map",
         "result_evidence_ids": [
-          "table:table_002",
-          "table:table_001"
-        ],
-        "search_type": "tables"
-      },
-      {
-        "phase1_priority": "SearchPriority.LOW",
-        "phase1_query_id": "Q5",
-        "query": "beam-shaping antenna array",
-        "query_source": "phase1_interpretation_map",
-        "result_evidence_ids": [
           "chunk:chunk_050",
           "chunk:chunk_049",
-          "chunk:chunk_053",
-          "chunk:chunk_048",
-          "chunk:chunk_052"
+          "chunk:chunk_053"
         ],
         "search_type": "text"
       }
@@ -3318,9 +2247,7 @@
         "result_evidence_ids": [
           "chunk:chunk_018",
           "chunk:chunk_007",
-          "chunk:chunk_012",
-          "section:section_002",
-          "chunk:chunk_005"
+          "chunk:chunk_012"
         ],
         "search_type": "text"
       },
@@ -3332,9 +2259,7 @@
         "result_evidence_ids": [
           "chunk:chunk_021",
           "chunk:chunk_018",
-          "chunk:chunk_040",
-          "chunk:chunk_006",
-          "chunk:chunk_022"
+          "chunk:chunk_040"
         ],
         "search_type": "text"
       },
@@ -3346,9 +2271,7 @@
         "result_evidence_ids": [
           "chunk:chunk_034",
           "chunk:chunk_029",
-          "chunk:chunk_017",
-          "chunk:chunk_016",
-          "chunk:chunk_028"
+          "chunk:chunk_017"
         ],
         "search_type": "text"
       },
@@ -3360,9 +2283,7 @@
         "result_evidence_ids": [
           "chunk:chunk_055",
           "section:section_007",
-          "section:section_004",
-          "chunk:chunk_067",
-          "chunk:chunk_016"
+          "section:section_004"
         ],
         "search_type": "text"
       },
@@ -3374,9 +2295,7 @@
         "result_evidence_ids": [
           "chunk:chunk_050",
           "chunk:chunk_049",
-          "chunk:chunk_053",
-          "chunk:chunk_048",
-          "chunk:chunk_052"
+          "chunk:chunk_053"
         ],
         "search_type": "text"
       }
@@ -3384,7 +2303,7 @@
   },
   "run_id": "run_20260421T091405157638Z",
   "schema_errors": [],
-  "timestamp_utc": "2026-04-21T13:45:09Z",
+  "timestamp_utc": "2026-04-21T15:26:53Z",
   "validation_success": true,
   "warnings": []
 }
