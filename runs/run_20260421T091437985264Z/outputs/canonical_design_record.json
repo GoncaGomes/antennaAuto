@@ -1,0 +1,316 @@
+{
+  "design_evolution_notes": [
+    {
+      "description": "Initial reference design: a microstrip line-fed triangular patch radiator with a complete ground plane.",
+      "evidence_ids": [
+        "chunk:chunk_018",
+        "table:table_001"
+      ],
+      "label": "Radiator 1 baseline"
+    },
+    {
+      "description": "An elliptical slot with 1 mm radius is inserted at the patch center to explore compactness and bandwidth tuning.",
+      "evidence_ids": [
+        "section:section_004",
+        "chunk:chunk_021",
+        "table:table_001"
+      ],
+      "label": "Radiator 2 / Step 2"
+    },
+    {
+      "description": "The optimized design from Radiator 2 is modified by adding a rectangular slot of 2 mm \u00d7 5 mm; the text notes improved gain/directivity relative to Radiator 2.",
+      "evidence_ids": [
+        "section:section_005",
+        "chunk:chunk_022",
+        "table:table_001"
+      ],
+      "label": "Radiator 3 / Step 3"
+    },
+    {
+      "description": "Final proposed design inserts a 3 mm radius circular slot into the triangular patch and is explicitly described as the best choice for ISM-band features.",
+      "evidence_ids": [
+        "section:section_006",
+        "chunk:chunk_024",
+        "chunk:chunk_028",
+        "figure:figure_008"
+      ],
+      "label": "Radiator 4 / Step 4 final geometry"
+    }
+  ],
+  "dominant_evidence_ids": [
+    "section:section_006",
+    "chunk:chunk_024",
+    "chunk:chunk_028",
+    "table:table_001",
+    "table:table_002",
+    "table:table_003",
+    "section:section_008",
+    "chunk:chunk_041"
+  ],
+  "final_design": {
+    "classification": {
+      "primary_family": "circularly slotted triangular patch antenna",
+      "topology_tags": [
+        "microstrip line-fed",
+        "full ground plane",
+        "single-layer",
+        "ISM band",
+        "circular slot"
+      ]
+    },
+    "extra_parameters": [
+      {
+        "evidence_ids": [
+          "chunk:chunk_015",
+          "section:section_003"
+        ],
+        "semantic_name": "substrate relative permittivity",
+        "symbol": "\u03b5r",
+        "target_component": "substrate",
+        "value": 4.4
+      },
+      {
+        "evidence_ids": [
+          "chunk:chunk_015",
+          "section:section_003"
+        ],
+        "semantic_name": "substrate thickness",
+        "symbol": "t",
+        "target_component": "substrate",
+        "unit": "mm",
+        "value": 1.6
+      },
+      {
+        "evidence_ids": [
+          "table:table_001",
+          "chunk:chunk_041"
+        ],
+        "semantic_name": "overall antenna footprint",
+        "target_component": "overall design",
+        "value": "25.5 mm \u00d7 22.5 mm \u00d7 1.6 mm"
+      },
+      {
+        "evidence_ids": [
+          "table:table_001",
+          "chunk:chunk_028"
+        ],
+        "semantic_name": "slot radius",
+        "symbol": "cr",
+        "target_component": "slot",
+        "unit": "mm",
+        "value": 3
+      },
+      {
+        "evidence_ids": [
+          "section:section_006",
+          "chunk:chunk_024"
+        ],
+        "semantic_name": "design iteration",
+        "target_component": "overall design",
+        "value": "Radiator 4 / Step 4"
+      }
+    ],
+    "feed": {
+      "dimensions": [
+        {
+          "name": "length",
+          "unit": "mm",
+          "value": 14
+        },
+        {
+          "name": "width",
+          "unit": "mm",
+          "value": 3.11
+        }
+      ],
+      "driven_target": "triangular patch apex",
+      "evidence_ids": [
+        "table:table_001",
+        "chunk:chunk_011",
+        "section:section_002"
+      ],
+      "feed_family": "microstrip line feed",
+      "matching_style": "apex-fed"
+    },
+    "ground": {
+      "dimensions": [
+        {
+          "name": "length",
+          "unit": "mm",
+          "value": 25.5
+        },
+        {
+          "name": "width",
+          "unit": "mm",
+          "value": 22.5
+        }
+      ],
+      "evidence_ids": [
+        "table:table_001",
+        "chunk:chunk_004",
+        "section:section_008"
+      ],
+      "label": "Ground plane",
+      "layer_role": "ground plane",
+      "shape_mode": "rectangular"
+    },
+    "layers": [
+      {
+        "evidence_ids": [
+          "chunk:chunk_015",
+          "section:section_003"
+        ],
+        "material_name": "FR4",
+        "role": "substrate",
+        "thickness_unit": "mm",
+        "thickness_value": 1.6
+      }
+    ],
+    "materials": [
+      {
+        "category": "substrate",
+        "evidence_ids": [
+          "chunk:chunk_015",
+          "section:section_003"
+        ],
+        "name": "FR4",
+        "roles": [
+          "substrate"
+        ]
+      }
+    ],
+    "patch": {
+      "dimensions": [
+        {
+          "name": "x",
+          "unit": "mm",
+          "value": 9.5
+        },
+        {
+          "name": "y",
+          "unit": "mm",
+          "value": 16.08
+        }
+      ],
+      "evidence_ids": [
+        "table:table_001",
+        "section:section_006"
+      ],
+      "label": "Triangular radiating patch",
+      "layer_role": "radiating patch",
+      "shape_mode": "triangular"
+    },
+    "performance_targets": [
+      {
+        "evidence_ids": [
+          "table:table_003",
+          "chunk:chunk_041"
+        ],
+        "name": "Operating frequency",
+        "unit": "GHz",
+        "value": 5.79
+      },
+      {
+        "evidence_ids": [
+          "table:table_003",
+          "chunk:chunk_041"
+        ],
+        "name": "Operating band",
+        "unit": "GHz",
+        "value": "5.70-5.88"
+      },
+      {
+        "evidence_ids": [
+          "table:table_002",
+          "table:table_003"
+        ],
+        "name": "Gain",
+        "unit": "dBi",
+        "value": 1.49
+      },
+      {
+        "evidence_ids": [
+          "chunk:chunk_004",
+          "section:section_008"
+        ],
+        "name": "Intended ISM center frequency",
+        "unit": "GHz",
+        "value": 5.8
+      }
+    ],
+    "slots": [
+      {
+        "dimensions": [
+          {
+            "name": "radius",
+            "unit": "mm",
+            "value": 3
+          }
+        ],
+        "evidence_ids": [
+          "table:table_001",
+          "section:section_006",
+          "chunk:chunk_028"
+        ],
+        "label": "Central circular slot",
+        "layer_role": "patch slot",
+        "shape_mode": "circular"
+      }
+    ]
+  },
+  "has_multiple_variants": true,
+  "identified_antennas": [
+    "Radiator 1: microstrip line-fed triangular patch radiator with complete ground plane",
+    "Radiator 2: triangular patch with central elliptical slot (1 mm radius)",
+    "Radiator 3: triangular patch with rectangular slot (2 mm \u00d7 5 mm)",
+    "Radiator 4: circularly slotted triangular patch radiator (3 mm circular slot radius)",
+    "Proposed CSTPA / developed antenna",
+    "Reference triangular patch radiator used as the baseline"
+  ],
+  "proposed_final_antenna_rationale": "Radiator 4 is the main proposed final design because the paper explicitly states that a circular-slot-based triangular patch radiator with a 3 mm slot radius is the best choice for ISM-band features, and the conclusion describes the developed antenna as the final compact 5.8 GHz CSTPA. Radiator 1\u20133 are clearly intermediate comparison designs, and the text/figures repeatedly link the final proposed geometry to Step 4. The only ambiguity is that the paper\u2019s reported performance numbers are not perfectly consistent across abstract, tables, and conclusion, but those do not change the identity of the final geometry.",
+  "secondary_evidence_ids": [
+    "section:section_003",
+    "section:section_004",
+    "section:section_005",
+    "chunk:chunk_016",
+    "chunk:chunk_018",
+    "chunk:chunk_021",
+    "chunk:chunk_022",
+    "chunk:chunk_023",
+    "chunk:chunk_030",
+    "chunk:chunk_031",
+    "figure:figure_008"
+  ],
+  "selected_design_rationale": "The paper repeatedly identifies Step 4 / Radiator 4 as the proposed or best choice: it is the final geometry in the design sequence, is explicitly described as the best choice for ISM-band operation, and is the design carried into the concluding summary. Earlier variants (Radiator 1\u20133) are intermediate steps used for parametric comparison: the reference triangular patch, the elliptical-slot variant, and the rectangular-slot variant. Step 4 is therefore the dominant final antenna despite some mixed performance reporting versus Step 3 in gain/directivity.",
+  "selected_design_summary": "Dominant final design is the proposed CSTPA / Radiator 4: a microstrip line-fed circularly slotted triangular patch antenna for the 5.8 GHz ISM band on FR4, with a 3 mm circular slot, triangular patch, and full-footprint ground on a 25.5 mm \u00d7 22.5 mm \u00d7 1.6 mm substrate.",
+  "unresolved_conflicts": [
+    {
+      "conflicting_evidence_ids": [
+        "chunk:chunk_004",
+        "section:section_008"
+      ],
+      "description": "The paper reports different final performance numbers in different places: the abstract and conclusion summarize 100 MHz bandwidth and 3% FBW at 5.8 GHz, while Table 2 gives Step 4 as 5.72-5.88 GHz with 160 MHz bandwidth, and Table 3 summarizes the proposed design as 5.70-5.88 GHz at 5.79 GHz. The final geometry is clear, but the exact bandwidth figure remains inconsistent across sources.",
+      "preferred_evidence_ids": [
+        "table:table_003",
+        "table:table_002"
+      ],
+      "status": "partially_resolved",
+      "topic": "Reported bandwidth / operating band"
+    },
+    {
+      "conflicting_evidence_ids": [
+        "chunk:chunk_041",
+        "section:section_008",
+        "chunk:chunk_042"
+      ],
+      "description": "The paper uses language implying fabrication/development and mentions validation in author contributions, but the retrieved evidence only shows simulated tables/figures and does not clearly include measured antenna results.",
+      "preferred_evidence_ids": [
+        "table:table_002",
+        "table:table_003",
+        "figure:figure_010"
+      ],
+      "status": "unresolved",
+      "topic": "Validation status"
+    }
+  ]
+}
