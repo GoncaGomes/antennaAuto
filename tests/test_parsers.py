@@ -130,8 +130,8 @@ def test_extract_pdf_to_bundle_writes_markdown_native_outputs(monkeypatch, tmp_p
     assert result["sections"][0]["section_id"] == "section_001"
     assert result["sections"][0]["title"] == "Introduction"
     assert "Intro text." in result["sections"][0]["text_excerpt"]
-    assert "Table 1. Dimensions of proposed antenna" in result["sections"][0]["text_excerpt"]
-    assert "Figure 1. Antenna geometry" in result["sections"][0]["text_excerpt"]
+    assert "Table 1. Dimensions of proposed antenna" not in result["sections"][0]["text_excerpt"]
+    assert "Figure 1. Antenna geometry" not in result["sections"][0]["text_excerpt"]
 
 
 def test_extract_pdf_to_bundle_adds_front_matter_when_no_headers(monkeypatch, tmp_path: Path) -> None:

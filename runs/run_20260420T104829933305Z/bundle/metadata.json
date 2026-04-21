@@ -1,0 +1,14 @@
+{
+  "file_size_bytes": 678821,
+  "ingestion_timestamp_utc": "2026-04-20T10:48:29Z",
+  "original_filename": "IJETT-V4I4P340.pdf",
+  "original_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\data\\raw\\paper_003\\IJETT-V4I4P340.pdf",
+  "page_count": 5,
+  "pdf_metadata": {
+    "creationDate": "D:20130429222243+05'30'",
+    "format": "PDF 1.5",
+    "producer": "doPDF Ver 7.2 Build 355 (Windows 7 Ultimate Edition - Version: 6.1.7600 (x86))"
+  },
+  "run_id": "run_20260420T104829933305Z",
+  "sha256": "c47fa454455737e44110f54f95340a48b511139146746dfc5a4001a2ac755b4f"
+}

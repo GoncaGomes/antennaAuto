@@ -70,6 +70,16 @@ FRONT_MATTER_PATTERNS = (
     "abstract:",
     "keywords:",
 )
+AFFILIATION_CONTACT_CUES = (
+    "department of",
+    "university",
+    "correspondence",
+    "email",
+    "school of",
+    "faculty of",
+    "institute of",
+    "college of",
+)
 ANALYSIS_CANDIDATES: list[tuple[str, tuple[str, ...], float]] = [
     ("radiation pattern", ("radiation pattern", "far-field", "e-plane", "h-plane", "polar plot"), 0.95),
     ("s11 plot", ("s11", "return loss", "reflection coefficient"), 0.95),
@@ -495,6 +505,8 @@ def _is_heading_noise(title: str, following_objects: list[dict[str, Any]], grobi
         return False
     if _is_running_header_footer_line(cleaned):
         return True
+    if EMAIL_PATTERN.search(cleaned):
+        return True
     if any(pattern in lowered for pattern in EDITORIAL_PATTERNS):
         return True
     if any(pattern in lowered for pattern in ("author contributions", "funding", "institutional review board", "informed consent")):
@@ -508,12 +520,19 @@ def _is_heading_noise(title: str, following_objects: list[dict[str, Any]], grobi
         for obj in following_objects
         if obj["object_type"] in {"paragraph", "list_item"} and not obj["meta"].get("is_noise")
     ).lower()
-    if EMAIL_PATTERN.search(following_text) or any(token in following_text for token in ("department of", "university", "correspondence")):
-        if TITLE_CASE_NAME_PATTERN.fullmatch(cleaned):
+    if EMAIL_PATTERN.search(following_text) or any(token in following_text for token in AFFILIATION_CONTACT_CUES):
+        if _looks_like_author_heading(cleaned):
             return True
     if cleaned.lower() in {"proceeding paper", "paper open access", "you may also like"}:
         return True
     return False
+
+
+def _looks_like_author_heading(text: str) -> bool:
+    candidate = re.sub(r"(?:\s*[,;]?\s*\d+\*?\s*)+$", "", text).strip()
+    if not candidate:
+        return False
+    return bool(TITLE_CASE_NAME_PATTERN.fullmatch(candidate))
 
 
 def _export_tables(
@@ -609,15 +628,22 @@ def _find_adjacent_caption_object(
             if candidate["meta"].get("is_noise"):
                 index += direction
                 continue
-            if candidate["object_type"] == "caption":
-                text = candidate["text"]
-                if expected == "table" and _looks_like_table_caption(text):
-                    return candidate
-                if expected == "figure" and _looks_like_figure_caption(text) and not _looks_like_table_caption(text):
-                    return candidate
-                return None
-            if candidate["object_type"] in {"paragraph", "heading", "list_item", "figure", "table", "formula"}:
-                break
+            candidate_type = candidate["object_type"]
+            text = candidate["text"]
+            if expected == "table":
+                if candidate_type in {"caption", "heading", "paragraph"}:
+                    if _looks_like_table_caption(text) and not _looks_like_figure_caption(text):
+                        return candidate
+                    break
+                if candidate_type in {"list_item", "figure", "table", "formula"}:
+                    break
+            elif expected == "figure":
+                if candidate_type == "caption":
+                    if _looks_like_figure_caption(text) and not _looks_like_table_caption(text):
+                        return candidate
+                    return None
+                if candidate_type in {"paragraph", "heading", "list_item", "figure", "table", "formula"}:
+                    break
             index += direction
             steps += 1
     return None
@@ -644,13 +670,11 @@ def _clean_table_caption(text: str) -> str:
         return ""
     match = TABLE_CAPTION_PATTERN.match(candidate)
     if match:
-        suffix = match.group(2).strip()
+        suffix = match.group(2).strip(" .:-")
         prefix = f"Table {match.group(1)}"
-        if candidate.lower().startswith("table ") and candidate[:5].istitle():
-            prefix = f"Table {match.group(1)}"
         if suffix:
-            return f"{prefix}. {suffix}".replace("..", ".").strip()
-        return prefix
+            return f"{prefix}. {suffix}".strip()
+        return f"{prefix}."
     return candidate
 
 
@@ -1238,21 +1262,10 @@ def _section_text(
     table_content_by_id: dict[str, str],
     figure_summaries_by_id: dict[str, dict[str, Any]],
 ) -> str:
-    if obj["object_type"] in {"paragraph", "list_item", "caption", "formula"}:
+    if obj["object_type"] in {"paragraph", "list_item", "formula"}:
         return obj["text"]
     if obj["object_type"] == "heading":
         return obj["text"]
-    if obj["object_type"] == "table":
-        artifact_id = str(obj.get("source_artifact_id") or "").strip()
-        table_content = table_content_by_id.get(artifact_id, "")
-        caption, _body = _split_table_markdown(table_content)
-        return caption or text_excerpt(table_content.replace("|", " "), limit=240)
-    if obj["object_type"] == "figure":
-        artifact_id = str(obj.get("source_artifact_id") or "").strip()
-        summary = figure_summaries_by_id.get(artifact_id, {})
-        if summary.get("figure_kind") == "decorative_or_editorial" and not summary.get("caption"):
-            return ""
-        return str(summary.get("caption") or summary.get("local_text_window") or summary.get("context") or "").strip()
     return ""
 
 
