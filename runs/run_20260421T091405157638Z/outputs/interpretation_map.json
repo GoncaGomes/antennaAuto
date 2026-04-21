@@ -1,0 +1,42 @@
+{
+  "has_final_design_signal": true,
+  "has_multiple_variants": true,
+  "open_uncertainties": [
+    "Whether the paper has only one main proposed patch or also a later array/beam-shaping variant",
+    "Whether the fabricated/measured results correspond to the same proposed antenna or a separate implementation",
+    "Whether the final selected geometry differs from the initial proposed dimensions",
+    "How much of the paper is simulation-only versus experimentally validated"
+  ],
+  "search_queries": [
+    {
+      "priority": "high",
+      "query_id": "Q1",
+      "query_text": "proposed microstrip patch antenna",
+      "why": "The paper repeatedly labels the design as proposed, so this is the best entry point for the main candidate design."
+    },
+    {
+      "priority": "high",
+      "query_id": "Q2",
+      "query_text": "dimensions of proposed antenna",
+      "why": "Table 1 is explicitly named as the dimensions of the proposed antenna and may confirm the selected geometry."
+    },
+    {
+      "priority": "medium",
+      "query_id": "Q3",
+      "query_text": "inset feeding schematic diagram",
+      "why": "The inset feed is a key design choice mentioned in the abstract and figure captions, and may resolve the feed implementation."
+    },
+    {
+      "priority": "medium",
+      "query_id": "Q4",
+      "query_text": "fabricated antenna",
+      "why": "The paper map includes fabricated signals and a measurement figure, so this may identify the built version versus only the simulated proposal."
+    },
+    {
+      "priority": "low",
+      "query_id": "Q5",
+      "query_text": "beam-shaping antenna array",
+      "why": "The map suggests an array/beam-shaping discussion later in the paper, which may indicate a secondary variant or extension beyond the main patch."
+    }
+  ]
+}

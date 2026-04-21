@@ -1,0 +1,108 @@
+{
+  "abstract": "The advantages of microstrip patch antennas include small size, adaptable surface, ease of fabrication, and compatibility with integrated circuit technology. Numerous experiments have been done over the past few decades to enhance the performance of this antenna, and both military and commercial sectors have found many uses for it. This paper introduces a microstrip patch antenna with an operating frequency of 28GHz for 5G mobile communication. This research designed and simulated a rectangular microstrip patch antenna with 3.494 mm 5.3 mm 0.003 mm. The proposed antenna resonates at 28 GHz with a reflection coefficient of -24 dB, a bandwidth of 280 MHz, and a gain of 2.2 dBi. The inset feed technique matches the 50 \u03a9 transmission line impedance. In the design, Rogers RT5880 substrate and c",
+  "candidate_design_mentions": [
+    {
+      "evidence_id": "chunk:chunk_018",
+      "page_number": 4,
+      "text": "## 2. Theoretical Analysis of Microstrip Patch Antenna ![Figure](figures/figure_004.png) Figure 1. Proposed Microstrip Patch Antenna"
+    },
+    {
+      "evidence_id": "chunk:chunk_009",
+      "page_number": 10,
+      "text": "Meanwhile, an array configuration can overcome the microstrip patch antenna's disadvantages, including lower gain and power handling capacity [4]. Also, by 2012, three feeding methods were"
+    },
+    {
+      "evidence_id": "chunk:chunk_055",
+      "page_number": 7,
+      "text": "The antenna's input impedance at the operating frequency band is 51.6 \u03a9, which shows good matching with the reference impedance 50 \u03a9. By implementing beam-shaping, several antennas are put into an antenna array. This way"
+    },
+    {
+      "evidence_id": "chunk:chunk_035",
+      "page_number": 7,
+      "text": "## 3. Results and discussions With the use of Computer Simulation Technology Microwave Studio, the antenna was modeled and simulated. From Figure 3 (a), the Input side and signal passed through to the output side of the"
+    },
+    {
+      "evidence_id": "chunk:chunk_067",
+      "page_number": 11,
+      "text": "Abirami M 2017 A Review of Patch Antenna Design for 5G John Colaco and Rajesh Lohani 2020 Design and Implementation of Microstrip Patch Antenna for 5G applications"
+    },
+    {
+      "evidence_id": "section:section_005",
+      "page_number": 7,
+      "text": "3. Results and discussions With the use of Computer Simulation Technology Microwave Studio, the antenna was modeled and simulated. From Figure 3 (a), the Input side and signal passed through to the output side of the DUT"
+    },
+    {
+      "evidence_id": "chunk:chunk_046",
+      "page_number": 9,
+      "text": "![Figure](figures/figure_008.png) Figure 5. Real part, imaginary part, magnitude of Z11 on the operating frequency The antenna's gain is another parameter that must be considered when designing. The gain represents the r"
+    },
+    {
+      "evidence_id": "chunk:chunk_017",
+      "page_number": 7,
+      "text": "Then introduce the way of feeding - inset feed, which also includes how to make impedance matching meet the requirement within the operating frequency band. This part tries to improve that only by making the antenna's in"
+    }
+  ],
+  "key_design_signals": {
+    "fabricated": 2,
+    "final": 0,
+    "measured": 1,
+    "optimized": 0,
+    "proposed": 15,
+    "simulated": 5
+  },
+  "key_figure_refs": [
+    {
+      "caption": "Figure 2. The schematic diagram of inset feeding",
+      "figure_id": "figure_005",
+      "figure_role_guess": "fabricated",
+      "page_number": 6
+    },
+    {
+      "caption": "Figure 3. Block diagram of S-parameter and S11 on the operating frequency",
+      "figure_id": "figure_006",
+      "figure_role_guess": "measurement",
+      "page_number": 7
+    },
+    {
+      "caption": "Figure 4. VSWR of the proposed antenna on operating frequency",
+      "figure_id": "figure_007",
+      "figure_role_guess": "measurement",
+      "page_number": 7
+    },
+    {
+      "caption": "Figure 6. Gain vs. Frequency",
+      "figure_id": "figure_009",
+      "figure_role_guess": "radiation",
+      "page_number": 9
+    },
+    {
+      "caption": "Figure 7. Beam-shaping: (a)Binormal distribution. (b) Edge distribution",
+      "figure_id": "figure_010",
+      "figure_role_guess": "radiation",
+      "page_number": 9
+    }
+  ],
+  "key_table_refs": [
+    {
+      "caption": "Table 1. Dimensions of proposed antenna",
+      "page_number": 4,
+      "table_id": "table_001",
+      "table_role_guess": "dimensions"
+    },
+    {
+      "caption": "Table 2. Spacial Parameter of Antenna array",
+      "page_number": 10,
+      "table_id": "table_002",
+      "table_role_guess": "parameters"
+    }
+  ],
+  "section_headings_top_level": [
+    "A microstrip patch antenna for 5G mobile communications",
+    "1. Introduction",
+    "2. Theoretical Analysis of Microstrip Patch Antenna",
+    "3. Results and discussions",
+    "4. Conclusion",
+    "References"
+  ],
+  "title": "A microstrip patch antenna for 5G mobile communications"
+}

@@ -1,0 +1,41 @@
+{
+  "has_final_design_signal": true,
+  "has_multiple_variants": false,
+  "open_uncertainties": [
+    "Whether the 'final patch obtained after simulation' is the only selected design or if there were intermediate candidate geometries.",
+    "The exact finalized patch dimensions, feed location, and ground-plane size.",
+    "Whether the fabricated design is distinct from the simulated final patch, since the map signals fabrication but no measured results."
+  ],
+  "search_queries": [
+    {
+      "priority": "high",
+      "query_id": "Q1",
+      "query_text": "final patch obtained after simulation",
+      "why": "The map explicitly names a final patch figure, so this is the strongest target for the selected design."
+    },
+    {
+      "priority": "high",
+      "query_id": "Q2",
+      "query_text": "Table I antenna parameters",
+      "why": "The paper includes a dedicated antenna-parameter table, likely containing the finalized dimensions and feed settings."
+    },
+    {
+      "priority": "medium",
+      "query_id": "Q3",
+      "query_text": "feed location design",
+      "why": "Feed placement is a named design subsection and may resolve the coaxial probe feed details."
+    },
+    {
+      "priority": "medium",
+      "query_id": "Q4",
+      "query_text": "ground dimension",
+      "why": "The abstract and headings indicate a partial ground plane, but the exact ground sizing may still need confirmation."
+    },
+    {
+      "priority": "low",
+      "query_id": "Q5",
+      "query_text": "proposed rectangular microstrip patch antenna",
+      "why": "This targets the main proposed geometry in case the final figure and parameter table are not sufficient."
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "abstract": "The design of a circularly slotted triangular patch radiator with a full-ground structure for 5.8 GHz ISM band applications is the basis for this research. The working band of the suggested miniaturized patch radiator may be adjusted by adjusting the slot size. The practical reduction in size is calculated by comparing the size of the standard elliptical-shaped slot with the size of the circular slot. Changes in the practical radius of the triangular patch, the main axis radius of the circular slot, the ground plane length, and feed line width are investigated. The proposed radiator has the dimensions of 25.5 mm \u00d7 22.5 mm \u00d7 1.6 mm. This small construction has a broad bandwidth of 100 MHz (5.8 GHz), with a 3% fractional bandwidth (FBW).",
+  "candidate_design_mentions": [
+    {
+      "evidence_id": "chunk:chunk_014",
+      "page_number": 4,
+      "text": "The rest of the paper is structured as follows. Section 2 describes the proposed CSTPA's design and geometric arrangement. Section 3 presents the simulated outcomes of the CSTPA. Section 4 gives the work's conclusion."
+    },
+    {
+      "evidence_id": "chunk:chunk_033",
+      "page_number": 4,
+      "text": "In other words, the antenna's pattern specifies how the antenna absorbs energy or radiates energy into space. The antenna's capacity to radiate in any direction relative to a theoretical antenna is known as antenna gain."
+    },
+    {
+      "evidence_id": "chunk:chunk_034",
+      "page_number": 5,
+      "text": "gain. An antenna would radiate evenly in all directions if it could be constru perfect sphere. \u0729 \u0bd7\u0bbb \u0d4c 10 \u0743\u074b\u0748 \u0b35\u0b34 ( 4 \u0723\u07df\u07e8 \u07e3 \u0b36 \u123b GdB is the antenna gain, h is the efficiency, A is the physical aperture area, and l is the wa"
+    },
+    {
+      "evidence_id": "section:section_005",
+      "page_number": 3,
+      "text": "2.3. Step 3 To accomplish miniaturization, the optimized design produced by Radiator 2 is used, and a rectangular slot is put into the triangular patch. The proportions of the inserted rectangular slot are kept, such tha"
+    },
+    {
+      "evidence_id": "chunk:chunk_022",
+      "page_number": 3,
+      "text": "## 2.3. Step 3 To accomplish miniaturization, the optimized design produced by Radiator 2 is used, and a rectangular slot is put into the triangular patch. The proportions of the inserted rectangular slot are kept, such"
+    },
+    {
+      "evidence_id": "chunk:chunk_015",
+      "page_number": 3,
+      "text": "## 2. Parametric Analysis The circular, rectangular, and elliptical slots are easier to design than the other geometries since they only need to change the radius of the patch (r). Because circular geometry has the small"
+    }
+  ],
+  "key_design_signals": {
+    "fabricated": 1,
+    "final": 0,
+    "measured": 0,
+    "optimized": 2,
+    "proposed": 8,
+    "simulated": 9
+  },
+  "key_figure_refs": [
+    {
+      "caption": "Figure 3. Simulated results of various radiators.",
+      "figure_id": "figure_009",
+      "figure_role_guess": "radiation",
+      "page_number": 4
+    },
+    {
+      "caption": "Figure 4. Far-field results. ( a ) Radiation pattern of CSTPA. ( b ) Gain of the CSTPA.",
+      "figure_id": "figure_010",
+      "figure_role_guess": "radiation",
+      "page_number": 5
+    },
+    {
+      "caption": "Figure 1. Parametric analysis: ( a ) triangular patch with the full ground. ( b ) Elliptically slotted triangular patch with the full ground. ( c ) Rectangularly slotted triangular",
+      "figure_id": "figure_007",
+      "figure_role_guess": "unknown",
+      "page_number": 2
+    },
+    {
+      "caption": "Figure 2. Various radii of circular slots of the CSTPA",
+      "figure_id": "figure_008",
+      "figure_role_guess": "unknown",
+      "page_number": 4
+    },
+    {
+      "caption": "Circularly Slotted Triangular Patch Antennas (CSTPAs) have grown in favor in recent years because of their wideband and circular polarization properties. These antennas are suited ",
+      "figure_id": "figure_004",
+      "figure_role_guess": "radiation",
+      "page_number": 1
+    }
+  ],
+  "key_table_refs": [
+    {
+      "caption": "Table 1. Simulated dimensions of various configurations",
+      "page_number": 3,
+      "table_id": "table_001",
+      "table_role_guess": "dimensions"
+    },
+    {
+      "caption": "Table 2. Simulated gain, frequencies, and bandwidth",
+      "page_number": 3,
+      "table_id": "table_002",
+      "table_role_guess": "results"
+    },
+    {
+      "caption": "Table 3. Comparison table . Table 3. Comparison table",
+      "page_number": 5,
+      "table_id": "table_003",
+      "table_role_guess": "comparison"
+    }
+  ],
+  "section_headings_top_level": [
+    "Circular Slotted Triangular Patch Antenna for 5.8 GHz ISM Band Applications \u2020",
+    "1. Introduction",
+    "2. Parametric Analysis",
+    "2.2. Step 2",
+    "2.3. Step 3",
+    "2.4. Step 4",
+    "4. Conclusions",
+    "References"
+  ],
+  "title": "Circular Slotted Triangular Patch Antenna for 5.8 GHz ISM Band Applications \"2279"
+}

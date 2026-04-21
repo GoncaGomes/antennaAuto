@@ -1,0 +1,26 @@
+{
+  "attempt_count": 0,
+  "evidence_ids_retrieved_per_block": {},
+  "extraction_status": "not_run",
+  "final_evidence_ids_used": [],
+  "model_name": null,
+  "phase1": {
+    "errors": [],
+    "interpretation_map_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260421T091437985264Z\\outputs\\interpretation_map.json",
+    "interpretation_map_status": "completed",
+    "model_name": "gpt-5.4-mini",
+    "paper_map_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260421T091437985264Z\\outputs\\paper_map.json",
+    "paper_map_status": "completed",
+    "run": true,
+    "warnings": []
+  },
+  "prompt_budget": {},
+  "prompt_evidence_ids_per_block": {},
+  "query_usefulness_per_block": {},
+  "retrieval_queries_used": {},
+  "run_id": "run_20260421T091437985264Z",
+  "schema_errors": [],
+  "timestamp_utc": "2026-04-21T10:00:52Z",
+  "validation_success": null,
+  "warnings": []
+}

@@ -1,0 +1,91 @@
+{
+  "abstract": "There are various types of microstrip antenna that can be used for many applications in communication systems. This paper presents the design of a rectangular microstrip patch antenna to operate at frequency range of 2 GHz to 2.5 GHz. This antenna, based on a thickness of 1.6mm Flame Retardant 4 (FR-4) substrate with a dielectric constant of approximately 4.4, is a probe feed and has a partial ground plane. After simulation, the antenna performance characteristics such as antenna input impedance, VSWR, Return Loss and current density are obtained.",
+  "candidate_design_mentions": [
+    {
+      "evidence_id": "chunk:chunk_010",
+      "page_number": 2,
+      "text": "![Figure](figures/figure_002.png) Figure 2. Proposed Rectangular Microstrip Patch Antenna ## III. DESIGN REQUIREMENT There are three essential parameters for design of a coaxial feed rectangular microstrip Patch Antenna."
+    },
+    {
+      "evidence_id": "section:section_004",
+      "page_number": 2,
+      "text": "IV. PHYSICAL PARAMETERS OF THE ANTENNA The antenna parameters of this antenna can be calculated by the transmission line method (Balanis, 2005), as exemplified below. Width of the Patch The width of the antenna can be de"
+    },
+    {
+      "evidence_id": "chunk:chunk_008",
+      "page_number": 1,
+      "text": "![Figure](figures/figure_001.png) Figure 1. Rectangular Microstrip Antenna II. ANTENNA GEOMETRY The structure of the proposed antenna is shown in Figure 2 below. For a rectangular patch, the length L of the"
+    },
+    {
+      "evidence_id": "section:section_003",
+      "page_number": 2,
+      "text": "III. DESIGN REQUIREMENT There are three essential parameters for design of a coaxial feed rectangular microstrip Patch Antenna. Firstly, the resonant frequency ( f0 ) of the antenna must be selected appropriately. The fr"
+    },
+    {
+      "evidence_id": "chunk:chunk_033",
+      "page_number": 5,
+      "text": "Balanis C.A. (2005) Antenna Theory: Analysis and Design, John Wiley & Sons Ramesh G, Prakash B, Inder B, and Ittipiboon A. (2001) Microstrip antenna design handbook, Artech House."
+    }
+  ],
+  "key_design_signals": {
+    "fabricated": 1,
+    "final": 2,
+    "measured": 0,
+    "optimized": 0,
+    "proposed": 3,
+    "simulated": 7
+  },
+  "key_figure_refs": [
+    {
+      "caption": "Figure 2. Proposed Rectangular Microstrip Patch Antenna",
+      "figure_id": "figure_002",
+      "figure_role_guess": "radiation",
+      "page_number": 2
+    },
+    {
+      "caption": "Figure 3. The Final Patch Obtained after Simulation",
+      "figure_id": "figure_003",
+      "figure_role_guess": "measurement",
+      "page_number": 3
+    },
+    {
+      "caption": "Figure 4. The Return Loss",
+      "figure_id": "figure_004",
+      "figure_role_guess": "measurement",
+      "page_number": 3
+    },
+    {
+      "caption": "Figure 5. VSWR vs Frequency",
+      "figure_id": "figure_005",
+      "figure_role_guess": "measurement",
+      "page_number": 3
+    },
+    {
+      "caption": "Figure 6. The Input impedance [Re(Zin)]",
+      "figure_id": "figure_006",
+      "figure_role_guess": "radiation",
+      "page_number": 4
+    }
+  ],
+  "key_table_refs": [
+    {
+      "caption": "Table I. ANTENNA PARAMETERS",
+      "page_number": 3,
+      "table_id": "table_001",
+      "table_role_guess": "parameters"
+    }
+  ],
+  "section_headings_top_level": [
+    "I. INTRODUCTION",
+    "III. DESIGN REQUIREMENT",
+    "IV. PHYSICAL PARAMETERS OF THE ANTENNA",
+    "A. Length of the Patch",
+    "B. Feed Location Design",
+    "C. Ground Dimension",
+    "TABLE I ANTENNA PARAMETERS",
+    "V. SIMULATIONS AND RESULTS",
+    "VI. CONCLUSION",
+    "VII. ACKNOWLEDGEMENT"
+  ],
+  "title": "Rectangular Microstrip Patch Antenna Using Coaxial Probe Feeding Technique to Operate in S-Band"
+}

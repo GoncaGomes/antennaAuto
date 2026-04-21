@@ -1,0 +1,42 @@
+{
+  "has_final_design_signal": true,
+  "has_multiple_variants": true,
+  "open_uncertainties": [
+    "Which radiator stage is the final selected design: Radiator 2, Step 3, or Step 4 CSTPA.",
+    "Whether the fabricated antenna corresponds exactly to the optimized simulated design.",
+    "Which specific slot radius and feed/ground dimensions were chosen in the final configuration.",
+    "Whether any measured validation is reported beyond simulation, since the map only signals fabricated but not measured."
+  ],
+  "search_queries": [
+    {
+      "priority": "high",
+      "query_id": "Q1",
+      "query_text": "optimized design produced by Radiator 2",
+      "why": "This is the strongest final-design signal in the map and likely identifies the selected design stage."
+    },
+    {
+      "priority": "high",
+      "query_id": "Q2",
+      "query_text": "Step 4 circularly slotted triangular patch antenna",
+      "why": "The paper has a Step 4 section and the title suggests the CSTPA may be the culminating design."
+    },
+    {
+      "priority": "medium",
+      "query_id": "Q3",
+      "query_text": "various radiators",
+      "why": "Figure 3 indicates multiple radiator variants and may reveal the design evolution leading to the selected antenna."
+    },
+    {
+      "priority": "medium",
+      "query_id": "Q4",
+      "query_text": "various radii of circular slots of the CSTPA",
+      "why": "Figure 2 suggests a parametric family of circular-slot variants that may clarify the optimized choice."
+    },
+    {
+      "priority": "low",
+      "query_id": "Q5",
+      "query_text": "simulated dimensions of various configurations",
+      "why": "Table 1 likely lists the candidate geometries and can help distinguish the final configuration from earlier variants."
+    }
+  ]
+}
