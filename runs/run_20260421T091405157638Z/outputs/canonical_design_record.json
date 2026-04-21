@@ -1,29 +1,37 @@
 {
   "design_evolution_notes": [
     {
-      "description": "Later sections combine several antennas into an array with binormal/edge amplitude distributions to create a 120\u00b0 sectorized directional pattern. This is a secondary extension of the proposed patch, not the core single-element geometry.",
+      "description": "The paper introduces a proposed rectangular microstrip patch antenna and then provides the principal dimensions in Table 1.",
+      "evidence_ids": [
+        "chunk:chunk_018",
+        "table:table_001"
+      ],
+      "label": "Main proposed geometry"
+    },
+    {
+      "description": "The feed is discussed first as microstrip-line feeding and then more specifically as inset feeding to improve impedance matching.",
+      "evidence_ids": [
+        "chunk:chunk_028",
+        "chunk:chunk_029",
+        "chunk:chunk_034"
+      ],
+      "label": "Feed choice refinement"
+    },
+    {
+      "description": "Later sections add beam-shaping and an antenna array for 3-sectorization with a 120\u00b0 directional radiation angle, which is a secondary extension of the proposed single antenna.",
       "evidence_ids": [
         "chunk:chunk_049",
         "chunk:chunk_050",
         "chunk:chunk_055",
         "figure:figure_011"
       ],
-      "label": "Beam-shaping array extension"
-    },
-    {
-      "description": "The retrieved evidence reports simulated electrical and radiation performance for the proposed antenna, but it does not explicitly separate any fabricated or measured implementation from the main proposed geometry.",
-      "evidence_ids": [
-        "chunk:chunk_041",
-        "chunk:chunk_045",
-        "chunk:chunk_047",
-        "section:section_006"
-      ],
-      "label": "Results reporting ambiguity"
+      "label": "Beam-shaping extension"
     }
   ],
   "dominant_evidence_ids": [
+    "table:table_001",
     "section:section_006",
-    "chunk:chunk_021",
+    "chunk:chunk_018",
     "chunk:chunk_019",
     "chunk:chunk_020",
     "chunk:chunk_034",
@@ -38,24 +46,43 @@
         "rectangular",
         "inset-fed",
         "microstrip-line-fed",
-        "single-element"
+        "single-element",
+        "array-extension-discussed"
       ]
     },
-    "extra_parameters": [],
+    "extra_parameters": [
+      {
+        "evidence_ids": [
+          "chunk:chunk_034",
+          "chunk:chunk_029",
+          "chunk:chunk_028"
+        ],
+        "semantic_name": "reference impedance",
+        "target_component": "feed",
+        "unit": "ohm",
+        "value": 50
+      }
+    ],
     "feed": {
       "dimensions": [
         {
           "name": "Wmic",
           "unit": "mm",
           "value": 0.1
+        },
+        {
+          "name": "Lslot",
+          "unit": "mm",
+          "value": 0.15
         }
       ],
-      "driven_target": "50 \u03a9",
+      "driven_target": "patch",
       "evidence_ids": [
         "chunk:chunk_028",
         "chunk:chunk_029",
         "chunk:chunk_034",
-        "chunk:chunk_021"
+        "figure:figure_005",
+        "table:table_001"
       ],
       "feed_family": "microstrip line",
       "matching_style": "inset feed"
@@ -76,22 +103,22 @@
       "evidence_ids": [
         "chunk:chunk_019",
         "chunk:chunk_020",
-        "chunk:chunk_021"
+        "table:table_001"
       ],
-      "label": "rectangular ground plane",
-      "layer_role": "ground plane",
+      "label": "ground plane",
+      "layer_role": "bottom",
       "material_name": "copper",
-      "shape_mode": "rectangle"
+      "shape_mode": "rectangular"
     },
     "layers": [
       {
         "evidence_ids": [
           "chunk:chunk_019",
           "chunk:chunk_020",
-          "chunk:chunk_021"
+          "table:table_001"
         ],
         "material_name": "copper",
-        "role": "ground layer",
+        "role": "bottom ground",
         "thickness_unit": "mm",
         "thickness_value": 0.003
       },
@@ -99,10 +126,10 @@
         "evidence_ids": [
           "chunk:chunk_019",
           "chunk:chunk_020",
-          "chunk:chunk_021"
+          "table:table_001"
         ],
         "material_name": "Rogers RT5880(lossy)",
-        "role": "substrate layer",
+        "role": "substrate",
         "thickness_unit": "mm",
         "thickness_value": 0.032
       },
@@ -110,10 +137,10 @@
         "evidence_ids": [
           "chunk:chunk_019",
           "chunk:chunk_020",
-          "chunk:chunk_021"
+          "table:table_001"
         ],
         "material_name": "copper",
-        "role": "patch layer",
+        "role": "top patch",
         "thickness_unit": "mm",
         "thickness_value": 0.003
       }
@@ -122,25 +149,24 @@
       {
         "category": "conductor",
         "evidence_ids": [
-          "chunk:chunk_019",
-          "chunk:chunk_020"
+          "chunk:chunk_020",
+          "chunk:chunk_019"
         ],
         "name": "copper",
         "roles": [
-          "ground plane",
-          "radiating patch",
-          "feed line"
+          "ground",
+          "patch"
         ]
       },
       {
         "category": "substrate",
         "evidence_ids": [
-          "chunk:chunk_019",
-          "chunk:chunk_020"
+          "chunk:chunk_020",
+          "chunk:chunk_019"
         ],
         "name": "Rogers RT5880(lossy)",
         "roles": [
-          "dielectric substrate"
+          "substrate"
         ]
       }
     ],
@@ -160,21 +186,21 @@
       "evidence_ids": [
         "chunk:chunk_018",
         "chunk:chunk_019",
-        "chunk:chunk_021"
+        "chunk:chunk_020",
+        "table:table_001"
       ],
       "label": "rectangular patch",
-      "layer_role": "radiating patch",
+      "layer_role": "top",
       "material_name": "copper",
-      "shape_mode": "rectangle"
+      "shape_mode": "rectangular"
     },
     "performance_targets": [
       {
         "evidence_ids": [
           "section:section_006",
-          "chunk:chunk_041",
-          "chunk:chunk_045"
+          "chunk:chunk_041"
         ],
-        "name": "operating frequency",
+        "name": "resonant frequency",
         "unit": "GHz",
         "value": 28
       },
@@ -217,7 +243,7 @@
       {
         "evidence_ids": [
           "section:section_006",
-          "chunk:chunk_047"
+          "chunk:chunk_041"
         ],
         "name": "VSWR",
         "value": 1.24
@@ -238,7 +264,7 @@
           "chunk:chunk_055"
         ],
         "name": "input impedance",
-        "unit": "\u03a9",
+        "unit": "ohm",
         "value": 51.6
       }
     ],
@@ -252,41 +278,43 @@
           }
         ],
         "evidence_ids": [
-          "chunk:chunk_021",
-          "chunk:chunk_034"
+          "chunk:chunk_034",
+          "table:table_001"
         ],
-        "label": "inset slot",
-        "layer_role": "patch inset cutout",
-        "shape_mode": "rectangular slot"
+        "label": "inset slot / notch",
+        "layer_role": "top"
       }
     ]
   },
   "has_multiple_variants": true,
   "identified_antennas": [
-    "Proposed rectangular microstrip patch antenna (single element, inset-fed, 28 GHz)",
-    "Beam-shaping antenna array / 3-sectorization directional variant"
+    "Proposed rectangular microstrip patch antenna at 28 GHz (single-element inset-fed design)",
+    "Beam-shaping antenna array / 3-sectorization directional variant built from multiple copies of the proposed antenna"
   ],
-  "proposed_final_antenna_rationale": "The main proposed design is the single rectangular microstrip patch antenna with inset feed, because the paper defines it as the proposed antenna in the design section, gives its core dimensions in Table 1, and reports its operating performance in the conclusion. The beam-shaping array appears later as a functional extension for directional sectorization and uses multiple antennas, so it is not selected as the canonical final antenna geometry.",
+  "proposed_final_antenna_rationale": "The paper's main proposed design is the single rectangular microstrip patch antenna shown as Figure 1 and parameterized in Table 1. The beam-shaping discussion comes later and explicitly combines several antennas into an array for sectorized directional use, so it is secondary to the core proposed antenna. The conclusion reports the key performance of the proposed antenna itself, which supports selecting the single-element patch as the canonical final design.",
   "secondary_evidence_ids": [
     "chunk:chunk_049",
     "chunk:chunk_050",
     "chunk:chunk_055",
-    "figure:figure_011"
+    "figure:figure_011",
+    "chunk:chunk_009",
+    "chunk:chunk_013"
   ],
-  "selected_design_rationale": "The paper\u2019s dominant design is the single proposed rectangular microstrip patch antenna: Figure 1 is labeled as the proposed antenna, Table 1 is explicitly the dimensions of the proposed antenna, and the conclusion summarizes the paper as proposing a rectangular microstrip patch antenna for 5G at 28 GHz. The later beam-shaping discussion describes an array extension for 3-sectorization, not a different core antenna geometry, so it is treated as secondary.",
-  "selected_design_summary": "Single-element rectangular microstrip patch antenna for 28 GHz 5G, inset-fed by a microstrip line on a Rogers RT5880(lossy) substrate with copper patch/ground layers.",
+  "selected_design_rationale": "The dominant design is the Fig. 1 / Table 1 proposed microstrip patch antenna: the paper frames it as the main antenna, gives its dimensions in the dedicated proposed-antenna table, and concludes with performance numbers for that antenna. The later beam-shaping section explicitly adds multiple copies into an antenna array for 3-sectorization, so it is treated as an extension, not the canonical single antenna. The feed is best interpreted as an inset-fed microstrip line, with the inset-feed schematic and text more specific than the broader generic 'microstrip line feeding' phrasing.",
+  "selected_design_summary": "Single proposed rectangular microstrip patch antenna for 28 GHz 5G operation, using an inset-fed microstrip line, copper patch/ground, and a Rogers RT5880(lossy) substrate. Table 1 gives the main geometry, and the later beam-shaping discussion is a secondary array extension rather than the dominant antenna geometry.",
   "unresolved_conflicts": [
     {
       "conflicting_evidence_ids": [],
-      "description": "The evidence set contains performance curves and a conclusion, but it is not explicit whether those results are purely simulated or include a separately fabricated/measured prototype. No distinct measured geometry can be isolated from the retrieved text.",
+      "description": "The retrieved context reports performance plots and conclusion values, but it does not clearly separate simulated results from any fabricated or measured implementation. It is therefore unclear whether the reported metrics are purely simulation-based or experimentally validated.",
       "preferred_evidence_ids": [
         "section:section_006",
         "chunk:chunk_041",
         "chunk:chunk_045",
-        "chunk:chunk_047"
+        "chunk:chunk_047",
+        "chunk:chunk_055"
       ],
-      "status": "unresolved",
-      "topic": "Simulation versus fabricated/measurement provenance"
+      "status": "partially_resolved",
+      "topic": "Validation modality"
     }
   ]
 }

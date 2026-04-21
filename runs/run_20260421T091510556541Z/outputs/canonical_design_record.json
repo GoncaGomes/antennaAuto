@@ -1,65 +1,56 @@
 {
   "design_evolution_notes": [
     {
-      "description": "Figure 1 is a generic rectangular microstrip antenna reference used for context, not a separate optimized final design.",
+      "description": "The paper first presents the proposed rectangular microstrip patch antenna, then later states that the antenna was simulated and the final patch obtained is shown in Figure 3.",
       "evidence_ids": [
-        "chunk:chunk_008"
+        "chunk:chunk_008",
+        "chunk:chunk_010",
+        "chunk:chunk_022"
       ],
-      "label": "Reference antenna illustration"
+      "label": "Proposal-to-final progression"
     },
     {
-      "description": "Figure 2 introduces the proposed rectangular microstrip patch antenna before final simulation.",
+      "description": "Table I lists the finalized patch dimensions, feed coordinates, and ground dimensions; nearby prose reports close rounded values that appear to describe the same finalized geometry.",
       "evidence_ids": [
-        "chunk:chunk_010"
+        "table:table_001",
+        "chunk:chunk_009"
       ],
-      "label": "Proposed geometry"
+      "label": "Final parameter set"
     },
     {
-      "description": "The final patch is the simulated design reported with return loss, VSWR, input impedance, radiation pattern, and current distribution results at 2.25 GHz.",
-      "evidence_ids": [
-        "chunk:chunk_022",
-        "chunk:chunk_023",
-        "chunk:chunk_024",
-        "chunk:chunk_025",
-        "chunk:chunk_026"
-      ],
-      "label": "Final simulation result"
-    },
-    {
-      "description": "The conclusion says the antenna can be easily fabricated, but the retrieved evidence does not include measured fabrication results or a distinct fabricated variant.",
+      "description": "The conclusion says the antenna can be easily fabricated on substrate material, but no separate fabricated geometry or measured prototype results are provided.",
       "evidence_ids": [
         "chunk:chunk_030"
       ],
-      "label": "Fabrication mentioned but not validated"
+      "label": "Fabrication remark"
     }
   ],
   "dominant_evidence_ids": [
+    "chunk:chunk_022",
+    "chunk:chunk_023",
     "table:table_001",
-    "chunk:chunk_009",
+    "chunk:chunk_021",
     "chunk:chunk_011",
     "chunk:chunk_013",
-    "chunk:chunk_023",
-    "chunk:chunk_025",
     "chunk:chunk_030"
   ],
   "final_design": {
     "classification": {
-      "primary_family": "rectangular_microstrip_patch_antenna",
+      "primary_family": "rectangular microstrip patch antenna",
       "topology_tags": [
-        "coaxial_probe_feed",
-        "partial_ground_plane",
-        "planar",
-        "single_patch",
-        "FR4_substrate"
+        "coaxial probe fed",
+        "finite ground plane",
+        "single patch",
+        "microstrip"
       ]
     },
     "extra_parameters": [
       {
         "evidence_ids": [
           "chunk:chunk_011",
-          "chunk:chunk_009"
+          "chunk:chunk_013"
         ],
-        "semantic_name": "substrate_relative_permittivity",
+        "semantic_name": "Relative permittivity",
         "symbol": "\u03b5r",
         "target_component": "substrate",
         "value": 4.4
@@ -68,50 +59,47 @@
         "evidence_ids": [
           "chunk:chunk_011"
         ],
-        "semantic_name": "substrate_loss_tangent",
+        "semantic_name": "Loss tangent",
+        "symbol": "tan\u03b4",
         "target_component": "substrate",
         "value": 0.002
       },
       {
         "evidence_ids": [
-          "table:table_001",
-          "section:section_006",
-          "chunk:chunk_018"
+          "chunk:chunk_013"
         ],
-        "semantic_name": "feed_impedance",
-        "symbol": "Z0",
-        "target_component": "feed",
-        "unit": "ohm",
-        "value": 50
+        "semantic_name": "Substrate thickness",
+        "symbol": "h",
+        "target_component": "substrate",
+        "unit": "mm",
+        "value": 1.6
       }
     ],
     "feed": {
       "dimensions": [],
-      "driven_target": "patch",
+      "driven_target": "50 \u03a9",
       "evidence_ids": [
         "table:table_001",
         "section:section_006",
-        "chunk:chunk_018",
-        "chunk:chunk_009",
-        "chunk:chunk_025"
+        "chunk:chunk_009"
       ],
-      "feed_family": "coaxial probe",
+      "feed_family": "coaxial probe feed",
       "location": {
         "unit": "mm",
         "x": 11.66,
         "y": 20.29
       },
-      "matching_style": "direct contact"
+      "matching_style": "coaxial probe feeding"
     },
     "ground": {
       "dimensions": [
         {
-          "name": "length",
+          "name": "Length",
           "unit": "mm",
           "value": 41.19
         },
         {
-          "name": "width",
+          "name": "Width",
           "unit": "mm",
           "value": 50.32
         }
@@ -119,19 +107,17 @@
       "evidence_ids": [
         "table:table_001",
         "chunk:chunk_009",
-        "section:section_007",
-        "chunk:chunk_020"
+        "section:section_007"
       ],
-      "label": "Ground plane",
-      "layer_role": "ground_plane",
+      "label": "Finite ground plane",
+      "layer_role": "bottom ground plane",
       "shape_mode": "rectangular"
     },
     "layers": [
       {
         "evidence_ids": [
           "chunk:chunk_013",
-          "chunk:chunk_011",
-          "chunk:chunk_009"
+          "chunk:chunk_011"
         ],
         "material_name": "FR-4 Epoxy",
         "role": "substrate",
@@ -141,11 +127,10 @@
     ],
     "materials": [
       {
-        "category": "dielectric substrate",
+        "category": "dielectric",
         "evidence_ids": [
           "chunk:chunk_011",
-          "chunk:chunk_013",
-          "chunk:chunk_009"
+          "chunk:chunk_013"
         ],
         "name": "FR-4 Epoxy",
         "roles": [
@@ -156,12 +141,12 @@
     "patch": {
       "dimensions": [
         {
-          "name": "length",
+          "name": "Length",
           "unit": "mm",
           "value": 31.43
         },
         {
-          "name": "width",
+          "name": "Width",
           "unit": "mm",
           "value": 40.57
         }
@@ -172,17 +157,25 @@
         "chunk:chunk_023"
       ],
       "label": "Radiating patch",
-      "layer_role": "radiating_patch",
+      "layer_role": "top radiating patch",
       "shape_mode": "rectangular"
     },
     "performance_targets": [
       {
         "evidence_ids": [
           "chunk:chunk_010",
-          "chunk:chunk_023",
-          "chunk:chunk_030"
+          "chunk:chunk_023"
         ],
-        "name": "operating_band",
+        "name": "Center frequency",
+        "unit": "GHz",
+        "value": 2.25
+      },
+      {
+        "evidence_ids": [
+          "chunk:chunk_010",
+          "chunk:chunk_023"
+        ],
+        "name": "Operating band",
         "unit": "GHz",
         "value": "2.0-2.5"
       },
@@ -191,84 +184,82 @@
           "chunk:chunk_023",
           "chunk:chunk_030"
         ],
-        "name": "center_frequency",
-        "unit": "GHz",
-        "value": 2.25
-      },
-      {
-        "evidence_ids": [
-          "chunk:chunk_023"
-        ],
-        "name": "return_loss",
-        "unit": "dB",
-        "value": -23
-      },
-      {
-        "evidence_ids": [
-          "chunk:chunk_023"
-        ],
-        "name": "bandwidth",
+        "name": "Bandwidth",
         "unit": "MHz",
         "value": 46
       },
       {
         "evidence_ids": [
-          "chunk:chunk_023"
+          "chunk:chunk_023",
+          "chunk:chunk_024"
         ],
-        "name": "fractional_bandwidth",
-        "unit": "%",
-        "value": 2
+        "name": "Return loss",
+        "unit": "dB",
+        "value": -23
       },
       {
         "evidence_ids": [
-          "chunk:chunk_024",
           "chunk:chunk_025"
+        ],
+        "name": "Input impedance",
+        "unit": "\u03a9",
+        "value": 47.98
+      },
+      {
+        "evidence_ids": [
+          "chunk:chunk_024"
         ],
         "name": "VSWR",
+        "unit": "ratio",
         "value": 1.13
-      },
-      {
-        "evidence_ids": [
-          "chunk:chunk_025"
-        ],
-        "name": "input_impedance",
-        "unit": "ohm",
-        "value": 47.98
       }
     ],
     "slots": []
   },
   "has_multiple_variants": false,
   "identified_antennas": [
-    "Figure 1 generic rectangular microstrip antenna reference",
-    "Figure 2 proposed rectangular microstrip patch antenna",
-    "Figure 3 final patch obtained after simulation"
+    "Rectangular microstrip antenna reference / introductory example (Figure 1)",
+    "Proposed rectangular microstrip patch antenna (Figure 2)",
+    "Final patch obtained after simulation (Figure 3)",
+    "Fabrication-ready version mentioned in the conclusion (no separate measured geometry reported)"
   ],
-  "proposed_final_antenna_rationale": "Figure 3 is the only geometry explicitly called the final patch, and it is the one tied to the reported return loss, VSWR, input impedance, and bandwidth results. Table I supplies the completed dimensions and feed coordinates that align with this final simulated design. The earlier figures and derivation subsections are best treated as background and design-synthesis steps rather than separate canonical antennas.",
+  "proposed_final_antenna_rationale": "The canonical design should be the final simulated rectangular microstrip patch antenna, because the paper explicitly labels Figure 3 as the 'final patch obtained after simulation' and then reports the realized electrical results against that geometry. Table I supplies the finalized dimensions and feed coordinates, making it the best source for canonical geometry. The proposed Figure 2 antenna and the final Figure 3 antenna are not competing variants; they are the same design before and after simulation refinement. The conclusion\u2019s fabrication remark does not introduce a different geometry or measured prototype, so it is not selected as a separate canonical design.",
   "secondary_evidence_ids": [
     "chunk:chunk_008",
+    "chunk:chunk_009",
     "chunk:chunk_010",
-    "chunk:chunk_018",
     "section:section_006",
     "section:section_007",
-    "chunk:chunk_020",
-    "chunk:chunk_022",
     "chunk:chunk_024",
+    "chunk:chunk_025",
     "chunk:chunk_026"
   ],
-  "selected_design_rationale": "The paper's canonical design is the figure explicitly labeled as the 'final patch obtained after simulation' and the associated parameter table. Figure 1 is only a generic introductory microstrip-antenna illustration, Figure 2 is the proposed geometry, and Figure 3 plus Table I carry the finalized dimensions and performance results. No competing antenna variants are developed or compared as alternate final candidates.",
-  "selected_design_summary": "Single dominant design: a coaxial-probe-fed rectangular microstrip patch antenna on FR-4, simulated and finalized around 2.25 GHz with a finite rectangular ground plane.",
+  "selected_design_rationale": "The paper\u2019s dominant target is the proposed rectangular microstrip patch antenna, and the final simulated version is explicitly identified in the results section as the 'final patch obtained after simulation'. Table I is the clearest finalized parameter source and is more authoritative than nearby prose that reports rounded or slightly reordered values. There are no distinct competing antenna variants; the figure labeled proposed antenna and the final patch figure represent the same design progression rather than separate candidates. The feed is characterized only by its coaxial-probe match location and 50 \u03a9 excitation; no separate structural feed dimensions are explicitly reported, so the canonical feed-dimension list is left empty rather than invented.",
+  "selected_design_summary": "Dominant design is a simulated, coaxial-probe-fed rectangular microstrip patch antenna on FR-4 for the 2.0\u20132.5 GHz band, centered at 2.25 GHz. The most authoritative finalized geometry is Table I: patch length 31.43 mm, patch width 40.57 mm, feed coordinates Xf 11.66 mm and Yf 20.29 mm, and finite ground plane 41.19 mm \u00d7 50.32 mm.",
   "unresolved_conflicts": [
     {
       "conflicting_evidence_ids": [
         "chunk:chunk_009"
       ],
-      "description": "Table I gives Length 31.43 mm and Width 40.57 mm, while the prose describes the patch as 40.1 mm \u00d7 31 mm. These appear to be the same rectangle expressed with rounding and/or swapped ordering, but the exact finalized geometry is not perfectly consistent across sources.",
+      "description": "Table I gives Length 31.43 mm, Width 40.57 mm, Xf 11.66 mm, Yf 20.29 mm, Lg 41.19 mm, Wg 50.32 mm, while prose elsewhere reports approximate values such as 40.1 mm \u00d7 31 mm and 11.662 mm \u00d7 20.286 mm. These appear to be rounded / reordered descriptions of the same geometry, but the table is preferred as the canonical source.",
       "preferred_evidence_ids": [
-        "table:table_001"
+        "table:table_001",
+        "chunk:chunk_021"
       ],
       "status": "partially_resolved",
-      "topic": "Patch dimensions and axis naming"
+      "topic": "Final patch dimensions and feed coordinates"
+    },
+    {
+      "conflicting_evidence_ids": [
+        "chunk:chunk_030"
+      ],
+      "description": "The results section explicitly refers to a simulated final patch, whereas the conclusion notes the antenna can be fabricated. No separate fabricated geometry or measured results are given, so fabrication is treated as contextual rather than a distinct design record.",
+      "preferred_evidence_ids": [
+        "chunk:chunk_022",
+        "chunk:chunk_023"
+      ],
+      "status": "partially_resolved",
+      "topic": "Simulation final design versus fabrication mention"
     }
   ]
 }

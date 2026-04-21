@@ -100,3 +100,47 @@ def test_agents_client_retries_transient_failures() -> None:
 
     assert attempts["count"] == 3
     assert result.parsed.value == "ok"
+
+
+def test_agents_client_with_tools_attaches_tools_and_honors_max_turns() -> None:
+    client = object.__new__(OpenAIAgentsStructuredClient)
+    captured = {}
+
+    class FakeRunner:
+        @staticmethod
+        def run_sync(agent, input, max_turns):
+            captured["agent"] = agent
+            captured["input"] = input
+            captured["max_turns"] = max_turns
+
+            class FakeResult:
+                @staticmethod
+                def final_output_as(response_model, raise_if_incorrect_type=True):
+                    return response_model(value="ok")
+
+            return FakeResult()
+
+    client._Agent = lambda **kwargs: kwargs
+    client._ModelSettings = lambda **kwargs: kwargs
+    client._Reasoning = lambda **kwargs: kwargs
+    client._Runner = FakeRunner
+    tool = object()
+    original_wait = OpenAIAgentsStructuredClient.generate_structured_via_agent_with_tools.retry.wait
+    OpenAIAgentsStructuredClient.generate_structured_via_agent_with_tools.retry.wait = wait_none()
+    try:
+        result = client.generate_structured_via_agent_with_tools(
+            agent_name="repair_agent",
+            model="gpt-5.4-mini",
+            reasoning_effort="medium",
+            instructions="test instructions",
+            input_text="test input",
+            response_model=DummyResponse,
+            tools=[tool],
+            max_turns=4,
+        )
+    finally:
+        OpenAIAgentsStructuredClient.generate_structured_via_agent_with_tools.retry.wait = original_wait
+
+    assert result.parsed.value == "ok"
+    assert captured["max_turns"] == 4
+    assert captured["agent"]["tools"] == [tool]

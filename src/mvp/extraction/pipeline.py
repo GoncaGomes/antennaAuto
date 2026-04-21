@@ -12,9 +12,10 @@ from ..retrieval import BundleRetriever
 from ..schemas.canonical_design_record import CanonicalDesignRecord, collect_canonical_evidence_ids
 from ..schemas.extraction_spec import AntennaArchitectureSpecMvpV2, collect_nested_evidence_ids
 from ..schemas.interpretation_map import validate_interpretation_map_payload
-from ..utils import ensure_dir, read_json, utc_timestamp, write_json
-from .agent import gather_retrieval_context_with_phase1
+from ..utils import ensure_dir, read_json, text_excerpt, utc_timestamp, write_json
+from .agent import _build_prompt_record, gather_retrieval_context_with_phase1
 from .prompting import (
+    build_canonical_repair_input,
     build_canonicalization_input,
     build_schema_construction_input,
 )
@@ -103,6 +104,7 @@ def _extract_run_multistage(
     phase2_artifact_path = target_dir / "phase2_retrieval_context.json"
     attempt_count = 0
     stage = "retrieval"
+    repair_report = _empty_repair_report()
 
     try:
         llm2_request = build_canonicalization_input(
@@ -122,13 +124,82 @@ def _extract_run_multistage(
             request=llm2_request,
             response_model=CanonicalDesignRecord,
         )
-        attempt_count = 1
+        attempt_count += 1
         if debug_dir is not None:
             write_json(
                 debug_dir / "llm2_canonicalization_response.json",
                 {"raw_text": llm2_result.raw_text, "parsed": llm2_result.parsed.model_dump(exclude_none=True)},
             )
         canonical_record = _validate_canonical_generation(llm2_result.parsed, retrieval_context)
+        repair_needed, missing_requirements = _canonical_record_needs_repair(canonical_record)
+        repair_report.update(
+            {
+                "repair_stage_considered": True,
+                "repair_stage_executed": False,
+                "missing_requirements": missing_requirements,
+                "repaired_canonical_record_used": False,
+                "repair_evidence_ids": [],
+            }
+        )
+        if debug_dir is not None:
+            write_json(debug_dir / "llm2_repair_status.json", repair_report)
+
+        if repair_needed:
+            repair_evidence_by_id: dict[str, dict[str, Any]] = {}
+            try:
+                if not hasattr(client, "generate_structured_via_agent_with_tools"):
+                    raise TypeError("LLM client does not support tool-enabled canonical repair")
+                repair_request = build_canonical_repair_input(
+                    retrieval_context["run_context"],
+                    canonical_record.to_clean_dict(),
+                    missing_requirements,
+                    phase1_guidance=phase1_guidance,
+                )
+                if debug_dir is not None:
+                    write_json(debug_dir / "llm2_repair_request.json", repair_request)
+
+                stage = "llm2_repair"
+                repair_result = _generate_agents_structured_with_tools(
+                    client,
+                    agent_name="phase2_canonical_repair",
+                    model=DEFAULT_LLM2_MODEL,
+                    reasoning_effort=DEFAULT_AGENTS_REASONING_EFFORT,
+                    request=repair_request,
+                    response_model=CanonicalDesignRecord,
+                    tools=_build_canonical_repair_tools(retriever, repair_evidence_by_id),
+                    max_turns=4,
+                )
+                attempt_count += 1
+                repair_evidence_ids = _merge_repair_evidence_into_context(retrieval_context, repair_evidence_by_id)
+                repaired_record = _validate_canonical_generation(repair_result.parsed, retrieval_context)
+                canonical_record = repaired_record
+                repair_report.update(
+                    {
+                        "repair_stage_executed": True,
+                        "repaired_canonical_record_used": True,
+                        "repair_evidence_ids": repair_evidence_ids,
+                    }
+                )
+                if debug_dir is not None:
+                    write_json(
+                        debug_dir / "llm2_repair_response.json",
+                        {"raw_text": repair_result.raw_text, "parsed": repair_result.parsed.model_dump(exclude_none=True)},
+                    )
+                    write_json(debug_dir / "llm2_repair_status.json", repair_report)
+            except Exception as repair_exc:
+                repair_evidence_ids = _merge_repair_evidence_into_context(retrieval_context, repair_evidence_by_id)
+                repair_report.update(
+                    {
+                        "repair_stage_executed": True,
+                        "repaired_canonical_record_used": False,
+                        "repair_evidence_ids": repair_evidence_ids,
+                        "repair_stage_error": str(repair_exc),
+                    }
+                )
+                warnings.append(f"Canonical repair failed; continuing with initial canonical record: {repair_exc}")
+                if debug_dir is not None:
+                    write_json(debug_dir / "llm2_repair_status.json", repair_report)
+
         write_json(canonical_design_record_path, canonical_record.to_clean_dict())
 
         linked_evidence_records = _build_linked_evidence_records(canonical_record, retrieval_context["evidence_by_block"])
@@ -149,7 +220,7 @@ def _extract_run_multistage(
             request=llm3_request,
             response_model=AntennaArchitectureSpecMvpV2,
         )
-        attempt_count = 2
+        attempt_count += 1
         if debug_dir is not None:
             write_json(
                 debug_dir / "llm3_schema_response.json",
@@ -162,6 +233,7 @@ def _extract_run_multistage(
         extraction_status = {
             "retrieval": "failed_retrieval",
             "llm2": "failed_llm2_canonicalization",
+            "llm2_repair": "failed_llm2_repair",
             "llm3": "failed_llm3_schema_extraction",
         }.get(stage, "failed_extraction")
         _write_phase2_retrieval_context(
@@ -199,6 +271,7 @@ def _extract_run_multistage(
             canonical_design_record_path=(str(canonical_design_record_path) if canonical_design_record_path.exists() else None),
             legacy_direct_path_used=False,
             legacy_model_name=None,
+            repair_report=repair_report,
         )
         write_json(target_dir / "extraction_run_report.json", report)
         raise RuntimeError(
@@ -243,6 +316,7 @@ def _extract_run_multistage(
         canonical_design_record_path=str(canonical_design_record_path),
         legacy_direct_path_used=False,
         legacy_model_name=None,
+        repair_report=repair_report,
     )
     save_structured_output(run_paths.run_dir, spec_json, report, output_dir=target_dir)
     return spec_json, report
@@ -396,6 +470,224 @@ def _generate_agents_structured(
     if isinstance(result, dict) and "parsed" in result and "raw_text" in result:
         return StructuredGenerationResult(parsed=result["parsed"], raw_text=result["raw_text"])
     raise TypeError("LLM client must return StructuredGenerationResult or an equivalent payload")
+
+
+def _generate_agents_structured_with_tools(
+    client: Any,
+    *,
+    agent_name: str,
+    model: str,
+    reasoning_effort: str,
+    request: dict[str, str],
+    response_model: type[Any],
+    tools: list[Any],
+    max_turns: int,
+) -> StructuredGenerationResult:
+    result = client.generate_structured_via_agent_with_tools(
+        agent_name=agent_name,
+        model=model,
+        reasoning_effort=reasoning_effort,
+        instructions=request["instructions"],
+        input_text=request["input_text"],
+        response_model=response_model,
+        tools=tools,
+        max_turns=max_turns,
+    )
+    if isinstance(result, StructuredGenerationResult):
+        return result
+    if isinstance(result, dict) and "parsed" in result and "raw_text" in result:
+        return StructuredGenerationResult(parsed=result["parsed"], raw_text=result["raw_text"])
+    raise TypeError("LLM client must return StructuredGenerationResult or an equivalent payload")
+
+
+def _empty_repair_report() -> dict[str, Any]:
+    return {
+        "repair_stage_considered": False,
+        "repair_stage_executed": False,
+        "missing_requirements": [],
+        "repaired_canonical_record_used": False,
+        "repair_evidence_ids": [],
+        "repair_stage_error": None,
+    }
+
+
+def _canonical_record_needs_repair(record: CanonicalDesignRecord) -> tuple[bool, list[str]]:
+    final_design = record.final_design
+    missing: list[str] = []
+
+    if final_design.feed is not None:
+        if _location_missing(final_design.feed.location):
+            missing.append("feed_location")
+        if not final_design.feed.dimensions:
+            missing.append("feed_dimensions")
+    if final_design.patch is not None and not final_design.patch.dimensions:
+        missing.append("patch_dimensions")
+    if final_design.ground is not None and not final_design.ground.dimensions:
+        missing.append("ground_dimensions")
+    if any(not slot.dimensions for slot in final_design.slots):
+        missing.append("slot_dimensions")
+    if not final_design.layers:
+        missing.append("layers")
+    if not final_design.materials:
+        missing.append("materials")
+    if any(_conflict_topic_requires_repair(conflict.topic, conflict.description) for conflict in record.unresolved_conflicts):
+        missing.append("geometry_conflict")
+
+    return bool(missing), _dedupe_preserve_order(missing)
+
+
+def _location_missing(location: Any) -> bool:
+    if location is None:
+        return True
+    return not any(
+        value not in {None, ""}
+        for value in [
+            getattr(location, "x", None),
+            getattr(location, "y", None),
+        ]
+    )
+
+
+def _conflict_topic_requires_repair(topic: str, description: str) -> bool:
+    text = f"{topic} {description}".lower()
+    return any(cue in text for cue in ("geometry", "dimension", "feed", "layer", "slot", "patch", "ground", "material"))
+
+
+def _build_canonical_repair_tools(
+    retriever: BundleRetriever,
+    repair_evidence_by_id: dict[str, dict[str, Any]],
+) -> list[Any]:
+    try:
+        from agents import function_tool
+    except ImportError as exc:  # pragma: no cover
+        raise ImportError("openai-agents is required for tool-enabled canonical repair") from exc
+
+    @function_tool
+    def search_text(query: str, top_k: int = 3) -> dict[str, Any]:
+        return _repair_search_tool_payload(
+            retriever,
+            repair_evidence_by_id,
+            search_type="text",
+            query=query,
+            top_k=top_k,
+            max_top_k=3,
+        )
+
+    @function_tool
+    def search_tables(query: str, top_k: int = 3) -> dict[str, Any]:
+        return _repair_search_tool_payload(
+            retriever,
+            repair_evidence_by_id,
+            search_type="tables",
+            query=query,
+            top_k=top_k,
+            max_top_k=3,
+        )
+
+    @function_tool
+    def search_figures(query: str, top_k: int = 2) -> dict[str, Any]:
+        return _repair_search_tool_payload(
+            retriever,
+            repair_evidence_by_id,
+            search_type="figures",
+            query=query,
+            top_k=top_k,
+            max_top_k=2,
+        )
+
+    @function_tool
+    def get_evidence_by_id(evidence_id: str) -> dict[str, Any]:
+        evidence = retriever.get_evidence_by_id(evidence_id)
+        if evidence is None:
+            return {"evidence_id": evidence_id, "found": False}
+        record = _build_prompt_record(
+            {
+                "score": 1.0,
+                "snippet": text_excerpt(evidence.get("text", ""), limit=300),
+            },
+            evidence,
+        )
+        repair_evidence_by_id.setdefault(record["evidence_id"], record)
+        return {"found": True, "record": _compact_repair_tool_record(record)}
+
+    return [search_text, search_tables, search_figures, get_evidence_by_id]
+
+
+def _repair_search_tool_payload(
+    retriever: BundleRetriever,
+    repair_evidence_by_id: dict[str, dict[str, Any]],
+    *,
+    search_type: str,
+    query: str,
+    top_k: int,
+    max_top_k: int,
+) -> dict[str, Any]:
+    safe_top_k = _bounded_top_k(top_k, max_top_k)
+    search_fn = {
+        "text": retriever.search_text,
+        "tables": retriever.search_tables,
+        "figures": retriever.search_figures,
+    }[search_type]
+    records: list[dict[str, Any]] = []
+    for result in search_fn(query, top_k=safe_top_k):
+        evidence = retriever.get_evidence_by_id(result["evidence_id"])
+        if evidence is None:
+            continue
+        record = _build_prompt_record(result, evidence)
+        repair_evidence_by_id.setdefault(record["evidence_id"], record)
+        records.append(_compact_repair_tool_record(record))
+    return {
+        "search_type": search_type,
+        "query": query,
+        "top_k": safe_top_k,
+        "results": records,
+    }
+
+
+def _bounded_top_k(top_k: int, max_top_k: int) -> int:
+    try:
+        requested = int(top_k)
+    except (TypeError, ValueError):
+        requested = max_top_k
+    return max(1, min(requested, max_top_k))
+
+
+def _compact_repair_tool_record(record: dict[str, Any]) -> dict[str, Any]:
+    return {
+        "evidence_id": record.get("evidence_id"),
+        "source_type": record.get("source_type"),
+        "source_id": record.get("source_id"),
+        "page_number": record.get("page_number"),
+        "content": record.get("content", ""),
+        "source_payload": record.get("source_payload", {}),
+    }
+
+
+def _merge_repair_evidence_into_context(
+    retrieval_context: dict[str, Any],
+    repair_evidence_by_id: dict[str, dict[str, Any]],
+) -> list[str]:
+    repair_ids = list(repair_evidence_by_id)
+    if not repair_ids:
+        retrieval_context["repair_evidence_ids"] = []
+        return []
+
+    repair_block = retrieval_context.setdefault("evidence_by_block", {}).setdefault("canonical_repair", [])
+    repair_block_ids = {record.get("evidence_id") for record in repair_block}
+    for evidence_id in repair_ids:
+        record = deepcopy(repair_evidence_by_id[evidence_id])
+        if evidence_id not in repair_block_ids:
+            repair_block.append(record)
+            repair_block_ids.add(evidence_id)
+
+    retrieval_context.setdefault("evidence_ids_by_block", {})["canonical_repair"] = [
+        record["evidence_id"] for record in repair_block
+    ]
+    retrieval_context["all_retrieved_evidence_ids"] = _dedupe_preserve_order(
+        list(retrieval_context.get("all_retrieved_evidence_ids", [])) + repair_ids
+    )
+    retrieval_context["repair_evidence_ids"] = repair_ids
+    return repair_ids
 
 
 def _prepare_llm2_evidence_by_block(evidence_by_block: dict[str, list[dict[str, Any]]]) -> dict[str, list[dict[str, Any]]]:
@@ -584,7 +876,9 @@ def _build_report(
     canonical_design_record_path: str | None,
     legacy_direct_path_used: bool,
     legacy_model_name: str | None,
+    repair_report: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
+    repair_payload = repair_report or _empty_repair_report()
     report = {
         "run_id": run_paths.run_id,
         "timestamp_utc": utc_timestamp(),
@@ -618,6 +912,12 @@ def _build_report(
             structural_bound_evidence_ids=structural_bound_evidence_ids,
         ),
         "prompt_budget": prompt_budget,
+        "repair_stage_considered": repair_payload["repair_stage_considered"],
+        "repair_stage_executed": repair_payload["repair_stage_executed"],
+        "missing_requirements": repair_payload["missing_requirements"],
+        "repaired_canonical_record_used": repair_payload["repaired_canonical_record_used"],
+        "repair_evidence_ids": repair_payload["repair_evidence_ids"],
+        "repair_stage_error": repair_payload.get("repair_stage_error"),
     }
     if phase1_payload is not None:
         report["phase1"] = phase1_payload

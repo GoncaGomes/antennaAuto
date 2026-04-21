@@ -1,7 +1,15 @@
 {
-  "attempt_count": 2,
+  "attempt_count": 3,
   "canonical_design_record_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260421T091405157638Z\\outputs\\canonical_design_record.json",
   "evidence_ids_retrieved_per_block": {
+    "canonical_repair": [
+      "chunk:chunk_051",
+      "chunk:chunk_029",
+      "chunk:chunk_034",
+      "table:table_001",
+      "table:table_002",
+      "chunk:chunk_017"
+    ],
     "classification": [
       "chunk:chunk_055",
       "section:section_006",
@@ -202,11 +210,11 @@
   "extraction_path": "retrieval_llm2_llm3",
   "extraction_status": "completed",
   "final_evidence_ids_used": [
+    "table:table_001",
     "section:section_006",
     "chunk:chunk_018",
     "chunk:chunk_019",
     "chunk:chunk_020",
-    "chunk:chunk_021",
     "chunk:chunk_028",
     "chunk:chunk_029",
     "chunk:chunk_034",
@@ -216,7 +224,10 @@
     "chunk:chunk_049",
     "chunk:chunk_050",
     "chunk:chunk_055",
-    "figure:figure_011"
+    "figure:figure_005",
+    "figure:figure_011",
+    "chunk:chunk_009",
+    "chunk:chunk_013"
   ],
   "legacy_direct_path_available": true,
   "legacy_direct_path_used": false,
@@ -225,6 +236,9 @@
   "llm2_reasoning_effort": "medium",
   "llm3_model_name": "gpt-5.4-mini",
   "llm3_reasoning_effort": "medium",
+  "missing_requirements": [
+    "feed_location"
+  ],
   "model_name": "gpt-5.4-mini",
   "old_single_gpt4o_path_replaced": true,
   "phase1": {
@@ -369,8 +383,11 @@
       {
         "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 0,
-        "final_evidence_usage_id_samples": [],
+        "final_evidence_usage_count": 2,
+        "final_evidence_usage_id_samples": [
+          "chunk:chunk_009",
+          "chunk:chunk_013"
+        ],
         "prompt_survival_count": 1,
         "prompt_survival_evidence_id_samples": [
           "chunk:chunk_009"
@@ -397,9 +414,8 @@
       {
         "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
+        "final_evidence_usage_count": 1,
         "final_evidence_usage_id_samples": [
-          "chunk:chunk_021",
           "chunk:chunk_018"
         ],
         "prompt_survival_count": 2,
@@ -463,10 +479,8 @@
       {
         "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 1,
-        "final_evidence_usage_id_samples": [
-          "chunk:chunk_021"
-        ],
+        "final_evidence_usage_count": 0,
+        "final_evidence_usage_id_samples": [],
         "prompt_survival_count": 0,
         "prompt_survival_evidence_id_samples": [],
         "query": "antenna geometry",
@@ -552,9 +566,8 @@
       {
         "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
+        "final_evidence_usage_count": 1,
         "final_evidence_usage_id_samples": [
-          "chunk:chunk_021",
           "chunk:chunk_018"
         ],
         "prompt_survival_count": 1,
@@ -584,8 +597,10 @@
       {
         "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 0,
-        "final_evidence_usage_id_samples": [],
+        "final_evidence_usage_count": 1,
+        "final_evidence_usage_id_samples": [
+          "figure:figure_005"
+        ],
         "prompt_survival_count": 1,
         "prompt_survival_evidence_id_samples": [
           "figure:figure_005"
@@ -633,7 +648,7 @@
       {
         "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 3,
+        "final_evidence_usage_count": 4,
         "final_evidence_usage_id_samples": [
           "chunk:chunk_029",
           "chunk:chunk_034",
@@ -735,9 +750,8 @@
       {
         "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
+        "final_evidence_usage_count": 1,
         "final_evidence_usage_id_samples": [
-          "chunk:chunk_021",
           "chunk:chunk_018"
         ],
         "prompt_survival_count": 2,
@@ -868,8 +882,10 @@
       {
         "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 0,
-        "final_evidence_usage_id_samples": [],
+        "final_evidence_usage_count": 1,
+        "final_evidence_usage_id_samples": [
+          "table:table_001"
+        ],
         "prompt_survival_count": 0,
         "prompt_survival_evidence_id_samples": [],
         "query": "thickness",
@@ -895,9 +911,8 @@
       {
         "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
+        "final_evidence_usage_count": 1,
         "final_evidence_usage_id_samples": [
-          "chunk:chunk_021",
           "chunk:chunk_018"
         ],
         "prompt_survival_count": 2,
@@ -912,8 +927,10 @@
       {
         "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 0,
-        "final_evidence_usage_id_samples": [],
+        "final_evidence_usage_count": 1,
+        "final_evidence_usage_id_samples": [
+          "table:table_001"
+        ],
         "prompt_survival_count": 0,
         "prompt_survival_evidence_id_samples": [],
         "query": "dimensions of proposed antenna",
@@ -1045,9 +1062,8 @@
       {
         "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
+        "final_evidence_usage_count": 1,
         "final_evidence_usage_id_samples": [
-          "chunk:chunk_021",
           "chunk:chunk_018"
         ],
         "prompt_survival_count": 2,
@@ -1062,8 +1078,10 @@
       {
         "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 0,
-        "final_evidence_usage_id_samples": [],
+        "final_evidence_usage_count": 1,
+        "final_evidence_usage_id_samples": [
+          "table:table_001"
+        ],
         "prompt_survival_count": 1,
         "prompt_survival_evidence_id_samples": [
           "table:table_001"
@@ -1125,8 +1143,10 @@
       {
         "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 0,
-        "final_evidence_usage_id_samples": [],
+        "final_evidence_usage_count": 1,
+        "final_evidence_usage_id_samples": [
+          "table:table_001"
+        ],
         "prompt_survival_count": 1,
         "prompt_survival_evidence_id_samples": [
           "table:table_001"
@@ -1138,8 +1158,10 @@
       {
         "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 0,
-        "final_evidence_usage_id_samples": [],
+        "final_evidence_usage_count": 1,
+        "final_evidence_usage_id_samples": [
+          "table:table_001"
+        ],
         "prompt_survival_count": 1,
         "prompt_survival_evidence_id_samples": [
           "table:table_001"
@@ -1151,9 +1173,8 @@
       {
         "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
+        "final_evidence_usage_count": 1,
         "final_evidence_usage_id_samples": [
-          "chunk:chunk_021",
           "chunk:chunk_050"
         ],
         "prompt_survival_count": 1,
@@ -1167,9 +1188,8 @@
       {
         "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 3,
+        "final_evidence_usage_count": 2,
         "final_evidence_usage_id_samples": [
-          "chunk:chunk_021",
           "chunk:chunk_050",
           "chunk:chunk_049"
         ],
@@ -1218,9 +1238,8 @@
       {
         "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
+        "final_evidence_usage_count": 1,
         "final_evidence_usage_id_samples": [
-          "chunk:chunk_021",
           "chunk:chunk_018"
         ],
         "prompt_survival_count": 2,
@@ -1235,8 +1254,10 @@
       {
         "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 0,
-        "final_evidence_usage_id_samples": [],
+        "final_evidence_usage_count": 1,
+        "final_evidence_usage_id_samples": [
+          "table:table_001"
+        ],
         "prompt_survival_count": 1,
         "prompt_survival_evidence_id_samples": [
           "table:table_001"
@@ -1307,9 +1328,10 @@
       {
         "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 1,
+        "final_evidence_usage_count": 2,
         "final_evidence_usage_id_samples": [
-          "chunk:chunk_047"
+          "chunk:chunk_047",
+          "chunk:chunk_009"
         ],
         "prompt_survival_count": 2,
         "prompt_survival_evidence_id_samples": [
@@ -1323,8 +1345,9 @@
       {
         "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 1,
+        "final_evidence_usage_count": 2,
         "final_evidence_usage_id_samples": [
+          "chunk:chunk_013",
           "chunk:chunk_020"
         ],
         "prompt_survival_count": 1,
@@ -1379,9 +1402,8 @@
       {
         "bound_structural_evidence_id_samples": [],
         "contributed_to_bound_structural_field": false,
-        "final_evidence_usage_count": 2,
+        "final_evidence_usage_count": 1,
         "final_evidence_usage_id_samples": [
-          "chunk:chunk_021",
           "chunk:chunk_018"
         ],
         "prompt_survival_count": 2,
@@ -1440,6 +1462,18 @@
       }
     ]
   },
+  "repair_evidence_ids": [
+    "chunk:chunk_051",
+    "chunk:chunk_029",
+    "chunk:chunk_034",
+    "table:table_001",
+    "table:table_002",
+    "chunk:chunk_017"
+  ],
+  "repair_stage_considered": true,
+  "repair_stage_error": null,
+  "repair_stage_executed": true,
+  "repaired_canonical_record_used": true,
   "retrieval_queries_used": {
     "classification": [
       {
@@ -2303,7 +2337,7 @@
   },
   "run_id": "run_20260421T091405157638Z",
   "schema_errors": [],
-  "timestamp_utc": "2026-04-21T15:26:53Z",
+  "timestamp_utc": "2026-04-21T18:25:07Z",
   "validation_success": true,
   "warnings": []
 }

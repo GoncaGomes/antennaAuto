@@ -13,11 +13,18 @@ except ImportError:  # pragma: no cover
 
 from mvp.config import RetrievalConfig
 from mvp.extraction.agent import gather_retrieval_context
-from mvp.extraction.pipeline import extract_run
+from mvp.extraction.pipeline import (
+    _build_linked_evidence_records,
+    _canonical_record_needs_repair,
+    _merge_repair_evidence_into_context,
+    _validate_canonical_generation,
+    extract_run,
+)
 from mvp.index import index_run
 from mvp.llm.client import StructuredGenerationResult
 from mvp.pipeline import run_pipeline
 from mvp.retrieval import BundleRetriever
+from mvp.schemas.canonical_design_record import CanonicalDesignRecord
 from mvp.schemas.extraction_spec import validate_spec_payload
 from mvp.schemas.interpretation_map import validate_interpretation_map_payload
 
@@ -49,6 +56,36 @@ class FakeAgentsClient:
                 "instructions": instructions,
                 "input_text": input_text,
                 "response_model": response_model,
+            }
+        )
+        if not self.responses:
+            raise AssertionError("No fake responses remaining")
+        payload = self.responses.pop(0)
+        parsed = payload if isinstance(payload, response_model) else response_model.model_validate(payload)
+        return StructuredGenerationResult(parsed=parsed, raw_text=parsed.model_dump_json())
+
+    def generate_structured_via_agent_with_tools(
+        self,
+        *,
+        agent_name: str,
+        model: str,
+        reasoning_effort: str,
+        instructions: str,
+        input_text: str,
+        response_model,
+        tools: list,
+        max_turns: int,
+    ) -> StructuredGenerationResult:
+        self.calls.append(
+            {
+                "agent_name": agent_name,
+                "model": model,
+                "reasoning_effort": reasoning_effort,
+                "instructions": instructions,
+                "input_text": input_text,
+                "response_model": response_model,
+                "tools": tools,
+                "max_turns": max_turns,
             }
         )
         if not self.responses:
@@ -131,6 +168,8 @@ def test_extract_run_multistage_writes_outputs_and_uses_agents_models(tmp_path: 
     assert report["llm2_model_name"] == "gpt-5.4-mini"
     assert report["llm3_model_name"] == "gpt-5.4-mini"
     assert report["legacy_direct_path_used"] is False
+    assert report["repair_stage_considered"] is True
+    assert report["repair_stage_executed"] is False
     assert (run_paths.outputs_dir / "canonical_design_record.json").exists()
 
     phase2_artifact = json.loads((run_paths.outputs_dir / "phase2_retrieval_context.json").read_text(encoding="utf-8"))
@@ -233,6 +272,81 @@ def test_extract_run_multistage_dedupes_exact_duplicate_parameters(tmp_path: Pat
     assert spec["entities"][0]["geometry"]["dimensions"][0]["param_ref"] == "param_patch_length_a"
 
 
+def test_extract_run_multistage_runs_one_repair_pass_when_canonical_record_is_under_specified(tmp_path: Path) -> None:
+    run_paths, retrieval_context = _prepare_retrieval_context(tmp_path)
+    under_specified = _build_under_specified_canonical_payload(retrieval_context)
+    repaired = _build_canonical_payload(retrieval_context)
+    client = FakeAgentsClient([
+        under_specified,
+        repaired,
+        _build_valid_payload(run_paths, retrieval_context),
+    ])
+
+    _, report = extract_run(run_paths.run_dir, top_k=3, llm_client=client)
+
+    assert report["validation_success"] is True
+    assert report["repair_stage_considered"] is True
+    assert report["repair_stage_executed"] is True
+    assert report["repaired_canonical_record_used"] is True
+    assert {"feed_location", "feed_dimensions", "layers"} <= set(report["missing_requirements"])
+    assert [call["agent_name"] for call in client.calls] == [
+        "phase2_canonicalization",
+        "phase2_canonical_repair",
+        "phase3_schema_construction",
+    ]
+    assert client.calls[1]["max_turns"] == 4
+    assert client.calls[1]["tools"]
+
+
+def test_canonical_record_repair_trigger_detects_missing_build_critical_fields() -> None:
+    record = CanonicalDesignRecord.model_validate(
+        _build_under_specified_canonical_payload(
+            {
+                "all_retrieved_evidence_ids": ["chunk:chunk_001"],
+                "evidence_ids_by_block": {"parameters": ["chunk:chunk_001"], "materials": ["chunk:chunk_001"], "feeds": ["chunk:chunk_001"]},
+            }
+        )
+    )
+
+    needs_repair, missing = _canonical_record_needs_repair(record)
+
+    assert needs_repair is True
+    assert {"feed_location", "feed_dimensions", "layers"} <= set(missing)
+
+
+def test_repair_evidence_merge_expands_validation_and_linking_context() -> None:
+    repair_record = {
+        "evidence_id": "table:table_999",
+        "source_type": "table",
+        "source_id": "table_999",
+        "page_number": 4,
+        "score": 1.0,
+        "snippet": "feed dimensions",
+        "content": "feed dimensions",
+        "source_payload": {"table_id": "table_999", "rows": [["feed", "1.2 mm"]], "markdown": "| feed | 1.2 mm |"},
+    }
+    retrieval_context = {
+        "all_retrieved_evidence_ids": ["chunk:chunk_001"],
+        "evidence_by_block": {"feeds": []},
+        "evidence_ids_by_block": {"feeds": []},
+    }
+    payload = _build_canonical_payload(
+        {
+            "all_retrieved_evidence_ids": ["table:table_999"],
+            "evidence_ids_by_block": {"parameters": ["table:table_999"], "materials": ["table:table_999"], "feeds": ["table:table_999"]},
+        }
+    )
+    record = CanonicalDesignRecord.model_validate(payload)
+
+    repair_ids = _merge_repair_evidence_into_context(retrieval_context, {"table:table_999": repair_record})
+    validated = _validate_canonical_generation(record, retrieval_context)
+    linked = _build_linked_evidence_records(validated, retrieval_context["evidence_by_block"])
+
+    assert repair_ids == ["table:table_999"]
+    assert "table:table_999" in retrieval_context["all_retrieved_evidence_ids"]
+    assert linked[0]["evidence_id"] == "table:table_999"
+
+
 def test_extract_run_legacy_path_isolated_behind_flag(tmp_path: Path) -> None:
     run_paths, retrieval_context = _prepare_retrieval_context(tmp_path)
     client = FakeLLMClient([_build_valid_payload(run_paths, retrieval_context)])
@@ -295,20 +409,28 @@ def _build_canonical_payload(retrieval_context: dict) -> dict:
                 "feed_family": "microstrip",
                 "matching_style": "inset",
                 "driven_target": "main patch",
-                "dimensions": [],
-                "location": None,
+                "dimensions": [{"name": "inset_depth", "value": "1.1", "unit": "mm"}],
+                "location": {"x": "edge inset", "y": "centerline", "unit": None},
                 "evidence_ids": [feed_evidence],
             },
             "ground": None,
             "slots": [],
             "materials": [{"name": "Rogers RT5880", "category": "dielectric", "roles": ["substrate"], "evidence_ids": [materials_evidence]}],
-            "layers": [],
+            "layers": [{"role": "substrate", "material_name": "Rogers RT5880", "thickness_value": "1.6", "thickness_unit": "mm", "evidence_ids": [materials_evidence]}],
             "performance_targets": [],
             "extra_parameters": [],
         },
         "design_evolution_notes": [],
         "unresolved_conflicts": [],
     }
+
+
+def _build_under_specified_canonical_payload(retrieval_context: dict) -> dict:
+    payload = _build_canonical_payload(retrieval_context)
+    payload["final_design"]["feed"]["dimensions"] = []
+    payload["final_design"]["feed"]["location"] = None
+    payload["final_design"]["layers"] = []
+    return payload
 
 
 def _build_valid_payload(run_paths, retrieval_context: dict) -> dict:

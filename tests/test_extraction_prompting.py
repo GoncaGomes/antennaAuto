@@ -8,7 +8,11 @@ from mvp.extraction.legacy.prompting import (
     build_repair_messages,
     prepare_prompt_evidence,
 )
-from mvp.extraction.prompting import build_canonicalization_input, build_schema_construction_input
+from mvp.extraction.prompting import (
+    build_canonical_repair_input,
+    build_canonicalization_input,
+    build_schema_construction_input,
+)
 
 
 def test_prompt_builder_includes_extraction_rules() -> None:
@@ -159,6 +163,24 @@ def test_schema_construction_input_includes_canonical_record_and_linked_evidence
     assert "run_context" in payload["input_text"]
     prompt_path = Path(__file__).resolve().parents[1] / "src" / "mvp" / "prompts" / "schema_construction_system.md"
     assert payload["instructions"] == prompt_path.read_text(encoding="utf-8").strip()
+
+
+def test_canonical_repair_input_instructs_bounded_retrieval_and_full_record_output() -> None:
+    payload = build_canonical_repair_input(
+        {"run_id": "run_1", "original_filename": "article.pdf", "page_count": 2},
+        {
+            "selected_design_summary": "Rectangular patch",
+            "final_design": {"feed": {"dimensions": [], "location": None}},
+        },
+        ["feed_location", "feed_dimensions"],
+        phase1_guidance={"search_queries": [{"query_text": "feed location"}]},
+    )
+
+    assert "repairing an existing canonical design record" in payload["input_text"]
+    assert "Output a complete CanonicalDesignRecord" in payload["input_text"]
+    assert "feed_location" in payload["input_text"]
+    assert "feed location" in payload["input_text"]
+    assert payload["instructions"]
 
 
 def test_prepare_prompt_evidence_uses_block_specific_caps() -> None:

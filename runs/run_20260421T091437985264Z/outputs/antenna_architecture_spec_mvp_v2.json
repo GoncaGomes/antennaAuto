@@ -1,21 +1,21 @@
 {
   "classification": {
-    "confidence": 0.96,
+    "confidence": 0.98,
     "evidence_ids": [
       "chunk:chunk_024",
-      "chunk:chunk_023",
       "table:table_001",
-      "chunk:chunk_041",
-      "chunk:chunk_030"
+      "chunk:chunk_023",
+      "chunk:chunk_041"
     ],
-    "primary_family": "circularly slotted triangular patch antenna",
+    "primary_family": "circular-slotted triangular patch antenna",
     "status": "extracted",
     "topology_tags": [
-      "microstrip line-fed",
+      "microstrip-fed",
       "planar",
-      "single-layer",
       "slot-loaded",
-      "ISM-band"
+      "triangular-patch",
+      "ISM-band",
+      "compact"
     ]
   },
   "document_context": {
@@ -25,19 +25,18 @@
   },
   "entities": [
     {
-      "entity_id": "patch",
-      "entity_type": "triangular_patch",
+      "entity_id": "entity_patch",
+      "entity_type": "patch",
       "evidence_ids": [
-        "chunk:chunk_024",
         "table:table_001",
-        "chunk:chunk_041"
+        "chunk:chunk_024"
       ],
       "geometry": {
         "dimensions": [
           {
             "evidence_ids": [
               "table:table_001",
-              "chunk:chunk_041"
+              "chunk:chunk_024"
             ],
             "name": "x",
             "status": "extracted",
@@ -47,7 +46,7 @@
           {
             "evidence_ids": [
               "table:table_001",
-              "chunk:chunk_041"
+              "chunk:chunk_024"
             ],
             "name": "y",
             "status": "extracted",
@@ -58,29 +57,69 @@
         "outline_points": [],
         "shape_mode": "triangular"
       },
-      "layer_ref": "substrate_layer",
+      "layer_ref": "layer_top_metal",
+      "material_ref": "material_conductor",
       "placement": {
         "status": "missing"
       },
-      "role": "radiating_patch"
+      "role": "radiating patch"
     },
     {
-      "entity_id": "slot",
-      "entity_type": "circular_slot",
+      "entity_id": "entity_ground",
+      "entity_type": "ground_plane",
       "evidence_ids": [
-        "chunk:chunk_024",
-        "chunk:chunk_031",
-        "chunk:chunk_030",
-        "table:table_001"
+        "table:table_001",
+        "chunk:chunk_018"
       ],
       "geometry": {
         "dimensions": [
           {
             "evidence_ids": [
+              "table:table_001",
+              "chunk:chunk_018"
+            ],
+            "name": "length",
+            "status": "extracted",
+            "unit": "mm",
+            "value": 25.5
+          },
+          {
+            "evidence_ids": [
+              "table:table_001",
+              "chunk:chunk_018"
+            ],
+            "name": "width",
+            "status": "extracted",
+            "unit": "mm",
+            "value": 22.5
+          }
+        ],
+        "outline_points": [],
+        "shape_mode": "rectangular"
+      },
+      "layer_ref": "layer_ground_plane",
+      "material_ref": "material_conductor",
+      "placement": {
+        "anchor": "board_reference",
+        "status": "assumed_local_origin"
+      },
+      "role": "ground plane"
+    },
+    {
+      "entity_id": "entity_slot",
+      "entity_type": "slot",
+      "evidence_ids": [
+        "table:table_001",
+        "chunk:chunk_024",
+        "chunk:chunk_031"
+      ],
+      "geometry": {
+        "dimensions": [
+          {
+            "evidence_ids": [
+              "table:table_001",
               "chunk:chunk_024",
-              "chunk:chunk_031",
-              "chunk:chunk_030",
-              "table:table_001"
+              "chunk:chunk_031"
             ],
             "name": "radius",
             "status": "extracted",
@@ -91,75 +130,78 @@
         "outline_points": [],
         "shape_mode": "circular"
       },
-      "layer_ref": "substrate_layer",
+      "layer_ref": "layer_top_metal",
       "placement": {
-        "status": "missing"
+        "anchor": "centered_in_patch",
+        "status": "extracted"
       },
-      "role": "slot"
+      "role": "etched slot"
     },
     {
-      "entity_id": "ground_plane",
-      "entity_type": "ground_plane",
+      "entity_id": "entity_feedline",
+      "entity_type": "feedline",
       "evidence_ids": [
-        "chunk:chunk_018",
         "table:table_001",
-        "chunk:chunk_041"
+        "chunk:chunk_004"
       ],
       "geometry": {
         "dimensions": [
           {
             "evidence_ids": [
               "table:table_001",
-              "chunk:chunk_041"
-            ],
-            "name": "width",
-            "status": "extracted",
-            "unit": "mm",
-            "value": 25.5
-          },
-          {
-            "evidence_ids": [
-              "table:table_001",
-              "chunk:chunk_041"
+              "chunk:chunk_004"
             ],
             "name": "length",
             "status": "extracted",
             "unit": "mm",
-            "value": 22.5
+            "value": 14
+          },
+          {
+            "evidence_ids": [
+              "table:table_001",
+              "chunk:chunk_004"
+            ],
+            "name": "width",
+            "status": "extracted",
+            "unit": "mm",
+            "value": 3.11
           }
         ],
         "outline_points": [],
-        "shape_mode": "planar"
+        "shape_mode": "rectangular"
       },
-      "layer_ref": "substrate_layer",
+      "layer_ref": "layer_top_metal",
+      "material_ref": "material_conductor",
       "placement": {
         "status": "missing"
       },
-      "role": "ground_plane"
+      "role": "microstrip line feed"
     }
   ],
   "evidence_used": [
     "chunk:chunk_024",
-    "chunk:chunk_023",
     "table:table_001",
-    "chunk:chunk_041",
-    "chunk:chunk_030",
-    "chunk:chunk_031",
     "chunk:chunk_018",
-    "chunk:chunk_006",
-    "chunk:chunk_015"
+    "chunk:chunk_023",
+    "section:section_005",
+    "chunk:chunk_030",
+    "chunk:chunk_041",
+    "chunk:chunk_039",
+    "chunk:chunk_004",
+    "chunk:chunk_015",
+    "chunk:chunk_022",
+    "chunk:chunk_031"
   ],
   "feeds": [
     {
-      "driven_entity_ref": "patch",
+      "driven_entity_ref": "entity_patch",
       "evidence_ids": [
-        "chunk:chunk_018",
-        "chunk:chunk_006",
-        "chunk:chunk_015"
+        "table:table_001",
+        "chunk:chunk_004"
       ],
-      "feed_family": "microstrip line",
-      "feed_id": "feed_1",
-      "matching_style": "line-fed",
+      "feed_family": "microstrip line feed",
+      "feed_id": "feed_microstrip_line",
+      "matching_style": "direct feed",
       "port_type": {
         "status": "missing"
       },
@@ -177,8 +219,8 @@
         "chunk:chunk_015",
         "table:table_001"
       ],
-      "layer_id": "substrate_layer",
-      "material_ref": "fr4_epoxy",
+      "layer_id": "layer_substrate",
+      "material_ref": "material_fr4_epoxy",
       "role": "substrate",
       "thickness": {
         "evidence_ids": [
@@ -190,32 +232,83 @@
         "value": 1.6
       },
       "z_order": 0
+    },
+    {
+      "evidence_ids": [
+        "chunk:chunk_018",
+        "table:table_001"
+      ],
+      "layer_id": "layer_ground_plane",
+      "material_ref": "material_conductor",
+      "role": "ground plane",
+      "thickness": {
+        "evidence_ids": [],
+        "status": "missing"
+      },
+      "z_order": -1
+    },
+    {
+      "evidence_ids": [
+        "chunk:chunk_024",
+        "table:table_001"
+      ],
+      "layer_id": "layer_top_metal",
+      "material_ref": "material_conductor",
+      "role": "radiating layer",
+      "thickness": {
+        "evidence_ids": [],
+        "status": "missing"
+      },
+      "z_order": 1
     }
   ],
   "materials": [
     {
-      "category": "substrate",
+      "category": "substrate dielectric",
       "evidence_ids": [
-        "chunk:chunk_015"
+        "chunk:chunk_015",
+        "chunk:chunk_041"
       ],
-      "material_id": "fr4_epoxy",
-      "name": "FR4-epoxy",
+      "material_id": "material_fr4_epoxy",
+      "name": "FR4 epoxy",
       "name_raw": "FR4-epoxy",
       "roles": [
         "substrate"
       ],
       "status": "extracted"
+    },
+    {
+      "category": "conductor",
+      "evidence_ids": [],
+      "material_id": "material_conductor",
+      "name": "conductor",
+      "roles": [
+        "radiating patch",
+        "ground plane",
+        "feedline"
+      ],
+      "status": "missing"
     }
   ],
   "parameters": [
     {
       "evidence_ids": [
         "chunk:chunk_015",
-        "chunk:chunk_024",
         "chunk:chunk_041"
       ],
-      "param_id": "center_frequency",
-      "semantic_name": "center_frequency",
+      "param_id": "param_relative_permittivity",
+      "semantic_name": "relative permittivity",
+      "status": "extracted",
+      "symbol": "epsilon_r",
+      "value": 4.4
+    },
+    {
+      "evidence_ids": [
+        "chunk:chunk_024",
+        "chunk:chunk_023"
+      ],
+      "param_id": "param_center_frequency",
+      "semantic_name": "center frequency",
       "status": "extracted",
       "symbol": "fc",
       "unit": "GHz",
@@ -225,17 +318,18 @@
       "evidence_ids": [
         "chunk:chunk_023"
       ],
-      "param_id": "operating_band",
-      "semantic_name": "operating_band",
+      "param_id": "param_operating_band",
+      "semantic_name": "operating band",
       "status": "extracted",
       "unit": "GHz",
       "value": "5.72-5.88"
     },
     {
       "evidence_ids": [
-        "chunk:chunk_023"
+        "chunk:chunk_023",
+        "chunk:chunk_041"
       ],
-      "param_id": "bandwidth",
+      "param_id": "param_bandwidth",
       "semantic_name": "bandwidth",
       "status": "extracted",
       "unit": "MHz",
@@ -243,12 +337,13 @@
     },
     {
       "evidence_ids": [
-        "chunk:chunk_023"
+        "chunk:chunk_023",
+        "chunk:chunk_039"
       ],
-      "param_id": "gain",
+      "param_id": "param_gain",
       "semantic_name": "gain",
       "status": "extracted",
-      "unit": "dB",
+      "unit": "dBi",
       "value": 1.49
     },
     {
@@ -256,34 +351,24 @@
         "table:table_001",
         "chunk:chunk_041"
       ],
-      "param_id": "overall_footprint",
-      "semantic_name": "overall_footprint",
+      "param_id": "param_overall_dimensions",
+      "semantic_name": "overall dimensions",
       "status": "extracted",
       "unit": "mm",
       "value": "25.5 \u00d7 22.5 \u00d7 1.6"
-    },
-    {
-      "evidence_ids": [
-        "chunk:chunk_015"
-      ],
-      "param_id": "substrate_permittivity",
-      "semantic_name": "relative_permittivity",
-      "status": "extracted",
-      "symbol": "\u03b5r",
-      "value": 4.4
     }
   ],
   "quality": {
     "ambiguities": [
-      "bandwidth_reporting_conflict_160_mhz_vs_100_mhz",
-      "feed_coordinates_not_recovered"
+      "Reported bandwidth differs between Table 2 (160 MHz, 5.72-5.88 GHz) and the conclusion (100 MHz); Table 2 is treated as primary.",
+      "Exact feed location coordinates are not provided in the retrieved evidence.",
+      "The conductive layer material for patch and ground is not explicitly specified in the retrieved evidence."
     ],
     "build_readiness": "partial",
     "confidence": 0.91,
     "missing_required_for_build": [
-      "feed_coordinates",
-      "feed_line_dimensions",
-      "validation_type"
+      "exact feed location coordinates",
+      "conductive material specification"
     ]
   },
   "schema_name": "antenna_architecture_spec_mvp_v2",
@@ -291,22 +376,18 @@
   "units": {
     "frequency": {
       "evidence_ids": [
-        "chunk:chunk_015",
-        "chunk:chunk_023",
-        "chunk:chunk_024"
+        "chunk:chunk_023"
       ],
       "status": "extracted",
       "value": "GHz"
     },
     "impedance": {
       "evidence_ids": [],
-      "status": "missing",
-      "value": "ohm"
+      "status": "missing"
     },
     "length": {
       "evidence_ids": [
-        "table:table_001",
-        "chunk:chunk_041"
+        "table:table_001"
       ],
       "status": "extracted",
       "value": "mm"

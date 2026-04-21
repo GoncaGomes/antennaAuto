@@ -1026,6 +1026,16 @@
     ]
   },
   "retrieved_evidence_ids_per_block": {
+    "canonical_repair": {
+      "count": 5,
+      "sample_evidence_ids": [
+        "table:table_001",
+        "chunk:chunk_021",
+        "chunk:chunk_007",
+        "section:section_006",
+        "chunk:chunk_009"
+      ]
+    },
     "classification": {
       "count": 22,
       "sample_evidence_ids": [

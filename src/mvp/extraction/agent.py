@@ -264,12 +264,12 @@ def _summarize_evidence_content(evidence: dict[str, Any]) -> str:
 def _compact_source_payload(source_type: str, payload: dict[str, Any]) -> dict[str, Any]:
     if source_type == "table":
         rows = payload.get("rows", [])
-        compact_rows = rows[:6] if isinstance(rows, list) else []
         return {
             "table_id": payload.get("table_id", ""),
             "caption": payload.get("caption", ""),
             "page_number": payload.get("page_number"),
-            "rows": compact_rows,
+            "rows": rows if isinstance(rows, list) else [],
+            "markdown": payload.get("markdown", ""),
             "structured": payload.get("structured", True),
         }
     if source_type == "figure":

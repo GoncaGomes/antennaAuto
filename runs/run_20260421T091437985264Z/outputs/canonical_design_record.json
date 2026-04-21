@@ -1,92 +1,111 @@
 {
   "design_evolution_notes": [
     {
-      "description": "Initial reference is a microstrip line-fed triangular patch radiator with a complete ground plane and 25.5 mm square substrate footprint.",
+      "description": "Initial reference design: microstrip line-fed triangular patch with a complete ground plane; Table 2 marks it as non-radiating.",
       "evidence_ids": [
         "chunk:chunk_018",
         "table:table_001"
       ],
-      "label": "Reference radiator 1"
+      "label": "Radiator 1"
     },
     {
-      "description": "An intermediate variant introduces an ellipse slot with radius 1 mm while keeping the triangular patch geometry unchanged.",
+      "description": "Adds an elliptical slot of radius 1 mm to the triangular patch; Table 2 reports 6.05-6.23 GHz operation, 180 MHz bandwidth, and 2.00 dB gain.",
       "evidence_ids": [
-        "table:table_001"
-      ],
-      "label": "Step 2 ellipse-slot variant"
-    },
-    {
-      "description": "Radiator 2 is reused for miniaturization and a rectangular slot of 2 mm \u00d7 5 mm is inserted into the triangular patch. This is an intermediate stage, not the final selected antenna.",
-      "evidence_ids": [
-        "section:section_005",
-        "chunk:chunk_022",
         "table:table_001",
         "chunk:chunk_023"
       ],
-      "label": "Step 3 rectangular-slot variant"
+      "label": "Radiator 2 / Step 2"
     },
     {
-      "description": "A circular slot is inserted into the center of the triangular patch. A parametric sweep over circular-slot radius (2, 2.5, 3, 3.5 mm) indicates 3 mm as the preferred value and yields the final CSTPA geometry.",
+      "description": "Uses the optimized design from Radiator 2 and inserts a rectangular slot of 2 mm \u00d7 5 mm; Table 2 reports 6.25-6.37 GHz operation, 120 MHz bandwidth, and 2.45 dB gain.",
       "evidence_ids": [
-        "chunk:chunk_024",
-        "chunk:chunk_030",
-        "chunk:chunk_031",
+        "section:section_005",
+        "table:table_001",
         "chunk:chunk_023"
       ],
-      "label": "Step 4 circular-slot finalization"
+      "label": "Radiator 3 / Step 3"
+    },
+    {
+      "description": "Final proposed design with a circular slot radius of 3 mm centered in the triangular patch; Table 2 reports 5.72-5.88 GHz operation, 160 MHz bandwidth, and 1.49 dB gain.",
+      "evidence_ids": [
+        "chunk:chunk_024",
+        "table:table_001",
+        "chunk:chunk_030",
+        "chunk:chunk_023"
+      ],
+      "label": "Radiator 4 / Step 4"
     }
   ],
   "dominant_evidence_ids": [
     "chunk:chunk_024",
-    "chunk:chunk_023",
     "table:table_001",
-    "chunk:chunk_041",
-    "chunk:chunk_030"
+    "chunk:chunk_023",
+    "chunk:chunk_041"
   ],
   "final_design": {
     "classification": {
-      "primary_family": "circularly slotted triangular patch antenna",
+      "primary_family": "circular-slotted triangular patch antenna",
       "topology_tags": [
-        "microstrip line-fed",
+        "microstrip-fed",
         "planar",
-        "single-layer",
         "slot-loaded",
-        "ISM-band"
+        "triangular-patch",
+        "ISM-band",
+        "compact"
       ]
     },
     "extra_parameters": [
       {
         "evidence_ids": [
-          "table:table_001",
-          "chunk:chunk_041"
+          "table:table_001"
         ],
-        "semantic_name": "overall footprint",
+        "semantic_name": "Overall dimensions",
         "target_component": "entire antenna",
         "unit": "mm",
         "value": "25.5 \u00d7 22.5 \u00d7 1.6"
       }
     ],
     "feed": {
-      "dimensions": [],
-      "driven_target": "triangular patch",
-      "evidence_ids": [
-        "chunk:chunk_018",
-        "chunk:chunk_006",
-        "chunk:chunk_015"
+      "dimensions": [
+        {
+          "name": "feedline length",
+          "unit": "mm",
+          "value": 14
+        },
+        {
+          "name": "feedline width",
+          "unit": "mm",
+          "value": 3.11
+        }
       ],
-      "feed_family": "microstrip line",
-      "matching_style": "line-fed"
+      "driven_target": "patch",
+      "evidence_ids": [
+        "table:table_001",
+        "chunk:chunk_004"
+      ],
+      "feed_family": "microstrip line feed",
+      "matching_style": "direct feed"
     },
     "ground": {
-      "dimensions": [],
-      "evidence_ids": [
-        "chunk:chunk_018",
-        "table:table_001",
-        "chunk:chunk_041"
+      "dimensions": [
+        {
+          "name": "ground length",
+          "unit": "mm",
+          "value": 25.5
+        },
+        {
+          "name": "ground width",
+          "unit": "mm",
+          "value": 22.5
+        }
       ],
-      "label": "Complete ground plane",
+      "evidence_ids": [
+        "table:table_001",
+        "chunk:chunk_018"
+      ],
+      "label": "Ground plane",
       "layer_role": "ground plane",
-      "shape_mode": "planar"
+      "shape_mode": "rectangular"
     },
     "layers": [
       {
@@ -102,9 +121,10 @@
     ],
     "materials": [
       {
-        "category": "substrate",
+        "category": "substrate dielectric",
         "evidence_ids": [
-          "chunk:chunk_015"
+          "chunk:chunk_015",
+          "chunk:chunk_041"
         ],
         "name": "FR4-epoxy",
         "roles": [
@@ -126,20 +146,18 @@
         }
       ],
       "evidence_ids": [
-        "chunk:chunk_024",
         "table:table_001",
-        "chunk:chunk_041"
+        "chunk:chunk_024"
       ],
-      "label": "Triangular patch",
+      "label": "Triangular patch radiator",
       "layer_role": "radiating patch",
       "shape_mode": "triangular"
     },
     "performance_targets": [
       {
         "evidence_ids": [
-          "chunk:chunk_015",
           "chunk:chunk_024",
-          "chunk:chunk_041"
+          "chunk:chunk_023"
         ],
         "name": "Center frequency",
         "unit": "GHz",
@@ -163,10 +181,11 @@
       },
       {
         "evidence_ids": [
-          "chunk:chunk_023"
+          "chunk:chunk_023",
+          "chunk:chunk_039"
         ],
         "name": "Gain",
-        "unit": "dB",
+        "unit": "dBi",
         "value": 1.49
       }
     ],
@@ -180,81 +199,56 @@
           }
         ],
         "evidence_ids": [
+          "table:table_001",
           "chunk:chunk_024",
-          "chunk:chunk_031",
-          "chunk:chunk_030",
-          "table:table_001"
+          "chunk:chunk_031"
         ],
-        "label": "Centered circular slot",
-        "layer_role": "slot",
+        "label": "Circular slot",
+        "layer_role": "etched slot",
         "shape_mode": "circular"
       }
     ]
   },
   "has_multiple_variants": true,
   "identified_antennas": [
-    "Radiator 1: microstrip line-fed triangular patch with complete ground plane",
-    "Radiator 2: intermediate triangular-patch variant with ellipse slot radius 1 mm",
-    "Radiator 3: intermediate triangular-patch variant with rectangular slot 2 mm \u00d7 5 mm",
-    "Radiator 4 / Step 4 CSTPA: triangular patch with centered circular slot radius 3 mm",
-    "Figure 2/3 circular-slot sweep variants: r = 2 mm, 2.5 mm, 3 mm, 3.5 mm"
+    "Radiator 1: microstrip line-fed triangular patch radiator with a complete ground plane",
+    "Radiator 2 / Step 2: triangular patch with an elliptical slot of radius 1 mm",
+    "Radiator 3 / Step 3: optimized design from Radiator 2 with a rectangular slot (2 mm \u00d7 5 mm)",
+    "Radiator 4 / Step 4: circular-slotted triangular patch radiator with a 3 mm radius slot",
+    "CSTPA proposed design: the final circular-slotted triangular patch antenna summarized in the paper"
   ],
-  "proposed_final_antenna_rationale": "Radiator 4 / Step 4 is the dominant final design because the paper explicitly identifies the circular-slot triangular patch as the best choice, and the Step 4 table aligns the geometry with the intended 5.8 GHz ISM band. Step 3 is clearly described as an earlier miniaturization step derived from Radiator 2 and uses a rectangular slot, but its resonant band is shifted upward and it is not presented as the best final choice. The circular-slot sweep indicates 3 mm as the chosen radius. The record should therefore canonicalize Step 4, while retaining Step 3 and earlier variants as evolution history.",
+  "proposed_final_antenna_rationale": "Radiator 4 is the canonical final design because the paper's Step 4 section directly says the circular-slot insertion is the best choice and describes the suggested circular slotted triangular patch radiator geometry. The final geometry is also the only variant with the 3 mm circular slot, reduced substrate width/overall width, and the final feedline/ground dimensions listed in Table 1. Step 3 is explicitly an intermediate rectangular-slot miniaturization stage, and Radiator 1-2 are earlier reference or optimization stages. The comparison table and conclusion both point back to the circular-slot final antenna, so Step 4 is the dominant design target.",
   "secondary_evidence_ids": [
     "chunk:chunk_018",
     "section:section_005",
     "chunk:chunk_022",
-    "chunk:chunk_020",
-    "chunk:chunk_031"
+    "chunk:chunk_031",
+    "chunk:chunk_030",
+    "chunk:chunk_039"
   ],
-  "selected_design_rationale": "Step 4 is the paper's clearest final proposed geometry: the prose explicitly says the circular-slot triangle patch is the best choice for ISM-band features with adequate gain/directivity, and the Step 4 table gives the final dimensions and operating band. Table 2 supports this by showing the Step 4 band centered on 5.8 GHz. Step 3 (Radiator 2 plus a rectangular slot) and earlier radiator variants are intermediate design iterations, not the canonical final antenna. The recovered evidence is simulation-focused; no explicit measured validation was found.",
-  "selected_design_summary": "Dominant design is the Step 4 / Radiator 4 circular-slotted triangular patch antenna (CSTPA): a microstrip line-fed triangular patch on FR4-epoxy with a 3 mm-radius circular slot, targeting the 5.8 GHz ISM band, with final simulated footprint 25.5 \u00d7 22.5 \u00d7 1.6 mm.",
+  "selected_design_rationale": "The retrieved text explicitly identifies Step 4 as the best choice and the suggested circular-slotted triangular patch radiator, while Step 3 is framed as an intermediate miniaturization step using a rectangular slot on the optimized Radiator 2. Table 1 gives the final Step 4 geometry, Table 2 gives the final simulated performance, and the conclusion reiterates a compact antenna with a circular slit on the triangular patch for 5.8 GHz operation. For canonicalization, Radiator 4 is therefore the dominant final design, not the earlier Radiator 1-3 variants.",
+  "selected_design_summary": "Step 4 / Radiator 4 is the paper's dominant proposed antenna: a microstrip-line-fed circular-slotted triangular patch antenna on FR4 for the 5.8 GHz ISM band, with a 3 mm circular slot radius and compact 25.5 \u00d7 22.5 \u00d7 1.6 mm overall size.",
   "unresolved_conflicts": [
-    {
-      "conflicting_evidence_ids": [
-        "section:section_005",
-        "chunk:chunk_022"
-      ],
-      "description": "The paper's narrative uses Radiator 2, Step 3, and Step 4 as design milestones. Step 4 / Radiator 4 is canonicalized as the final design because it is explicitly called the best choice for the target ISM band and matches the final operating band and dimensions.",
-      "preferred_evidence_ids": [
-        "chunk:chunk_024",
-        "chunk:chunk_023",
-        "chunk:chunk_041"
-      ],
-      "status": "resolved",
-      "topic": "Final selected stage"
-    },
     {
       "conflicting_evidence_ids": [
         "chunk:chunk_041",
         "chunk:chunk_039"
       ],
-      "description": "Table 2 reports Step 4 as 160 MHz bandwidth and 1.49 dB gain, while the conclusion summarizes the design as 100 MHz bandwidth and Table 3 contains a looser comparison row around 5.70-5.88 GHz. Table 2 is treated as the most authoritative source for the stepwise design comparison.",
+      "description": "The detailed simulation table reports Step 4 bandwidth as 160 MHz with 5.72-5.88 GHz limits, while the conclusion states a 100 MHz bandwidth and the comparison table summarizes the proposed antenna as 5.70-5.88 GHz. The detailed Table 2 values are treated as primary, but the discrepancy is not fully resolved.",
       "preferred_evidence_ids": [
         "chunk:chunk_023"
       ],
       "status": "partially_resolved",
-      "topic": "Bandwidth / performance reporting"
+      "topic": "Reported bandwidth for the final proposed antenna"
     },
     {
       "conflicting_evidence_ids": [],
-      "description": "The retrieved evidence supports simulation and states that the antenna was designed and developed, but no explicit measured validation is recovered from the available text.",
+      "description": "The retrieved table and text specify the feedline family, length, and width, but no explicit feed location coordinates are provided in the retrieved evidence. The feed location is therefore left null rather than inferred.",
       "preferred_evidence_ids": [
-        "chunk:chunk_041",
-        "chunk:chunk_023"
+        "table:table_001"
       ],
       "status": "unresolved",
-      "topic": "Validation type"
-    },
-    {
-      "conflicting_evidence_ids": [],
-      "description": "The design lineage indicates a microstrip line-fed antenna, but the exact feed coordinates and feed-line dimensions are not explicitly provided in the recovered evidence.",
-      "preferred_evidence_ids": [
-        "chunk:chunk_018",
-        "chunk:chunk_006"
-      ],
-      "status": "unresolved",
-      "topic": "Feed coordinates / dimensions"
+      "topic": "Exact feed location coordinates"
     }
   ]
 }

@@ -11,7 +11,12 @@ except ImportError:  # pragma: no cover
     import fitz as pymupdf  # type: ignore[no-redef]
 
 from mvp.config import RetrievalConfig
-from mvp.extraction.agent import RETRIEVAL_PLAN, gather_retrieval_context, gather_retrieval_context_with_phase1
+from mvp.extraction.agent import (
+    RETRIEVAL_PLAN,
+    _compact_source_payload,
+    gather_retrieval_context,
+    gather_retrieval_context_with_phase1,
+)
 from mvp.index import index_run
 from mvp import parsers
 from mvp.pipeline import run_pipeline
@@ -395,3 +400,22 @@ def test_gather_retrieval_context_routes_phase1_queries_by_modality(tmp_path: Pa
         if "figures" in block_search_types:
             assert any(entry["query"] == "geometry figure layout" and entry["search_type"] == "figures" for entry in phase1_entries)
         assert all(len(entry["result_evidence_ids"]) <= 3 for entry in phase1_entries)
+
+
+def test_table_source_payload_keeps_full_rows_and_markdown() -> None:
+    rows = [["Parameter", "Value"]] + [[f"P{index}", str(index)] for index in range(12)]
+
+    payload = _compact_source_payload(
+        "table",
+        {
+            "table_id": "table_001",
+            "caption": "Table 1. Parameters",
+            "page_number": 3,
+            "structured": True,
+            "rows": rows,
+            "markdown": "| Parameter | Value |\n| --- | --- |\n| P11 | 11 |",
+        },
+    )
+
+    assert payload["rows"] == rows
+    assert payload["markdown"].endswith("| P11 | 11 |")

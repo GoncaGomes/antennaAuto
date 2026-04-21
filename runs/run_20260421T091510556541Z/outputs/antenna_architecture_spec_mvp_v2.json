@@ -2,22 +2,18 @@
   "classification": {
     "confidence": 0.98,
     "evidence_ids": [
-      "table:table_001",
-      "chunk:chunk_009",
-      "chunk:chunk_011",
-      "chunk:chunk_013",
-      "chunk:chunk_023",
-      "chunk:chunk_025",
-      "chunk:chunk_030"
+      "chunk:chunk_008",
+      "chunk:chunk_010",
+      "chunk:chunk_022",
+      "table:table_001"
     ],
-    "primary_family": "rectangular_microstrip_patch_antenna",
+    "primary_family": "rectangular microstrip patch antenna",
     "status": "extracted",
     "topology_tags": [
-      "coaxial_probe_feed",
-      "partial_ground_plane",
-      "planar",
-      "single_patch",
-      "FR4_substrate"
+      "coaxial probe fed",
+      "finite ground plane",
+      "single patch",
+      "microstrip"
     ]
   },
   "document_context": {
@@ -32,7 +28,6 @@
       "evidence_ids": [
         "table:table_001",
         "chunk:chunk_009",
-        "chunk:chunk_022",
         "chunk:chunk_023"
       ],
       "geometry": {
@@ -42,7 +37,7 @@
               "table:table_001",
               "chunk:chunk_009"
             ],
-            "name": "length",
+            "name": "Length",
             "status": "extracted",
             "unit": "mm",
             "value": 31.43
@@ -52,7 +47,7 @@
               "table:table_001",
               "chunk:chunk_009"
             ],
-            "name": "width",
+            "name": "Width",
             "status": "extracted",
             "unit": "mm",
             "value": 40.57
@@ -63,9 +58,10 @@
       },
       "layer_ref": "layer_substrate",
       "placement": {
-        "status": "missing"
+        "anchor": "top surface",
+        "status": "extracted"
       },
-      "role": "radiating_patch"
+      "role": "radiating patch"
     },
     {
       "entity_id": "entity_ground",
@@ -73,8 +69,7 @@
       "evidence_ids": [
         "table:table_001",
         "chunk:chunk_009",
-        "section:section_007",
-        "chunk:chunk_020"
+        "section:section_007"
       ],
       "geometry": {
         "dimensions": [
@@ -83,7 +78,7 @@
               "table:table_001",
               "chunk:chunk_009"
             ],
-            "name": "length",
+            "name": "Length",
             "status": "extracted",
             "unit": "mm",
             "value": 41.19
@@ -93,7 +88,7 @@
               "table:table_001",
               "chunk:chunk_009"
             ],
-            "name": "width",
+            "name": "Width",
             "status": "extracted",
             "unit": "mm",
             "value": 50.32
@@ -104,27 +99,53 @@
       },
       "layer_ref": "layer_substrate",
       "placement": {
-        "status": "missing"
+        "anchor": "bottom surface",
+        "status": "extracted"
       },
-      "role": "ground_plane"
+      "role": "bottom ground plane"
+    },
+    {
+      "entity_id": "entity_feedpoint",
+      "entity_type": "coaxial_probe_feed",
+      "evidence_ids": [
+        "table:table_001",
+        "section:section_006",
+        "chunk:chunk_009"
+      ],
+      "geometry": {
+        "dimensions": [],
+        "outline_points": [
+          {
+            "x": 11.66,
+            "y": 20.29
+          }
+        ],
+        "shape_mode": "point"
+      },
+      "layer_ref": "layer_substrate",
+      "placement": {
+        "anchor": "on patch surface",
+        "status": "extracted"
+      },
+      "role": "feed location"
     }
   ],
   "evidence_used": [
-    "table:table_001",
+    "chunk:chunk_008",
     "chunk:chunk_009",
     "chunk:chunk_010",
     "chunk:chunk_011",
     "chunk:chunk_013",
-    "chunk:chunk_018",
-    "section:section_006",
-    "section:section_007",
-    "chunk:chunk_020",
+    "chunk:chunk_021",
     "chunk:chunk_022",
     "chunk:chunk_023",
     "chunk:chunk_024",
     "chunk:chunk_025",
     "chunk:chunk_026",
-    "chunk:chunk_030"
+    "chunk:chunk_030",
+    "section:section_006",
+    "section:section_007",
+    "table:table_001"
   ],
   "feeds": [
     {
@@ -132,26 +153,21 @@
       "evidence_ids": [
         "table:table_001",
         "section:section_006",
-        "chunk:chunk_018",
-        "chunk:chunk_009",
-        "chunk:chunk_025"
+        "chunk:chunk_009"
       ],
-      "feed_family": "coaxial_probe",
+      "feed_family": "coaxial probe feed",
       "feed_id": "feed_coaxial_probe",
-      "matching_style": "direct_contact",
+      "matching_style": "coaxial probe feeding",
       "port_type": {
-        "status": "extracted",
-        "value": "coaxial_probe"
+        "status": "missing"
       },
       "reference_impedance": {
         "evidence_ids": [
-          "table:table_001",
-          "section:section_006",
-          "chunk:chunk_018",
-          "chunk:chunk_025"
+          "chunk:chunk_009",
+          "chunk:chunk_030"
         ],
         "status": "extracted",
-        "unit": "ohm",
+        "unit": "\u03a9",
         "value": 50
       }
     }
@@ -160,17 +176,15 @@
   "layers": [
     {
       "evidence_ids": [
-        "chunk:chunk_013",
         "chunk:chunk_011",
-        "chunk:chunk_009"
+        "chunk:chunk_013"
       ],
       "layer_id": "layer_substrate",
       "material_ref": "material_fr4_epoxy",
       "role": "substrate",
       "thickness": {
         "evidence_ids": [
-          "chunk:chunk_013",
-          "chunk:chunk_009"
+          "chunk:chunk_013"
         ],
         "status": "extracted",
         "unit": "mm",
@@ -181,11 +195,10 @@
   ],
   "materials": [
     {
-      "category": "dielectric substrate",
+      "category": "dielectric",
       "evidence_ids": [
         "chunk:chunk_011",
-        "chunk:chunk_013",
-        "chunk:chunk_009"
+        "chunk:chunk_013"
       ],
       "material_id": "material_fr4_epoxy",
       "name": "FR-4 Epoxy",
@@ -200,10 +213,10 @@
     {
       "evidence_ids": [
         "chunk:chunk_011",
-        "chunk:chunk_009"
+        "chunk:chunk_013"
       ],
-      "param_id": "param_substrate_relative_permittivity",
-      "semantic_name": "substrate_relative_permittivity",
+      "param_id": "param_epsr",
+      "semantic_name": "Relative permittivity",
       "status": "extracted",
       "symbol": "\u03b5r",
       "value": 4.4
@@ -212,43 +225,42 @@
       "evidence_ids": [
         "chunk:chunk_011"
       ],
-      "param_id": "param_substrate_loss_tangent",
-      "semantic_name": "substrate_loss_tangent",
+      "param_id": "param_tand",
+      "semantic_name": "Loss tangent",
       "status": "extracted",
+      "symbol": "tan\u03b4",
       "value": 0.002
     },
     {
       "evidence_ids": [
-        "table:table_001",
-        "chunk:chunk_009"
+        "chunk:chunk_013"
       ],
-      "param_id": "param_feed_location_x",
-      "semantic_name": "feed_location_x",
+      "param_id": "param_h",
+      "semantic_name": "Substrate thickness",
       "status": "extracted",
-      "symbol": "Xf",
+      "symbol": "h",
       "unit": "mm",
-      "value": 11.66
-    },
-    {
-      "evidence_ids": [
-        "table:table_001",
-        "chunk:chunk_009"
-      ],
-      "param_id": "param_feed_location_y",
-      "semantic_name": "feed_location_y",
-      "status": "extracted",
-      "symbol": "Yf",
-      "unit": "mm",
-      "value": 20.29
+      "value": 1.6
     },
     {
       "evidence_ids": [
         "chunk:chunk_010",
-        "chunk:chunk_023",
-        "chunk:chunk_030"
+        "chunk:chunk_023"
       ],
-      "param_id": "param_operating_band",
-      "semantic_name": "operating_band",
+      "param_id": "param_f0",
+      "semantic_name": "Center frequency",
+      "status": "extracted",
+      "symbol": "f0",
+      "unit": "GHz",
+      "value": 2.25
+    },
+    {
+      "evidence_ids": [
+        "chunk:chunk_010",
+        "chunk:chunk_023"
+      ],
+      "param_id": "param_band",
+      "semantic_name": "Operating band",
       "status": "extracted",
       "unit": "GHz",
       "value": "2.0-2.5"
@@ -258,74 +270,61 @@
         "chunk:chunk_023",
         "chunk:chunk_030"
       ],
-      "param_id": "param_center_frequency",
-      "semantic_name": "center_frequency",
+      "param_id": "param_bw",
+      "semantic_name": "Bandwidth",
       "status": "extracted",
-      "symbol": "f0",
-      "unit": "GHz",
-      "value": 2.25
-    },
-    {
-      "evidence_ids": [
-        "chunk:chunk_023"
-      ],
-      "param_id": "param_return_loss",
-      "semantic_name": "return_loss",
-      "status": "extracted",
-      "symbol": "S11",
-      "unit": "dB",
-      "value": -23
-    },
-    {
-      "evidence_ids": [
-        "chunk:chunk_023"
-      ],
-      "param_id": "param_bandwidth",
-      "semantic_name": "bandwidth",
-      "status": "extracted",
+      "symbol": "BW",
       "unit": "MHz",
       "value": 46
     },
     {
       "evidence_ids": [
-        "chunk:chunk_023"
+        "chunk:chunk_023",
+        "chunk:chunk_024"
       ],
-      "param_id": "param_fractional_bandwidth",
-      "semantic_name": "fractional_bandwidth",
+      "param_id": "param_rl",
+      "semantic_name": "Return loss",
       "status": "extracted",
-      "unit": "%",
-      "value": 2
+      "symbol": "RL",
+      "unit": "dB",
+      "value": -23
     },
     {
       "evidence_ids": [
-        "chunk:chunk_024",
-        "chunk:chunk_025"
+        "chunk:chunk_025",
+        "chunk:chunk_030"
+      ],
+      "param_id": "param_zin",
+      "semantic_name": "Input impedance",
+      "status": "extracted",
+      "symbol": "Zin",
+      "unit": "\u03a9",
+      "value": 47.98
+    },
+    {
+      "evidence_ids": [
+        "chunk:chunk_024"
       ],
       "param_id": "param_vswr",
       "semantic_name": "VSWR",
       "status": "extracted",
+      "symbol": "VSWR",
+      "unit": "ratio",
       "value": 1.13
-    },
-    {
-      "evidence_ids": [
-        "chunk:chunk_025"
-      ],
-      "param_id": "param_input_impedance",
-      "semantic_name": "input_impedance",
-      "status": "extracted",
-      "symbol": "Zin",
-      "unit": "ohm",
-      "value": 47.98
     }
   ],
   "quality": {
     "ambiguities": [
-      "Patch length/width are slightly inconsistent between prose and Table I; Table I values were preferred.",
-      "Fabrication is mentioned in the conclusion, but no measured fabricated variant is present in the retrieved evidence."
+      "Feed coordinates are preserved as a point-geometry entity because the schema has no dedicated feed-coordinate field.",
+      "Table I values are preferred over nearby rounded prose values for finalized geometry and feed location.",
+      "No separate fabricated prototype geometry or measured-layout record is provided; the design remains the simulated final patch."
     ],
-    "build_readiness": "ready",
-    "confidence": 0.93,
-    "missing_required_for_build": []
+    "build_readiness": "partial",
+    "confidence": 0.95,
+    "missing_required_for_build": [
+      "explicit conductive material for patch and ground",
+      "port_type not separately stated beyond coaxial probe feeding"
+    ]
   },
   "schema_name": "antenna_architecture_spec_mvp_v2",
   "schema_version": "2.0",
@@ -341,20 +340,19 @@
     },
     "impedance": {
       "evidence_ids": [
-        "table:table_001",
-        "section:section_006",
-        "chunk:chunk_018",
-        "chunk:chunk_025"
+        "chunk:chunk_009",
+        "chunk:chunk_024",
+        "chunk:chunk_025",
+        "chunk:chunk_030"
       ],
       "status": "extracted",
-      "value": "ohm"
+      "value": "\u03a9"
     },
     "length": {
       "evidence_ids": [
-        "table:table_001",
         "chunk:chunk_009",
         "chunk:chunk_013",
-        "chunk:chunk_020"
+        "table:table_001"
       ],
       "status": "extracted",
       "value": "mm"

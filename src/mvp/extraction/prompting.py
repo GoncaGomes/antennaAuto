@@ -62,6 +62,37 @@ def build_schema_construction_input(
     return {"instructions": SCHEMA_CONSTRUCTION_SYSTEM_PROMPT, "input_text": input_text}
 
 
+def build_canonical_repair_input(
+    run_context: dict[str, Any],
+    canonical_design_record: dict[str, Any],
+    missing_requirements: list[str],
+    phase1_guidance: dict[str, Any] | None = None,
+) -> dict[str, str]:
+    payload = {
+        "run_context": run_context,
+        "phase1_guidance": _compact_phase1_guidance_for_llm2(phase1_guidance),
+        "missing_requirements": missing_requirements,
+        "canonical_design_record": canonical_design_record,
+    }
+    input_text = "\n".join(
+        [
+            "You are repairing an existing canonical design record before final schema construction.",
+            "",
+            "Rules:",
+            "- Keep the selected dominant design fixed unless the current record is clearly inconsistent with retrieved evidence.",
+            "- Retrieve only the evidence needed to repair the listed missing build-critical fields.",
+            "- Use as few retrieval queries as possible.",
+            "- Make no more than two tool calls total, then output the repaired full record.",
+            "- Prefer text and tables; use figures only when necessary for geometry or layout evidence.",
+            "- Output a complete CanonicalDesignRecord, not a patch fragment.",
+            "- Use only evidence IDs returned by the provided retrieval tools or already present in the canonical record.",
+            "",
+            _json_pretty_block(payload),
+        ]
+    )
+    return {"instructions": CANONICALIZATION_SYSTEM_PROMPT, "input_text": input_text}
+
+
 def _json_pretty_block(payload: Any) -> str:
     return json.dumps(payload, sort_keys=True, ensure_ascii=False, indent=2)
 

@@ -5,7 +5,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-from tenacity import retry, stop_after_attempt, wait_exponential
+from tenacity import retry, retry_if_exception, stop_after_attempt, wait_exponential
 
 from ..utils import load_env_file, project_root
 
@@ -106,6 +106,38 @@ class OpenAIAgentsStructuredClient:
             output_type=response_model,
         )
         result = self._Runner.run_sync(agent, input=input_text, max_turns=1)
+        parsed = result.final_output_as(response_model, raise_if_incorrect_type=True)
+        raw_text = parsed.model_dump_json(indent=2, exclude_none=True) if hasattr(parsed, "model_dump_json") else str(parsed)
+        return StructuredGenerationResult(parsed=parsed, raw_text=raw_text)
+
+    @retry(
+        stop=stop_after_attempt(3),
+        wait=wait_exponential(multiplier=1, min=2, max=10),
+        retry=retry_if_exception(lambda exc: exc.__class__.__name__ != "MaxTurnsExceeded"),
+    )
+    def generate_structured_via_agent_with_tools(
+        self,
+        *,
+        agent_name: str,
+        model: str,
+        reasoning_effort: str,
+        instructions: str,
+        input_text: str,
+        response_model: type[Any],
+        tools: list[Any],
+        max_turns: int,
+    ) -> StructuredGenerationResult:
+        agent = self._Agent(
+            name=agent_name,
+            instructions=instructions,
+            model=model,
+            model_settings=self._ModelSettings(
+                reasoning=self._Reasoning(effort=reasoning_effort),
+            ),
+            tools=tools,
+            output_type=response_model,
+        )
+        result = self._Runner.run_sync(agent, input=input_text, max_turns=max_turns)
         parsed = result.final_output_as(response_model, raise_if_incorrect_type=True)
         raw_text = parsed.model_dump_json(indent=2, exclude_none=True) if hasattr(parsed, "model_dump_json") else str(parsed)
         return StructuredGenerationResult(parsed=parsed, raw_text=raw_text)
