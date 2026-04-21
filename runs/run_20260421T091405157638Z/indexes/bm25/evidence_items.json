@@ -1,0 +1,1503 @@
+[
+  {
+    "evidence_id": "chunk:chunk_001",
+    "metadata": {
+      "char_end": 238,
+      "char_start": 0,
+      "chunk_id": "chunk_001",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_001",
+      "paragraph_index": 1,
+      "source": "fulltext.md"
+    },
+    "page_number": 1,
+    "snippet": "View the article online for updates and enhancements. ![Figure](figures/figure_001.png) An off-center fed patch antenna with overlapping sub-patch for simultaneous crack and temperature sensing Xianzhi Li, Songtao Xue, Liyu Xie et al. -",
+    "source_id": "chunk_001",
+    "source_type": "chunk",
+    "text": "View the article online for updates and enhancements.\n\n![Figure](figures/figure_001.png)\n\nAn off-center fed patch antenna with overlapping sub-patch for simultaneous crack and temperature sensing Xianzhi Li, Songtao Xue, Liyu Xie et al. -"
+  },
+  {
+    "evidence_id": "chunk:chunk_002",
+    "metadata": {
+      "char_end": 133,
+      "char_start": 0,
+      "chunk_id": "chunk_002",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_002",
+      "paragraph_index": 2,
+      "source": "fulltext.md"
+    },
+    "page_number": 1,
+    "snippet": "Wideband terahertz imaging pixel with a small on-chip antenna in 180 nm CMOS Yuri Kanazawa, Sayuri Yokoyama, Shota Hiramatsu et al. -",
+    "source_id": "chunk_002",
+    "source_type": "chunk",
+    "text": "Wideband terahertz imaging pixel with a small on-chip antenna in 180 nm CMOS Yuri Kanazawa, Sayuri Yokoyama, Shota Hiramatsu et al. -"
+  },
+  {
+    "evidence_id": "chunk:chunk_003",
+    "metadata": {
+      "char_end": 134,
+      "char_start": 0,
+      "chunk_id": "chunk_003",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_003",
+      "paragraph_index": 3,
+      "source": "fulltext.md"
+    },
+    "page_number": 1,
+    "snippet": "Bidirectional large strain monitoring using a novel graphene film-based patch antenna sensor - Shun Weng, Tingjun Peng, Ke Gao et al.",
+    "source_id": "chunk_003",
+    "source_type": "chunk",
+    "text": "Bidirectional large strain monitoring using a novel graphene film-based patch antenna sensor -\n\nShun Weng, Tingjun Peng, Ke Gao et al."
+  },
+  {
+    "evidence_id": "chunk:chunk_004",
+    "metadata": {
+      "char_end": 236,
+      "char_start": 0,
+      "chunk_id": "chunk_004",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_004",
+      "paragraph_index": 4,
+      "source": "fulltext.md"
+    },
+    "page_number": 2,
+    "snippet": "![Figure](figures/figure_002.png) # A microstrip patch antenna for 5G mobile communications Yitong Li 1 1 Department of Electronic and Computer Engineering, The Hong Kong University of Science and Technology, Hong Kong, 999077, China",
+    "source_id": "chunk_004",
+    "source_type": "chunk",
+    "text": "![Figure](figures/figure_002.png)\n\n# A microstrip patch antenna for 5G mobile communications\n\nYitong Li 1\n\n1 Department of Electronic and Computer Engineering, The Hong Kong University of Science and Technology, Hong Kong, 999077, China"
+  },
+  {
+    "evidence_id": "chunk:chunk_005",
+    "metadata": {
+      "char_end": 796,
+      "char_start": 0,
+      "chunk_id": "chunk_005",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_005",
+      "paragraph_index": 5,
+      "source": "fulltext.md"
+    },
+    "page_number": 2,
+    "snippet": "Caster.li@connect.ust.hk Abstract . The advantages of microstrip patch antennas include small size, adaptable surface, ease of fabrication, and compatibility with integrated circuit technology. Numerous experiments have been done over the p",
+    "source_id": "chunk_005",
+    "source_type": "chunk",
+    "text": "Caster.li@connect.ust.hk\n\nAbstract . The advantages of microstrip patch antennas include small size, adaptable surface, ease of fabrication, and compatibility with integrated circuit technology. Numerous experiments have been done over the past few decades to enhance the performance of this antenna, and both military and commercial sectors have found many uses for it. This paper introduces a microstrip patch antenna with an operating frequency of 28GHz for 5G mobile communication. This research designed and simulated a rectangular microstrip patch antenna with 3.494 mm * 5.3 mm * 0.003 mm. The proposed antenna resonates at 28 GHz with a reflection coefficient of -24 dB, a bandwidth of 280 MHz, and a gain of 2.2 dBi. The inset feed technique matches the 50 \u03a9 transmission line impedance."
+  },
+  {
+    "evidence_id": "chunk:chunk_006",
+    "metadata": {
+      "char_end": 1339,
+      "char_start": 597,
+      "chunk_id": "chunk_006",
+      "chunk_index_within_paragraph": 2,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_005",
+      "paragraph_index": 5,
+      "source": "fulltext.md"
+    },
+    "page_number": 2,
+    "snippet": "The proposed antenna resonates at 28 GHz with a reflection coefficient of -24 dB, a bandwidth of 280 MHz, and a gain of 2.2 dBi. The inset feed technique matches the 50 \u03a9 transmission line impedance. In the design, Rogers RT5880 substrate a",
+    "source_id": "chunk_006",
+    "source_type": "chunk",
+    "text": "The proposed antenna resonates at 28 GHz with a reflection coefficient of -24 dB, a bandwidth of 280 MHz, and a gain of 2.2 dBi. The inset feed technique matches the 50 \u03a9 transmission line impedance. In the design, Rogers RT5880 substrate and copper ground are used. The antenna's geometry was calculated, and simulated results were analyzed using Computer Simulation Technology Microwave Studio. In conclusion, the proposed antenna has a reflection coefficient of 24 dB, VSWR of 1.24, an input impedance of 51.6\u03a9, and a gain of 2.2 dBi at operating frequency with a compact geometry can be used in 5G mobile communications. The future shift in resonance frequencies and beams can be considered to make the antenna operate as a smart antenna."
+  },
+  {
+    "evidence_id": "chunk:chunk_007",
+    "metadata": {
+      "char_end": 711,
+      "char_start": 0,
+      "chunk_id": "chunk_007",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_006",
+      "paragraph_index": 6,
+      "source": "fulltext.md"
+    },
+    "page_number": 2,
+    "snippet": "Keywords: Index Terms - Millimeter wave, Microstrip patch antenna, 5G, 28GHz ## 1. Introduction Microstrip patch antenna has been developed for several years and put into engineering applications for a long time. During this period, many gr",
+    "source_id": "chunk_007",
+    "source_type": "chunk",
+    "text": "Keywords: Index Terms - Millimeter wave, Microstrip patch antenna, 5G, 28GHz\n\n## 1. Introduction\n\nMicrostrip patch antenna has been developed for several years and put into engineering applications for a long time. During this period, many great improvements were made to the antenna. For example, a solution to the rectangular microstrip antenna problem was proposed in 1987 by extending the patch and feedline currents into a suitable set of patterns and formulating a solution in the spectral domain [1]. This helps to achieve close results for the radiative edge feeding and coupling case [2]. Later in 1991, an experimental investigation on a microstrip patch antenna with coplanar feed lines was proposed."
+  },
+  {
+    "evidence_id": "chunk:chunk_008",
+    "metadata": {
+      "char_end": 1236,
+      "char_start": 508,
+      "chunk_id": "chunk_008",
+      "chunk_index_within_paragraph": 2,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_006",
+      "paragraph_index": 6,
+      "source": "fulltext.md"
+    },
+    "page_number": 2,
+    "snippet": "This helps to achieve close results for the radiative edge feeding and coupling case [2]. Later in 1991, an experimental investigation on a microstrip patch antenna with coplanar feed lines was proposed. The ground plane's slot is used to c",
+    "source_id": "chunk_008",
+    "source_type": "chunk",
+    "text": "This helps to achieve close results for the radiative edge feeding and coupling case [2]. Later in 1991, an experimental investigation on a microstrip patch antenna with coplanar feed lines was proposed. The ground plane's slot is used to couple the coplanar line to the patch and inductively or capacitively connects the slot to the coplanar line. Adjusting the slot length can be used to change the input return loss, and additional frequency tuning can be achieved by switching the inductive and capacitive coupling[3]. Recently, after 2010, some progress has been made in the research of microstrip patch antennas, making them smaller in profile, smaller in size, lower in cost, lighter in weight, and easier to manufacture."
+  },
+  {
+    "evidence_id": "chunk:chunk_051",
+    "metadata": {
+      "char_end": 131,
+      "char_start": 0,
+      "chunk_id": "chunk_051",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_034",
+      "paragraph_index": 34,
+      "source": "fulltext.md"
+    },
+    "page_number": 2,
+    "snippet": "| | X-axis | Y-axis | Z-axis | | --- | --- | --- | --- | | Elements in x, y, z | 2 | 2 | 2 | | Space shift in x, y, z | 6 | 1 | 2 |",
+    "source_id": "chunk_051",
+    "source_type": "chunk",
+    "text": "| | X-axis | Y-axis | Z-axis | | --- | --- | --- | --- | | Elements in x, y, z | 2 | 2 | 2 | | Space shift in x, y, z | 6 | 1 | 2 |"
+  },
+  {
+    "evidence_id": "chunk:chunk_056",
+    "metadata": {
+      "char_end": 581,
+      "char_start": 0,
+      "chunk_id": "chunk_056",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_037",
+      "paragraph_index": 37,
+      "source": "fulltext.md"
+    },
+    "page_number": 2,
+    "snippet": "A microstrip patch antenna is now widely used in today's 5G technology. Meanwhile, 5G is less of a single technology, like 3G or 4G, but more of a pathway, which can enable many new technologies like IoT. Therefore, the microstrip patch ant",
+    "source_id": "chunk_056",
+    "source_type": "chunk",
+    "text": "A microstrip patch antenna is now widely used in today's 5G technology. Meanwhile, 5G is less of a single technology, like 3G or 4G, but more of a pathway, which can enable many new technologies like IoT. Therefore, the microstrip patch antenna has a wide range of applications. Applications for microstrip patch antennas are numerous and not just limited to 5G communications. Specific patch radiators with a light weight and low profile are appropriate for use in treating malignancies in humans. Microstrip patch antennas are produced in large quantities using photolithography."
+  },
+  {
+    "evidence_id": "chunk:chunk_010",
+    "metadata": {
+      "char_end": 666,
+      "char_start": 0,
+      "chunk_id": "chunk_010",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_008",
+      "paragraph_index": 8,
+      "source": "fulltext.md"
+    },
+    "page_number": 3,
+    "snippet": "![Figure](figures/figure_003.png) commonly used in microstrip patch antenna: coaxial feed, microstrip line feed, and aperture-coupled feed. Considering several benefits of microstrip patch antennas, such as adaptable surfaces, small in size",
+    "source_id": "chunk_010",
+    "source_type": "chunk",
+    "text": "![Figure](figures/figure_003.png)\n\ncommonly used in microstrip patch antenna: coaxial feed, microstrip line feed, and aperture-coupled feed. Considering several benefits of microstrip patch antennas, such as adaptable surfaces, small in size, compatibility with integrated circuit technology and simplicity of manufacture, there has been extensive research on how to improve antenna performance. And from 1980 to 2010, microstrip patch antennas were widely used in military and commercial applications [5-7]. After 2010, development within wireless communication technology leads to changes from traditional antennas to microstrip patch antenna for its compact size."
+  },
+  {
+    "evidence_id": "chunk:chunk_011",
+    "metadata": {
+      "char_end": 494,
+      "char_start": 0,
+      "chunk_id": "chunk_011",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_009",
+      "paragraph_index": 9,
+      "source": "fulltext.md"
+    },
+    "page_number": 3,
+    "snippet": "Antenna research has taken a huge leap forward in the last five years. M icrostrip patch antennas have been used in wireless wearable products, military equipment, and cell phones. Microstrip patch antennas have many advantages and outstand",
+    "source_id": "chunk_011",
+    "source_type": "chunk",
+    "text": "Antenna research has taken a huge leap forward in the last five years. M icrostrip patch antennas have been used in wireless wearable products, military equipment, and cell phones. Microstrip patch antennas have many advantages and outstanding results far surpass conventional antennas. Because they are lightweight, foldable, simple to make, operate at numerous frequencies, and compact, microstrip patch antennas have largely supplanted all conventional antennas in wireless applications [8]."
+  },
+  {
+    "evidence_id": "chunk:chunk_012",
+    "metadata": {
+      "char_end": 747,
+      "char_start": 0,
+      "chunk_id": "chunk_012",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_010",
+      "paragraph_index": 10,
+      "source": "fulltext.md"
+    },
+    "page_number": 3,
+    "snippet": "For this reason, microstrip patch antenna has been put into engineering applications in many fields, including biomedicine, radar communication, 5G mobile communication, etc. An important area of research in biomedical applications is the d",
+    "source_id": "chunk_012",
+    "source_type": "chunk",
+    "text": "For this reason, microstrip patch antenna has been put into engineering applications in many fields, including biomedicine, radar communication, 5G mobile communication, etc. An important area of research in biomedical applications is the design of narrowband antennas for wearable devices. A microstrip patch antenna based on the defective ground structure was proposed in 2019 that can be used for narrowband applications. It has excellent performance, low cost, lightweight, and easy fabrication hold promise for biomedical WLAN applications [9-11]. For another field, radar communication, a twolayer electromagnetic coupling with minimum return loss and microstrip line embedding rectangular patch antenna is investigated for wireless devices."
+  },
+  {
+    "evidence_id": "chunk:chunk_014",
+    "metadata": {
+      "char_end": 1621,
+      "char_start": 1009,
+      "chunk_id": "chunk_014",
+      "chunk_index_within_paragraph": 3,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_010",
+      "paragraph_index": 10,
+      "source": "fulltext.md"
+    },
+    "page_number": 4,
+    "snippet": "The sensing parameter estimation algorithm can be further developed to match the multibeam framework well, based on the conventional digital Fourier transform and one-dimensional compressed sensing techniques [13][14]. Mobile communication ",
+    "source_id": "chunk_014",
+    "source_type": "chunk",
+    "text": "The sensing parameter estimation algorithm can be further developed to match the multibeam framework well, based on the conventional digital Fourier transform and one-dimensional compressed sensing techniques [13][14]. Mobile communication is in demand as mobile users multiply quickly. Mobile users require more features, including faster data rates, effective communication, less traffic, ease of use of different applications, etc. Service providers must meet mobile users' demands, and 5G technology can help. A high-frequency range with a wide bandwidth can be provided using 5G in the millimeter wave band."
+  },
+  {
+    "evidence_id": "chunk:chunk_018",
+    "metadata": {
+      "char_end": 134,
+      "char_start": 0,
+      "chunk_id": "chunk_018",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_012",
+      "paragraph_index": 12,
+      "source": "fulltext.md"
+    },
+    "page_number": 4,
+    "snippet": "## 2. Theoretical Analysis of Microstrip Patch Antenna ![Figure](figures/figure_004.png) Figure 1. Proposed Microstrip Patch Antenna",
+    "source_id": "chunk_018",
+    "source_type": "chunk",
+    "text": "## 2. Theoretical Analysis of Microstrip Patch Antenna\n\n![Figure](figures/figure_004.png)\n\nFigure 1. Proposed Microstrip Patch Antenna"
+  },
+  {
+    "evidence_id": "chunk:chunk_019",
+    "metadata": {
+      "char_end": 611,
+      "char_start": 0,
+      "chunk_id": "chunk_019",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_013",
+      "paragraph_index": 13,
+      "source": "fulltext.md"
+    },
+    "page_number": 4,
+    "snippet": "Figure 1 depicts the proposed 5G microstrip patch antenna operating at 28 GHz. After choosing 28 GHz as the operating frequency, materials used for the antenna should be considered first. Three layers make up the antenna. The ground is the ",
+    "source_id": "chunk_019",
+    "source_type": "chunk",
+    "text": "Figure 1 depicts the proposed 5G microstrip patch antenna operating at 28 GHz. After choosing 28 GHz as the operating frequency, materials used for the antenna should be considered first. Three layers make up the antenna. The ground is the bottom layer, the substrate is the middle layer, and the patch antenna is the top layer. Typically, copper foil is used to make the metallic patch. The substrate material maintains the necessary distance between its ground plane and the patch and supports the radiating patch. The most important criterion for determining the substrate in commercial applications is cost."
+  },
+  {
+    "evidence_id": "chunk:chunk_020",
+    "metadata": {
+      "char_end": 962,
+      "char_start": 388,
+      "chunk_id": "chunk_020",
+      "chunk_index_within_paragraph": 2,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_013",
+      "paragraph_index": 13,
+      "source": "fulltext.md"
+    },
+    "page_number": 4,
+    "snippet": "The substrate material maintains the necessary distance between its ground plane and the patch and supports the radiating patch. The most important criterion for determining the substrate in commercial applications is cost. By using the die",
+    "source_id": "chunk_020",
+    "source_type": "chunk",
+    "text": "The substrate material maintains the necessary distance between its ground plane and the patch and supports the radiating patch. The most important criterion for determining the substrate in commercial applications is cost. By using the dielectric honeycomb of a foam board as the substrate for array primitives operating at low microwave frequencies(lower than 15 GHz), it is possible to reduce material costs, losses, and antenna quality while increasing bandwidth. We use copper as the ground and patch antenna, and Rogers RT5880(lossy) as the substrate for this antenna."
+  },
+  {
+    "evidence_id": "chunk:chunk_021",
+    "metadata": {
+      "char_end": 274,
+      "char_start": 0,
+      "chunk_id": "chunk_021",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_014",
+      "paragraph_index": 14,
+      "source": "fulltext.md"
+    },
+    "page_number": 4,
+    "snippet": "The parameters are summarized in Table 1 below for the antenna geometry. Table 1. Dimensions of proposed antenna | Parameter | Value(mm) | | --- | --- | | Lgnd | 15 | | Wlng | 8 | | Lpat | 3.494 | | Wpat | 5.3 | | Wmic | 0.1 | | Lslot | 0.1",
+    "source_id": "chunk_021",
+    "source_type": "chunk",
+    "text": "The parameters are summarized in Table 1 below for the antenna geometry.\n\nTable 1. Dimensions of proposed antenna\n\n| Parameter | Value(mm) | | --- | --- | | Lgnd | 15 | | Wlng | 8 | | Lpat | 3.494 | | Wpat | 5.3 | | Wmic | 0.1 | | Lslot | 0.15 | | h | 0.032 | | th | 0.003 |"
+  },
+  {
+    "evidence_id": "chunk:chunk_022",
+    "metadata": {
+      "char_end": 624,
+      "char_start": 0,
+      "chunk_id": "chunk_022",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_015",
+      "paragraph_index": 15,
+      "source": "fulltext.md"
+    },
+    "page_number": 4,
+    "snippet": "TM10 mode is used in the proposed antenna. This is due to the different cross-polarization brought by different modes. For the TM m0 mode, the smaller the m, the larger the contribution to the crosspolarization, so the TM10 mode contributes",
+    "source_id": "chunk_022",
+    "source_type": "chunk",
+    "text": "TM10 mode is used in the proposed antenna. This is due to the different cross-polarization brought by different modes. For the TM m0 mode, the smaller the m, the larger the contribution to the crosspolarization, so the TM10 mode contributes the most to the cross-polarization field. The ratio of crosspolarization to co-polarization in a particular direction is equal to |\ud835\udc38 10 (\ud835\udf03, \ud835\udf11)|/|\ud835\udc38 01 (\ud835\udf03, \ud835\udf11)| . Likewise, if the patch is activated at the TM10 mode's resonance frequency, it is roughly represented by |\ud835\udc38 01 (\ud835\udf03, \ud835\udf11)|/|\ud835\udc38 10 (\ud835\udf03, \ud835\udf11)| . Equations (1-2) display the analytical computations for the patch's geometry parameters."
+  },
+  {
+    "evidence_id": "chunk:chunk_034",
+    "metadata": {
+      "char_end": 393,
+      "char_start": 0,
+      "chunk_id": "chunk_034",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_024",
+      "paragraph_index": 24,
+      "source": "fulltext.md"
+    },
+    "page_number": 4,
+    "snippet": "![Figure](figures/figure_005.png) Figure 2. The schematic diagram of inset feeding As using edge feed always brings large input impedance, altering the feeding position to the antenna's center can be better for the current at both ends is g",
+    "source_id": "chunk_034",
+    "source_type": "chunk",
+    "text": "![Figure](figures/figure_005.png)\n\nFigure 2. The schematic diagram of inset feeding\n\nAs using edge feed always brings large input impedance, altering the feeding position to the antenna's center can be better for the current at both ends is generally low but relatively higher towards the center. This way, we can effectively decrease the input impedance and make it easier to match impedance."
+  },
+  {
+    "evidence_id": "chunk:chunk_057",
+    "metadata": {
+      "char_end": 155,
+      "char_start": 0,
+      "chunk_id": "chunk_057",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_038",
+      "paragraph_index": 38,
+      "source": "fulltext.md"
+    },
+    "page_number": 4,
+    "snippet": "## References Hohn Colaco and Rajesh B. Lohani 2022 Performance analysis of microstrip patch antenna using a four-layered substrate of different materials",
+    "source_id": "chunk_057",
+    "source_type": "chunk",
+    "text": "## References\n\nHohn Colaco and Rajesh B. Lohani 2022 Performance analysis of microstrip patch antenna using a four-layered substrate of different materials"
+  },
+  {
+    "evidence_id": "chunk:chunk_023",
+    "metadata": {
+      "char_end": 184,
+      "char_start": 0,
+      "chunk_id": "chunk_023",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_016",
+      "paragraph_index": 16,
+      "source": "fulltext.md"
+    },
+    "page_number": 5,
+    "snippet": "w here \ud835\udc58\ud835\udc5a\ud835\udc5b is the phase-shift constant of the electromagnetic wave, \ud835\udc4a\ud835\udc5d\ud835\udc4e\ud835\udc61 is the patch width, \ud835\udc3f\ud835\udc5d\ud835\udc4e\ud835\udc61 is the patch length, \ud835\udc5a and \ud835\udc5b represent which mode the electromagnetic wave is working.",
+    "source_id": "chunk_023",
+    "source_type": "chunk",
+    "text": "w here \ud835\udc58\ud835\udc5a\ud835\udc5b is the phase-shift constant of the electromagnetic wave, \ud835\udc4a\ud835\udc5d\ud835\udc4e\ud835\udc61 is the patch width, \ud835\udc3f\ud835\udc5d\ud835\udc4e\ud835\udc61 is the patch length, \ud835\udc5a and \ud835\udc5b represent which mode the electromagnetic wave is working."
+  },
+  {
+    "evidence_id": "chunk:chunk_024",
+    "metadata": {
+      "char_end": 234,
+      "char_start": 0,
+      "chunk_id": "chunk_024",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_017",
+      "paragraph_index": 17,
+      "source": "fulltext.md"
+    },
+    "page_number": 5,
+    "snippet": "where \ud835\udc53 \ud835\udc5a\ud835\udc5b is the antenna's operating frequency on TMmn mode, \ud835\udf00\ud835\udc5f is the relative dielectric constant, \ud835\udc50 is the speed of light in free space. From equation (1-2), we can derive equation (3), which gives us the patch width on TM10 mode.",
+    "source_id": "chunk_024",
+    "source_type": "chunk",
+    "text": "where \ud835\udc53 \ud835\udc5a\ud835\udc5b is the antenna's operating frequency on TMmn mode, \ud835\udf00\ud835\udc5f is the relative dielectric constant, \ud835\udc50 is the speed of light in free space. From equation (1-2), we can derive equation (3), which gives us the patch width on TM10 mode."
+  },
+  {
+    "evidence_id": "chunk:chunk_025",
+    "metadata": {
+      "char_end": 424,
+      "char_start": 0,
+      "chunk_id": "chunk_025",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_018",
+      "paragraph_index": 18,
+      "source": "fulltext.md"
+    },
+    "page_number": 5,
+    "snippet": "\ud835\udc4a\ud835\udc5d\ud835\udc4e\ud835\udc61: \ud835\udc3f \ud835\udc5d\ud835\udc4e\ud835\udc61 affects the cross-polarization level. When \ud835\udc4a\ud835\udc5d\ud835\udc4e\ud835\udc61: \ud835\udc3f \ud835\udc5d\ud835\udc4e\ud835\udc61 = 1.5: 1 , or roughly 21 dB below the co-polarized field, the cross-polarization is the least when applied to a patch feed at the edge. More extensive tests demonstrate that",
+    "source_id": "chunk_025",
+    "source_type": "chunk",
+    "text": "\ud835\udc4a\ud835\udc5d\ud835\udc4e\ud835\udc61: \ud835\udc3f \ud835\udc5d\ud835\udc4e\ud835\udc61 affects the cross-polarization level. When \ud835\udc4a\ud835\udc5d\ud835\udc4e\ud835\udc61: \ud835\udc3f \ud835\udc5d\ud835\udc4e\ud835\udc61 = 1.5: 1 , or roughly 21 dB below the co-polarized field, the cross-polarization is the least when applied to a patch feed at the edge. More extensive tests demonstrate that the cross-polarized to co-polarized ratios vary on substrate thickness, resonance frequencies and feed position. From equation (4), we can calculate the width and length of the patch."
+  },
+  {
+    "evidence_id": "chunk:chunk_026",
+    "metadata": {
+      "char_end": 232,
+      "char_start": 0,
+      "chunk_id": "chunk_026",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_019",
+      "paragraph_index": 19,
+      "source": "fulltext.md"
+    },
+    "page_number": 5,
+    "snippet": "where \ud835\udc4a\ud835\udc5d\ud835\udc4e\ud835\udc61 is the patch width, \ud835\udc3f\ud835\udc5d\ud835\udc4e\ud835\udc61 is the patch length. Equation (5) can be used to determine the effective permittivity and height of the substrate given operating frequency, relative dielectric constant, width, and patch length.",
+    "source_id": "chunk_026",
+    "source_type": "chunk",
+    "text": "where \ud835\udc4a\ud835\udc5d\ud835\udc4e\ud835\udc61 is the patch width, \ud835\udc3f\ud835\udc5d\ud835\udc4e\ud835\udc61 is the patch length.\n\nEquation (5) can be used to determine the effective permittivity and height of the substrate given operating frequency, relative dielectric constant, width, and patch length."
+  },
+  {
+    "evidence_id": "chunk:chunk_027",
+    "metadata": {
+      "char_end": 182,
+      "char_start": 0,
+      "chunk_id": "chunk_027",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_020",
+      "paragraph_index": 20,
+      "source": "fulltext.md"
+    },
+    "page_number": 5,
+    "snippet": "Where \ud835\udf00\ud835\udc5f is the relative dielectric constant, \ud835\udc3f\ud835\udc5d\ud835\udc4e\ud835\udc61 is the length of patch, \u210e is height of the substrate. where \ud835\udc4a\ud835\udc5d\ud835\udc4e\ud835\udc61 is width of the patch, \ud835\udc53 \ud835\udc5f is operating frequency of the antenna.",
+    "source_id": "chunk_027",
+    "source_type": "chunk",
+    "text": "Where \ud835\udf00\ud835\udc5f is the relative dielectric constant, \ud835\udc3f\ud835\udc5d\ud835\udc4e\ud835\udc61 is the length of patch, \u210e is height of the substrate.\n\nwhere \ud835\udc4a\ud835\udc5d\ud835\udc4e\ud835\udc61 is width of the patch, \ud835\udc53 \ud835\udc5f is operating frequency of the antenna."
+  },
+  {
+    "evidence_id": "chunk:chunk_028",
+    "metadata": {
+      "char_end": 643,
+      "char_start": 0,
+      "chunk_id": "chunk_028",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_021",
+      "paragraph_index": 21,
+      "source": "fulltext.md"
+    },
+    "page_number": 5,
+    "snippet": "What should be considered is how to feed the antenna. Generally, there are three ways to feed the antenna, microstrip line feed, coaxial cable feed, and electromagnetic coupling feed. Here we use microstrip line feeding as the feeding metho",
+    "source_id": "chunk_028",
+    "source_type": "chunk",
+    "text": "What should be considered is how to feed the antenna. Generally, there are three ways to feed the antenna, microstrip line feed, coaxial cable feed, and electromagnetic coupling feed. Here we use microstrip line feeding as the feeding method. For the patch antenna and microstrip line, we want both of them to be coplanar, so that photo etching can be easily done for them. Meanwhile, as the feeding line also radiates power towards the outside, interfering with the antenna's radiation pattern, the microstrip line's width is limited. The microstrip line's limitation is that the microstrip line's width must be much less than the wavelength."
+  },
+  {
+    "evidence_id": "chunk:chunk_030",
+    "metadata": {
+      "char_end": 544,
+      "char_start": 0,
+      "chunk_id": "chunk_030",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_022",
+      "paragraph_index": 22,
+      "source": "fulltext.md"
+    },
+    "page_number": 6,
+    "snippet": "Impedance match is one of the most important parts when designing the antenna. It can influence the load's power and suppress the signal's reflection by matching the transmission line's impedance with load's impedance. Assuming the power so",
+    "source_id": "chunk_030",
+    "source_type": "chunk",
+    "text": "Impedance match is one of the most important parts when designing the antenna. It can influence the load's power and suppress the signal's reflection by matching the transmission line's impedance with load's impedance. Assuming the power source is determined, the load's power will be determined by the impedance match between the transmission line and load. The reactance led by the capacitor and inductor can be ignored for idealized pure resistance circuits or low-frequency circuits. The most impedance of the circuit comes from resistance."
+  },
+  {
+    "evidence_id": "chunk:chunk_031",
+    "metadata": {
+      "char_end": 659,
+      "char_start": 0,
+      "chunk_id": "chunk_031",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_023",
+      "paragraph_index": 23,
+      "source": "fulltext.md"
+    },
+    "page_number": 6,
+    "snippet": "where \ud835\udc45 is load resistance, \ud835\udc5f is resistance of other circuit parts. From equations (7-8), it can be derived that the maximum value can be obtained when R equals r. As the photoconduction property of water and light is different, the light w",
+    "source_id": "chunk_031",
+    "source_type": "chunk",
+    "text": "where \ud835\udc45 is load resistance, \ud835\udc5f is resistance of other circuit parts. From equations (7-8), it can be derived that the maximum value can be obtained when R equals r. As the photoconduction property of water and light is different, the light will be reflected when the light hits water from the air. Similarly, if the reference impedance changes significantly during the transmission of the signal, it will also be reflected. Low-frequency signals have wavelengths significantly greater than the transmission line's length since the relationship between wavelength and frequency is inverse, making it unnecessary to consider signal reflection in this situation."
+  },
+  {
+    "evidence_id": "chunk:chunk_032",
+    "metadata": {
+      "char_end": 1126,
+      "char_start": 424,
+      "chunk_id": "chunk_032",
+      "chunk_index_within_paragraph": 2,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_023",
+      "paragraph_index": 23,
+      "source": "fulltext.md"
+    },
+    "page_number": 6,
+    "snippet": "Low-frequency signals have wavelengths significantly greater than the transmission line's length since the relationship between wavelength and frequency is inverse, making it unnecessary to consider signal reflection in this situation. Howe",
+    "source_id": "chunk_032",
+    "source_type": "chunk",
+    "text": "Low-frequency signals have wavelengths significantly greater than the transmission line's length since the relationship between wavelength and frequency is inverse, making it unnecessary to consider signal reflection in this situation. However, when it comes to high frequency, when the signal's wavelength and the transmission line length are almost in the same order, the reflected signal will commonly be an alias with the original signal, influencing the signal quality. By implementing an impedance match, the reflection of the highfrequency signal can be effectively decreased. Generally, there are two ways to make an impedance match, lumped-circuit matching and adjusting the transmission line."
+  },
+  {
+    "evidence_id": "chunk:chunk_033",
+    "metadata": {
+      "char_end": 1411,
+      "char_start": 899,
+      "chunk_id": "chunk_033",
+      "chunk_index_within_paragraph": 3,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_023",
+      "paragraph_index": 23,
+      "source": "fulltext.md"
+    },
+    "page_number": 6,
+    "snippet": "By implementing an impedance match, the reflection of the highfrequency signal can be effectively decreased. Generally, there are two ways to make an impedance match, lumped-circuit matching and adjusting the transmission line. Lumped-circu",
+    "source_id": "chunk_033",
+    "source_type": "chunk",
+    "text": "By implementing an impedance match, the reflection of the highfrequency signal can be effectively decreased. Generally, there are two ways to make an impedance match, lumped-circuit matching and adjusting the transmission line. Lumped-circuit matching is achieved via different serial or parallel connections of capacitors, inductors, and load to make the input impedance match reference impedance. Here we use another way, as shown in Figure 2 , adjusting the transmission line to match the reference impedance."
+  },
+  {
+    "evidence_id": "chunk:chunk_017",
+    "metadata": {
+      "char_end": 1203,
+      "char_start": 485,
+      "chunk_id": "chunk_017",
+      "chunk_index_within_paragraph": 2,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_011",
+      "paragraph_index": 11,
+      "source": "fulltext.md"
+    },
+    "page_number": 7,
+    "snippet": "Then introduce the way of feeding - inset feed, which also includes how to make impedance matching meet the requirement within the operating frequency band. This part tries to improve that only by making the antenna's input impedance match ",
+    "source_id": "chunk_017",
+    "source_type": "chunk",
+    "text": "Then introduce the way of feeding - inset feed, which also includes how to make impedance matching meet the requirement within the operating frequency band. This part tries to improve that only by making the antenna's input impedance match the transmission line's reference impedance can the antenna radiates most power into outer space instead of reflecting them. Nowadays, with the development of several technologies, microstrip patch antenna applications are used widely, including medical applications, radar applications, radar frequency identification, global positioning system applications, satellite and communication applications, Bluetooth applications, and most importantly, 5G communication applications."
+  },
+  {
+    "evidence_id": "chunk:chunk_029",
+    "metadata": {
+      "char_end": 925,
+      "char_start": 374,
+      "chunk_id": "chunk_029",
+      "chunk_index_within_paragraph": 2,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_021",
+      "paragraph_index": 21,
+      "source": "fulltext.md"
+    },
+    "page_number": 7,
+    "snippet": "Meanwhile, as the feeding line also radiates power towards the outside, interfering with the antenna's radiation pattern, the microstrip line's width is limited. The microstrip line's limitation is that the microstrip line's width must be m",
+    "source_id": "chunk_029",
+    "source_type": "chunk",
+    "text": "Meanwhile, as the feeding line also radiates power towards the outside, interfering with the antenna's radiation pattern, the microstrip line's width is limited. The microstrip line's limitation is that the microstrip line's width must be much less than the wavelength. More specifically, six methods are commonly used in microstrip patch antenna, edge feed, inset feed, quarter-wave transformer, coaxial cable feed, electromagnetic feed, and diameter feed. Here we use inset feed as it will be easy to do impedance matching using this feeding method."
+  },
+  {
+    "evidence_id": "chunk:chunk_035",
+    "metadata": {
+      "char_end": 758,
+      "char_start": 0,
+      "chunk_id": "chunk_035",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_025",
+      "paragraph_index": 25,
+      "source": "fulltext.md"
+    },
+    "page_number": 7,
+    "snippet": "## 3. Results and discussions With the use of Computer Simulation Technology Microwave Studio, the antenna was modeled and simulated. From Figure 3 (a), the Input side and signal passed through to the output side of the DUT can be measured ",
+    "source_id": "chunk_035",
+    "source_type": "chunk",
+    "text": "## 3. Results and discussions\n\nWith the use of Computer Simulation Technology Microwave Studio, the antenna was modeled and simulated. From Figure 3 (a), the Input side and signal passed through to the output side of the DUT can be measured by VNA. The VNA receiver detects the generated signal and compares the known signal with it. In this way, there're 4 coefficients obtained from VNA. The reflection coefficient represents the input reflection coefficient, as shown in equation (9). The reflection coefficient is the signal applied to Port 1 with Port 2 terminated in 50\u03a9. It represents the amount of power that is reflected instead of radiating to outer space. For an antenna, the smaller its reflection coefficient, the better performance it will get."
+  },
+  {
+    "evidence_id": "chunk:chunk_036",
+    "metadata": {
+      "char_end": 1377,
+      "char_start": 578,
+      "chunk_id": "chunk_036",
+      "chunk_index_within_paragraph": 2,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_025",
+      "paragraph_index": 25,
+      "source": "fulltext.md"
+    },
+    "page_number": 7,
+    "snippet": "It represents the amount of power that is reflected instead of radiating to outer space. For an antenna, the smaller its reflection coefficient, the better performance it will get. For the reflection coefficient, -10 dB is the threshold of ",
+    "source_id": "chunk_036",
+    "source_type": "chunk",
+    "text": "It represents the amount of power that is reflected instead of radiating to outer space. For an antenna, the smaller its reflection coefficient, the better performance it will get. For the reflection coefficient, -10 dB is the threshold of acceptance. Figure 3 (b) shows that the antenna has the smallest reflection coefficient of -24 dB at 28 GHz. The entire curve declines rapidly at about 27.6 GHz and reaches its peak at 28 GHz, then increases fast with the frequency rise. Generally, the frequency band corresponding to half of the reflection coefficient's peak can be considered the antenna's bandwidth. The tags within the reflection coefficient's figure show that the bandwidth's upper limit is 27.864 GHz, and the lower limit of the bandwidth is 28.14 GHz, giving us a bandwidth of 280 MHz."
+  },
+  {
+    "evidence_id": "chunk:chunk_037",
+    "metadata": {
+      "char_end": 1472,
+      "char_start": 1188,
+      "chunk_id": "chunk_037",
+      "chunk_index_within_paragraph": 3,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_025",
+      "paragraph_index": 25,
+      "source": "fulltext.md"
+    },
+    "page_number": 7,
+    "snippet": "The tags within the reflection coefficient's figure show that the bandwidth's upper limit is 27.864 GHz, and the lower limit of the bandwidth is 28.14 GHz, giving us a bandwidth of 280 MHz. In order to get a better reflection coefficient, w",
+    "source_id": "chunk_037",
+    "source_type": "chunk",
+    "text": "The tags within the reflection coefficient's figure show that the bandwidth's upper limit is 27.864 GHz, and the lower limit of the bandwidth is 28.14 GHz, giving us a bandwidth of 280 MHz. In order to get a better reflection coefficient, we have to make the antenna's input impedance"
+  },
+  {
+    "evidence_id": "chunk:chunk_038",
+    "metadata": {
+      "char_end": 134,
+      "char_start": 0,
+      "chunk_id": "chunk_038",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_026",
+      "paragraph_index": 26,
+      "source": "fulltext.md"
+    },
+    "page_number": 7,
+    "snippet": "match the transmission line's reference impedance at the operating frequency, which will greatly influence the reflection coefficient.",
+    "source_id": "chunk_038",
+    "source_type": "chunk",
+    "text": "match the transmission line's reference impedance at the operating frequency, which will greatly influence the reflection coefficient."
+  },
+  {
+    "evidence_id": "chunk:chunk_039",
+    "metadata": {
+      "char_end": 794,
+      "char_start": 0,
+      "chunk_id": "chunk_039",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_027",
+      "paragraph_index": 27,
+      "source": "fulltext.md"
+    },
+    "page_number": 7,
+    "snippet": "![Figure](figures/figure_006.png) Figure 3. Block diagram of S-parameter and S11 on the operating frequency When the input and output sides are not conjugated matched, the reflected wave will sum up with the output wave and form a standing ",
+    "source_id": "chunk_039",
+    "source_type": "chunk",
+    "text": "![Figure](figures/figure_006.png)\n\nFigure 3. Block diagram of S-parameter and S11 on the operating frequency\n\nWhen the input and output sides are not conjugated matched, the reflected wave will sum up with the output wave and form a standing wave. The amount of reflection can be evaluated by the VSWR. Equation (10) shows that VSWR is positively correlated with the reflection coefficient. Therefore, like the reflection coefficient, the larger the VSWR, the worse the antenna's performance. The best case happens when the reflection coefficient equals to 0. At this time, VSWR will be the smallest, which is 1. For all other cases, VSWR will be larger than 1. More specifically, for the reflection coefficient's threshold of acceptance in the proposed antenna, its corresponding VSWR is 1.22."
+  },
+  {
+    "evidence_id": "chunk:chunk_040",
+    "metadata": {
+      "char_end": 888,
+      "char_start": 662,
+      "chunk_id": "chunk_040",
+      "chunk_index_within_paragraph": 2,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_027",
+      "paragraph_index": 27,
+      "source": "fulltext.md"
+    },
+    "page_number": 7,
+    "snippet": "More specifically, for the reflection coefficient's threshold of acceptance in the proposed antenna, its corresponding VSWR is 1.22. For the peak of the reflection coefficient, which is -24 dB, its corresponding VSWR is 1.008.",
+    "source_id": "chunk_040",
+    "source_type": "chunk",
+    "text": "More specifically, for the reflection coefficient's threshold of acceptance in the proposed antenna, its corresponding VSWR is 1.22. For the peak of the reflection coefficient, which is -24 dB, its corresponding VSWR is 1.008."
+  },
+  {
+    "evidence_id": "chunk:chunk_041",
+    "metadata": {
+      "char_end": 750,
+      "char_start": 0,
+      "chunk_id": "chunk_041",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_028",
+      "paragraph_index": 28,
+      "source": "fulltext.md"
+    },
+    "page_number": 7,
+    "snippet": "To some extent, VSWR can also be used to represent the power reflected by the antenna, as the reflection coefficient can calculate it. The variation trend of VSWR is shown clearly in Figure 4. In total, the curve is symmetric at around 28 G",
+    "source_id": "chunk_041",
+    "source_type": "chunk",
+    "text": "To some extent, VSWR can also be used to represent the power reflected by the antenna, as the reflection coefficient can calculate it. The variation trend of VSWR is shown clearly in Figure 4. In total, the curve is symmetric at around 28 GHz. At 27 GHz, the curve is generally stable at 11. The curve starts to decline when the frequency comes close to 27.1 GHz. From 27.1 GHz to the upper limit of the designed frequency band, 27.864 GHz, VSWR decreases from 11 to 1.8. Within the designed frequency band, VSWR first declines from 1.8 to 1.24, then increases to 1.72. In the whole designed frequency band, VSWR is smaller than 1.8. As the curve reaches its peak at the operating frequency, it shows the antenna works well within the frequency band."
+  },
+  {
+    "evidence_id": "chunk:chunk_042",
+    "metadata": {
+      "char_end": 298,
+      "char_start": 0,
+      "chunk_id": "chunk_042",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_029",
+      "paragraph_index": 29,
+      "source": "fulltext.md"
+    },
+    "page_number": 7,
+    "snippet": "![Figure](figures/figure_007.png) Figure 4. VSWR of the proposed antenna on operating frequency Generally, transmission line's impedance is 50\u03a9. Therefore, impedance match requires the antenna's entire input impedance to reach approximately",
+    "source_id": "chunk_042",
+    "source_type": "chunk",
+    "text": "![Figure](figures/figure_007.png)\n\nFigure 4. VSWR of the proposed antenna on operating frequency\n\nGenerally, transmission line's impedance is 50\u03a9. Therefore, impedance match requires the antenna's entire input impedance to reach approximately 50\u03a9 at operating frequency. Figure 5 shows the trend of"
+  },
+  {
+    "evidence_id": "chunk:chunk_047",
+    "metadata": {
+      "char_end": 1323,
+      "char_start": 546,
+      "chunk_id": "chunk_047",
+      "chunk_index_within_paragraph": 2,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_031",
+      "paragraph_index": 31,
+      "source": "fulltext.md"
+    },
+    "page_number": 7,
+    "snippet": "Because the requirements of different applications can differ, both gain and radiation patterns must be considered due to various applications. Figure 6 shows the trend of realized gain and reflection coefficient versus frequency. At 27 GHz",
+    "source_id": "chunk_047",
+    "source_type": "chunk",
+    "text": "Because the requirements of different applications can differ, both gain and radiation patterns must be considered due to various applications. Figure 6 shows the trend of realized gain and reflection coefficient versus frequency. At 27 GHz, the gain is less than -5 dBi. It increases from -5 dBi to 1.5 dBi, with a frequency rising to 27.8 GHz. Within the working frequency, ranging from 27.864 GHz to 28.14 GHz, gain first rises from 1.5 dBi to 2.2 dBi, then decreases to 1.78 dBi. Then the gain decreases rapidly as the frequency becomes higher. As the proposed antenna is used for 5G mobile communications, for mobile devices, generally, the requirement for gain is 0 dBi. The antenna's gain within the operating frequency band can meet the requirement of a mobile antenna."
+  },
+  {
+    "evidence_id": "chunk:chunk_055",
+    "metadata": {
+      "char_end": 1008,
+      "char_start": 484,
+      "chunk_id": "chunk_055",
+      "chunk_index_within_paragraph": 2,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_036",
+      "paragraph_index": 36,
+      "source": "fulltext.md"
+    },
+    "page_number": 7,
+    "snippet": "The antenna's input impedance at the operating frequency band is 51.6 \u03a9, which shows good matching with the reference impedance 50 \u03a9. By implementing beam-shaping, several antennas are put into an antenna array. This way, the antenna can be",
+    "source_id": "chunk_055",
+    "source_type": "chunk",
+    "text": "The antenna's input impedance at the operating frequency band is 51.6 \u03a9, which shows good matching with the reference impedance 50 \u03a9. By implementing beam-shaping, several antennas are put into an antenna array. This way, the antenna can be used in 3-sectorization as a directional antenna whose radiation angle is 120\u00b0. In total, the antenna's reflection coefficient and gain at the operating frequency band can meet the design purpose requirement, which makes the antenna have great performance at its operating frequency."
+  },
+  {
+    "evidence_id": "chunk:chunk_043",
+    "metadata": {
+      "char_end": 751,
+      "char_start": 0,
+      "chunk_id": "chunk_043",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_030",
+      "paragraph_index": 30,
+      "source": "fulltext.md"
+    },
+    "page_number": 8,
+    "snippet": "the real part, the imaginary part, and the whole magnitude of the antenna's input impedance. The real part of impedance, represented by the blue curve, moves around from 27 GHz to 28 GHz and reaches about 33\u03a9 at 28 GHz. The overall trend of",
+    "source_id": "chunk_043",
+    "source_type": "chunk",
+    "text": "the real part, the imaginary part, and the whole magnitude of the antenna's input impedance. The real part of impedance, represented by the blue curve, moves around from 27 GHz to 28 GHz and reaches about 33\u03a9 at 28 GHz. The overall trend of impedance's real part from 27 GHz to 28 GHz is stable, but then it grows over 4 times after 28 GHz and reaches its peak of 182 \u03a9 at 28.6 GHz. The imaginary part of impedance, represented by the orange curve, declines rapidly from 150\u03a9 to 0\u03a9 at the frequency range 27 GHz - 28.3 GHz and reaches about 40\u03a9 at 28 GHz. Within the frequency range 27GHz - 28.3 GHz, the imaginary part of impedance decreases almost linearly from 150\u03a9 to 0\u03a9, then rises rapidly after 28.5 GHz and reaches its peak of 154\u03a9 at 28.8 GHz."
+  },
+  {
+    "evidence_id": "chunk:chunk_044",
+    "metadata": {
+      "char_end": 1221,
+      "char_start": 556,
+      "chunk_id": "chunk_044",
+      "chunk_index_within_paragraph": 2,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_030",
+      "paragraph_index": 30,
+      "source": "fulltext.md"
+    },
+    "page_number": 8,
+    "snippet": "Within the frequency range 27GHz - 28.3 GHz, the imaginary part of impedance decreases almost linearly from 150\u03a9 to 0\u03a9, then rises rapidly after 28.5 GHz and reaches its peak of 154\u03a9 at 28.8 GHz. The entire magnitude of the antenna input im",
+    "source_id": "chunk_044",
+    "source_type": "chunk",
+    "text": "Within the frequency range 27GHz - 28.3 GHz, the imaginary part of impedance decreases almost linearly from 150\u03a9 to 0\u03a9, then rises rapidly after 28.5 GHz and reaches its peak of 154\u03a9 at 28.8 GHz. The entire magnitude of the antenna input impedance, represented by the black curve, moves nearly to its lowest point of 51.6\u03a9 at 28 GHz, then reaches its peak at about 28.6 GHz. As the operating frequency band is from 27.864 to 28.14, the entire magnitude of input impedance ranges from 51\u03a9 to 55\u03a9, which shows impedance matching is good in the whole frequency band. All three curves seem to decrease at different speeds before 28 GHz, then all peak at about 28.7 GHz."
+  },
+  {
+    "evidence_id": "chunk:chunk_045",
+    "metadata": {
+      "char_end": 1526,
+      "char_start": 931,
+      "chunk_id": "chunk_045",
+      "chunk_index_within_paragraph": 3,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_030",
+      "paragraph_index": 30,
+      "source": "fulltext.md"
+    },
+    "page_number": 8,
+    "snippet": "As the operating frequency band is from 27.864 to 28.14, the entire magnitude of input impedance ranges from 51\u03a9 to 55\u03a9, which shows impedance matching is good in the whole frequency band. All three curves seem to decrease at different spee",
+    "source_id": "chunk_045",
+    "source_type": "chunk",
+    "text": "As the operating frequency band is from 27.864 to 28.14, the entire magnitude of input impedance ranges from 51\u03a9 to 55\u03a9, which shows impedance matching is good in the whole frequency band. All three curves seem to decrease at different speeds before 28 GHz, then all peak at about 28.7 GHz. For the entire magnitude of input impedance, its trend appears to be similar to the reflection coefficient, which shows that on the designed frequency band, the antenna's input impedance is around 50\u03a9. Impedance matching at such frequency bands guarantees good performance within the operating frequency."
+  },
+  {
+    "evidence_id": "chunk:chunk_046",
+    "metadata": {
+      "char_end": 776,
+      "char_start": 0,
+      "chunk_id": "chunk_046",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_031",
+      "paragraph_index": 31,
+      "source": "fulltext.md"
+    },
+    "page_number": 9,
+    "snippet": "![Figure](figures/figure_008.png) Figure 5. Real part, imaginary part, magnitude of Z11 on the operating frequency The antenna's gain is another parameter that must be considered when designing. The gain represents the ratio between the ant",
+    "source_id": "chunk_046",
+    "source_type": "chunk",
+    "text": "![Figure](figures/figure_008.png)\n\nFigure 5. Real part, imaginary part, magnitude of Z11 on the operating frequency\n\nThe antenna's gain is another parameter that must be considered when designing. The gain represents the ratio between the antenna's radiation power density and the reference antenna's radiation power density. Antenna gain can measure the ability to transmit and receive signals in a specific direction. It also strongly relates to the antenna's radiation pattern. The antenna will have a higher gain if the main lobe is thinner. Because the requirements of different applications can differ, both gain and radiation patterns must be considered due to various applications. Figure 6 shows the trend of realized gain and reflection coefficient versus frequency."
+  },
+  {
+    "evidence_id": "chunk:chunk_048",
+    "metadata": {
+      "char_end": 737,
+      "char_start": 0,
+      "chunk_id": "chunk_048",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_032",
+      "paragraph_index": 32,
+      "source": "fulltext.md"
+    },
+    "page_number": 9,
+    "snippet": "![Figure](figures/figure_009.png) Figure 6. Gain vs. Frequency As the antenna's gain is highly related to its radiation pattern. Radiation patterns need to be carefully designed to meet our requirements. Generally, there are two ways to cha",
+    "source_id": "chunk_048",
+    "source_type": "chunk",
+    "text": "![Figure](figures/figure_009.png)\n\nFigure 6. Gain vs. Frequency\n\nAs the antenna's gain is highly related to its radiation pattern. Radiation patterns need to be carefully designed to meet our requirements. Generally, there are two ways to change the radiation pattern, Beamsteering and Beam-shaping. Beam-steering can be achieved by several configurations of the array and phase shifters. The phase shift can influence which direction the radiation pattern's main lobe points. By doing this, the main lobe's direction and its gain can be influenced, side lobes' gain and direction can also be influenced. Beam-shaping can be obtained by using non-uniform amplitude distributions. It can greatly change the shape of the radiation pattern."
+  },
+  {
+    "evidence_id": "chunk:chunk_049",
+    "metadata": {
+      "char_end": 1323,
+      "char_start": 605,
+      "chunk_id": "chunk_049",
+      "chunk_index_within_paragraph": 2,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_032",
+      "paragraph_index": 32,
+      "source": "fulltext.md"
+    },
+    "page_number": 9,
+    "snippet": "Beam-shaping can be obtained by using non-uniform amplitude distributions. It can greatly change the shape of the radiation pattern. Figure 7 (a) shows the antenna's radiation pattern using binormal distribution when beam-shaping. It helps ",
+    "source_id": "chunk_049",
+    "source_type": "chunk",
+    "text": "Beam-shaping can be obtained by using non-uniform amplitude distributions. It can greatly change the shape of the radiation pattern. Figure 7 (a) shows the antenna's radiation pattern using binormal distribution when beam-shaping. It helps focus all the radiation power into two main lobes in two different radiating directions and cancels all other lobes. Figure 7 (b) shows the antenna's radiation pattern using edge distribution when beam-shaping. Unlike binormal distribution, instead of focusing on radiating power into a single lobe, it helps distribute all the power into different side lobes and makes their power equal. In the proposed antenna, beam-shaping, an antenna array is combined, as shown in Table 2."
+  },
+  {
+    "evidence_id": "chunk:chunk_050",
+    "metadata": {
+      "char_end": 151,
+      "char_start": 0,
+      "chunk_id": "chunk_050",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_033",
+      "paragraph_index": 33,
+      "source": "fulltext.md"
+    },
+    "page_number": 9,
+    "snippet": "![Figure](figures/figure_010.png) Figure 7. Beam-shaping: (a)Binormal distribution. (b) Edge distribution Table 2. Spacial Parameter of Antenna array",
+    "source_id": "chunk_050",
+    "source_type": "chunk",
+    "text": "![Figure](figures/figure_010.png)\n\nFigure 7. Beam-shaping: (a)Binormal distribution. (b) Edge distribution\n\nTable 2. Spacial Parameter of Antenna array"
+  },
+  {
+    "evidence_id": "chunk:chunk_009",
+    "metadata": {
+      "char_end": 188,
+      "char_start": 0,
+      "chunk_id": "chunk_009",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_007",
+      "paragraph_index": 7,
+      "source": "fulltext.md"
+    },
+    "page_number": 10,
+    "snippet": "Meanwhile, an array configuration can overcome the microstrip patch antenna's disadvantages, including lower gain and power handling capacity [4]. Also, by 2012, three feeding methods were",
+    "source_id": "chunk_009",
+    "source_type": "chunk",
+    "text": "Meanwhile, an array configuration can overcome the microstrip patch antenna's disadvantages, including lower gain and power handling capacity [4]. Also, by 2012, three feeding methods were"
+  },
+  {
+    "evidence_id": "chunk:chunk_013",
+    "metadata": {
+      "char_end": 1295,
+      "char_start": 553,
+      "chunk_id": "chunk_013",
+      "chunk_index_within_paragraph": 2,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_010",
+      "paragraph_index": 10,
+      "source": "fulltext.md"
+    },
+    "page_number": 10,
+    "snippet": "For another field, radar communication, a twolayer electromagnetic coupling with minimum return loss and microstrip line embedding rectangular patch antenna is investigated for wireless devices. The antenna has a compact size, excellent ret",
+    "source_id": "chunk_013",
+    "source_type": "chunk",
+    "text": "For another field, radar communication, a twolayer electromagnetic coupling with minimum return loss and microstrip line embedding rectangular patch antenna is investigated for wireless devices. The antenna has a compact size, excellent return loss, and radiation pattern performance, which enables patch antenna array configuration by creating cutouts in the ground, making it usable for various communication devices, especially in the radar field [12]. The sensing parameter estimation algorithm can be further developed to match the multibeam framework well, based on the conventional digital Fourier transform and one-dimensional compressed sensing techniques [13][14]. Mobile communication is in demand as mobile users multiply quickly."
+  },
+  {
+    "evidence_id": "chunk:chunk_015",
+    "metadata": {
+      "char_end": 2010,
+      "char_start": 1444,
+      "chunk_id": "chunk_015",
+      "chunk_index_within_paragraph": 4,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_010",
+      "paragraph_index": 10,
+      "source": "fulltext.md"
+    },
+    "page_number": 10,
+    "snippet": "Service providers must meet mobile users' demands, and 5G technology can help. A high-frequency range with a wide bandwidth can be provided using 5G in the millimeter wave band. More specifically, There is a great demand for uninterrupted h",
+    "source_id": "chunk_015",
+    "source_type": "chunk",
+    "text": "Service providers must meet mobile users' demands, and 5G technology can help. A high-frequency range with a wide bandwidth can be provided using 5G in the millimeter wave band. More specifically, There is a great demand for uninterrupted high-stream online education worldwide, especially in developing countries, and this application scenario has high data rate and bandwidth requirements. A microstrip patch antenna operating in the 5G millimeter wave band can meet user needs at the level of high-quality online education and other application scenarios [15-17]."
+  },
+  {
+    "evidence_id": "chunk:chunk_016",
+    "metadata": {
+      "char_end": 641,
+      "char_start": 0,
+      "chunk_id": "chunk_016",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_011",
+      "paragraph_index": 11,
+      "source": "fulltext.md"
+    },
+    "page_number": 10,
+    "snippet": "This paper proposes a microstrip patch antenna in 5G mobile communications. Implementing beamshaping and beam-steering makes the antenna a directional antenna with a radiating angle of 120\u00b0. In theoretical analysis, this paper first illustr",
+    "source_id": "chunk_016",
+    "source_type": "chunk",
+    "text": "This paper proposes a microstrip patch antenna in 5G mobile communications. Implementing beamshaping and beam-steering makes the antenna a directional antenna with a radiating angle of 120\u00b0. In theoretical analysis, this paper first illustrates the geometry parameters of the antenna. It explains how these parameters are calculated considering electromagnetic wave theory, which tries to prove that the antenna's performance (reflection coefficient, gain, radiation pattern) is good. Then introduce the way of feeding - inset feed, which also includes how to make impedance matching meet the requirement within the operating frequency band."
+  },
+  {
+    "evidence_id": "chunk:chunk_052",
+    "metadata": {
+      "char_end": 758,
+      "char_start": 0,
+      "chunk_id": "chunk_052",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_035",
+      "paragraph_index": 35,
+      "source": "fulltext.md"
+    },
+    "page_number": 10,
+    "snippet": "Within mobile communication, co-channel interference is a great influence on the channel. To solve this, sectorization can be performed. In the case of a sectorized cell, each cell is divided into either 3 or 6 equal parts or sectors. It me",
+    "source_id": "chunk_052",
+    "source_type": "chunk",
+    "text": "Within mobile communication, co-channel interference is a great influence on the channel. To solve this, sectorization can be performed. In the case of a sectorized cell, each cell is divided into either 3 or 6 equal parts or sectors. It means using 3 or 6 directional antennas at the base station instead of a single omnidirectional antenna to reduce the number of co-channel interferences. In the proposed antenna, we sectorize the cell into 3 parts, which means the antenna's radiation angle should be 120\u00b0. By implementing beam-shaping, we make several antennas into an entire antenna array, which gives the radiation pattern in Figure 8 (a). The radiation pattern's main lobe magnitude is 3.12 dBi, far beyond a mobile communication antenna requirement."
+  },
+  {
+    "evidence_id": "chunk:chunk_053",
+    "metadata": {
+      "char_end": 1044,
+      "char_start": 511,
+      "chunk_id": "chunk_053",
+      "chunk_index_within_paragraph": 2,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_035",
+      "paragraph_index": 35,
+      "source": "fulltext.md"
+    },
+    "page_number": 10,
+    "snippet": "By implementing beam-shaping, we make several antennas into an entire antenna array, which gives the radiation pattern in Figure 8 (a). The radiation pattern's main lobe magnitude is 3.12 dBi, far beyond a mobile communication antenna requi",
+    "source_id": "chunk_053",
+    "source_type": "chunk",
+    "text": "By implementing beam-shaping, we make several antennas into an entire antenna array, which gives the radiation pattern in Figure 8 (a). The radiation pattern's main lobe magnitude is 3.12 dBi, far beyond a mobile communication antenna requirement. The angular width is 123\u00b0, which we propose in this antenna. This radiation pattern shows that most of the energy is focused within the main lobe, and power within all other lobes is suppressed, which is only -13.6 dBi. Figure 8 (b) shows how the power is radiated in the 3D dimension."
+  },
+  {
+    "evidence_id": "chunk:chunk_054",
+    "metadata": {
+      "char_end": 695,
+      "char_start": 0,
+      "chunk_id": "chunk_054",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_036",
+      "paragraph_index": 36,
+      "source": "fulltext.md"
+    },
+    "page_number": 10,
+    "snippet": "![Figure](figures/figure_011.png) Figure 8. (a)2D radiation pattern. (b)3D radiation pattern ## 4. Conclusion This paper proposes a rectangular microstrip patch antenna for 5G mobile wireless communication at 28 GHz. The antenna resonates a",
+    "source_id": "chunk_054",
+    "source_type": "chunk",
+    "text": "![Figure](figures/figure_011.png)\n\nFigure 8. (a)2D radiation pattern. (b)3D radiation pattern\n\n## 4. Conclusion\n\nThis paper proposes a rectangular microstrip patch antenna for 5G mobile wireless communication at 28 GHz. The antenna resonates at 28 GHz with a reflection coefficient of -24 dB. The antenna's bandwidth is 280 MHz, with a lower operating frequency of 27.864GHz and an upper operating frequency of 28.14 GHz. The proposed antenna shows a VSWR of 1.24, a gain of 2.2 dBi. The antenna's input impedance at the operating frequency band is 51.6 \u03a9, which shows good matching with the reference impedance 50 \u03a9. By implementing beam-shaping, several antennas are put into an antenna array."
+  },
+  {
+    "evidence_id": "chunk:chunk_058",
+    "metadata": {
+      "char_end": 180,
+      "char_start": 0,
+      "chunk_id": "chunk_058",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_039",
+      "paragraph_index": 39,
+      "source": "fulltext.md"
+    },
+    "page_number": 11,
+    "snippet": "David M. Pozar and Susanne M. Voda 1987 A Rigorous Analysis of a Microstripline Fed Patch Antenna W. Menzel and W. Grabherr 1991 A Microstrip Patch Antenna with Coplanar Feed Line",
+    "source_id": "chunk_058",
+    "source_type": "chunk",
+    "text": "David M. Pozar and Susanne M. Voda 1987 A Rigorous Analysis of a Microstripline Fed Patch Antenna\n\nW. Menzel and W. Grabherr 1991 A Microstrip Patch Antenna with Coplanar Feed Line"
+  },
+  {
+    "evidence_id": "chunk:chunk_059",
+    "metadata": {
+      "char_end": 167,
+      "char_start": 0,
+      "chunk_id": "chunk_059",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_040",
+      "paragraph_index": 40,
+      "source": "fulltext.md"
+    },
+    "page_number": 11,
+    "snippet": "V.S. Tripathi 2011 Microstrip Patch Antenna and its Applications: a Survey G. Christina 2022 A review on novel microstrip patch antenna designs and feeding techniques",
+    "source_id": "chunk_059",
+    "source_type": "chunk",
+    "text": "V.S. Tripathi 2011 Microstrip Patch Antenna and its Applications: a Survey\n\nG. Christina 2022 A review on novel microstrip patch antenna designs and feeding techniques"
+  },
+  {
+    "evidence_id": "chunk:chunk_060",
+    "metadata": {
+      "char_end": 209,
+      "char_start": 0,
+      "chunk_id": "chunk_060",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_041",
+      "paragraph_index": 41,
+      "source": "fulltext.md"
+    },
+    "page_number": 11,
+    "snippet": "Srisuji. T and Nandagopal. C 2015 Analysis on microstrip patch antennas for wireless communication KAI-FONG LEE and KIN-FAI TONG 2012 Microstrip Patch Antennas - Basic Characteristics and Some Recent Advances",
+    "source_id": "chunk_060",
+    "source_type": "chunk",
+    "text": "Srisuji. T and Nandagopal. C 2015 Analysis on microstrip patch antennas for wireless communication\n\nKAI-FONG LEE and KIN-FAI TONG 2012 Microstrip Patch Antennas - Basic Characteristics and Some Recent Advances"
+  },
+  {
+    "evidence_id": "chunk:chunk_061",
+    "metadata": {
+      "char_end": 291,
+      "char_start": 0,
+      "chunk_id": "chunk_061",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_042",
+      "paragraph_index": 42,
+      "source": "fulltext.md"
+    },
+    "page_number": 11,
+    "snippet": "Aakash Bansal and Richa Gupta 2020 A review on microstrip patch antenna and feeding techniques Md. Shazzadul Islam, Muhammad I. Ibrahimy, S. M. A. Motakabber, A.K. M. Zakir Hossain and S. M. Kayser Azam 2019 Microstrip patch antenna with de",
+    "source_id": "chunk_061",
+    "source_type": "chunk",
+    "text": "Aakash Bansal and Richa Gupta 2020 A review on microstrip patch antenna and feeding techniques\n\nMd. Shazzadul Islam, Muhammad I. Ibrahimy, S. M. A. Motakabber, A.K. M. Zakir Hossain and S. M. Kayser Azam 2019 Microstrip patch antenna with defected ground structure for biomedical application"
+  },
+  {
+    "evidence_id": "chunk:chunk_062",
+    "metadata": {
+      "char_end": 144,
+      "char_start": 0,
+      "chunk_id": "chunk_062",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_043",
+      "paragraph_index": 43,
+      "source": "fulltext.md"
+    },
+    "page_number": 11,
+    "snippet": "Gijo Augustin and Tayeb. A. Denidni 2012 An integrated ultra-wideband/narrow band antenna in uniplanar configuration for cognitive radio systems",
+    "source_id": "chunk_062",
+    "source_type": "chunk",
+    "text": "Gijo Augustin and Tayeb. A. Denidni 2012 An integrated ultra-wideband/narrow band antenna in uniplanar configuration for cognitive radio systems"
+  },
+  {
+    "evidence_id": "chunk:chunk_063",
+    "metadata": {
+      "char_end": 223,
+      "char_start": 0,
+      "chunk_id": "chunk_063",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_044",
+      "paragraph_index": 44,
+      "source": "fulltext.md"
+    },
+    "page_number": 11,
+    "snippet": "Irena Zivkovic and Klaus Scheffler 2013 A new innovative antenna concept for both narrowband and uwb applications S. Palanivel Rajan and C. Vivek 2019 Analysis and Design of Microstrip Patch Antenna for Radar Communication",
+    "source_id": "chunk_063",
+    "source_type": "chunk",
+    "text": "Irena Zivkovic and Klaus Scheffler 2013 A new innovative antenna concept for both narrowband and uwb applications\n\nS. Palanivel Rajan and C. Vivek 2019 Analysis and Design of Microstrip Patch Antenna for Radar Communication"
+  },
+  {
+    "evidence_id": "chunk:chunk_064",
+    "metadata": {
+      "char_end": 166,
+      "char_start": 0,
+      "chunk_id": "chunk_064",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_045",
+      "paragraph_index": 45,
+      "source": "fulltext.md"
+    },
+    "page_number": 11,
+    "snippet": "Lars Reichardt, Thomas Fugen and Thomas Zwich 2011 Virtual drive: A complete V2X communication and radar system simulator for optimization of multiple antenna systems",
+    "source_id": "chunk_064",
+    "source_type": "chunk",
+    "text": "Lars Reichardt, Thomas Fugen and Thomas Zwich 2011 Virtual drive: A complete V2X communication and radar system simulator for optimization of multiple antenna systems"
+  },
+  {
+    "evidence_id": "chunk:chunk_065",
+    "metadata": {
+      "char_end": 176,
+      "char_start": 0,
+      "chunk_id": "chunk_065",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_046",
+      "paragraph_index": 46,
+      "source": "fulltext.md"
+    },
+    "page_number": 11,
+    "snippet": "J. Andrew Zhang, Xiaojing Huang, Y. Jay Guo, Jinhong Yuan and Robert W. Heath Jr. 2019 Multibeam for joint communication and radar sensing using steerable analog antenna arrays",
+    "source_id": "chunk_065",
+    "source_type": "chunk",
+    "text": "J. Andrew Zhang, Xiaojing Huang, Y. Jay Guo, Jinhong Yuan and Robert W. Heath Jr. 2019 Multibeam for joint communication and radar sensing using steerable analog antenna arrays"
+  },
+  {
+    "evidence_id": "chunk:chunk_066",
+    "metadata": {
+      "char_end": 146,
+      "char_start": 0,
+      "chunk_id": "chunk_066",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_047",
+      "paragraph_index": 47,
+      "source": "fulltext.md"
+    },
+    "page_number": 11,
+    "snippet": "B. Mazumdar, U. Chakraborty, A. Bhowmik, S. K. Chowdhury and A.K. Bhattacharjee 2012 A compact microstrip patch antenna for wireless communication",
+    "source_id": "chunk_066",
+    "source_type": "chunk",
+    "text": "B. Mazumdar, U. Chakraborty, A. Bhowmik, S. K. Chowdhury and A.K. Bhattacharjee 2012 A compact microstrip patch antenna for wireless communication"
+  },
+  {
+    "evidence_id": "chunk:chunk_067",
+    "metadata": {
+      "char_end": 164,
+      "char_start": 0,
+      "chunk_id": "chunk_067",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_048",
+      "paragraph_index": 48,
+      "source": "fulltext.md"
+    },
+    "page_number": 11,
+    "snippet": "Abirami M 2017 A Review of Patch Antenna Design for 5G John Colaco and Rajesh Lohani 2020 Design and Implementation of Microstrip Patch Antenna for 5G applications",
+    "source_id": "chunk_067",
+    "source_type": "chunk",
+    "text": "Abirami M 2017 A Review of Patch Antenna Design for 5G\n\nJohn Colaco and Rajesh Lohani 2020 Design and Implementation of Microstrip Patch Antenna for 5G applications"
+  },
+  {
+    "evidence_id": "figure:figure_001",
+    "metadata": {
+      "caption": "",
+      "caption_source": "missing",
+      "context": "View the article online for updates and enhancements. An off-center fed patch antenna with overlapping sub-patch for simultaneous crack and temperature sensing Xianzhi Li, Songtao Xue, Liyu Xie et al. -",
+      "figure_kind": "unknown",
+      "image_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260421T091405157638Z\\bundle\\figures\\figure_001.png",
+      "local_text_window": "View the article online for updates and enhancements. An off-center fed patch antenna with overlapping sub-patch for simultaneous crack and temperature sensing Xianzhi Li, Songtao Xue, Liyu Xie et al. - Wideband terahertz imaging pixel with a small on-chip antenna in 180 nm CMOS Yuri Kanazawa, Sayuri Yokoyama, Shota Hiramatsu et al. -"
+    },
+    "page_number": 1,
+    "snippet": "View the article online for updates and enhancements. An off-center fed patch antenna with overlapping sub-patch for simultaneous crack and temperature sensing Xianzhi Li, Songtao Xue, Liyu Xie et al. - Wideband terahertz imaging pixel with",
+    "source_id": "figure_001",
+    "source_type": "figure",
+    "text": "View the article online for updates and enhancements. An off-center fed patch antenna with overlapping sub-patch for simultaneous crack and temperature sensing Xianzhi Li, Songtao Xue, Liyu Xie et al. - Wideband terahertz imaging pixel with a small on-chip antenna in 180 nm CMOS Yuri Kanazawa, Sayuri Yokoyama, Shota Hiramatsu et al. -\nView the article online for updates and enhancements. An off-center fed patch antenna with overlapping sub-patch for simultaneous crack and temperature sensing Xianzhi Li, Songtao Xue, Liyu Xie et al. -"
+  },
+  {
+    "evidence_id": "figure:figure_002",
+    "metadata": {
+      "caption": "",
+      "caption_source": "missing",
+      "context": "Shun Weng, Tingjun Peng, Ke Gao et al.",
+      "figure_kind": "unknown",
+      "image_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260421T091405157638Z\\bundle\\figures\\figure_002.png",
+      "local_text_window": "Bidirectional large strain monitoring using a novel graphene film-based patch antenna sensor - Shun Weng, Tingjun Peng, Ke Gao et al."
+    },
+    "page_number": 1,
+    "snippet": "Bidirectional large strain monitoring using a novel graphene film-based patch antenna sensor - Shun Weng, Tingjun Peng, Ke Gao et al. Shun Weng, Tingjun Peng, Ke Gao et al.",
+    "source_id": "figure_002",
+    "source_type": "figure",
+    "text": "Bidirectional large strain monitoring using a novel graphene film-based patch antenna sensor - Shun Weng, Tingjun Peng, Ke Gao et al.\nShun Weng, Tingjun Peng, Ke Gao et al."
+  },
+  {
+    "evidence_id": "figure:figure_003",
+    "metadata": {
+      "caption": "",
+      "caption_source": "missing",
+      "context": "Meanwhile, an array configuration can overcome the microstrip patch antenna's disadvantages, including lower gain and power handling capacity [4]. Also, by 2012, three feeding methods were",
+      "figure_kind": "unknown",
+      "image_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260421T091405157638Z\\bundle\\figures\\figure_003.png",
+      "local_text_window": "Microstrip patch antenna has been developed for several years and put into engineering applications for a long time. During this period, many great improvements were made to the antenna. For example, a solution to the rectangular microstrip antenna problem was proposed in 1987 by extending the patch and feedline currents into a suitable set of patterns and formulating a solution in the spectral domain [1]. This helps to achieve close results for the radiative edge feeding and coupling case [2]. Later in 1991, an experimental investigation on a microstrip patch antenna with coplanar feed lines was proposed. The ground plane's slot is used to couple the coplanar line to the patch and inductively or capacitively connects the slot to the coplanar line. Adjusting the slot length can be used to"
+    },
+    "page_number": 2,
+    "snippet": "Microstrip patch antenna has been developed for several years and put into engineering applications for a long time. During this period, many great improvements were made to the antenna. For example, a solution to the rectangular microstrip",
+    "source_id": "figure_003",
+    "source_type": "figure",
+    "text": "Microstrip patch antenna has been developed for several years and put into engineering applications for a long time. During this period, many great improvements were made to the antenna. For example, a solution to the rectangular microstrip antenna problem was proposed in 1987 by extending the patch and feedline currents into a suitable set of patterns and formulating a solution in the spectral domain [1]. This helps to achieve close results for the radiative edge feeding and coupling case [2]. Later in 1991, an experimental investigation on a microstrip patch antenna with coplanar feed lines was proposed. The ground plane's slot is used to couple the coplanar line to the patch and inductively or capacitively connects the slot to the coplanar line. Adjusting the slot length can be used to\nMeanwhile, an array configuration can overcome the microstrip patch antenna's disadvantages, including lower gain and power handling capacity [4]. Also, by 2012, three feeding methods were"
+  },
+  {
+    "evidence_id": "figure:figure_004",
+    "metadata": {
+      "caption": "Figure 1. Proposed Microstrip Patch Antenna",
+      "caption_source": "explicit_caption_object",
+      "context": "2. Theoretical Analysis of Microstrip Patch Antenna Figure 1 depicts the proposed 5G microstrip patch antenna operating at 28 GHz. After choosing 28 GHz as the operating frequency, materials used for the antenna should be considered first. Three layers make up the antenna. The ground is the bottom layer, the substrate is the middle layer, and the patch antenna is the top layer. Typically, copper foil is used to make the metallic patch. The substrate material maintains the necessary distance betw",
+      "figure_kind": "labeled_figure",
+      "image_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260421T091405157638Z\\bundle\\figures\\figure_004.png",
+      "local_text_window": "2. Theoretical Analysis of Microstrip Patch Antenna Figure 1 depicts the proposed 5G microstrip patch antenna operating at 28 GHz. After choosing 28 GHz as the operating frequency, materials used for the antenna should be considered first. Three layers make up the antenna. The ground is the bottom layer, the substrate is the middle layer, and the patch antenna is the top layer. Typically, copper foil is used to make the metallic patch. The substrate material maintains the necessary distance between its ground plane and the patch and supports the radiating patch. The most important criterion for determining the substrate in commercial applications is cost. By using the dielectric honeycomb of a foam board as the substrate for array primitives operating at low microwave frequencies(lower tha"
+    },
+    "page_number": 4,
+    "snippet": "Figure 1. Proposed Microstrip Patch Antenna 2. Theoretical Analysis of Microstrip Patch Antenna Figure 1 depicts the proposed 5G microstrip patch antenna operating at 28 GHz. After choosing 28 GHz as the operating frequency, materials used ",
+    "source_id": "figure_004",
+    "source_type": "figure",
+    "text": "Figure 1. Proposed Microstrip Patch Antenna\n2. Theoretical Analysis of Microstrip Patch Antenna Figure 1 depicts the proposed 5G microstrip patch antenna operating at 28 GHz. After choosing 28 GHz as the operating frequency, materials used for the antenna should be considered first. Three layers make up the antenna. The ground is the bottom layer, the substrate is the middle layer, and the patch antenna is the top layer. Typically, copper foil is used to make the metallic patch. The substrate material maintains the necessary distance between its ground plane and the patch and supports the radiating patch. The most important criterion for determining the substrate in commercial applications is cost. By using the dielectric honeycomb of a foam board as the substrate for array primitives operating at low microwave frequencies(lower tha\n2. Theoretical Analysis of Microstrip Patch Antenna Figure 1 depicts the proposed 5G microstrip patch antenna operating at 28 GHz. After choosing 28 GHz as the operating frequency, materials used for the antenna should be considered first. Three layers make up the antenna. The ground is the bottom layer, the substrate is the middle layer, and the patch antenna is the top layer. Typically, copper foil is used to make the metallic patch. The substrate material maintains the necessary distance betw"
+  },
+  {
+    "evidence_id": "figure:figure_005",
+    "metadata": {
+      "caption": "Figure 2. The schematic diagram of inset feeding",
+      "caption_source": "explicit_caption_object",
+      "context": "From equations (7-8), it can be derived that the maximum value can be obtained when R equals r. As the photoconduction property of water and light is different, the light will be reflected when the light hits water from the air. Similarly, if the reference impedance changes significantly during the transmission of the signal, it will also be reflected. Low-frequency signals have wavelengths significantly greater than the transmission line's length since the relationship between wavelength and fr",
+      "figure_kind": "labeled_figure",
+      "image_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260421T091405157638Z\\bundle\\figures\\figure_005.png",
+      "local_text_window": "From equations (7-8), it can be derived that the maximum value can be obtained when R equals r. As the photoconduction property of water and light is different, the light will be reflected when the light hits water from the air. Similarly, if the reference impedance changes significantly during the transmission of the signal, it will also be reflected. Low-frequency signals have wavelengths significantly greater than the transmission line's length since the relationship between wavelength and frequency is inverse, making it unnecessary to consider signal reflection in this situation. However, when it comes to high frequency, when the signal's wavelength and the transmission line length are almost in the same order, the reflected signal will commonly be an alias with the original signal, in"
+    },
+    "page_number": 6,
+    "snippet": "Figure 2. The schematic diagram of inset feeding From equations (7-8), it can be derived that the maximum value can be obtained when R equals r. As the photoconduction property of water and light is different, the light will be reflected wh",
+    "source_id": "figure_005",
+    "source_type": "figure",
+    "text": "Figure 2. The schematic diagram of inset feeding\nFrom equations (7-8), it can be derived that the maximum value can be obtained when R equals r. As the photoconduction property of water and light is different, the light will be reflected when the light hits water from the air. Similarly, if the reference impedance changes significantly during the transmission of the signal, it will also be reflected. Low-frequency signals have wavelengths significantly greater than the transmission line's length since the relationship between wavelength and frequency is inverse, making it unnecessary to consider signal reflection in this situation. However, when it comes to high frequency, when the signal's wavelength and the transmission line length are almost in the same order, the reflected signal will commonly be an alias with the original signal, in\nFrom equations (7-8), it can be derived that the maximum value can be obtained when R equals r. As the photoconduction property of water and light is different, the light will be reflected when the light hits water from the air. Similarly, if the reference impedance changes significantly during the transmission of the signal, it will also be reflected. Low-frequency signals have wavelengths significantly greater than the transmission line's length since the relationship between wavelength and fr"
+  },
+  {
+    "evidence_id": "figure:figure_006",
+    "metadata": {
+      "caption": "Figure 3. Block diagram of S-parameter and S11 on the operating frequency",
+      "caption_source": "explicit_caption_object",
+      "context": "match the transmission line's reference impedance at the operating frequency, which will greatly influence the reflection coefficient. When the input and output sides are not conjugated matched, the reflected wave will sum up with the output wave and form a standing wave. The amount of reflection can be evaluated by the VSWR. Equation (10) shows that VSWR is positively correlated with the reflection coefficient. Therefore, like the reflection coefficient, the larger the VSWR, the worse the anten",
+      "figure_kind": "labeled_figure",
+      "image_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260421T091405157638Z\\bundle\\figures\\figure_006.png",
+      "local_text_window": "match the transmission line's reference impedance at the operating frequency, which will greatly influence the reflection coefficient. When the input and output sides are not conjugated matched, the reflected wave will sum up with the output wave and form a standing wave. The amount of reflection can be evaluated by the VSWR. Equation (10) shows that VSWR is positively correlated with the reflection coefficient. Therefore, like the reflection coefficient, the larger the VSWR, the worse the antenna's performance. The best case happens when the reflection coefficient equals to 0. At this time, VSWR will be the smallest, which is 1. For all other cases, VSWR will be larger than 1. More specifically, for the reflection coefficient's threshold of acceptance in the proposed antenna, its correspo"
+    },
+    "page_number": 7,
+    "snippet": "Figure 3. Block diagram of S-parameter and S11 on the operating frequency match the transmission line's reference impedance at the operating frequency, which will greatly influence the reflection coefficient. When the input and output sides",
+    "source_id": "figure_006",
+    "source_type": "figure",
+    "text": "Figure 3. Block diagram of S-parameter and S11 on the operating frequency\nmatch the transmission line's reference impedance at the operating frequency, which will greatly influence the reflection coefficient. When the input and output sides are not conjugated matched, the reflected wave will sum up with the output wave and form a standing wave. The amount of reflection can be evaluated by the VSWR. Equation (10) shows that VSWR is positively correlated with the reflection coefficient. Therefore, like the reflection coefficient, the larger the VSWR, the worse the antenna's performance. The best case happens when the reflection coefficient equals to 0. At this time, VSWR will be the smallest, which is 1. For all other cases, VSWR will be larger than 1. More specifically, for the reflection coefficient's threshold of acceptance in the proposed antenna, its correspo\nmatch the transmission line's reference impedance at the operating frequency, which will greatly influence the reflection coefficient. When the input and output sides are not conjugated matched, the reflected wave will sum up with the output wave and form a standing wave. The amount of reflection can be evaluated by the VSWR. Equation (10) shows that VSWR is positively correlated with the reflection coefficient. Therefore, like the reflection coefficient, the larger the VSWR, the worse the anten"
+  },
+  {
+    "evidence_id": "figure:figure_007",
+    "metadata": {
+      "caption": "Figure 4. VSWR of the proposed antenna on operating frequency",
+      "caption_source": "explicit_caption_object",
+      "context": "To some extent, VSWR can also be used to represent the power reflected by the antenna, as the reflection coefficient can calculate it. The variation trend of VSWR is shown clearly in Figure 4. In total, the curve is symmetric at around 28 GHz. At 27 GHz, the curve is generally stable at 11. The curve starts to decline when the frequency comes close to 27.1 GHz. From 27.1 GHz to the upper limit of the designed frequency band, 27.864 GHz, VSWR decreases from 11 to 1.8. Within the designed frequenc",
+      "figure_kind": "labeled_figure",
+      "image_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260421T091405157638Z\\bundle\\figures\\figure_007.png",
+      "local_text_window": "When the input and output sides are not conjugated matched, the reflected wave will sum up with the output wave and form a standing wave. The amount of reflection can be evaluated by the VSWR. Equation (10) shows that VSWR is positively correlated with the reflection coefficient. Therefore, like the reflection coefficient, the larger the VSWR, the worse the antenna's performance. The best case happens when the reflection coefficient equals to 0. At this time, VSWR will be the smallest, which is 1. For all other cases, VSWR will be larger than 1. More specifically, for the reflection coefficient's threshold of acceptance in the proposed antenna, its corresponding VSWR is 1.22. For the peak of the reflection coefficient, which is -24 dB, its corresponding VSWR is 1.008. To some extent, VSWR"
+    },
+    "page_number": 7,
+    "snippet": "Figure 4. VSWR of the proposed antenna on operating frequency When the input and output sides are not conjugated matched, the reflected wave will sum up with the output wave and form a standing wave. The amount of reflection can be evaluate",
+    "source_id": "figure_007",
+    "source_type": "figure",
+    "text": "Figure 4. VSWR of the proposed antenna on operating frequency\nWhen the input and output sides are not conjugated matched, the reflected wave will sum up with the output wave and form a standing wave. The amount of reflection can be evaluated by the VSWR. Equation (10) shows that VSWR is positively correlated with the reflection coefficient. Therefore, like the reflection coefficient, the larger the VSWR, the worse the antenna's performance. The best case happens when the reflection coefficient equals to 0. At this time, VSWR will be the smallest, which is 1. For all other cases, VSWR will be larger than 1. More specifically, for the reflection coefficient's threshold of acceptance in the proposed antenna, its corresponding VSWR is 1.22. For the peak of the reflection coefficient, which is -24 dB, its corresponding VSWR is 1.008. To some extent, VSWR\nTo some extent, VSWR can also be used to represent the power reflected by the antenna, as the reflection coefficient can calculate it. The variation trend of VSWR is shown clearly in Figure 4. In total, the curve is symmetric at around 28 GHz. At 27 GHz, the curve is generally stable at 11. The curve starts to decline when the frequency comes close to 27.1 GHz. From 27.1 GHz to the upper limit of the designed frequency band, 27.864 GHz, VSWR decreases from 11 to 1.8. Within the designed frequenc"
+  },
+  {
+    "evidence_id": "figure:figure_008",
+    "metadata": {
+      "caption": "Figure 5. Real part, imaginary part, magnitude of Z11 on the operating frequency",
+      "caption_source": "explicit_caption_object",
+      "context": "the real part, the imaginary part, and the whole magnitude of the antenna's input impedance. The real part of impedance, represented by the blue curve, moves around from 27 GHz to 28 GHz and reaches about 33\u03a9 at 28 GHz. The overall trend of impedance's real part from 27 GHz to 28 GHz is stable, but then it grows over 4 times after 28 GHz and reaches its peak of 182 \u03a9 at 28.6 GHz. The imaginary part of impedance, represented by the orange curve, declines rapidly from 150\u03a9 to 0\u03a9 at the frequency r",
+      "figure_kind": "labeled_figure",
+      "image_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260421T091405157638Z\\bundle\\figures\\figure_008.png",
+      "local_text_window": "the real part, the imaginary part, and the whole magnitude of the antenna's input impedance. The real part of impedance, represented by the blue curve, moves around from 27 GHz to 28 GHz and reaches about 33\u03a9 at 28 GHz. The overall trend of impedance's real part from 27 GHz to 28 GHz is stable, but then it grows over 4 times after 28 GHz and reaches its peak of 182 \u03a9 at 28.6 GHz. The imaginary part of impedance, represented by the orange curve, declines rapidly from 150\u03a9 to 0\u03a9 at the frequency range 27 GHz - 28.3 GHz and reaches about 40\u03a9 at 28 GHz. Within the frequency range 27GHz - 28.3 GHz, the imaginary part of impedance decreases almost linearly from 150\u03a9 to 0\u03a9, then rises rapidly after 28.5 GHz and reaches its peak of 154\u03a9 at 28.8 GHz. The entire magnitude of the antenna input impeda"
+    },
+    "page_number": 8,
+    "snippet": "Figure 5. Real part, imaginary part, magnitude of Z11 on the operating frequency the real part, the imaginary part, and the whole magnitude of the antenna's input impedance. The real part of impedance, represented by the blue curve, moves a",
+    "source_id": "figure_008",
+    "source_type": "figure",
+    "text": "Figure 5. Real part, imaginary part, magnitude of Z11 on the operating frequency\nthe real part, the imaginary part, and the whole magnitude of the antenna's input impedance. The real part of impedance, represented by the blue curve, moves around from 27 GHz to 28 GHz and reaches about 33\u03a9 at 28 GHz. The overall trend of impedance's real part from 27 GHz to 28 GHz is stable, but then it grows over 4 times after 28 GHz and reaches its peak of 182 \u03a9 at 28.6 GHz. The imaginary part of impedance, represented by the orange curve, declines rapidly from 150\u03a9 to 0\u03a9 at the frequency range 27 GHz - 28.3 GHz and reaches about 40\u03a9 at 28 GHz. Within the frequency range 27GHz - 28.3 GHz, the imaginary part of impedance decreases almost linearly from 150\u03a9 to 0\u03a9, then rises rapidly after 28.5 GHz and reaches its peak of 154\u03a9 at 28.8 GHz. The entire magnitude of the antenna input impeda\nthe real part, the imaginary part, and the whole magnitude of the antenna's input impedance. The real part of impedance, represented by the blue curve, moves around from 27 GHz to 28 GHz and reaches about 33\u03a9 at 28 GHz. The overall trend of impedance's real part from 27 GHz to 28 GHz is stable, but then it grows over 4 times after 28 GHz and reaches its peak of 182 \u03a9 at 28.6 GHz. The imaginary part of impedance, represented by the orange curve, declines rapidly from 150\u03a9 to 0\u03a9 at the frequency r"
+  },
+  {
+    "evidence_id": "figure:figure_009",
+    "metadata": {
+      "caption": "Figure 6. Gain vs. Frequency",
+      "caption_source": "explicit_caption_object",
+      "context": "As the antenna's gain is highly related to its radiation pattern. Radiation patterns need to be carefully designed to meet our requirements. Generally, there are two ways to change the radiation pattern, Beamsteering and Beam-shaping. Beam-steering can be achieved by several configurations of the array and phase shifters. The phase shift can influence which direction the radiation pattern's main lobe points. By doing this, the main lobe's direction and its gain can be influenced, side lobes' gai",
+      "figure_kind": "labeled_figure",
+      "image_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260421T091405157638Z\\bundle\\figures\\figure_009.png",
+      "local_text_window": "As the antenna's gain is highly related to its radiation pattern. Radiation patterns need to be carefully designed to meet our requirements. Generally, there are two ways to change the radiation pattern, Beamsteering and Beam-shaping. Beam-steering can be achieved by several configurations of the array and phase shifters. The phase shift can influence which direction the radiation pattern's main lobe points. By doing this, the main lobe's direction and its gain can be influenced, side lobes' gain and direction can also be influenced. Beam-shaping can be obtained by using non-uniform amplitude distributions. It can greatly change the shape of the radiation pattern. Figure 7 (a) shows the antenna's radiation pattern using binormal distribution when beam-shaping. It helps focus all the radiat"
+    },
+    "page_number": 9,
+    "snippet": "Figure 6. Gain vs. Frequency As the antenna's gain is highly related to its radiation pattern. Radiation patterns need to be carefully designed to meet our requirements. Generally, there are two ways to change the radiation pattern, Beamste",
+    "source_id": "figure_009",
+    "source_type": "figure",
+    "text": "Figure 6. Gain vs. Frequency\nAs the antenna's gain is highly related to its radiation pattern. Radiation patterns need to be carefully designed to meet our requirements. Generally, there are two ways to change the radiation pattern, Beamsteering and Beam-shaping. Beam-steering can be achieved by several configurations of the array and phase shifters. The phase shift can influence which direction the radiation pattern's main lobe points. By doing this, the main lobe's direction and its gain can be influenced, side lobes' gain and direction can also be influenced. Beam-shaping can be obtained by using non-uniform amplitude distributions. It can greatly change the shape of the radiation pattern. Figure 7 (a) shows the antenna's radiation pattern using binormal distribution when beam-shaping. It helps focus all the radiat\nAs the antenna's gain is highly related to its radiation pattern. Radiation patterns need to be carefully designed to meet our requirements. Generally, there are two ways to change the radiation pattern, Beamsteering and Beam-shaping. Beam-steering can be achieved by several configurations of the array and phase shifters. The phase shift can influence which direction the radiation pattern's main lobe points. By doing this, the main lobe's direction and its gain can be influenced, side lobes' gai"
+  },
+  {
+    "evidence_id": "figure:figure_010",
+    "metadata": {
+      "caption": "Figure 7. Beam-shaping: (a)Binormal distribution. (b) Edge distribution",
+      "caption_source": "explicit_caption_object",
+      "context": "As the antenna's gain is highly related to its radiation pattern. Radiation patterns need to be carefully designed to meet our requirements. Generally, there are two ways to change the radiation pattern, Beamsteering and Beam-shaping. Beam-steering can be achieved by several configurations of the array and phase shifters. The phase shift can influence which direction the radiation pattern's main lobe points. By doing this, the main lobe's direction and its gain can be influenced, side lobes' gai",
+      "figure_kind": "labeled_figure",
+      "image_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260421T091405157638Z\\bundle\\figures\\figure_010.png",
+      "local_text_window": "As the antenna's gain is highly related to its radiation pattern. Radiation patterns need to be carefully designed to meet our requirements. Generally, there are two ways to change the radiation pattern, Beamsteering and Beam-shaping. Beam-steering can be achieved by several configurations of the array and phase shifters. The phase shift can influence which direction the radiation pattern's main lobe points. By doing this, the main lobe's direction and its gain can be influenced, side lobes' gain and direction can also be influenced. Beam-shaping can be obtained by using non-uniform amplitude distributions. It can greatly change the shape of the radiation pattern. Figure 7 (a) shows the antenna's radiation pattern using binormal distribution when beam-shaping. It helps focus all the radiat"
+    },
+    "page_number": 9,
+    "snippet": "Figure 7. Beam-shaping: (a)Binormal distribution. (b) Edge distribution As the antenna's gain is highly related to its radiation pattern. Radiation patterns need to be carefully designed to meet our requirements. Generally, there are two wa",
+    "source_id": "figure_010",
+    "source_type": "figure",
+    "text": "Figure 7. Beam-shaping: (a)Binormal distribution. (b) Edge distribution\nAs the antenna's gain is highly related to its radiation pattern. Radiation patterns need to be carefully designed to meet our requirements. Generally, there are two ways to change the radiation pattern, Beamsteering and Beam-shaping. Beam-steering can be achieved by several configurations of the array and phase shifters. The phase shift can influence which direction the radiation pattern's main lobe points. By doing this, the main lobe's direction and its gain can be influenced, side lobes' gain and direction can also be influenced. Beam-shaping can be obtained by using non-uniform amplitude distributions. It can greatly change the shape of the radiation pattern. Figure 7 (a) shows the antenna's radiation pattern using binormal distribution when beam-shaping. It helps focus all the radiat\nAs the antenna's gain is highly related to its radiation pattern. Radiation patterns need to be carefully designed to meet our requirements. Generally, there are two ways to change the radiation pattern, Beamsteering and Beam-shaping. Beam-steering can be achieved by several configurations of the array and phase shifters. The phase shift can influence which direction the radiation pattern's main lobe points. By doing this, the main lobe's direction and its gain can be influenced, side lobes' gai"
+  },
+  {
+    "evidence_id": "figure:figure_011",
+    "metadata": {
+      "caption": "Figure 8. (a)2D radiation pattern. (b)3D radiation pattern",
+      "caption_source": "explicit_caption_object",
+      "context": "Within mobile communication, co-channel interference is a great influence on the channel. To solve this, sectorization can be performed. In the case of a sectorized cell, each cell is divided into either 3 or 6 equal parts or sectors. It means using 3 or 6 directional antennas at the base station instead of a single omnidirectional antenna to reduce the number of co-channel interferences. In the proposed antenna, we sectorize the cell into 3 parts, which means the antenna's radiation angle shoul",
+      "figure_kind": "labeled_figure",
+      "image_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260421T091405157638Z\\bundle\\figures\\figure_011.png",
+      "local_text_window": "Within mobile communication, co-channel interference is a great influence on the channel. To solve this, sectorization can be performed. In the case of a sectorized cell, each cell is divided into either 3 or 6 equal parts or sectors. It means using 3 or 6 directional antennas at the base station instead of a single omnidirectional antenna to reduce the number of co-channel interferences. In the proposed antenna, we sectorize the cell into 3 parts, which means the antenna's radiation angle should be 120\u00b0. By implementing beam-shaping, we make several antennas into an entire antenna array, which gives the radiation pattern in Figure 8 (a). The radiation pattern's main lobe magnitude is 3.12 dBi, far beyond a mobile communication antenna requirement. The angular width is 123\u00b0, which we propo"
+    },
+    "page_number": 10,
+    "snippet": "Figure 8. (a)2D radiation pattern. (b)3D radiation pattern Within mobile communication, co-channel interference is a great influence on the channel. To solve this, sectorization can be performed. In the case of a sectorized cell, each cell ",
+    "source_id": "figure_011",
+    "source_type": "figure",
+    "text": "Figure 8. (a)2D radiation pattern. (b)3D radiation pattern\nWithin mobile communication, co-channel interference is a great influence on the channel. To solve this, sectorization can be performed. In the case of a sectorized cell, each cell is divided into either 3 or 6 equal parts or sectors. It means using 3 or 6 directional antennas at the base station instead of a single omnidirectional antenna to reduce the number of co-channel interferences. In the proposed antenna, we sectorize the cell into 3 parts, which means the antenna's radiation angle should be 120\u00b0. By implementing beam-shaping, we make several antennas into an entire antenna array, which gives the radiation pattern in Figure 8 (a). The radiation pattern's main lobe magnitude is 3.12 dBi, far beyond a mobile communication antenna requirement. The angular width is 123\u00b0, which we propo\nWithin mobile communication, co-channel interference is a great influence on the channel. To solve this, sectorization can be performed. In the case of a sectorized cell, each cell is divided into either 3 or 6 equal parts or sectors. It means using 3 or 6 directional antennas at the base station instead of a single omnidirectional antenna to reduce the number of co-channel interferences. In the proposed antenna, we sectorize the cell into 3 parts, which means the antenna's radiation angle shoul"
+  },
+  {
+    "evidence_id": "section:section_001",
+    "metadata": {
+      "section_id": "section_001",
+      "text_excerpt": "View the article online for updates and enhancements. An off-center fed patch antenna with overlapping sub-patch for simultaneous crack and temperature sensing Xianzhi Li, Songtao Xue, Liyu Xie et al. - Wideband terahertz imaging pixel with a small on-chip antenna in 180 nm CMOS Yuri Kanazawa, Sayuri Yokoyama, Shota Hiramatsu et al. - Bidirectional large strain monitoring using a novel graphene film-based patch antenna sensor - Shun Weng, Tingjun Peng, Ke Gao et al.",
+      "title": "Front Matter"
+    },
+    "page_number": 1,
+    "snippet": "Front Matter View the article online for updates and enhancements. An off-center fed patch antenna with overlapping sub-patch for simultaneous crack and temperature sensing Xianzhi Li, Songtao Xue, Liyu Xie et al. - Wideband terahertz imagi",
+    "source_id": "section_001",
+    "source_type": "section",
+    "text": "Front Matter\nView the article online for updates and enhancements. An off-center fed patch antenna with overlapping sub-patch for simultaneous crack and temperature sensing Xianzhi Li, Songtao Xue, Liyu Xie et al. - Wideband terahertz imaging pixel with a small on-chip antenna in 180 nm CMOS Yuri Kanazawa, Sayuri Yokoyama, Shota Hiramatsu et al. - Bidirectional large strain monitoring using a novel graphene film-based patch antenna sensor - Shun Weng, Tingjun Peng, Ke Gao et al."
+  },
+  {
+    "evidence_id": "section:section_002",
+    "metadata": {
+      "section_id": "section_002",
+      "text_excerpt": "Yitong Li 1 1 Department of Electronic and Computer Engineering, The Hong Kong University of Science and Technology, Hong Kong, 999077, China Caster.li@connect.ust.hk Abstract . The advantages of microstrip patch antennas include small size, adaptable surface, ease of fabrication, and compatibility with integrated circuit technology. Numerous experiments have been done over the past few decades to enhance the performance of this antenna, and both military and commercial sectors have found many uses for it. This paper introduces a microstrip patch antenna with an operating frequency of 28GHz for 5G mobile communication. This research designed and simulated a rectangular microstrip patch antenna with 3.494 mm * 5.3 mm * 0.003 mm. The proposed antenna resonates at 28 GHz with a reflection coefficient of -24 dB, a bandwidth of 280 MHz, and a gain of 2.2 dBi. The inset feed technique matches the 50 \u03a9 transmission line impedance. In the design, Rogers RT5880 substrate and copper ground are used. The antenna's geometry was calculated, and simulated results were analyzed using Computer Simulation Technology Microwave Studio. In conclusion, the proposed antenna has a reflection coefficient ",
+      "title": "A microstrip patch antenna for 5G mobile communications"
+    },
+    "page_number": 2,
+    "snippet": "A microstrip patch antenna for 5G mobile communications Yitong Li 1 1 Department of Electronic and Computer Engineering, The Hong Kong University of Science and Technology, Hong Kong, 999077, China Caster.li@connect.ust.hk Abstract . The ad",
+    "source_id": "section_002",
+    "source_type": "section",
+    "text": "A microstrip patch antenna for 5G mobile communications\nYitong Li 1 1 Department of Electronic and Computer Engineering, The Hong Kong University of Science and Technology, Hong Kong, 999077, China Caster.li@connect.ust.hk Abstract . The advantages of microstrip patch antennas include small size, adaptable surface, ease of fabrication, and compatibility with integrated circuit technology. Numerous experiments have been done over the past few decades to enhance the performance of this antenna, and both military and commercial sectors have found many uses for it. This paper introduces a microstrip patch antenna with an operating frequency of 28GHz for 5G mobile communication. This research designed and simulated a rectangular microstrip patch antenna with 3.494 mm * 5.3 mm * 0.003 mm. The proposed antenna resonates at 28 GHz with a reflection coefficient of -24 dB, a bandwidth of 280 MHz, and a gain of 2.2 dBi. The inset feed technique matches the 50 \u03a9 transmission line impedance. In the design, Rogers RT5880 substrate and copper ground are used. The antenna's geometry was calculated, and simulated results were analyzed using Computer Simulation Technology Microwave Studio. In conclusion, the proposed antenna has a reflection coefficient "
+  },
+  {
+    "evidence_id": "section:section_003",
+    "metadata": {
+      "section_id": "section_003",
+      "text_excerpt": "Microstrip patch antenna has been developed for several years and put into engineering applications for a long time. During this period, many great improvements were made to the antenna. For example, a solution to the rectangular microstrip antenna problem was proposed in 1987 by extending the patch and feedline currents into a suitable set of patterns and formulating a solution in the spectral domain [1]. This helps to achieve close results for the radiative edge feeding and coupling case [2]. Later in 1991, an experimental investigation on a microstrip patch antenna with coplanar feed lines was proposed. The ground plane's slot is used to couple the coplanar line to the patch and inductively or capacitively connects the slot to the coplanar line. Adjusting the slot length can be used to change the input return loss, and additional frequency tuning can be achieved by switching the inductive and capacitive coupling[3]. Recently, after 2010, some progress has been made in the research of microstrip patch antennas, making them smaller in profile, smaller in size, lower in cost, lighter in weight, and easier to manufacture. Meanwhile, an array configuration can overcome the microstrip",
+      "title": "1. Introduction"
+    },
+    "page_number": 3,
+    "snippet": "1. Introduction Microstrip patch antenna has been developed for several years and put into engineering applications for a long time. During this period, many great improvements were made to the antenna. For example, a solution to the rectan",
+    "source_id": "section_003",
+    "source_type": "section",
+    "text": "1. Introduction\nMicrostrip patch antenna has been developed for several years and put into engineering applications for a long time. During this period, many great improvements were made to the antenna. For example, a solution to the rectangular microstrip antenna problem was proposed in 1987 by extending the patch and feedline currents into a suitable set of patterns and formulating a solution in the spectral domain [1]. This helps to achieve close results for the radiative edge feeding and coupling case [2]. Later in 1991, an experimental investigation on a microstrip patch antenna with coplanar feed lines was proposed. The ground plane's slot is used to couple the coplanar line to the patch and inductively or capacitively connects the slot to the coplanar line. Adjusting the slot length can be used to change the input return loss, and additional frequency tuning can be achieved by switching the inductive and capacitive coupling[3]. Recently, after 2010, some progress has been made in the research of microstrip patch antennas, making them smaller in profile, smaller in size, lower in cost, lighter in weight, and easier to manufacture. Meanwhile, an array configuration can overcome the microstrip"
+  },
+  {
+    "evidence_id": "section:section_004",
+    "metadata": {
+      "section_id": "section_004",
+      "text_excerpt": "Figure 1 depicts the proposed 5G microstrip patch antenna operating at 28 GHz. After choosing 28 GHz as the operating frequency, materials used for the antenna should be considered first. Three layers make up the antenna. The ground is the bottom layer, the substrate is the middle layer, and the patch antenna is the top layer. Typically, copper foil is used to make the metallic patch. The substrate material maintains the necessary distance between its ground plane and the patch and supports the radiating patch. The most important criterion for determining the substrate in commercial applications is cost. By using the dielectric honeycomb of a foam board as the substrate for array primitives operating at low microwave frequencies(lower than 15 GHz), it is possible to reduce material costs, losses, and antenna quality while increasing bandwidth. We use copper as the ground and patch antenna, and Rogers RT5880(lossy) as the substrate for this antenna. The parameters are summarized in Table 1 below for the antenna geometry. TM10 mode is used in the proposed antenna. This is due to the different cross-polarization brought by different modes. For the TM m0 mode, the smaller the m, the la",
+      "title": "2. Theoretical Analysis of Microstrip Patch Antenna"
+    },
+    "page_number": 4,
+    "snippet": "2. Theoretical Analysis of Microstrip Patch Antenna Figure 1 depicts the proposed 5G microstrip patch antenna operating at 28 GHz. After choosing 28 GHz as the operating frequency, materials used for the antenna should be considered first. ",
+    "source_id": "section_004",
+    "source_type": "section",
+    "text": "2. Theoretical Analysis of Microstrip Patch Antenna\nFigure 1 depicts the proposed 5G microstrip patch antenna operating at 28 GHz. After choosing 28 GHz as the operating frequency, materials used for the antenna should be considered first. Three layers make up the antenna. The ground is the bottom layer, the substrate is the middle layer, and the patch antenna is the top layer. Typically, copper foil is used to make the metallic patch. The substrate material maintains the necessary distance between its ground plane and the patch and supports the radiating patch. The most important criterion for determining the substrate in commercial applications is cost. By using the dielectric honeycomb of a foam board as the substrate for array primitives operating at low microwave frequencies(lower than 15 GHz), it is possible to reduce material costs, losses, and antenna quality while increasing bandwidth. We use copper as the ground and patch antenna, and Rogers RT5880(lossy) as the substrate for this antenna. The parameters are summarized in Table 1 below for the antenna geometry. TM10 mode is used in the proposed antenna. This is due to the different cross-polarization brought by different modes. For the TM m0 mode, the smaller the m, the la"
+  },
+  {
+    "evidence_id": "section:section_005",
+    "metadata": {
+      "section_id": "section_005",
+      "text_excerpt": "With the use of Computer Simulation Technology Microwave Studio, the antenna was modeled and simulated. From Figure 3 (a), the Input side and signal passed through to the output side of the DUT can be measured by VNA. The VNA receiver detects the generated signal and compares the known signal with it. In this way, there're 4 coefficients obtained from VNA. The reflection coefficient represents the input reflection coefficient, as shown in equation (9). The reflection coefficient is the signal applied to Port 1 with Port 2 terminated in 50\u03a9. It represents the amount of power that is reflected instead of radiating to outer space. For an antenna, the smaller its reflection coefficient, the better performance it will get. For the reflection coefficient, -10 dB is the threshold of acceptance. Figure 3 (b) shows that the antenna has the smallest reflection coefficient of -24 dB at 28 GHz. The entire curve declines rapidly at about 27.6 GHz and reaches its peak at 28 GHz, then increases fast with the frequency rise. Generally, the frequency band corresponding to half of the reflection coefficient's peak can be considered the antenna's bandwidth. The tags within the reflection coefficient'",
+      "title": "3. Results and discussions"
+    },
+    "page_number": 7,
+    "snippet": "3. Results and discussions With the use of Computer Simulation Technology Microwave Studio, the antenna was modeled and simulated. From Figure 3 (a), the Input side and signal passed through to the output side of the DUT can be measured by ",
+    "source_id": "section_005",
+    "source_type": "section",
+    "text": "3. Results and discussions\nWith the use of Computer Simulation Technology Microwave Studio, the antenna was modeled and simulated. From Figure 3 (a), the Input side and signal passed through to the output side of the DUT can be measured by VNA. The VNA receiver detects the generated signal and compares the known signal with it. In this way, there're 4 coefficients obtained from VNA. The reflection coefficient represents the input reflection coefficient, as shown in equation (9). The reflection coefficient is the signal applied to Port 1 with Port 2 terminated in 50\u03a9. It represents the amount of power that is reflected instead of radiating to outer space. For an antenna, the smaller its reflection coefficient, the better performance it will get. For the reflection coefficient, -10 dB is the threshold of acceptance. Figure 3 (b) shows that the antenna has the smallest reflection coefficient of -24 dB at 28 GHz. The entire curve declines rapidly at about 27.6 GHz and reaches its peak at 28 GHz, then increases fast with the frequency rise. Generally, the frequency band corresponding to half of the reflection coefficient's peak can be considered the antenna's bandwidth. The tags within the reflection coefficient'"
+  },
+  {
+    "evidence_id": "section:section_006",
+    "metadata": {
+      "section_id": "section_006",
+      "text_excerpt": "This paper proposes a rectangular microstrip patch antenna for 5G mobile wireless communication at 28 GHz. The antenna resonates at 28 GHz with a reflection coefficient of -24 dB. The antenna's bandwidth is 280 MHz, with a lower operating frequency of 27.864GHz and an upper operating frequency of 28.14 GHz. The proposed antenna shows a VSWR of 1.24, a gain of 2.2 dBi. The antenna's input impedance at the operating frequency band is 51.6 \u03a9, which shows good matching with the reference impedance 50 \u03a9. By implementing beam-shaping, several antennas are put into an antenna array. This way, the antenna can be used in 3-sectorization as a directional antenna whose radiation angle is 120\u00b0. In total, the antenna's reflection coefficient and gain at the operating frequency band can meet the design purpose requirement, which makes the antenna have great performance at its operating frequency. A microstrip patch antenna is now widely used in today's 5G technology. Meanwhile, 5G is less of a single technology, like 3G or 4G, but more of a pathway, which can enable many new technologies like IoT. Therefore, the microstrip patch antenna has a wide range of applications. Applications for microstr",
+      "title": "4. Conclusion"
+    },
+    "page_number": 10,
+    "snippet": "4. Conclusion This paper proposes a rectangular microstrip patch antenna for 5G mobile wireless communication at 28 GHz. The antenna resonates at 28 GHz with a reflection coefficient of -24 dB. The antenna's bandwidth is 280 MHz, with a low",
+    "source_id": "section_006",
+    "source_type": "section",
+    "text": "4. Conclusion\nThis paper proposes a rectangular microstrip patch antenna for 5G mobile wireless communication at 28 GHz. The antenna resonates at 28 GHz with a reflection coefficient of -24 dB. The antenna's bandwidth is 280 MHz, with a lower operating frequency of 27.864GHz and an upper operating frequency of 28.14 GHz. The proposed antenna shows a VSWR of 1.24, a gain of 2.2 dBi. The antenna's input impedance at the operating frequency band is 51.6 \u03a9, which shows good matching with the reference impedance 50 \u03a9. By implementing beam-shaping, several antennas are put into an antenna array. This way, the antenna can be used in 3-sectorization as a directional antenna whose radiation angle is 120\u00b0. In total, the antenna's reflection coefficient and gain at the operating frequency band can meet the design purpose requirement, which makes the antenna have great performance at its operating frequency. A microstrip patch antenna is now widely used in today's 5G technology. Meanwhile, 5G is less of a single technology, like 3G or 4G, but more of a pathway, which can enable many new technologies like IoT. Therefore, the microstrip patch antenna has a wide range of applications. Applications for microstr"
+  },
+  {
+    "evidence_id": "section:section_007",
+    "metadata": {
+      "section_id": "section_007",
+      "text_excerpt": "Hohn Colaco and Rajesh B. Lohani 2022 Performance analysis of microstrip patch antenna using a four-layered substrate of different materials David M. Pozar and Susanne M. Voda 1987 A Rigorous Analysis of a Microstripline Fed Patch Antenna W. Menzel and W. Grabherr 1991 A Microstrip Patch Antenna with Coplanar Feed Line V.S. Tripathi 2011 Microstrip Patch Antenna and its Applications: a Survey G. Christina 2022 A review on novel microstrip patch antenna designs and feeding techniques Srisuji. T and Nandagopal. C 2015 Analysis on microstrip patch antennas for wireless communication KAI-FONG LEE and KIN-FAI TONG 2012 Microstrip Patch Antennas - Basic Characteristics and Some Recent Advances Aakash Bansal and Richa Gupta 2020 A review on microstrip patch antenna and feeding techniques Md. Shazzadul Islam, Muhammad I. Ibrahimy, S. M. A. Motakabber, A.K. M. Zakir Hossain and S. M. Kayser Azam 2019 Microstrip patch antenna with defected ground structure for biomedical application Gijo Augustin and Tayeb. A. Denidni 2012 An integrated ultra-wideband/narrow band antenna in uniplanar configuration for cognitive radio systems Irena Zivkovic and Klaus Scheffler 2013 A new innovative antenna co",
+      "title": "References"
+    },
+    "page_number": 11,
+    "snippet": "References Hohn Colaco and Rajesh B. Lohani 2022 Performance analysis of microstrip patch antenna using a four-layered substrate of different materials David M. Pozar and Susanne M. Voda 1987 A Rigorous Analysis of a Microstripline Fed Patc",
+    "source_id": "section_007",
+    "source_type": "section",
+    "text": "References\nHohn Colaco and Rajesh B. Lohani 2022 Performance analysis of microstrip patch antenna using a four-layered substrate of different materials David M. Pozar and Susanne M. Voda 1987 A Rigorous Analysis of a Microstripline Fed Patch Antenna W. Menzel and W. Grabherr 1991 A Microstrip Patch Antenna with Coplanar Feed Line V.S. Tripathi 2011 Microstrip Patch Antenna and its Applications: a Survey G. Christina 2022 A review on novel microstrip patch antenna designs and feeding techniques Srisuji. T and Nandagopal. C 2015 Analysis on microstrip patch antennas for wireless communication KAI-FONG LEE and KIN-FAI TONG 2012 Microstrip Patch Antennas - Basic Characteristics and Some Recent Advances Aakash Bansal and Richa Gupta 2020 A review on microstrip patch antenna and feeding techniques Md. Shazzadul Islam, Muhammad I. Ibrahimy, S. M. A. Motakabber, A.K. M. Zakir Hossain and S. M. Kayser Azam 2019 Microstrip patch antenna with defected ground structure for biomedical application Gijo Augustin and Tayeb. A. Denidni 2012 An integrated ultra-wideband/narrow band antenna in uniplanar configuration for cognitive radio systems Irena Zivkovic and Klaus Scheffler 2013 A new innovative antenna co"
+  },
+  {
+    "evidence_id": "table:table_001",
+    "metadata": {
+      "artifact_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260421T091405157638Z\\bundle\\tables\\table_001.md",
+      "caption": "Table 1. Dimensions of proposed antenna",
+      "extraction_method": "pymupdf4llm_markdown",
+      "structured": true
+    },
+    "page_number": 4,
+    "snippet": "Table 1. Dimensions of proposed antenna | Parameter | Value(mm) | | --- | --- | | Lgnd | 15 | | Wlng | 8 | | Lpat | 3.494 | | Wpat | 5.3 | | Wmic | 0.1 | | Lslot | 0.15 | | h | 0.032 | | th | 0.003 |",
+    "source_id": "table_001",
+    "source_type": "table",
+    "text": "Table 1. Dimensions of proposed antenna\n| Parameter | Value(mm) |\n| --- | --- |\n| Lgnd | 15 |\n| Wlng | 8 |\n| Lpat | 3.494 |\n| Wpat | 5.3 |\n| Wmic | 0.1 |\n| Lslot | 0.15 |\n| h | 0.032 |\n| th | 0.003 |"
+  },
+  {
+    "evidence_id": "table:table_002",
+    "metadata": {
+      "artifact_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260421T091405157638Z\\bundle\\tables\\table_002.md",
+      "caption": "Table 2. Spacial Parameter of Antenna array",
+      "extraction_method": "pymupdf4llm_markdown",
+      "structured": true
+    },
+    "page_number": 10,
+    "snippet": "Table 2. Spacial Parameter of Antenna array | | X-axis | Y-axis | Z-axis | | --- | --- | --- | --- | | Elements in x, y, z | 2 | 2 | 2 | | Space shift in x, y, z | 6 | 1 | 2 |",
+    "source_id": "table_002",
+    "source_type": "table",
+    "text": "Table 2. Spacial Parameter of Antenna array\n|   | X-axis | Y-axis | Z-axis |\n| --- | --- | --- | --- |\n| Elements in x, y, z | 2 | 2 | 2 |\n| Space shift in x, y, z | 6 | 1 | 2 |"
+  }
+]

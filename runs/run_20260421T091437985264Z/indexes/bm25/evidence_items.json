@@ -1,0 +1,1671 @@
+[
+  {
+    "evidence_id": "chunk:chunk_001",
+    "metadata": {
+      "char_end": 149,
+      "char_start": 0,
+      "chunk_id": "chunk_001",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_001",
+      "paragraph_index": 1,
+      "source": "fulltext.md"
+    },
+    "page_number": 1,
+    "snippet": "![Figure](figures/figure_001.png) # Circular Slotted Triangular Patch Antenna for 5.8 GHz ISM Band Applications \u2020 ![Figure](figures/figure_002.png)",
+    "source_id": "chunk_001",
+    "source_type": "chunk",
+    "text": "![Figure](figures/figure_001.png)\n\n# Circular Slotted Triangular Patch Antenna for 5.8 GHz ISM Band Applications \u2020\n\n![Figure](figures/figure_002.png)"
+  },
+  {
+    "evidence_id": "chunk:chunk_002",
+    "metadata": {
+      "char_end": 290,
+      "char_start": 0,
+      "chunk_id": "chunk_002",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_002",
+      "paragraph_index": 2,
+      "source": "fulltext.md"
+    },
+    "page_number": 1,
+    "snippet": "Ashweena Atif, Alishba Majid, Muhammad Zahid * and Yasar Amin ![Figure](figures/figure_003.png) Telecommunication Engineering Department, University of Engineering and Technology, Taxila 47050, Pakistan; 19-te-25@students.uettaxila.edu.pk (",
+    "source_id": "chunk_002",
+    "source_type": "chunk",
+    "text": "Ashweena Atif, Alishba Majid, Muhammad Zahid * and Yasar Amin\n\n![Figure](figures/figure_003.png)\n\nTelecommunication Engineering Department, University of Engineering and Technology, Taxila 47050, Pakistan; 19-te-25@students.uettaxila.edu.pk (A.A.); 19-te-1@students.uettaxila.edu.pk (A.M.);"
+  },
+  {
+    "evidence_id": "chunk:chunk_003",
+    "metadata": {
+      "char_end": 194,
+      "char_start": 0,
+      "chunk_id": "chunk_003",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_003",
+      "paragraph_index": 3,
+      "source": "fulltext.md"
+    },
+    "page_number": 1,
+    "snippet": "yasar.amin@uettaxila.edu.pk (Y.A.) Correspondence: muhammad.zahid@uettaxila.edu.pk \u2020 Presented at the 8th International Electrical Engineering Conference, Karachi, Pakistan, 25-26 August 2023.",
+    "source_id": "chunk_003",
+    "source_type": "chunk",
+    "text": "yasar.amin@uettaxila.edu.pk (Y.A.)\n\nCorrespondence: muhammad.zahid@uettaxila.edu.pk\n\n\u2020 Presented at the 8th International Electrical Engineering Conference, Karachi, Pakistan, 25-26 August 2023."
+  },
+  {
+    "evidence_id": "chunk:chunk_004",
+    "metadata": {
+      "char_end": 755,
+      "char_start": 0,
+      "chunk_id": "chunk_004",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_004",
+      "paragraph_index": 4,
+      "source": "fulltext.md"
+    },
+    "page_number": 1,
+    "snippet": "Abstract: The design of a circularly slotted triangular patch radiator with a full-ground structure for 5.8 GHz ISM band applications is the basis for this research. The working band of the suggested miniaturized patch radiator may be adjus",
+    "source_id": "chunk_004",
+    "source_type": "chunk",
+    "text": "Abstract: The design of a circularly slotted triangular patch radiator with a full-ground structure for 5.8 GHz ISM band applications is the basis for this research. The working band of the suggested miniaturized patch radiator may be adjusted by adjusting the slot size. The practical reduction in size is calculated by comparing the size of the standard elliptical-shaped slot with the size of the circular slot. Changes in the practical radius of the triangular patch, the main axis radius of the circular slot, the ground plane length, and feed line width are investigated. The proposed radiator has the dimensions of 25.5 mm \u00d7 22.5 mm \u00d7 1.6 mm. This small construction has a broad bandwidth of 100 MHz (5.8 GHz), with a 3% fractional bandwidth (FBW)."
+  },
+  {
+    "evidence_id": "chunk:chunk_042",
+    "metadata": {
+      "char_end": 319,
+      "char_start": 0,
+      "chunk_id": "chunk_042",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_033",
+      "paragraph_index": 33,
+      "source": "fulltext.md"
+    },
+    "page_number": 1,
+    "snippet": "Author Contributions: Conceptualization, A.A. and M.Z.; methodology, M.Z.; software, A.A.; validation, A.M., M.Z. and A.A.; formal analysis, M.Z.; investigation, M.Z.; writing-original draft preparation, A.A.; writing-review and editing, Y.",
+    "source_id": "chunk_042",
+    "source_type": "chunk",
+    "text": "Author Contributions: Conceptualization, A.A. and M.Z.; methodology, M.Z.; software, A.A.; validation, A.M., M.Z. and A.A.; formal analysis, M.Z.; investigation, M.Z.; writing-original draft preparation, A.A.; writing-review and editing, Y.A. All authors have read and agreed to the published version of the manuscript."
+  },
+  {
+    "evidence_id": "chunk:chunk_043",
+    "metadata": {
+      "char_end": 136,
+      "char_start": 0,
+      "chunk_id": "chunk_043",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_034",
+      "paragraph_index": 34,
+      "source": "fulltext.md"
+    },
+    "page_number": 1,
+    "snippet": "Funding: This research received no external funding. Institutional Review Board Statement: Not applicable. Informed Consent Statement:",
+    "source_id": "chunk_043",
+    "source_type": "chunk",
+    "text": "Funding: This research received no external funding.\n\nInstitutional Review Board Statement: Not applicable.\n\nInformed Consent Statement:"
+  },
+  {
+    "evidence_id": "chunk:chunk_005",
+    "metadata": {
+      "char_end": 791,
+      "char_start": 0,
+      "chunk_id": "chunk_005",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_005",
+      "paragraph_index": 5,
+      "source": "fulltext.md"
+    },
+    "page_number": 2,
+    "snippet": "Keywords: ISM band; circular slot; triangular patch; microstrip patch antenna ## 1. Introduction Circularly Slotted Triangular Patch Antennas (CSTPAs) have grown in favor in recent years because of their wideband and circular polarization p",
+    "source_id": "chunk_005",
+    "source_type": "chunk",
+    "text": "Keywords: ISM band; circular slot; triangular patch; microstrip patch antenna\n\n## 1. Introduction\n\nCircularly Slotted Triangular Patch Antennas (CSTPAs) have grown in favor in recent years because of their wideband and circular polarization properties. These antennas are suited to a variety of wireless communication technologies, including Bluetooth, WLAN, and RFID, that operate in the 5.8 GHz ISM band [1]. CSTPAs are a modified version of the traditional triangular patch antenna, with circular slots added to the patch to increase the bandwidth and axial ratio. The circular slots operate as resonators and generate additional modes, resulting in a large increase in bandwidth. Furthermore, circular polarization is obtained by altering the position of the feed point on the patch [2]."
+  },
+  {
+    "evidence_id": "chunk:chunk_006",
+    "metadata": {
+      "char_end": 1182,
+      "char_start": 568,
+      "chunk_id": "chunk_006",
+      "chunk_index_within_paragraph": 2,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_005",
+      "paragraph_index": 5,
+      "source": "fulltext.md"
+    },
+    "page_number": 2,
+    "snippet": "The circular slots operate as resonators and generate additional modes, resulting in a large increase in bandwidth. Furthermore, circular polarization is obtained by altering the position of the feed point on the patch [2]. The circular pol",
+    "source_id": "chunk_006",
+    "source_type": "chunk",
+    "text": "The circular slots operate as resonators and generate additional modes, resulting in a large increase in bandwidth. Furthermore, circular polarization is obtained by altering the position of the feed point on the patch [2]. The circular polarization of CSTPAs makes them an excellent choice for applications requiring polarization variety and tolerance to multipath fading. These antennas' wide bandwidth also makes them suited to systems requiring large data rates and minimal latency. Furthermore, CSTPAs' small size and low profile make them excellent for applications in which space and weight are crucial [3]."
+  },
+  {
+    "evidence_id": "chunk:chunk_007",
+    "metadata": {
+      "char_end": 781,
+      "char_start": 0,
+      "chunk_id": "chunk_007",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_006",
+      "paragraph_index": 6,
+      "source": "fulltext.md"
+    },
+    "page_number": 2,
+    "snippet": "Several research studies have been undertaken on the design and performance of CSTPAs for various wireless communication systems. The radiation characteristics, impedance bandwidth, and axial ratio of these antennas have been analyzed and o",
+    "source_id": "chunk_007",
+    "source_type": "chunk",
+    "text": "Several research studies have been undertaken on the design and performance of CSTPAs for various wireless communication systems. The radiation characteristics, impedance bandwidth, and axial ratio of these antennas have been analyzed and optimized using different approaches, such as the technique of finite element, the method of moments, and the genetic algorithm [4]. Several studies on antenna miniaturization have been conducted in recent years. Due to their multiple advantages, slot antennas have been used in a wide range of applications. Various slot designs etched on the antenna have been studied, with the bonus of providing suitable bandwidth modifications [5-9]. The authors suggest a 5.8 GHz ISM band ultra-wideband antenna designed around the ground layer [10,11]."
+  },
+  {
+    "evidence_id": "chunk:chunk_008",
+    "metadata": {
+      "char_end": 1053,
+      "char_start": 548,
+      "chunk_id": "chunk_008",
+      "chunk_index_within_paragraph": 2,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_006",
+      "paragraph_index": 6,
+      "source": "fulltext.md"
+    },
+    "page_number": 2,
+    "snippet": "Various slot designs etched on the antenna have been studied, with the bonus of providing suitable bandwidth modifications [5-9]. The authors suggest a 5.8 GHz ISM band ultra-wideband antenna designed around the ground layer [10,11]. T-shap",
+    "source_id": "chunk_008",
+    "source_type": "chunk",
+    "text": "Various slot designs etched on the antenna have been studied, with the bonus of providing suitable bandwidth modifications [5-9]. The authors suggest a 5.8 GHz ISM band ultra-wideband antenna designed around the ground layer [10,11]. T-shaped slots [12], L-shaped slots [13], elliptical/circular slots [14], semi-circular slots [15], C-shaped slots [16], hexagonal slots [17,18], and various types of slots used in antenna design for multiband operation have all been proposed. The updated ground plane of"
+  },
+  {
+    "evidence_id": "chunk:chunk_009",
+    "metadata": {
+      "char_end": 274,
+      "char_start": 0,
+      "chunk_id": "chunk_009",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_007",
+      "paragraph_index": 7,
+      "source": "fulltext.md"
+    },
+    "page_number": 2,
+    "snippet": "![Figure](figures/figure_004.png) ![Figure](figures/figure_005.png) ![Figure](figures/figure_006.png) microstrip antennas aids in dual-band [19], wide-bandwidth [20], and other performance needs. A multiband circularly shaped radiator is de",
+    "source_id": "chunk_009",
+    "source_type": "chunk",
+    "text": "![Figure](figures/figure_004.png)\n\n![Figure](figures/figure_005.png)\n\n![Figure](figures/figure_006.png)\n\nmicrostrip antennas aids in dual-band [19], wide-bandwidth [20], and other performance needs. A multiband circularly shaped radiator is designed and constructed [21,22]."
+  },
+  {
+    "evidence_id": "chunk:chunk_010",
+    "metadata": {
+      "char_end": 700,
+      "char_start": 0,
+      "chunk_id": "chunk_010",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_008",
+      "paragraph_index": 8,
+      "source": "fulltext.md"
+    },
+    "page_number": 2,
+    "snippet": "The use of a D-shaped radiator in conjunction with the modified ground plane construction helps create circularly polarized features. Aside from these advantages, a unique dual-band slot antenna design is described, in which two adjunct arc",
+    "source_id": "chunk_010",
+    "source_type": "chunk",
+    "text": "The use of a D-shaped radiator in conjunction with the modified ground plane construction helps create circularly polarized features. Aside from these advantages, a unique dual-band slot antenna design is described, in which two adjunct arc-shaped slots are inserted into two primary semi-circular slots embedded on the ground plane to acquire the required frequency bands [23]. The analysis of a slotted triangle antenna is enhanced by etching and extensively analyzing a floral-shaped slot [24]. The main design features of these slots are their small size, ease of setup, required gain, and so on. In [25], a wideband antenna for sub-6 GHz applications is presented; however, it is somewhat large."
+  },
+  {
+    "evidence_id": "chunk:chunk_011",
+    "metadata": {
+      "char_end": 1243,
+      "char_start": 498,
+      "chunk_id": "chunk_011",
+      "chunk_index_within_paragraph": 2,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_008",
+      "paragraph_index": 8,
+      "source": "fulltext.md"
+    },
+    "page_number": 2,
+    "snippet": "The main design features of these slots are their small size, ease of setup, required gain, and so on. In [25], a wideband antenna for sub-6 GHz applications is presented; however, it is somewhat large. The benefit of etching an elliptical ",
+    "source_id": "chunk_011",
+    "source_type": "chunk",
+    "text": "The main design features of these slots are their small size, ease of setup, required gain, and so on. In [25], a wideband antenna for sub-6 GHz applications is presented; however, it is somewhat large. The benefit of etching an elliptical groove has been described by researchers in [26], but its enormous size restricts its application. In [27], a broad triangular patch with a full ground plane is created, but it has a low average gain for ISM band applications. This paper describes a revolutionary tiny patch radiator that can perform ISM band applications and was influenced by prior research efforts. It is claimed that a triangular patch with a circular slot and an apex fed by a microstrip feed line produces radiation in the ISM band."
+  },
+  {
+    "evidence_id": "chunk:chunk_012",
+    "metadata": {
+      "char_end": 722,
+      "char_start": 0,
+      "chunk_id": "chunk_012",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_009",
+      "paragraph_index": 9,
+      "source": "fulltext.md"
+    },
+    "page_number": 2,
+    "snippet": "The influence of adding the slot and the complete ground plane is noted, indicating that it helps to achieve the 100 MHz bandwidth. During the design phases, the elliptical slot of the radius (r) is analyzed and then changed into a circular",
+    "source_id": "chunk_012",
+    "source_type": "chunk",
+    "text": "The influence of adding the slot and the complete ground plane is noted, indicating that it helps to achieve the 100 MHz bandwidth. During the design phases, the elliptical slot of the radius (r) is analyzed and then changed into a circular-shaped slot. The effect of introducing various forms of slot architectures is investigated, and we were able to embed the circular slot in the intended triangle patch due to the output performance features of a wideband operation with a smaller size. As a result, for ISM band applications, a circularly slotted triangular patch radiator (CSTPA) is envisioned and constructed. A dualband scorpion-shaped antenna is discussed in [28] for 5.8 GHz applications on a compact substrate."
+  },
+  {
+    "evidence_id": "chunk:chunk_013",
+    "metadata": {
+      "char_end": 812,
+      "char_start": 492,
+      "chunk_id": "chunk_013",
+      "chunk_index_within_paragraph": 2,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_009",
+      "paragraph_index": 9,
+      "source": "fulltext.md"
+    },
+    "page_number": 2,
+    "snippet": "As a result, for ISM band applications, a circularly slotted triangular patch radiator (CSTPA) is envisioned and constructed. A dualband scorpion-shaped antenna is discussed in [28] for 5.8 GHz applications on a compact substrate. The autho",
+    "source_id": "chunk_013",
+    "source_type": "chunk",
+    "text": "As a result, for ISM band applications, a circularly slotted triangular patch radiator (CSTPA) is envisioned and constructed. A dualband scorpion-shaped antenna is discussed in [28] for 5.8 GHz applications on a compact substrate. The authors in [29] present an antenna array for 5.8 GHz ISM band high-gain applications."
+  },
+  {
+    "evidence_id": "chunk:chunk_016",
+    "metadata": {
+      "char_end": 305,
+      "char_start": 0,
+      "chunk_id": "chunk_016",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_012",
+      "paragraph_index": 12,
+      "source": "fulltext.md"
+    },
+    "page_number": 2,
+    "snippet": ", , 10 ![Figure](figures/figure_007.png) Figure 1. Parametric analysis: ( a ) triangular patch with the full ground. ( b ) Elliptically slotted triangular patch with the full ground. ( c ) Rectangularly slotted triangular patch with the ful",
+    "source_id": "chunk_016",
+    "source_type": "chunk",
+    "text": ",\n\n, 10\n\n![Figure](figures/figure_007.png)\n\nFigure 1. Parametric analysis: ( a ) triangular patch with the full ground. ( b ) Elliptically slotted triangular patch with the full ground. ( c ) Rectangularly slotted triangular patch with the full ground. ( d ) Circularly slotted patch with the full ground."
+  },
+  {
+    "evidence_id": "chunk:chunk_058",
+    "metadata": {
+      "char_end": 188,
+      "char_start": 0,
+      "chunk_id": "chunk_058",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_049",
+      "paragraph_index": 49,
+      "source": "fulltext.md"
+    },
+    "page_number": 2,
+    "snippet": "Konhar, D.; Behera, A.K.; Mishra, S.N.; Mishra, D. A high gain elliptical slot antenna for lower C-band and X-band application. J. King Saud Univ. Eng. Sci. 2020 , 34 , 108-115. [CrossRef]",
+    "source_id": "chunk_058",
+    "source_type": "chunk",
+    "text": "Konhar, D.; Behera, A.K.; Mishra, S.N.; Mishra, D. A high gain elliptical slot antenna for lower C-band and X-band application. J. King Saud Univ. Eng. Sci. 2020 , 34 , 108-115. [CrossRef]"
+  },
+  {
+    "evidence_id": "chunk:chunk_015",
+    "metadata": {
+      "char_end": 662,
+      "char_start": 0,
+      "chunk_id": "chunk_015",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_011",
+      "paragraph_index": 11,
+      "source": "fulltext.md"
+    },
+    "page_number": 3,
+    "snippet": "## 2. Parametric Analysis The circular, rectangular, and elliptical slots are easier to design than the other geometries since they only need to change the radius of the patch (r). Because circular geometry has the smallest footprint area, ",
+    "source_id": "chunk_015",
+    "source_type": "chunk",
+    "text": "## 2. Parametric Analysis\n\nThe circular, rectangular, and elliptical slots are easier to design than the other geometries since they only need to change the radius of the patch (r). Because circular geometry has the smallest footprint area, a triangular patch radiator was originally built and used as a reference design. The antenna's several iterations are designed to function in the ISM band at the center frequency (fc) of 5.8 GHz. The Flame Retardant (FR4-exopy) substrate with a relative permittivity ( \u03b5 r) of 4.4 and a thickness (t) of 1.6 mm is selected. Figure 1a-d depicts the design steps chosen to build the CSTPA, which are described below: 3 of 7"
+  },
+  {
+    "evidence_id": "chunk:chunk_017",
+    "metadata": {
+      "char_end": 146,
+      "char_start": 0,
+      "chunk_id": "chunk_017",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_013",
+      "paragraph_index": 13,
+      "source": "fulltext.md"
+    },
+    "page_number": 3,
+    "snippet": "Radiator 1 is first conceived as a microstrip line-fed triangular patch radiator with a complete ground plane. Table 1 shows the patch parameters.",
+    "source_id": "chunk_017",
+    "source_type": "chunk",
+    "text": "Radiator 1 is first conceived as a microstrip line-fed triangular patch radiator with a complete ground plane. Table 1 shows the patch parameters."
+  },
+  {
+    "evidence_id": "chunk:chunk_018",
+    "metadata": {
+      "char_end": 205,
+      "char_start": 0,
+      "chunk_id": "chunk_018",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_014",
+      "paragraph_index": 14,
+      "source": "fulltext.md"
+    },
+    "page_number": 3,
+    "snippet": "Table 1. Simulated dimensions of various configurations. Radiator 1 is first conceived as a microstrip line-fed triangular patch radiator with a complete ground plane. Table 1 shows the patch parameters.",
+    "source_id": "chunk_018",
+    "source_type": "chunk",
+    "text": "Table 1.\n\nSimulated dimensions of various configurations.\n\nRadiator 1 is first conceived as a microstrip line-fed triangular patch radiator with a complete ground plane. Table 1 shows the patch parameters."
+  },
+  {
+    "evidence_id": "chunk:chunk_020",
+    "metadata": {
+      "char_end": 907,
+      "char_start": 9,
+      "chunk_id": "chunk_020",
+      "chunk_index_within_paragraph": 2,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_015",
+      "paragraph_index": 15,
+      "source": "fulltext.md"
+    },
+    "page_number": 3,
+    "snippet": "Simulated dimensions of various configurations | Parameters | Step 1 (mm) | Step 2 (mm) | Step 3 (mm) | Step 4 (mm) | | --- | --- | --- | --- | --- | | Overall thickness (t) | 1.6 | 1.6 | 1.6 | 1.6 | | Substrate side length (sl) | 25.5 | 25",
+    "source_id": "chunk_020",
+    "source_type": "chunk",
+    "text": "Simulated dimensions of various configurations\n\n| Parameters | Step 1 (mm) | Step 2 (mm) | Step 3 (mm) | Step 4 (mm) | | --- | --- | --- | --- | --- | | Overall thickness (t) | 1.6 | 1.6 | 1.6 | 1.6 | | Substrate side length (sl) | 25.5 | 25.5 | 25.5 | 25.5 | | Substrate width(sw) | 25.5 | 25.5 | 25.5 | 22.5 | | Dimensions (W \u00d7 L \u00d7 H) | 25.5 \u00d7 25.5 \u00d7 1.6 | 25.5 \u00d7 25.5 \u00d7 1.6 | 25.5 \u00d7 25.5 \u00d7 1.6 | 25.5 \u00d7 22.5 \u00d7 1.6 | | Triangular patch (x), (y) | 5.76, 12.03 | 5.76, 12.03 | 5.76, 12.03 | 9.5, 16.08 | | Ellipse slot radius (er) | - | 1 | - | - | | Radius of circular slot (cr) | - | - | - | 3 | | Length of rectangular slot (rl) | - | - | 2 | - | | Width of rectangular slot (rw) | - | - | 5 | - | | Feedline length (fl) | 9.3 | 9.3 | 9.3 | 14 | | Feedline width (fw) | 0.5 | 0.5 | 0.5 | 3.11 | | Ground length (gl) | 25.5 | 25.5 | 25.5 | 25.5 | | Ground width (gw) | 25.5 | 25.5 | 25.5 | 22.5 |"
+  },
+  {
+    "evidence_id": "chunk:chunk_021",
+    "metadata": {
+      "char_end": 460,
+      "char_start": 0,
+      "chunk_id": "chunk_021",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_016",
+      "paragraph_index": 16,
+      "source": "fulltext.md"
+    },
+    "page_number": 3,
+    "snippet": "## 2.2. Step 2 Slots are inserted in the patch radiator to modify the design shape to achieve a compact size with enhanced output parameters. The patch slot facilitates the use of a compact microstrip antenna with enhanced bandwidth and eff",
+    "source_id": "chunk_021",
+    "source_type": "chunk",
+    "text": "## 2.2. Step 2\n\nSlots are inserted in the patch radiator to modify the design shape to achieve a compact size with enhanced output parameters. The patch slot facilitates the use of a compact microstrip antenna with enhanced bandwidth and efficiency. The dimensions of the elliptical slot are proportional to the impedance bandwidth's lowest transmission zero frequency. At the patch radiator's center, an elliptical slot with a slot radius of 1 mm is inserted."
+  },
+  {
+    "evidence_id": "chunk:chunk_022",
+    "metadata": {
+      "char_end": 518,
+      "char_start": 0,
+      "chunk_id": "chunk_022",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_017",
+      "paragraph_index": 17,
+      "source": "fulltext.md"
+    },
+    "page_number": 3,
+    "snippet": "## 2.3. Step 3 To accomplish miniaturization, the optimized design produced by Radiator 2 is used, and a rectangular slot is put into the triangular patch. The proportions of the inserted rectangular slot are kept, such that it is 2 mm long",
+    "source_id": "chunk_022",
+    "source_type": "chunk",
+    "text": "## 2.3. Step 3\n\nTo accomplish miniaturization, the optimized design produced by Radiator 2 is used, and a rectangular slot is put into the triangular patch. The proportions of the inserted rectangular slot are kept, such that it is 2 mm long and 5 mm wide. Radiator 3 provides more gain and directivity than Radiator 2. Table 2 shows the performance characteristics, which show that while the gain and directivity are better than Radiator 2. However, Radiator 3 outperforms Radiator 2 in terms of gain and directivity."
+  },
+  {
+    "evidence_id": "chunk:chunk_023",
+    "metadata": {
+      "char_end": 376,
+      "char_start": 0,
+      "chunk_id": "chunk_023",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_018",
+      "paragraph_index": 18,
+      "source": "fulltext.md"
+    },
+    "page_number": 3,
+    "snippet": "Table 2. Simulated gain, frequencies, and bandwidth | Output Factors | Step 1 | Step 2 | Step 3 | Step 4 | | --- | --- | --- | --- | --- | | Highest frequency | Non-radiating | 6.23 GHz | 6.37 GHz | 5.88 GHz | | Lowest frequency | Non-radia",
+    "source_id": "chunk_023",
+    "source_type": "chunk",
+    "text": "Table 2. Simulated gain, frequencies, and bandwidth\n\n| Output Factors | Step 1 | Step 2 | Step 3 | Step 4 | | --- | --- | --- | --- | --- | | Highest frequency | Non-radiating | 6.23 GHz | 6.37 GHz | 5.88 GHz | | Lowest frequency | Non-radiating | 6.05 GHz | 6.25 GHz | 5.72 GHz | | Bandwidth | Non-radiating | 180MHz | 120MHz | 160MHz | | Gain (dB) | - | 2.00 | 2.45 | 1.49 |"
+  },
+  {
+    "evidence_id": "chunk:chunk_024",
+    "metadata": {
+      "char_end": 779,
+      "char_start": 0,
+      "chunk_id": "chunk_024",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_019",
+      "paragraph_index": 19,
+      "source": "fulltext.md"
+    },
+    "page_number": 3,
+    "snippet": "## 2.4. Step 4 This procedure involves inserting the circular slot into the triangle patch. The benefit of a circular slot for a compact proposed design is that it reduces the region of radiation while maintaining acceptable characteristics",
+    "source_id": "chunk_024",
+    "source_type": "chunk",
+    "text": "## 2.4. Step 4\n\nThis procedure involves inserting the circular slot into the triangle patch. The benefit of a circular slot for a compact proposed design is that it reduces the region of radiation while maintaining acceptable characteristics and is polarization-insensitive. In the middle of the patch radiator is a circular slot with a 3 mm radius. It is evident that the best choice for providing ISM band features with adequate gain and directivity is a circular-slotbased triangle patch radiator. In Figure 1d, Radiator 4 shows the steps used to create the suggested circular slotted triangular patch radiator's geometry. The design requirements of the suggested antenna are explained in detail in Table 1. With the data reported in Table 2, the slot's impact is discernible."
+  },
+  {
+    "evidence_id": "chunk:chunk_031",
+    "metadata": {
+      "char_end": 127,
+      "char_start": 0,
+      "chunk_id": "chunk_031",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_023",
+      "paragraph_index": 23,
+      "source": "fulltext.md"
+    },
+    "page_number": 3,
+    "snippet": "![Figure](figures/figure_008.png) Figure 2. Various radii of circular slots of the CSTPA . ![Figure](figures/figure_009.png)",
+    "source_id": "chunk_031",
+    "source_type": "chunk",
+    "text": "![Figure](figures/figure_008.png)\n\nFigure 2. Various radii of circular slots of the CSTPA\n\n.\n\n![Figure](figures/figure_009.png)"
+  },
+  {
+    "evidence_id": "chunk:chunk_014",
+    "metadata": {
+      "char_end": 217,
+      "char_start": 0,
+      "chunk_id": "chunk_014",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_010",
+      "paragraph_index": 10,
+      "source": "fulltext.md"
+    },
+    "page_number": 4,
+    "snippet": "The rest of the paper is structured as follows. Section 2 describes the proposed CSTPA's design and geometric arrangement. Section 3 presents the simulated outcomes of the CSTPA. Section 4 gives the work's conclusion.",
+    "source_id": "chunk_014",
+    "source_type": "chunk",
+    "text": "The rest of the paper is structured as follows. Section 2 describes the proposed CSTPA's design and geometric arrangement. Section 3 presents the simulated outcomes of the CSTPA. Section 4 gives the work's conclusion."
+  },
+  {
+    "evidence_id": "chunk:chunk_019",
+    "metadata": {
+      "char_end": 8,
+      "char_start": 0,
+      "chunk_id": "chunk_019",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_015",
+      "paragraph_index": 15,
+      "source": "fulltext.md"
+    },
+    "page_number": 4,
+    "snippet": "Table 1.",
+    "source_id": "chunk_019",
+    "source_type": "chunk",
+    "text": "Table 1."
+  },
+  {
+    "evidence_id": "chunk:chunk_025",
+    "metadata": {
+      "char_end": 944,
+      "char_start": 626,
+      "chunk_id": "chunk_025",
+      "chunk_index_within_paragraph": 2,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_019",
+      "paragraph_index": 19,
+      "source": "fulltext.md"
+    },
+    "page_number": 4,
+    "snippet": "The design requirements of the suggested antenna are explained in detail in Table 1. With the data reported in Table 2, the slot's impact is discernible. The gain and directivity values are improved in this situation, and the bandwidth is s",
+    "source_id": "chunk_025",
+    "source_type": "chunk",
+    "text": "The design requirements of the suggested antenna are explained in detail in Table 1. With the data reported in Table 2, the slot's impact is discernible. The gain and directivity values are improved in this situation, and the bandwidth is sufficient. Radiator 4 has a better bandwidth than the other radiators, though."
+  },
+  {
+    "evidence_id": "chunk:chunk_026",
+    "metadata": {
+      "char_end": 273,
+      "char_start": 0,
+      "chunk_id": "chunk_026",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_020",
+      "paragraph_index": 20,
+      "source": "fulltext.md"
+    },
+    "page_number": 4,
+    "snippet": ", , 10 the suggested antenna are explained in detail in Table 1. With the data reported in Tabl 2, the slot's impact is discernible. The gain and directivity values are improved in thi situation, and the bandwidth is sufficient. Radiator 4 ",
+    "source_id": "chunk_026",
+    "source_type": "chunk",
+    "text": ",\n\n, 10\n\nthe suggested antenna are explained in detail in Table 1. With the data reported in Tabl\n\n2, the slot's impact is discernible. The gain and directivity values are improved in thi situation, and the bandwidth is sufficient. Radiator 4 has a better bandwidth than th"
+  },
+  {
+    "evidence_id": "chunk:chunk_027",
+    "metadata": {
+      "char_end": 186,
+      "char_start": 0,
+      "chunk_id": "chunk_027",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_021",
+      "paragraph_index": 21,
+      "source": "fulltext.md"
+    },
+    "page_number": 4,
+    "snippet": "other radiators, though. 3. Simulated Results and Discussion ## 3. Simulated Results and Discussion As we can see from the above figure and Table 2, the triangular patch with a circula",
+    "source_id": "chunk_027",
+    "source_type": "chunk",
+    "text": "other radiators, though.\n\n3. Simulated Results and Discussion\n\n## 3. Simulated Results and Discussion As we can see from the above figure and Table 2, the triangular patch with a circula"
+  },
+  {
+    "evidence_id": "chunk:chunk_028",
+    "metadata": {
+      "char_end": 788,
+      "char_start": 0,
+      "chunk_id": "chunk_028",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_022",
+      "paragraph_index": 22,
+      "source": "fulltext.md"
+    },
+    "page_number": 4,
+    "snippet": "As we can see from the above figure and Table 2, the triangular patch with a circular slot radiator is best as it gives a 5.8 GHz ISM band. In Radiator 4, we take the radius of the circular slot to be 3 mm so it gives an accurate ISM band. ",
+    "source_id": "chunk_028",
+    "source_type": "chunk",
+    "text": "As we can see from the above figure and Table 2, the triangular patch with a circular slot radiator is best as it gives a 5.8 GHz ISM band. In Radiator 4, we take the radius of the circular slot to be 3 mm so it gives an accurate ISM band. In Figure 2, we take different values of circular slots, like 2 mm, 2.5 mm, 3 mm, and 3.5 mm. As can be seen, the circular slot has a greater effect on the bandwidth, gain, and directivity. If the radius is less than 3 mm, the bandwidth becomes smaller, and the graph moves beyond 5.8 GHz. If we take the radius of the circular slot to be greater than 3 mm, then the bandwidth is still smaller, but the graph shifts to the left side. Therefore, after taking many values, we observed that the bandwidth gain is better at a 3 mm circular slot radius."
+  },
+  {
+    "evidence_id": "chunk:chunk_029",
+    "metadata": {
+      "char_end": 1307,
+      "char_start": 530,
+      "chunk_id": "chunk_029",
+      "chunk_index_within_paragraph": 2,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_022",
+      "paragraph_index": 22,
+      "source": "fulltext.md"
+    },
+    "page_number": 4,
+    "snippet": "If we take the radius of the circular slot to be greater than 3 mm, then the bandwidth is still smaller, but the graph shifts to the left side. Therefore, after taking many values, we observed that the bandwidth gain is better at a 3 mm cir",
+    "source_id": "chunk_029",
+    "source_type": "chunk",
+    "text": "If we take the radius of the circular slot to be greater than 3 mm, then the bandwidth is still smaller, but the graph shifts to the left side. Therefore, after taking many values, we observed that the bandwidth gain is better at a 3 mm circular slot radius. The simulated results of all four types of radiators are presented in Figure 3. slot radiator is best as it gives a 5.8 GHz ISM band. In Radiator 4, we take the radius of th circular slot to be 3 mm so it gives an accurate ISM band. In Figure 2, we take differen values of circular slots, like 2 mm, 2.5 mm, 3 mm, and 3.5 mm. As can be seen, the circula slot has a greater effect on the bandwidth, gain, and directivity. If the radius is less than mm, the bandwidth becomes smaller, and the graph moves beyond 5.8 GHz."
+  },
+  {
+    "evidence_id": "chunk:chunk_030",
+    "metadata": {
+      "char_end": 1642,
+      "char_start": 1115,
+      "chunk_id": "chunk_030",
+      "chunk_index_within_paragraph": 3,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_022",
+      "paragraph_index": 22,
+      "source": "fulltext.md"
+    },
+    "page_number": 4,
+    "snippet": "As can be seen, the circula slot has a greater effect on the bandwidth, gain, and directivity. If the radius is less than mm, the bandwidth becomes smaller, and the graph moves beyond 5.8 GHz. If we tak the radius of the circular slot to be",
+    "source_id": "chunk_030",
+    "source_type": "chunk",
+    "text": "As can be seen, the circula slot has a greater effect on the bandwidth, gain, and directivity. If the radius is less than mm, the bandwidth becomes smaller, and the graph moves beyond 5.8 GHz. If we tak the radius of the circular slot to be greater than 3 mm, then the bandwidth is still smaller but the graph shifts to the left side. Therefore, after taking many values, we observed tha the bandwidth gain is better at a 3 mm circular slot radius. The simulated results of al four types of radiators are presented in Figure 3."
+  },
+  {
+    "evidence_id": "chunk:chunk_032",
+    "metadata": {
+      "char_end": 734,
+      "char_start": 0,
+      "chunk_id": "chunk_032",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_024",
+      "paragraph_index": 24,
+      "source": "fulltext.md"
+    },
+    "page_number": 4,
+    "snippet": "Figure 3. Simulated results of various radiators. The graphical depiction of an antenna's radiation characteristics as a fu space is called an antenna pattern or radiation pattern. In other words, the anten tern specifies how the antenna ab",
+    "source_id": "chunk_032",
+    "source_type": "chunk",
+    "text": "Figure 3. Simulated results of various radiators. The graphical depiction of an antenna's radiation characteristics as a fu space is called an antenna pattern or radiation pattern. In other words, the anten tern specifies how the antenna absorbs energy or radiates energy into space. The a capacity to radiate in any direction relative to a theoretical antenna is known as The graphical depiction of an antenna's radiation characteristics as a function of space is called an antenna pattern or radiation pattern. In other words, the antenna's pattern specifies how the antenna absorbs energy or radiates energy into space. The antenna's capacity to radiate in any direction relative to a theoretical antenna is known as antenna gain."
+  },
+  {
+    "evidence_id": "chunk:chunk_033",
+    "metadata": {
+      "char_end": 832,
+      "char_start": 514,
+      "chunk_id": "chunk_033",
+      "chunk_index_within_paragraph": 2,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_024",
+      "paragraph_index": 24,
+      "source": "fulltext.md"
+    },
+    "page_number": 4,
+    "snippet": "In other words, the antenna's pattern specifies how the antenna absorbs energy or radiates energy into space. The antenna's capacity to radiate in any direction relative to a theoretical antenna is known as antenna gain. An antenna would ra",
+    "source_id": "chunk_033",
+    "source_type": "chunk",
+    "text": "In other words, the antenna's pattern specifies how the antenna absorbs energy or radiates energy into space. The antenna's capacity to radiate in any direction relative to a theoretical antenna is known as antenna gain. An antenna would radiate evenly in all directions if it could be constructed as a perfect sphere."
+  },
+  {
+    "evidence_id": "chunk:chunk_044",
+    "metadata": {
+      "char_end": 138,
+      "char_start": 0,
+      "chunk_id": "chunk_044",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_035",
+      "paragraph_index": 35,
+      "source": "fulltext.md"
+    },
+    "page_number": 4,
+    "snippet": "Not applicable. Data Availability Statement: The data can be obtained from the corresponding author upon request. Conflicts of Interest:",
+    "source_id": "chunk_044",
+    "source_type": "chunk",
+    "text": "Not applicable.\n\nData Availability Statement: The data can be obtained from the corresponding author upon request.\n\nConflicts of Interest:"
+  },
+  {
+    "evidence_id": "chunk:chunk_034",
+    "metadata": {
+      "char_end": 303,
+      "char_start": 0,
+      "chunk_id": "chunk_034",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_025",
+      "paragraph_index": 25,
+      "source": "fulltext.md"
+    },
+    "page_number": 5,
+    "snippet": "gain. An antenna would radiate evenly in all directions if it could be constru perfect sphere. \u0729 \u0bd7\u0bbb \u0d4c 10 \u0743\u074b\u0748 \u0b35\u0b34 ( 4 \u0723\u07df\u07e8 \u07e3 \u0b36 \u123b GdB is the antenna gain, h is the efficiency, A is the physical aperture area, and l is the wavelength at 5.8 GHz.",
+    "source_id": "chunk_034",
+    "source_type": "chunk",
+    "text": "gain. An antenna would radiate evenly in all directions if it could be constru perfect sphere.\n\n\u0729 \u0bd7\u0bbb \u0d4c 10 \u0743\u074b\u0748 \u0b35\u0b34 ( 4 \u0723\u07df\u07e8 \u07e3 \u0b36 \u123b GdB is the antenna gain, h is the efficiency, A is the physical aperture area, and l is the wavelength at 5.8 GHz. The radiation pattern and gain of a circular slot with a 3 mm"
+  },
+  {
+    "evidence_id": "chunk:chunk_035",
+    "metadata": {
+      "char_end": 198,
+      "char_start": 0,
+      "chunk_id": "chunk_035",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_026",
+      "paragraph_index": 26,
+      "source": "fulltext.md"
+    },
+    "page_number": 5,
+    "snippet": "is the physical aperture area, an wavelength at 5.8 GHz. The radiation pattern and gain of a circular slot with a dius are given in Figure 4a. At the ends of the patch, the current distribution mus",
+    "source_id": "chunk_035",
+    "source_type": "chunk",
+    "text": "is the physical aperture area, an wavelength at 5.8 GHz. The radiation pattern and gain of a circular slot with a\n\ndius are given in Figure 4a. At the ends of the patch, the current distribution mus"
+  },
+  {
+    "evidence_id": "chunk:chunk_036",
+    "metadata": {
+      "char_end": 191,
+      "char_start": 0,
+      "chunk_id": "chunk_036",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_027",
+      "paragraph_index": 27,
+      "source": "fulltext.md"
+    },
+    "page_number": 5,
+    "snippet": "perfect sphere. \u0729 \u0bd7\u0bbb \u0d4c \u0743\u074b\u0748 \u0b35\u0b34 ( \u0723\u07df\u07e8 \u0b36 \u07e3 \u123b is the physical aperture area, and (1) \u03bb is the wavelength at 5.8 GHz. The radiation pattern and gain of a circular slot with a 3 mm ra-",
+    "source_id": "chunk_036",
+    "source_type": "chunk",
+    "text": "perfect sphere.\n\n\u0729\n\n\u0bd7\u0bbb \u0d4c\n\n\u0743\u074b\u0748\n\n\u0b35\u0b34\n\n(\n\n\u0723\u07df\u07e8\n\n\u0b36\n\n\u07e3\n\n\u123b\n\nis the physical aperture area, and\n\n(1)\n\n\u03bb\n\nis the wavelength at 5.8 GHz. The radiation pattern and gain of a circular slot with a 3 mm ra-"
+  },
+  {
+    "evidence_id": "chunk:chunk_037",
+    "metadata": {
+      "char_end": 691,
+      "char_start": 0,
+      "chunk_id": "chunk_037",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_028",
+      "paragraph_index": 28,
+      "source": "fulltext.md"
+    },
+    "page_number": 5,
+    "snippet": "radius are given in Figure 4a. At the ends of the patch, the current distribution must be zero; the current cannot flow 'off' the patch. The voltage and the current are not in the phase. Therefore, the distribution of the CSTPA with a 3 mm ",
+    "source_id": "chunk_037",
+    "source_type": "chunk",
+    "text": "radius are given in Figure 4a. At the ends of the patch, the current distribution must be zero; the current cannot flow 'off' the patch. The voltage and the current are not in the phase. Therefore, the distribution of the CSTPA with a 3 mm radius is shown in Figure 4. The proposed antenna design is compared with some literature work in Table 3. dius are given in Figure 4a. At the ends of the patch, the current distribution must be zero; the current cannot flow 'off' the patch. The voltage and the current are not in the phase. Therefore, the distribution of the CSTPA with a 3 mm radius is shown in Figure 4. The proposed antenna design is compared with some literature work in Table 3."
+  },
+  {
+    "evidence_id": "chunk:chunk_038",
+    "metadata": {
+      "char_end": 122,
+      "char_start": 0,
+      "chunk_id": "chunk_038",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_029",
+      "paragraph_index": 29,
+      "source": "fulltext.md"
+    },
+    "page_number": 5,
+    "snippet": "![Figure](figures/figure_010.png) Figure 4. Far-field results. ( a ) Radiation pattern of CSTPA. ( b ) Gain of the CSTPA.",
+    "source_id": "chunk_038",
+    "source_type": "chunk",
+    "text": "![Figure](figures/figure_010.png)\n\nFigure 4. Far-field results. ( a ) Radiation pattern of CSTPA. ( b ) Gain of the CSTPA."
+  },
+  {
+    "evidence_id": "chunk:chunk_039",
+    "metadata": {
+      "char_end": 636,
+      "char_start": 0,
+      "chunk_id": "chunk_039",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_030",
+      "paragraph_index": 30,
+      "source": "fulltext.md"
+    },
+    "page_number": 5,
+    "snippet": "Table 3. Comparison table . Table 3. Comparison table | Reference | Reference Dielectric Constant | Dielectric Constant Size | Size Frequency (GHz) | Frequency (GHz) Bandwidth Bandwidth (GHz) | (GHz) Gain (dBi) | | --- | --- | --- | --- | -",
+    "source_id": "chunk_039",
+    "source_type": "chunk",
+    "text": "Table 3. Comparison table . Table 3. Comparison table\n\n| Reference | Reference Dielectric Constant | Dielectric Constant Size | Size Frequency (GHz) | Frequency (GHz) Bandwidth Bandwidth (GHz) | (GHz) Gain (dBi) | | --- | --- | --- | --- | --- | --- | | [30] | [30] 4.4 | 4.4 0.35 \u03bb 0.35 l \u00d7 0.35 l \u00d7 0.009 l | 0.35 \u03bb \u00d7 0.009 \u03bb 3.5/5.5 5.2/5.8 | 3.5/5.5 3.4-7.62 | 3.4-7.62 4 | | [31] | 4.4 | 0.83 l \u00d7 0.5 l \u00d7 0.006 l | 5.5 | 5.2/5.8 5.2-5.8 | 3.93 | | [32] | [31] 4.4 | 4.4 0.83 0.55 l \u00d7 0.55 l \u00d7 0.03 l | \u00d7 0.5 \u03bb \u00d7 0.006 \u03bb 5.8 | 5.71-5.9 | 5.2-5.8 3.93 4.76 | | Proposed | 4.4 | 0.5 l \u00d7 0.44 l \u00d7 0.03 l | 5.79 | 5.5 5.70-5.88 | 1.49 |"
+  },
+  {
+    "evidence_id": "chunk:chunk_040",
+    "metadata": {
+      "char_end": 123,
+      "char_start": 0,
+      "chunk_id": "chunk_040",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_031",
+      "paragraph_index": 31,
+      "source": "fulltext.md"
+    },
+    "page_number": 5,
+    "snippet": "[32] Proposed 4.4 4.4 0.55 0.5 \u03bb \u00d7 0.55 \u03bb \u00d7 0.44 \u03bb \u00d7 0.03 \u03bb \u00d7 0.03 \u03bb \u03bb 5.8 5.79 5.71-5.9 5.70-5.88 Gain",
+    "source_id": "chunk_040",
+    "source_type": "chunk",
+    "text": "[32]\n\nProposed\n\n4.4\n\n4.4\n\n0.55\n\n0.5\n\n\u03bb\n\n\u00d7 0.55\n\n\u03bb\n\n\u00d7 0.44\n\n\u03bb\n\n\u00d7 0.03\n\n\u03bb\n\n\u00d7 0.03\n\n\u03bb\n\n\u03bb\n\n5.8\n\n5.79\n\n5.71-5.9\n\n5.70-5.88\n\nGain"
+  },
+  {
+    "evidence_id": "chunk:chunk_041",
+    "metadata": {
+      "char_end": 766,
+      "char_start": 0,
+      "chunk_id": "chunk_041",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_032",
+      "paragraph_index": 32,
+      "source": "fulltext.md"
+    },
+    "page_number": 5,
+    "snippet": "(dBi) 3.93 4.76 1.49 ## 4. Conclusions A compact and miniaturized patch radiator for exhibiting a response in the 5.8 GHz frequency range has been designed and developed. A small and miniaturized patch radiator with a response frequency of ",
+    "source_id": "chunk_041",
+    "source_type": "chunk",
+    "text": "(dBi)\n\n3.93\n\n4.76\n\n1.49\n\n## 4. Conclusions\n\nA compact and miniaturized patch radiator for exhibiting a response in the 5.8 GHz frequency range has been designed and developed. A small and miniaturized patch radiator with a response frequency of 5.8 GHz has been conceived and produced. To create a broad bandwidth of 5.8 GHz, a circular slit is carved on the triangular patch. The developed antenna has compact dimensions of 25.5 mm \u00d7 22.5 mm \u00d7 1.6 mm, and denotes the wavelength at the 5.8 GHz center frequency. The suggested radiator is appropriate for ISM band applications. The observed findings corroborate the 100 MHz bandwidth, i.e., a 3% fractional bandwidth. The antenna specifications show that the developed CSTPA is appropriate for ISM band applications."
+  },
+  {
+    "evidence_id": "chunk:chunk_045",
+    "metadata": {
+      "char_end": 246,
+      "char_start": 0,
+      "chunk_id": "chunk_045",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_036",
+      "paragraph_index": 36,
+      "source": "fulltext.md"
+    },
+    "page_number": 6,
+    "snippet": "The authors declare no conflict of interest. ## References Jia, B.; Yan, L.; Fan, Y. Design of a circularly polarized triangular patch antenna with circular slots for the 5.8 GHz ISM band. IEEE Antennas Wirel. Propag. Lett. 2019 , 18 , 644-",
+    "source_id": "chunk_045",
+    "source_type": "chunk",
+    "text": "The authors declare no conflict of interest.\n\n## References\n\nJia, B.; Yan, L.; Fan, Y. Design of a circularly polarized triangular patch antenna with circular slots for the 5.8 GHz ISM band. IEEE Antennas Wirel. Propag. Lett. 2019 , 18 , 644-647."
+  },
+  {
+    "evidence_id": "chunk:chunk_046",
+    "metadata": {
+      "char_end": 166,
+      "char_start": 0,
+      "chunk_id": "chunk_046",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_037",
+      "paragraph_index": 37,
+      "source": "fulltext.md"
+    },
+    "page_number": 6,
+    "snippet": "Zhang, J.; Wang, Y.; Wang, J. A broadband circularly polarized triangular patch antenna with circular slots. IEEE Antennas Wirel. Propag. Lett. 2018 , 17 , 1956-1960.",
+    "source_id": "chunk_046",
+    "source_type": "chunk",
+    "text": "Zhang, J.; Wang, Y.; Wang, J. A broadband circularly polarized triangular patch antenna with circular slots. IEEE Antennas Wirel. Propag. Lett. 2018 , 17 , 1956-1960."
+  },
+  {
+    "evidence_id": "chunk:chunk_047",
+    "metadata": {
+      "char_end": 160,
+      "char_start": 0,
+      "chunk_id": "chunk_047",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_038",
+      "paragraph_index": 38,
+      "source": "fulltext.md"
+    },
+    "page_number": 6,
+    "snippet": "Garg, R.; Bharti, G.K. Design and analysis of circular slotted triangular patch antenna for RFID applications. Int. J. Eng. Trends Technol. 2015 , 23 , 307-311.",
+    "source_id": "chunk_047",
+    "source_type": "chunk",
+    "text": "Garg, R.; Bharti, G.K. Design and analysis of circular slotted triangular patch antenna for RFID applications. Int. J. Eng. Trends Technol. 2015 , 23 , 307-311."
+  },
+  {
+    "evidence_id": "chunk:chunk_048",
+    "metadata": {
+      "char_end": 145,
+      "char_start": 0,
+      "chunk_id": "chunk_048",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_039",
+      "paragraph_index": 39,
+      "source": "fulltext.md"
+    },
+    "page_number": 6,
+    "snippet": "Chen, X.; Xue, Q.; Zhang, J. Wideband circularly polarized antenna with circular slots for WLAN applications. IEEE Access 2018 , 6 , 38816-38821.",
+    "source_id": "chunk_048",
+    "source_type": "chunk",
+    "text": "Chen, X.; Xue, Q.; Zhang, J. Wideband circularly polarized antenna with circular slots for WLAN applications. IEEE Access 2018 , 6 , 38816-38821."
+  },
+  {
+    "evidence_id": "chunk:chunk_049",
+    "metadata": {
+      "char_end": 206,
+      "char_start": 0,
+      "chunk_id": "chunk_049",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_040",
+      "paragraph_index": 40,
+      "source": "fulltext.md"
+    },
+    "page_number": 6,
+    "snippet": "Bamy, C.L.; Mbango, F.M.; Konditi, D.B.; Mpele, P.M. A compact dual-band Dolly-shaped antenna with parasitic elements for automotive radar and 5G applications. Heliyon 2021 , 7 , e06793. [CrossRef] [PubMed]",
+    "source_id": "chunk_049",
+    "source_type": "chunk",
+    "text": "Bamy, C.L.; Mbango, F.M.; Konditi, D.B.; Mpele, P.M. A compact dual-band Dolly-shaped antenna with parasitic elements for automotive radar and 5G applications. Heliyon 2021 , 7 , e06793. [CrossRef] [PubMed]"
+  },
+  {
+    "evidence_id": "chunk:chunk_050",
+    "metadata": {
+      "char_end": 193,
+      "char_start": 0,
+      "chunk_id": "chunk_050",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_041",
+      "paragraph_index": 41,
+      "source": "fulltext.md"
+    },
+    "page_number": 6,
+    "snippet": "PShinde, P.N.; Shinde, J.P. Design of compact pentagonal slot antenna with bandwidth enhancement for multiband wireless applications. Int. J. Electron. Commun. 2015 , 69 , 1489-1494. [CrossRef]",
+    "source_id": "chunk_050",
+    "source_type": "chunk",
+    "text": "PShinde, P.N.; Shinde, J.P. Design of compact pentagonal slot antenna with bandwidth enhancement for multiband wireless applications. Int. J. Electron. Commun. 2015 , 69 , 1489-1494. [CrossRef]"
+  },
+  {
+    "evidence_id": "chunk:chunk_051",
+    "metadata": {
+      "char_end": 278,
+      "char_start": 0,
+      "chunk_id": "chunk_051",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_042",
+      "paragraph_index": 42,
+      "source": "fulltext.md"
+    },
+    "page_number": 6,
+    "snippet": "Kurniawan, F.; Sumantyo, J.T.S.; Prabowo, G.S.; Munir, A. Wide bandwidth lefthanded circularly polarized printed antenna with crescent slot. In Proceedings of the 2017 Progress in Electromagnetics Research Symposium (PIERS), St Petersburg, ",
+    "source_id": "chunk_051",
+    "source_type": "chunk",
+    "text": "Kurniawan, F.; Sumantyo, J.T.S.; Prabowo, G.S.; Munir, A. Wide bandwidth lefthanded circularly polarized printed antenna with crescent slot. In Proceedings of the 2017 Progress in Electromagnetics Research Symposium (PIERS), St Petersburg, Russia, 22-25 May 2017; pp. 1047-1050."
+  },
+  {
+    "evidence_id": "chunk:chunk_052",
+    "metadata": {
+      "char_end": 160,
+      "char_start": 0,
+      "chunk_id": "chunk_052",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_043",
+      "paragraph_index": 43,
+      "source": "fulltext.md"
+    },
+    "page_number": 6,
+    "snippet": "Ghali, H.; Moselhy, T. Broad-band and circularly polarized space-filling-based slot antennas. IEEE Trans. Microw. Theor. Tech. 2005 , 53 , 1946-1950. [CrossRef]",
+    "source_id": "chunk_052",
+    "source_type": "chunk",
+    "text": "Ghali, H.; Moselhy, T. Broad-band and circularly polarized space-filling-based slot antennas. IEEE Trans. Microw. Theor. Tech. 2005 , 53 , 1946-1950. [CrossRef]"
+  },
+  {
+    "evidence_id": "chunk:chunk_053",
+    "metadata": {
+      "char_end": 177,
+      "char_start": 0,
+      "chunk_id": "chunk_053",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_044",
+      "paragraph_index": 44,
+      "source": "fulltext.md"
+    },
+    "page_number": 6,
+    "snippet": "Kapoor, A.; Kumar, P.; Mishra, R. Analysis, and design of a passive spatial filter for sub-6 GHz 5G communication systems. J. Comput. Electron. 2021 , 20 , 1900-1915. [CrossRef]",
+    "source_id": "chunk_053",
+    "source_type": "chunk",
+    "text": "Kapoor, A.; Kumar, P.; Mishra, R. Analysis, and design of a passive spatial filter for sub-6 GHz 5G communication systems. J. Comput. Electron. 2021 , 20 , 1900-1915. [CrossRef]"
+  },
+  {
+    "evidence_id": "chunk:chunk_054",
+    "metadata": {
+      "char_end": 315,
+      "char_start": 0,
+      "chunk_id": "chunk_054",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_045",
+      "paragraph_index": 45,
+      "source": "fulltext.md"
+    },
+    "page_number": 6,
+    "snippet": "Tang, X.; Jiao, Y.; Li, H.; Zong, W.; Yao, Z.; Shan, F.; Li, Y.; Yue, W.; Gao, S. Ultra-wideband patch antenna for sub-6 GHz 5G communications. In Proceedings of the 2019 International Workshop on Electromagnetics: Applications and Student ",
+    "source_id": "chunk_054",
+    "source_type": "chunk",
+    "text": "Tang, X.; Jiao, Y.; Li, H.; Zong, W.; Yao, Z.; Shan, F.; Li, Y.; Yue, W.; Gao, S. Ultra-wideband patch antenna for sub-6 GHz 5G communications. In Proceedings of the 2019 International Workshop on Electromagnetics: Applications and Student Innovation Competition, (iWEM), Qingdao, China, 18 September 2019; pp. 1-3."
+  },
+  {
+    "evidence_id": "chunk:chunk_055",
+    "metadata": {
+      "char_end": 167,
+      "char_start": 0,
+      "chunk_id": "chunk_055",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_046",
+      "paragraph_index": 46,
+      "source": "fulltext.md"
+    },
+    "page_number": 6,
+    "snippet": "Mpeleetetal, P.M. A novel quad band ultra-miniaturized planar antenna with metallic vias and defected ground structure for portable devices. Heliyon 2021 , 7 , e06373.",
+    "source_id": "chunk_055",
+    "source_type": "chunk",
+    "text": "Mpeleetetal, P.M. A novel quad band ultra-miniaturized planar antenna with metallic vias and defected ground structure for portable devices. Heliyon 2021 , 7 , e06373."
+  },
+  {
+    "evidence_id": "chunk:chunk_056",
+    "metadata": {
+      "char_end": 211,
+      "char_start": 0,
+      "chunk_id": "chunk_056",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_047",
+      "paragraph_index": 47,
+      "source": "fulltext.md"
+    },
+    "page_number": 6,
+    "snippet": "Ding, Z.; Wang, H.; Tao, S.; Zhang, D.; Ma, C.; Zhong, Y. A novel broadband monopole antenna with T-slot, CB-CPW, parasitic stripe and heart-shaped slice for 5G applications. Sensors 2020 , 20 , 7002. [CrossRef]",
+    "source_id": "chunk_056",
+    "source_type": "chunk",
+    "text": "Ding, Z.; Wang, H.; Tao, S.; Zhang, D.; Ma, C.; Zhong, Y. A novel broadband monopole antenna with T-slot, CB-CPW, parasitic stripe and heart-shaped slice for 5G applications. Sensors 2020 , 20 , 7002. [CrossRef]"
+  },
+  {
+    "evidence_id": "chunk:chunk_059",
+    "metadata": {
+      "char_end": 151,
+      "char_start": 0,
+      "chunk_id": "chunk_059",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_050",
+      "paragraph_index": 50,
+      "source": "fulltext.md"
+    },
+    "page_number": 6,
+    "snippet": "Naji, D.K. Miniature slotted semi-circular dual-band antenna for WiMAX and WLAN applications. J. Electromagn. Eng. Sci. 2020 , 20 , 115-124. [CrossRef]",
+    "source_id": "chunk_059",
+    "source_type": "chunk",
+    "text": "Naji, D.K. Miniature slotted semi-circular dual-band antenna for WiMAX and WLAN applications. J. Electromagn. Eng. Sci. 2020 , 20 , 115-124. [CrossRef]"
+  },
+  {
+    "evidence_id": "chunk:chunk_060",
+    "metadata": {
+      "char_end": 399,
+      "char_start": 0,
+      "chunk_id": "chunk_060",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_051",
+      "paragraph_index": 51,
+      "source": "fulltext.md"
+    },
+    "page_number": 6,
+    "snippet": "Patel, N.H. Design of C-shaped patch antenna for multiband applications. Int. J. Eng. Res. Technol. 2020 , 9 , 145-148. Kapoor, A.; Mishra, R.; Kumar, P. Slotted wideband frequency selective reflectors for sub-6 GHz 5G devices. In Proceedin",
+    "source_id": "chunk_060",
+    "source_type": "chunk",
+    "text": "Patel, N.H. Design of C-shaped patch antenna for multiband applications. Int. J. Eng. Res. Technol. 2020 , 9 , 145-148.\n\nKapoor, A.; Mishra, R.; Kumar, P. Slotted wideband frequency selective reflectors for sub-6 GHz 5G devices. In Proceedings of the 2021 International Conference on Computing, Communication, and Intelligent Systems (ICCCIS), Greater Noida, India, 19-20 February 2021; pp. 786-791."
+  },
+  {
+    "evidence_id": "chunk:chunk_061",
+    "metadata": {
+      "char_end": 180,
+      "char_start": 0,
+      "chunk_id": "chunk_061",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_052",
+      "paragraph_index": 52,
+      "source": "fulltext.md"
+    },
+    "page_number": 6,
+    "snippet": "Kapoor, A.; Mishra, R.; Kumar, P. A compact high gain printed antenna with frequency selective surface for 5G wideband Applications. Adv. Electromagn. 2021 , 10 , 27-38. [CrossRef]",
+    "source_id": "chunk_061",
+    "source_type": "chunk",
+    "text": "Kapoor, A.; Mishra, R.; Kumar, P. A compact high gain printed antenna with frequency selective surface for 5G wideband Applications. Adv. Electromagn. 2021 , 10 , 27-38. [CrossRef]"
+  },
+  {
+    "evidence_id": "chunk:chunk_062",
+    "metadata": {
+      "char_end": 159,
+      "char_start": 0,
+      "chunk_id": "chunk_062",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_053",
+      "paragraph_index": 53,
+      "source": "fulltext.md"
+    },
+    "page_number": 6,
+    "snippet": "Mabaso, M.; Kumar, P. A dual-band patch antenna for Bluetooth and wireless local area networks applications. Int. J. Microw. Opt. Technol. 2018 , 13 , 393-400.",
+    "source_id": "chunk_062",
+    "source_type": "chunk",
+    "text": "Mabaso, M.; Kumar, P. A dual-band patch antenna for Bluetooth and wireless local area networks applications. Int. J. Microw. Opt. Technol. 2018 , 13 , 393-400."
+  },
+  {
+    "evidence_id": "chunk:chunk_063",
+    "metadata": {
+      "char_end": 164,
+      "char_start": 0,
+      "chunk_id": "chunk_063",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_054",
+      "paragraph_index": 54,
+      "source": "fulltext.md"
+    },
+    "page_number": 6,
+    "snippet": "Kumar, P.; Masa-Campos, J.L. Dual polarized microstrip patch antennas for ultra-wideband applications. Microw. Opt. Technol. Lett. 2014 , 56 , 2174-2179. [CrossRef]",
+    "source_id": "chunk_063",
+    "source_type": "chunk",
+    "text": "Kumar, P.; Masa-Campos, J.L. Dual polarized microstrip patch antennas for ultra-wideband applications. Microw. Opt. Technol. Lett. 2014 , 56 , 2174-2179. [CrossRef]"
+  },
+  {
+    "evidence_id": "chunk:chunk_064",
+    "metadata": {
+      "char_end": 192,
+      "char_start": 0,
+      "chunk_id": "chunk_064",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_055",
+      "paragraph_index": 55,
+      "source": "fulltext.md"
+    },
+    "page_number": 6,
+    "snippet": "Kunwar, A.; Gautam, A.K.; Kanaujia, B.K.; Rambabu, K. Circularly polarized D-shaped slot antenna for wireless applications. Int. J. RF Microw. Comput. Aided Eng. 2019 , 29 , e21498. [CrossRef]",
+    "source_id": "chunk_064",
+    "source_type": "chunk",
+    "text": "Kunwar, A.; Gautam, A.K.; Kanaujia, B.K.; Rambabu, K. Circularly polarized D-shaped slot antenna for wireless applications. Int. J. RF Microw. Comput. Aided Eng. 2019 , 29 , e21498. [CrossRef]"
+  },
+  {
+    "evidence_id": "chunk:chunk_065",
+    "metadata": {
+      "char_end": 167,
+      "char_start": 0,
+      "chunk_id": "chunk_065",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_056",
+      "paragraph_index": 56,
+      "source": "fulltext.md"
+    },
+    "page_number": 6,
+    "snippet": "Yoon, J.H.; Ha, S.J.; Rhee, Y.C. A novel monopole antenna with two arc-shaped strips for WLAN/WiMAX application. J. Electromagn. Eng. Sci. 2015 , 15 , 6-13. [CrossRef]",
+    "source_id": "chunk_065",
+    "source_type": "chunk",
+    "text": "Yoon, J.H.; Ha, S.J.; Rhee, Y.C. A novel monopole antenna with two arc-shaped strips for WLAN/WiMAX application. J. Electromagn. Eng. Sci. 2015 , 15 , 6-13. [CrossRef]"
+  },
+  {
+    "evidence_id": "chunk:chunk_066",
+    "metadata": {
+      "char_end": 230,
+      "char_start": 0,
+      "chunk_id": "chunk_066",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_057",
+      "paragraph_index": 57,
+      "source": "fulltext.md"
+    },
+    "page_number": 6,
+    "snippet": "Zebiri, C.; Sayad, D.; Elfergani, I.; Iqbal, A.; Mshwat, W.F.; Kosha, J.; Rodriguez, J.; Abd-Alhameed, R. A compact semi-circular and arc-shaped slot antenna for heterogeneous RF front-ends. Electronics 2019 , 8 , 1123. [CrossRef]",
+    "source_id": "chunk_066",
+    "source_type": "chunk",
+    "text": "Zebiri, C.; Sayad, D.; Elfergani, I.; Iqbal, A.; Mshwat, W.F.; Kosha, J.; Rodriguez, J.; Abd-Alhameed, R. A compact semi-circular and arc-shaped slot antenna for heterogeneous RF front-ends. Electronics 2019 , 8 , 1123. [CrossRef]"
+  },
+  {
+    "evidence_id": "chunk:chunk_067",
+    "metadata": {
+      "char_end": 202,
+      "char_start": 0,
+      "chunk_id": "chunk_067",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_058",
+      "paragraph_index": 58,
+      "source": "fulltext.md"
+    },
+    "page_number": 6,
+    "snippet": "Meena, M.L.; Gupta, A. Design analysis of a semi-circular floral-shaped directional UWB antenna integrated with wireless multiband applications. Prog. Electromagn. Res. C 2019 , 90 , 155-167. [CrossRef]",
+    "source_id": "chunk_067",
+    "source_type": "chunk",
+    "text": "Meena, M.L.; Gupta, A. Design analysis of a semi-circular floral-shaped directional UWB antenna integrated with wireless multiband applications. Prog. Electromagn. Res. C 2019 , 90 , 155-167. [CrossRef]"
+  },
+  {
+    "evidence_id": "chunk:chunk_068",
+    "metadata": {
+      "char_end": 138,
+      "char_start": 0,
+      "chunk_id": "chunk_068",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_059",
+      "paragraph_index": 59,
+      "source": "fulltext.md"
+    },
+    "page_number": 6,
+    "snippet": "Jha, P.; Singh, S.; Yadava, R.L. Wideband sub-6 GHz micro-strip antenna: Design and fabrication. Lect. Notes Elect. Eng. 2021 , 721 , 109.",
+    "source_id": "chunk_068",
+    "source_type": "chunk",
+    "text": "Jha, P.; Singh, S.; Yadava, R.L. Wideband sub-6 GHz micro-strip antenna: Design and fabrication. Lect. Notes Elect. Eng. 2021 , 721 , 109."
+  },
+  {
+    "evidence_id": "chunk:chunk_070",
+    "metadata": {
+      "char_end": 209,
+      "char_start": 0,
+      "chunk_id": "chunk_070",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_061",
+      "paragraph_index": 61,
+      "source": "fulltext.md"
+    },
+    "page_number": 6,
+    "snippet": "Azim, R.; Aktar, R.; Siddique, A.K.; Paul, L.C.; Islam, M.T. Circular patch planar ultra-wideband antenna for 5G sub-6 GHz wireless communication applications. J. Optoelectron. Adv. Mater. 2021 , 23 , 127-133.",
+    "source_id": "chunk_070",
+    "source_type": "chunk",
+    "text": "Azim, R.; Aktar, R.; Siddique, A.K.; Paul, L.C.; Islam, M.T. Circular patch planar ultra-wideband antenna for 5G sub-6 GHz wireless communication applications. J. Optoelectron. Adv. Mater. 2021 , 23 , 127-133."
+  },
+  {
+    "evidence_id": "chunk:chunk_057",
+    "metadata": {
+      "char_end": 145,
+      "char_start": 0,
+      "chunk_id": "chunk_057",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_048",
+      "paragraph_index": 48,
+      "source": "fulltext.md"
+    },
+    "page_number": 7,
+    "snippet": "Ma, Z.H.; Jiang, Y.F. L-shaped slot-loaded stepped-impedance microstrip structure UWB antenna. Micromachines 2020 , 11 , 828. [CrossRef] [PubMed]",
+    "source_id": "chunk_057",
+    "source_type": "chunk",
+    "text": "Ma, Z.H.; Jiang, Y.F. L-shaped slot-loaded stepped-impedance microstrip structure UWB antenna. Micromachines 2020 , 11 , 828. [CrossRef] [PubMed]"
+  },
+  {
+    "evidence_id": "chunk:chunk_069",
+    "metadata": {
+      "char_end": 286,
+      "char_start": 0,
+      "chunk_id": "chunk_069",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_060",
+      "paragraph_index": 60,
+      "source": "fulltext.md"
+    },
+    "page_number": 7,
+    "snippet": "Raheja, D.K.; Kanaujia, B.K. Design, and analysis of elliptical slot loaded microstrip antenna for C-Band communication. In Proceedings of the 2016 3rd International Conference on Computing for Sustainable Global Development, INDIACom, New ",
+    "source_id": "chunk_069",
+    "source_type": "chunk",
+    "text": "Raheja, D.K.; Kanaujia, B.K. Design, and analysis of elliptical slot loaded microstrip antenna for C-Band communication. In Proceedings of the 2016 3rd International Conference on Computing for Sustainable Global Development, INDIACom, New Delhi, India, 16-18 March 2016; pp. 2930-2933."
+  },
+  {
+    "evidence_id": "chunk:chunk_071",
+    "metadata": {
+      "char_end": 245,
+      "char_start": 0,
+      "chunk_id": "chunk_071",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_062",
+      "paragraph_index": 62,
+      "source": "fulltext.md"
+    },
+    "page_number": 7,
+    "snippet": "Farooq, M.U.; Saleh, H.M.; Zahid, M.; Amin, Y. Dual Band Scorpion-Shaped Antenna for 5.8 GHz ISM Band and X-Band Applications. In Proceedings of the 7th International Multi-Topic ICT Conference 2023 (IMTIC'23), Karachi, Pakistan, 10-12 May ",
+    "source_id": "chunk_071",
+    "source_type": "chunk",
+    "text": "Farooq, M.U.; Saleh, H.M.; Zahid, M.; Amin, Y. Dual Band Scorpion-Shaped Antenna for 5.8 GHz ISM Band and X-Band Applications. In Proceedings of the 7th International Multi-Topic ICT Conference 2023 (IMTIC'23), Karachi, Pakistan, 10-12 May 2023."
+  },
+  {
+    "evidence_id": "chunk:chunk_072",
+    "metadata": {
+      "char_end": 227,
+      "char_start": 0,
+      "chunk_id": "chunk_072",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_063",
+      "paragraph_index": 63,
+      "source": "fulltext.md"
+    },
+    "page_number": 7,
+    "snippet": "Taqdeer, M.M.; Amin, Y.; Amjad, Q.M. 2 \u00d7 2 Hexagonal Shaped Antenna Array for 5.8 GHz ISM Band Applications. In Proceedings of the 7th International Multi-Topic ICT Conference 2023 (IMTIC'23), Karachi, Pakistan, 10-12 May 2023.",
+    "source_id": "chunk_072",
+    "source_type": "chunk",
+    "text": "Taqdeer, M.M.; Amin, Y.; Amjad, Q.M. 2 \u00d7 2 Hexagonal Shaped Antenna Array for 5.8 GHz ISM Band Applications. In Proceedings of the 7th International Multi-Topic ICT Conference 2023 (IMTIC'23), Karachi, Pakistan, 10-12 May 2023."
+  },
+  {
+    "evidence_id": "chunk:chunk_073",
+    "metadata": {
+      "char_end": 165,
+      "char_start": 0,
+      "chunk_id": "chunk_073",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_064",
+      "paragraph_index": 64,
+      "source": "fulltext.md"
+    },
+    "page_number": 7,
+    "snippet": "Liu, W.C.; Wu, C.M.; Tseng, Y.J. Parasitically loadedcpw-fed monopole antenna for broadband operation. IEEE Trans. Antennas Propag. 2011 , 59 , 2415-2419. [CrossRef]",
+    "source_id": "chunk_073",
+    "source_type": "chunk",
+    "text": "Liu, W.C.; Wu, C.M.; Tseng, Y.J. Parasitically loadedcpw-fed monopole antenna for broadband operation. IEEE Trans. Antennas Propag. 2011 , 59 , 2415-2419. [CrossRef]"
+  },
+  {
+    "evidence_id": "chunk:chunk_074",
+    "metadata": {
+      "char_end": 138,
+      "char_start": 0,
+      "chunk_id": "chunk_074",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_065",
+      "paragraph_index": 65,
+      "source": "fulltext.md"
+    },
+    "page_number": 7,
+    "snippet": "Wu, M.T.; Chuang, M.L. Multibroadband slotted bow-tie monopole antenna. IEEE Antennas Wirel. Propag. Lett. 2015 , 14 , 887-890. [CrossRef]",
+    "source_id": "chunk_074",
+    "source_type": "chunk",
+    "text": "Wu, M.T.; Chuang, M.L. Multibroadband slotted bow-tie monopole antenna. IEEE Antennas Wirel. Propag. Lett. 2015 , 14 , 887-890. [CrossRef]"
+  },
+  {
+    "evidence_id": "chunk:chunk_075",
+    "metadata": {
+      "char_end": 238,
+      "char_start": 0,
+      "chunk_id": "chunk_075",
+      "chunk_index_within_paragraph": 1,
+      "chunking_mode": "paragraph",
+      "paragraph_id": "paragraph_066",
+      "paragraph_index": 66,
+      "source": "fulltext.md"
+    },
+    "page_number": 7,
+    "snippet": "Das, T.K.; Mishra, D.P.; Behera, S.K. Slotted Microstrip Antenna for 5.8 GHz ISM Band Applications. In Proceedings of the 2019 International Conference on Range Technology (ICORT), Balasore, India, 15-17 February 2019; pp. 1-4. [CrossRef]",
+    "source_id": "chunk_075",
+    "source_type": "chunk",
+    "text": "Das, T.K.; Mishra, D.P.; Behera, S.K. Slotted Microstrip Antenna for 5.8 GHz ISM Band Applications. In Proceedings of the 2019 International Conference on Range Technology (ICORT), Balasore, India, 15-17 February 2019; pp. 1-4. [CrossRef]"
+  },
+  {
+    "evidence_id": "figure:figure_001",
+    "metadata": {
+      "caption": "",
+      "caption_source": "missing",
+      "context": "Circular Slotted Triangular Patch Antenna for 5.8 GHz ISM Band Applications \u2020",
+      "figure_kind": "unknown",
+      "image_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260421T091437985264Z\\bundle\\figures\\figure_001.png",
+      "local_text_window": "Circular Slotted Triangular Patch Antenna for 5.8 GHz ISM Band Applications \u2020 Ashweena Atif, Alishba Majid, Muhammad Zahid * and Yasar Amin"
+    },
+    "page_number": 1,
+    "snippet": "Circular Slotted Triangular Patch Antenna for 5.8 GHz ISM Band Applications \u2020 Ashweena Atif, Alishba Majid, Muhammad Zahid * and Yasar Amin Circular Slotted Triangular Patch Antenna for 5.8 GHz ISM Band Applications \u2020",
+    "source_id": "figure_001",
+    "source_type": "figure",
+    "text": "Circular Slotted Triangular Patch Antenna for 5.8 GHz ISM Band Applications \u2020 Ashweena Atif, Alishba Majid, Muhammad Zahid * and Yasar Amin\nCircular Slotted Triangular Patch Antenna for 5.8 GHz ISM Band Applications \u2020"
+  },
+  {
+    "evidence_id": "figure:figure_002",
+    "metadata": {
+      "caption": "",
+      "caption_source": "missing",
+      "context": "Circular Slotted Triangular Patch Antenna for 5.8 GHz ISM Band Applications \u2020 Ashweena Atif, Alishba Majid, Muhammad Zahid * and Yasar Amin",
+      "figure_kind": "unknown",
+      "image_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260421T091437985264Z\\bundle\\figures\\figure_002.png",
+      "local_text_window": "Circular Slotted Triangular Patch Antenna for 5.8 GHz ISM Band Applications \u2020 Ashweena Atif, Alishba Majid, Muhammad Zahid * and Yasar Amin Telecommunication Engineering Department, University of Engineering and Technology, Taxila 47050, Pakistan; 19-te-25@students.uettaxila.edu.pk (A.A.); 19-te-1@students.uettaxila.edu.pk (A.M.);"
+    },
+    "page_number": 1,
+    "snippet": "Circular Slotted Triangular Patch Antenna for 5.8 GHz ISM Band Applications \u2020 Ashweena Atif, Alishba Majid, Muhammad Zahid * and Yasar Amin Telecommunication Engineering Department, University of Engineering and Technology, Taxila 47050, Pa",
+    "source_id": "figure_002",
+    "source_type": "figure",
+    "text": "Circular Slotted Triangular Patch Antenna for 5.8 GHz ISM Band Applications \u2020 Ashweena Atif, Alishba Majid, Muhammad Zahid * and Yasar Amin Telecommunication Engineering Department, University of Engineering and Technology, Taxila 47050, Pakistan; 19-te-25@students.uettaxila.edu.pk (A.A.); 19-te-1@students.uettaxila.edu.pk (A.M.);\nCircular Slotted Triangular Patch Antenna for 5.8 GHz ISM Band Applications \u2020 Ashweena Atif, Alishba Majid, Muhammad Zahid * and Yasar Amin"
+  },
+  {
+    "evidence_id": "figure:figure_003",
+    "metadata": {
+      "caption": "",
+      "caption_source": "missing",
+      "context": "Ashweena Atif, Alishba Majid, Muhammad Zahid * and Yasar Amin Telecommunication Engineering Department, University of Engineering and Technology, Taxila 47050, Pakistan; 19-te-25@students.uettaxila.edu.pk (A.A.); 19-te-1@students.uettaxila.edu.pk (A.M.);",
+      "figure_kind": "unknown",
+      "image_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260421T091437985264Z\\bundle\\figures\\figure_003.png",
+      "local_text_window": "Circular Slotted Triangular Patch Antenna for 5.8 GHz ISM Band Applications \u2020 Ashweena Atif, Alishba Majid, Muhammad Zahid * and Yasar Amin Telecommunication Engineering Department, University of Engineering and Technology, Taxila 47050, Pakistan; 19-te-25@students.uettaxila.edu.pk (A.A.); 19-te-1@students.uettaxila.edu.pk (A.M.); yasar.amin@uettaxila.edu.pk (Y.A.)"
+    },
+    "page_number": 1,
+    "snippet": "Circular Slotted Triangular Patch Antenna for 5.8 GHz ISM Band Applications \u2020 Ashweena Atif, Alishba Majid, Muhammad Zahid * and Yasar Amin Telecommunication Engineering Department, University of Engineering and Technology, Taxila 47050, Pa",
+    "source_id": "figure_003",
+    "source_type": "figure",
+    "text": "Circular Slotted Triangular Patch Antenna for 5.8 GHz ISM Band Applications \u2020 Ashweena Atif, Alishba Majid, Muhammad Zahid * and Yasar Amin Telecommunication Engineering Department, University of Engineering and Technology, Taxila 47050, Pakistan; 19-te-25@students.uettaxila.edu.pk (A.A.); 19-te-1@students.uettaxila.edu.pk (A.M.); yasar.amin@uettaxila.edu.pk (Y.A.)\nAshweena Atif, Alishba Majid, Muhammad Zahid * and Yasar Amin Telecommunication Engineering Department, University of Engineering and Technology, Taxila 47050, Pakistan; 19-te-25@students.uettaxila.edu.pk (A.A.); 19-te-1@students.uettaxila.edu.pk (A.M.);"
+  },
+  {
+    "evidence_id": "figure:figure_004",
+    "metadata": {
+      "caption": "",
+      "caption_source": "missing",
+      "context": "Several research studies have been undertaken on the design and performance of CSTPAs for various wireless communication systems. The radiation characteristics, impedance bandwidth, and axial ratio of these antennas have been analyzed and optimized using different approaches, such as the technique of finite element, the method of moments, and the genetic algorithm [4]. Several studies on antenna miniaturization have been conducted in recent years. Due to their multiple advantages, slot antennas",
+      "figure_kind": "unknown",
+      "image_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260421T091437985264Z\\bundle\\figures\\figure_004.png",
+      "local_text_window": "Circularly Slotted Triangular Patch Antennas (CSTPAs) have grown in favor in recent years because of their wideband and circular polarization properties. These antennas are suited to a variety of wireless communication technologies, including Bluetooth, WLAN, and RFID, that operate in the 5.8 GHz ISM band [1]. CSTPAs are a modified version of the traditional triangular patch antenna, with circular slots added to the patch to increase the bandwidth and axial ratio. The circular slots operate as resonators and generate additional modes, resulting in a large increase in bandwidth. Furthermore, circular polarization is obtained by altering the position of the feed point on the patch [2]. The circular polarization of CSTPAs makes them an excellent choice for applications requiring polarization"
+    },
+    "page_number": 1,
+    "snippet": "Circularly Slotted Triangular Patch Antennas (CSTPAs) have grown in favor in recent years because of their wideband and circular polarization properties. These antennas are suited to a variety of wireless communication technologies, includi",
+    "source_id": "figure_004",
+    "source_type": "figure",
+    "text": "Circularly Slotted Triangular Patch Antennas (CSTPAs) have grown in favor in recent years because of their wideband and circular polarization properties. These antennas are suited to a variety of wireless communication technologies, including Bluetooth, WLAN, and RFID, that operate in the 5.8 GHz ISM band [1]. CSTPAs are a modified version of the traditional triangular patch antenna, with circular slots added to the patch to increase the bandwidth and axial ratio. The circular slots operate as resonators and generate additional modes, resulting in a large increase in bandwidth. Furthermore, circular polarization is obtained by altering the position of the feed point on the patch [2]. The circular polarization of CSTPAs makes them an excellent choice for applications requiring polarization\nSeveral research studies have been undertaken on the design and performance of CSTPAs for various wireless communication systems. The radiation characteristics, impedance bandwidth, and axial ratio of these antennas have been analyzed and optimized using different approaches, such as the technique of finite element, the method of moments, and the genetic algorithm [4]. Several studies on antenna miniaturization have been conducted in recent years. Due to their multiple advantages, slot antennas"
+  },
+  {
+    "evidence_id": "figure:figure_005",
+    "metadata": {
+      "caption": "",
+      "caption_source": "missing",
+      "context": "Several research studies have been undertaken on the design and performance of CSTPAs for various wireless communication systems. The radiation characteristics, impedance bandwidth, and axial ratio of these antennas have been analyzed and optimized using different approaches, such as the technique of finite element, the method of moments, and the genetic algorithm [4]. Several studies on antenna miniaturization have been conducted in recent years. Due to their multiple advantages, slot antennas",
+      "figure_kind": "unknown",
+      "image_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260421T091437985264Z\\bundle\\figures\\figure_005.png",
+      "local_text_window": "Circularly Slotted Triangular Patch Antennas (CSTPAs) have grown in favor in recent years because of their wideband and circular polarization properties. These antennas are suited to a variety of wireless communication technologies, including Bluetooth, WLAN, and RFID, that operate in the 5.8 GHz ISM band [1]. CSTPAs are a modified version of the traditional triangular patch antenna, with circular slots added to the patch to increase the bandwidth and axial ratio. The circular slots operate as resonators and generate additional modes, resulting in a large increase in bandwidth. Furthermore, circular polarization is obtained by altering the position of the feed point on the patch [2]. The circular polarization of CSTPAs makes them an excellent choice for applications requiring polarization"
+    },
+    "page_number": 1,
+    "snippet": "Circularly Slotted Triangular Patch Antennas (CSTPAs) have grown in favor in recent years because of their wideband and circular polarization properties. These antennas are suited to a variety of wireless communication technologies, includi",
+    "source_id": "figure_005",
+    "source_type": "figure",
+    "text": "Circularly Slotted Triangular Patch Antennas (CSTPAs) have grown in favor in recent years because of their wideband and circular polarization properties. These antennas are suited to a variety of wireless communication technologies, including Bluetooth, WLAN, and RFID, that operate in the 5.8 GHz ISM band [1]. CSTPAs are a modified version of the traditional triangular patch antenna, with circular slots added to the patch to increase the bandwidth and axial ratio. The circular slots operate as resonators and generate additional modes, resulting in a large increase in bandwidth. Furthermore, circular polarization is obtained by altering the position of the feed point on the patch [2]. The circular polarization of CSTPAs makes them an excellent choice for applications requiring polarization\nSeveral research studies have been undertaken on the design and performance of CSTPAs for various wireless communication systems. The radiation characteristics, impedance bandwidth, and axial ratio of these antennas have been analyzed and optimized using different approaches, such as the technique of finite element, the method of moments, and the genetic algorithm [4]. Several studies on antenna miniaturization have been conducted in recent years. Due to their multiple advantages, slot antennas"
+  },
+  {
+    "evidence_id": "figure:figure_006",
+    "metadata": {
+      "caption": "",
+      "caption_source": "missing",
+      "context": "Several research studies have been undertaken on the design and performance of CSTPAs for various wireless communication systems. The radiation characteristics, impedance bandwidth, and axial ratio of these antennas have been analyzed and optimized using different approaches, such as the technique of finite element, the method of moments, and the genetic algorithm [4]. Several studies on antenna miniaturization have been conducted in recent years. Due to their multiple advantages, slot antennas",
+      "figure_kind": "unknown",
+      "image_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260421T091437985264Z\\bundle\\figures\\figure_006.png",
+      "local_text_window": "Circularly Slotted Triangular Patch Antennas (CSTPAs) have grown in favor in recent years because of their wideband and circular polarization properties. These antennas are suited to a variety of wireless communication technologies, including Bluetooth, WLAN, and RFID, that operate in the 5.8 GHz ISM band [1]. CSTPAs are a modified version of the traditional triangular patch antenna, with circular slots added to the patch to increase the bandwidth and axial ratio. The circular slots operate as resonators and generate additional modes, resulting in a large increase in bandwidth. Furthermore, circular polarization is obtained by altering the position of the feed point on the patch [2]. The circular polarization of CSTPAs makes them an excellent choice for applications requiring polarization"
+    },
+    "page_number": 1,
+    "snippet": "Circularly Slotted Triangular Patch Antennas (CSTPAs) have grown in favor in recent years because of their wideband and circular polarization properties. These antennas are suited to a variety of wireless communication technologies, includi",
+    "source_id": "figure_006",
+    "source_type": "figure",
+    "text": "Circularly Slotted Triangular Patch Antennas (CSTPAs) have grown in favor in recent years because of their wideband and circular polarization properties. These antennas are suited to a variety of wireless communication technologies, including Bluetooth, WLAN, and RFID, that operate in the 5.8 GHz ISM band [1]. CSTPAs are a modified version of the traditional triangular patch antenna, with circular slots added to the patch to increase the bandwidth and axial ratio. The circular slots operate as resonators and generate additional modes, resulting in a large increase in bandwidth. Furthermore, circular polarization is obtained by altering the position of the feed point on the patch [2]. The circular polarization of CSTPAs makes them an excellent choice for applications requiring polarization\nSeveral research studies have been undertaken on the design and performance of CSTPAs for various wireless communication systems. The radiation characteristics, impedance bandwidth, and axial ratio of these antennas have been analyzed and optimized using different approaches, such as the technique of finite element, the method of moments, and the genetic algorithm [4]. Several studies on antenna miniaturization have been conducted in recent years. Due to their multiple advantages, slot antennas"
+  },
+  {
+    "evidence_id": "figure:figure_007",
+    "metadata": {
+      "caption": "Figure 1. Parametric analysis: ( a ) triangular patch with the full ground. ( b ) Elliptically slotted triangular patch with the full ground. ( c ) Rectangularly slotted triangular patch with the full ground. ( d ) Circularly slotted patch with the full ground.",
+      "caption_source": "explicit_caption_object",
+      "context": ", 10 Radiator 1 is first conceived as a microstrip line-fed triangular patch radiator with a complete ground plane. Table 1 shows the patch parameters.",
+      "figure_kind": "labeled_figure",
+      "image_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260421T091437985264Z\\bundle\\figures\\figure_007.png",
+      "local_text_window": ", , 10 Radiator 1 is first conceived as a microstrip line-fed triangular patch radiator with a complete ground plane. Table 1 shows the patch parameters. Table 1."
+    },
+    "page_number": 2,
+    "snippet": "Figure 1. Parametric analysis: ( a ) triangular patch with the full ground. ( b ) Elliptically slotted triangular patch with the full ground. ( c ) Rectangularly slotted triangular patch with the full ground. ( d ) Circularly slotted patch ",
+    "source_id": "figure_007",
+    "source_type": "figure",
+    "text": "Figure 1. Parametric analysis: ( a ) triangular patch with the full ground. ( b ) Elliptically slotted triangular patch with the full ground. ( c ) Rectangularly slotted triangular patch with the full ground. ( d ) Circularly slotted patch with the full ground.\n, , 10 Radiator 1 is first conceived as a microstrip line-fed triangular patch radiator with a complete ground plane. Table 1 shows the patch parameters. Table 1.\n, 10 Radiator 1 is first conceived as a microstrip line-fed triangular patch radiator with a complete ground plane. Table 1 shows the patch parameters."
+  },
+  {
+    "evidence_id": "figure:figure_008",
+    "metadata": {
+      "caption": "Figure 2. Various radii of circular slots of the CSTPA",
+      "caption_source": "explicit_caption_object",
+      "context": "As we can see from the above figure and Table 2, the triangular patch with a circular slot radiator is best as it gives a 5.8 GHz ISM band. In Radiator 4, we take the radius of the circular slot to be 3 mm so it gives an accurate ISM band. In Figure 2, we take different values of circular slots, like 2 mm, 2.5 mm, 3 mm, and 3.5 mm. As can be seen, the circular slot has a greater effect on the bandwidth, gain, and directivity. If the radius is less than 3 mm, the bandwidth becomes smaller, and th",
+      "figure_kind": "labeled_figure",
+      "image_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260421T091437985264Z\\bundle\\figures\\figure_008.png",
+      "local_text_window": "3. Simulated Results and Discussion As we can see from the above figure and Table 2, the triangular patch with a circula As we can see from the above figure and Table 2, the triangular patch with a circular slot radiator is best as it gives a 5.8 GHz ISM band. In Radiator 4, we take the radius of the circular slot to be 3 mm so it gives an accurate ISM band. In Figure 2, we take different values of circular slots, like 2 mm, 2.5 mm, 3 mm, and 3.5 mm. As can be seen, the circular slot has a greater effect on the bandwidth, gain, and directivity. If the radius is less than 3 mm, the bandwidth becomes smaller, and the graph moves beyond 5.8 GHz. If we take the radius of the circular slot to be greater than 3 mm, then the bandwidth is still smaller, but the graph shifts to the left side. There"
+    },
+    "page_number": 4,
+    "snippet": "Figure 2. Various radii of circular slots of the CSTPA 3. Simulated Results and Discussion As we can see from the above figure and Table 2, the triangular patch with a circula As we can see from the above figure and Table 2, the triangular ",
+    "source_id": "figure_008",
+    "source_type": "figure",
+    "text": "Figure 2. Various radii of circular slots of the CSTPA\n3. Simulated Results and Discussion As we can see from the above figure and Table 2, the triangular patch with a circula As we can see from the above figure and Table 2, the triangular patch with a circular slot radiator is best as it gives a 5.8 GHz ISM band. In Radiator 4, we take the radius of the circular slot to be 3 mm so it gives an accurate ISM band. In Figure 2, we take different values of circular slots, like 2 mm, 2.5 mm, 3 mm, and 3.5 mm. As can be seen, the circular slot has a greater effect on the bandwidth, gain, and directivity. If the radius is less than 3 mm, the bandwidth becomes smaller, and the graph moves beyond 5.8 GHz. If we take the radius of the circular slot to be greater than 3 mm, then the bandwidth is still smaller, but the graph shifts to the left side. There\nAs we can see from the above figure and Table 2, the triangular patch with a circular slot radiator is best as it gives a 5.8 GHz ISM band. In Radiator 4, we take the radius of the circular slot to be 3 mm so it gives an accurate ISM band. In Figure 2, we take different values of circular slots, like 2 mm, 2.5 mm, 3 mm, and 3.5 mm. As can be seen, the circular slot has a greater effect on the bandwidth, gain, and directivity. If the radius is less than 3 mm, the bandwidth becomes smaller, and th"
+  },
+  {
+    "evidence_id": "figure:figure_009",
+    "metadata": {
+      "caption": "Figure 3. Simulated results of various radiators.",
+      "caption_source": "explicit_caption_object",
+      "context": ". The graphical depiction of an antenna's radiation characteristics as a fu space is called an antenna pattern or radiation pattern. In other words, the anten tern specifies how the antenna absorbs energy or radiates energy into space. The a capacity to radiate in any direction relative to a theoretical antenna is known as The graphical depiction of an antenna's radiation characteristics as a function of space is called an antenna pattern or radiation pattern. In other words, the antenna's patte",
+      "figure_kind": "labeled_figure",
+      "image_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260421T091437985264Z\\bundle\\figures\\figure_009.png",
+      "local_text_window": "As we can see from the above figure and Table 2, the triangular patch with a circular slot radiator is best as it gives a 5.8 GHz ISM band. In Radiator 4, we take the radius of the circular slot to be 3 mm so it gives an accurate ISM band. In Figure 2, we take different values of circular slots, like 2 mm, 2.5 mm, 3 mm, and 3.5 mm. As can be seen, the circular slot has a greater effect on the bandwidth, gain, and directivity. If the radius is less than 3 mm, the bandwidth becomes smaller, and the graph moves beyond 5.8 GHz. If we take the radius of the circular slot to be greater than 3 mm, then the bandwidth is still smaller, but the graph shifts to the left side. Therefore, after taking many values, we observed that the bandwidth gain is better at a 3 mm circular slot radius. The simulat"
+    },
+    "page_number": 4,
+    "snippet": "Figure 3. Simulated results of various radiators. As we can see from the above figure and Table 2, the triangular patch with a circular slot radiator is best as it gives a 5.8 GHz ISM band. In Radiator 4, we take the radius of the circular ",
+    "source_id": "figure_009",
+    "source_type": "figure",
+    "text": "Figure 3. Simulated results of various radiators.\nAs we can see from the above figure and Table 2, the triangular patch with a circular slot radiator is best as it gives a 5.8 GHz ISM band. In Radiator 4, we take the radius of the circular slot to be 3 mm so it gives an accurate ISM band. In Figure 2, we take different values of circular slots, like 2 mm, 2.5 mm, 3 mm, and 3.5 mm. As can be seen, the circular slot has a greater effect on the bandwidth, gain, and directivity. If the radius is less than 3 mm, the bandwidth becomes smaller, and the graph moves beyond 5.8 GHz. If we take the radius of the circular slot to be greater than 3 mm, then the bandwidth is still smaller, but the graph shifts to the left side. Therefore, after taking many values, we observed that the bandwidth gain is better at a 3 mm circular slot radius. The simulat\n. The graphical depiction of an antenna's radiation characteristics as a fu space is called an antenna pattern or radiation pattern. In other words, the anten tern specifies how the antenna absorbs energy or radiates energy into space. The a capacity to radiate in any direction relative to a theoretical antenna is known as The graphical depiction of an antenna's radiation characteristics as a function of space is called an antenna pattern or radiation pattern. In other words, the antenna's patte"
+  },
+  {
+    "evidence_id": "figure:figure_010",
+    "metadata": {
+      "caption": "Figure 4. Far-field results. ( a ) Radiation pattern of CSTPA. ( b ) Gain of the CSTPA.",
+      "caption_source": "explicit_caption_object",
+      "context": "radius are given in Figure 4a. At the ends of the patch, the current distribution must be zero; the current cannot flow 'off' the patch. The voltage and the current are not in the phase. Therefore, the distribution of the CSTPA with a 3 mm radius is shown in Figure 4. The proposed antenna design is compared with some literature work in Table 3. dius are given in Figure 4a. At the ends of the patch, the current distribution must be zero; the current cannot flow 'off' the patch. The voltage and th",
+      "figure_kind": "labeled_figure",
+      "image_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260421T091437985264Z\\bundle\\figures\\figure_010.png",
+      "local_text_window": "is the wavelength at 5.8 GHz. The radiation pattern and gain of a circular slot with a 3 mm ra- radius are given in Figure 4a. At the ends of the patch, the current distribution must be zero; the current cannot flow 'off' the patch. The voltage and the current are not in the phase. Therefore, the distribution of the CSTPA with a 3 mm radius is shown in Figure 4. The proposed antenna design is compared with some literature work in Table 3. dius are given in Figure 4a. At the ends of the patch, the current distribution must be zero; the current cannot flow 'off' the patch. The voltage and the current are not in the phase. Therefore, the distribution of the CSTPA with a 3 mm radius is shown in Figure 4. The proposed antenna design is compared with some literature work in Table 3. [32] Propose"
+    },
+    "page_number": 5,
+    "snippet": "Figure 4. Far-field results. ( a ) Radiation pattern of CSTPA. ( b ) Gain of the CSTPA. is the wavelength at 5.8 GHz. The radiation pattern and gain of a circular slot with a 3 mm ra- radius are given in Figure 4a. At the ends of the patch,",
+    "source_id": "figure_010",
+    "source_type": "figure",
+    "text": "Figure 4. Far-field results. ( a ) Radiation pattern of CSTPA. ( b ) Gain of the CSTPA.\nis the wavelength at 5.8 GHz. The radiation pattern and gain of a circular slot with a 3 mm ra- radius are given in Figure 4a. At the ends of the patch, the current distribution must be zero; the current cannot flow 'off' the patch. The voltage and the current are not in the phase. Therefore, the distribution of the CSTPA with a 3 mm radius is shown in Figure 4. The proposed antenna design is compared with some literature work in Table 3. dius are given in Figure 4a. At the ends of the patch, the current distribution must be zero; the current cannot flow 'off' the patch. The voltage and the current are not in the phase. Therefore, the distribution of the CSTPA with a 3 mm radius is shown in Figure 4. The proposed antenna design is compared with some literature work in Table 3. [32] Propose\nradius are given in Figure 4a. At the ends of the patch, the current distribution must be zero; the current cannot flow 'off' the patch. The voltage and the current are not in the phase. Therefore, the distribution of the CSTPA with a 3 mm radius is shown in Figure 4. The proposed antenna design is compared with some literature work in Table 3. dius are given in Figure 4a. At the ends of the patch, the current distribution must be zero; the current cannot flow 'off' the patch. The voltage and th"
+  },
+  {
+    "evidence_id": "section:section_001",
+    "metadata": {
+      "section_id": "section_001",
+      "text_excerpt": "Ashweena Atif, Alishba Majid, Muhammad Zahid * and Yasar Amin Telecommunication Engineering Department, University of Engineering and Technology, Taxila 47050, Pakistan; 19-te-25@students.uettaxila.edu.pk (A.A.); 19-te-1@students.uettaxila.edu.pk (A.M.); yasar.amin@uettaxila.edu.pk (Y.A.) Correspondence: muhammad.zahid@uettaxila.edu.pk \u2020 Presented at the 8th International Electrical Engineering Conference, Karachi, Pakistan, 25-26 August 2023. Abstract: The design of a circularly slotted triangular patch radiator with a full-ground structure for 5.8 GHz ISM band applications is the basis for this research. The working band of the suggested miniaturized patch radiator may be adjusted by adjusting the slot size. The practical reduction in size is calculated by comparing the size of the standard elliptical-shaped slot with the size of the circular slot. Changes in the practical radius of the triangular patch, the main axis radius of the circular slot, the ground plane length, and feed line width are investigated. The proposed radiator has the dimensions of 25.5 mm \u00d7 22.5 mm \u00d7 1.6 mm. This small construction has a broad bandwidth of 100 MHz (5.8 GHz), with a 3% fractional bandwidth (FB",
+      "title": "Circular Slotted Triangular Patch Antenna for 5.8 GHz ISM Band Applications \u2020"
+    },
+    "page_number": 1,
+    "snippet": "Circular Slotted Triangular Patch Antenna for 5.8 GHz ISM Band Applications \u2020 Ashweena Atif, Alishba Majid, Muhammad Zahid * and Yasar Amin Telecommunication Engineering Department, University of Engineering and Technology, Taxila 47050, Pa",
+    "source_id": "section_001",
+    "source_type": "section",
+    "text": "Circular Slotted Triangular Patch Antenna for 5.8 GHz ISM Band Applications \u2020\nAshweena Atif, Alishba Majid, Muhammad Zahid * and Yasar Amin Telecommunication Engineering Department, University of Engineering and Technology, Taxila 47050, Pakistan; 19-te-25@students.uettaxila.edu.pk (A.A.); 19-te-1@students.uettaxila.edu.pk (A.M.); yasar.amin@uettaxila.edu.pk (Y.A.) Correspondence: muhammad.zahid@uettaxila.edu.pk \u2020 Presented at the 8th International Electrical Engineering Conference, Karachi, Pakistan, 25-26 August 2023. Abstract: The design of a circularly slotted triangular patch radiator with a full-ground structure for 5.8 GHz ISM band applications is the basis for this research. The working band of the suggested miniaturized patch radiator may be adjusted by adjusting the slot size. The practical reduction in size is calculated by comparing the size of the standard elliptical-shaped slot with the size of the circular slot. Changes in the practical radius of the triangular patch, the main axis radius of the circular slot, the ground plane length, and feed line width are investigated. The proposed radiator has the dimensions of 25.5 mm \u00d7 22.5 mm \u00d7 1.6 mm. This small construction has a broad bandwidth of 100 MHz (5.8 GHz), with a 3% fractional bandwidth (FB"
+  },
+  {
+    "evidence_id": "section:section_002",
+    "metadata": {
+      "section_id": "section_002",
+      "text_excerpt": "Circularly Slotted Triangular Patch Antennas (CSTPAs) have grown in favor in recent years because of their wideband and circular polarization properties. These antennas are suited to a variety of wireless communication technologies, including Bluetooth, WLAN, and RFID, that operate in the 5.8 GHz ISM band [1]. CSTPAs are a modified version of the traditional triangular patch antenna, with circular slots added to the patch to increase the bandwidth and axial ratio. The circular slots operate as resonators and generate additional modes, resulting in a large increase in bandwidth. Furthermore, circular polarization is obtained by altering the position of the feed point on the patch [2]. The circular polarization of CSTPAs makes them an excellent choice for applications requiring polarization variety and tolerance to multipath fading. These antennas' wide bandwidth also makes them suited to systems requiring large data rates and minimal latency. Furthermore, CSTPAs' small size and low profile make them excellent for applications in which space and weight are crucial [3]. Several research studies have been undertaken on the design and performance of CSTPAs for various wireless communica",
+      "title": "1. Introduction"
+    },
+    "page_number": 2,
+    "snippet": "1. Introduction Circularly Slotted Triangular Patch Antennas (CSTPAs) have grown in favor in recent years because of their wideband and circular polarization properties. These antennas are suited to a variety of wireless communication techn",
+    "source_id": "section_002",
+    "source_type": "section",
+    "text": "1. Introduction\nCircularly Slotted Triangular Patch Antennas (CSTPAs) have grown in favor in recent years because of their wideband and circular polarization properties. These antennas are suited to a variety of wireless communication technologies, including Bluetooth, WLAN, and RFID, that operate in the 5.8 GHz ISM band [1]. CSTPAs are a modified version of the traditional triangular patch antenna, with circular slots added to the patch to increase the bandwidth and axial ratio. The circular slots operate as resonators and generate additional modes, resulting in a large increase in bandwidth. Furthermore, circular polarization is obtained by altering the position of the feed point on the patch [2]. The circular polarization of CSTPAs makes them an excellent choice for applications requiring polarization variety and tolerance to multipath fading. These antennas' wide bandwidth also makes them suited to systems requiring large data rates and minimal latency. Furthermore, CSTPAs' small size and low profile make them excellent for applications in which space and weight are crucial [3]. Several research studies have been undertaken on the design and performance of CSTPAs for various wireless communica"
+  },
+  {
+    "evidence_id": "section:section_003",
+    "metadata": {
+      "section_id": "section_003",
+      "text_excerpt": "The circular, rectangular, and elliptical slots are easier to design than the other geometries since they only need to change the radius of the patch (r). Because circular geometry has the smallest footprint area, a triangular patch radiator was originally built and used as a reference design. The antenna's several iterations are designed to function in the ISM band at the center frequency (fc) of 5.8 GHz. The Flame Retardant (FR4-exopy) substrate with a relative permittivity ( \u03b5 r) of 4.4 and a thickness (t) of 1.6 mm is selected. Figure 1a-d depicts the design steps chosen to build the CSTPA, which are described below: 3 of 7 , , 10 Radiator 1 is first conceived as a microstrip line-fed triangular patch radiator with a complete ground plane. Table 1 shows the patch parameters. Table 1. Simulated dimensions of various configurations. Radiator 1 is first conceived as a microstrip line-fed triangular patch radiator with a complete ground plane. Table 1 shows the patch parameters.",
+      "title": "2. Parametric Analysis"
+    },
+    "page_number": 3,
+    "snippet": "2. Parametric Analysis The circular, rectangular, and elliptical slots are easier to design than the other geometries since they only need to change the radius of the patch (r). Because circular geometry has the smallest footprint area, a t",
+    "source_id": "section_003",
+    "source_type": "section",
+    "text": "2. Parametric Analysis\nThe circular, rectangular, and elliptical slots are easier to design than the other geometries since they only need to change the radius of the patch (r). Because circular geometry has the smallest footprint area, a triangular patch radiator was originally built and used as a reference design. The antenna's several iterations are designed to function in the ISM band at the center frequency (fc) of 5.8 GHz. The Flame Retardant (FR4-exopy) substrate with a relative permittivity ( \u03b5 r) of 4.4 and a thickness (t) of 1.6 mm is selected. Figure 1a-d depicts the design steps chosen to build the CSTPA, which are described below: 3 of 7 , , 10 Radiator 1 is first conceived as a microstrip line-fed triangular patch radiator with a complete ground plane. Table 1 shows the patch parameters. Table 1. Simulated dimensions of various configurations. Radiator 1 is first conceived as a microstrip line-fed triangular patch radiator with a complete ground plane. Table 1 shows the patch parameters."
+  },
+  {
+    "evidence_id": "section:section_004",
+    "metadata": {
+      "section_id": "section_004",
+      "text_excerpt": "Slots are inserted in the patch radiator to modify the design shape to achieve a compact size with enhanced output parameters. The patch slot facilitates the use of a compact microstrip antenna with enhanced bandwidth and efficiency. The dimensions of the elliptical slot are proportional to the impedance bandwidth's lowest transmission zero frequency. At the patch radiator's center, an elliptical slot with a slot radius of 1 mm is inserted.",
+      "title": "2.2. Step 2"
+    },
+    "page_number": 3,
+    "snippet": "2.2. Step 2 Slots are inserted in the patch radiator to modify the design shape to achieve a compact size with enhanced output parameters. The patch slot facilitates the use of a compact microstrip antenna with enhanced bandwidth and effici",
+    "source_id": "section_004",
+    "source_type": "section",
+    "text": "2.2. Step 2\nSlots are inserted in the patch radiator to modify the design shape to achieve a compact size with enhanced output parameters. The patch slot facilitates the use of a compact microstrip antenna with enhanced bandwidth and efficiency. The dimensions of the elliptical slot are proportional to the impedance bandwidth's lowest transmission zero frequency. At the patch radiator's center, an elliptical slot with a slot radius of 1 mm is inserted."
+  },
+  {
+    "evidence_id": "section:section_005",
+    "metadata": {
+      "section_id": "section_005",
+      "text_excerpt": "To accomplish miniaturization, the optimized design produced by Radiator 2 is used, and a rectangular slot is put into the triangular patch. The proportions of the inserted rectangular slot are kept, such that it is 2 mm long and 5 mm wide. Radiator 3 provides more gain and directivity than Radiator 2. Table 2 shows the performance characteristics, which show that while the gain and directivity are better than Radiator 2. However, Radiator 3 outperforms Radiator 2 in terms of gain and directivity.",
+      "title": "2.3. Step 3"
+    },
+    "page_number": 3,
+    "snippet": "2.3. Step 3 To accomplish miniaturization, the optimized design produced by Radiator 2 is used, and a rectangular slot is put into the triangular patch. The proportions of the inserted rectangular slot are kept, such that it is 2 mm long an",
+    "source_id": "section_005",
+    "source_type": "section",
+    "text": "2.3. Step 3\nTo accomplish miniaturization, the optimized design produced by Radiator 2 is used, and a rectangular slot is put into the triangular patch. The proportions of the inserted rectangular slot are kept, such that it is 2 mm long and 5 mm wide. Radiator 3 provides more gain and directivity than Radiator 2. Table 2 shows the performance characteristics, which show that while the gain and directivity are better than Radiator 2. However, Radiator 3 outperforms Radiator 2 in terms of gain and directivity."
+  },
+  {
+    "evidence_id": "section:section_006",
+    "metadata": {
+      "section_id": "section_006",
+      "text_excerpt": "This procedure involves inserting the circular slot into the triangle patch. The benefit of a circular slot for a compact proposed design is that it reduces the region of radiation while maintaining acceptable characteristics and is polarization-insensitive. In the middle of the patch radiator is a circular slot with a 3 mm radius. It is evident that the best choice for providing ISM band features with adequate gain and directivity is a circular-slotbased triangle patch radiator. In Figure 1d, Radiator 4 shows the steps used to create the suggested circular slotted triangular patch radiator's geometry. The design requirements of the suggested antenna are explained in detail in Table 1. With the data reported in Table 2, the slot's impact is discernible. The gain and directivity values are improved in this situation, and the bandwidth is sufficient. Radiator 4 has a better bandwidth than the other radiators, though. , , 10 the suggested antenna are explained in detail in Table 1. With the data reported in Tabl 2, the slot's impact is discernible. The gain and directivity values are improved in thi situation, and the bandwidth is sufficient. Radiator 4 has a better bandwidth than th ",
+      "title": "2.4. Step 4"
+    },
+    "page_number": 4,
+    "snippet": "2.4. Step 4 This procedure involves inserting the circular slot into the triangle patch. The benefit of a circular slot for a compact proposed design is that it reduces the region of radiation while maintaining acceptable characteristics an",
+    "source_id": "section_006",
+    "source_type": "section",
+    "text": "2.4. Step 4\nThis procedure involves inserting the circular slot into the triangle patch. The benefit of a circular slot for a compact proposed design is that it reduces the region of radiation while maintaining acceptable characteristics and is polarization-insensitive. In the middle of the patch radiator is a circular slot with a 3 mm radius. It is evident that the best choice for providing ISM band features with adequate gain and directivity is a circular-slotbased triangle patch radiator. In Figure 1d, Radiator 4 shows the steps used to create the suggested circular slotted triangular patch radiator's geometry. The design requirements of the suggested antenna are explained in detail in Table 1. With the data reported in Table 2, the slot's impact is discernible. The gain and directivity values are improved in this situation, and the bandwidth is sufficient. Radiator 4 has a better bandwidth than the other radiators, though. , , 10 the suggested antenna are explained in detail in Table 1. With the data reported in Tabl 2, the slot's impact is discernible. The gain and directivity values are improved in thi situation, and the bandwidth is sufficient. Radiator 4 has a better bandwidth than th "
+  },
+  {
+    "evidence_id": "section:section_007",
+    "metadata": {
+      "section_id": "section_007",
+      "text_excerpt": "As we can see from the above figure and Table 2, the triangular patch with a circular slot radiator is best as it gives a 5.8 GHz ISM band. In Radiator 4, we take the radius of the circular slot to be 3 mm so it gives an accurate ISM band. In Figure 2, we take different values of circular slots, like 2 mm, 2.5 mm, 3 mm, and 3.5 mm. As can be seen, the circular slot has a greater effect on the bandwidth, gain, and directivity. If the radius is less than 3 mm, the bandwidth becomes smaller, and the graph moves beyond 5.8 GHz. If we take the radius of the circular slot to be greater than 3 mm, then the bandwidth is still smaller, but the graph shifts to the left side. Therefore, after taking many values, we observed that the bandwidth gain is better at a 3 mm circular slot radius. The simulated results of all four types of radiators are presented in Figure 3. slot radiator is best as it gives a 5.8 GHz ISM band. In Radiator 4, we take the radius of th circular slot to be 3 mm so it gives an accurate ISM band. In Figure 2, we take differen values of circular slots, like 2 mm, 2.5 mm, 3 mm, and 3.5 mm. As can be seen, the circula slot has a greater effect on the bandwidth, gain, and dir",
+      "title": "3. Simulated Results and Discussion As we can see from the above figure and Table 2, the triangular patch with a circula"
+    },
+    "page_number": 4,
+    "snippet": "3. Simulated Results and Discussion As we can see from the above figure and Table 2, the triangular patch with a circula As we can see from the above figure and Table 2, the triangular patch with a circular slot radiator is best as it gives",
+    "source_id": "section_007",
+    "source_type": "section",
+    "text": "3. Simulated Results and Discussion As we can see from the above figure and Table 2, the triangular patch with a circula\nAs we can see from the above figure and Table 2, the triangular patch with a circular slot radiator is best as it gives a 5.8 GHz ISM band. In Radiator 4, we take the radius of the circular slot to be 3 mm so it gives an accurate ISM band. In Figure 2, we take different values of circular slots, like 2 mm, 2.5 mm, 3 mm, and 3.5 mm. As can be seen, the circular slot has a greater effect on the bandwidth, gain, and directivity. If the radius is less than 3 mm, the bandwidth becomes smaller, and the graph moves beyond 5.8 GHz. If we take the radius of the circular slot to be greater than 3 mm, then the bandwidth is still smaller, but the graph shifts to the left side. Therefore, after taking many values, we observed that the bandwidth gain is better at a 3 mm circular slot radius. The simulated results of all four types of radiators are presented in Figure 3. slot radiator is best as it gives a 5.8 GHz ISM band. In Radiator 4, we take the radius of th circular slot to be 3 mm so it gives an accurate ISM band. In Figure 2, we take differen values of circular slots, like 2 mm, 2.5 mm, 3 mm, and 3.5 mm. As can be seen, the circula slot has a greater effect on the bandwidth, gain, and dir"
+  },
+  {
+    "evidence_id": "section:section_008",
+    "metadata": {
+      "section_id": "section_008",
+      "text_excerpt": "A compact and miniaturized patch radiator for exhibiting a response in the 5.8 GHz frequency range has been designed and developed. A small and miniaturized patch radiator with a response frequency of 5.8 GHz has been conceived and produced. To create a broad bandwidth of 5.8 GHz, a circular slit is carved on the triangular patch. The developed antenna has compact dimensions of 25.5 mm \u00d7 22.5 mm \u00d7 1.6 mm, and denotes the wavelength at the 5.8 GHz center frequency. The suggested radiator is appropriate for ISM band applications. The observed findings corroborate the 100 MHz bandwidth, i.e., a 3% fractional bandwidth. The antenna specifications show that the developed CSTPA is appropriate for ISM band applications. Author Contributions: Conceptualization, A.A. and M.Z.; methodology, M.Z.; software, A.A.; validation, A.M., M.Z. and A.A.; formal analysis, M.Z.; investigation, M.Z.; writing-original draft preparation, A.A.; writing-review and editing, Y.A. All authors have read and agreed to the published version of the manuscript. Funding: This research received no external funding. Institutional Review Board Statement: Not applicable. Informed Consent Statement: Not applicable. Data A",
+      "title": "4. Conclusions"
+    },
+    "page_number": 5,
+    "snippet": "4. Conclusions A compact and miniaturized patch radiator for exhibiting a response in the 5.8 GHz frequency range has been designed and developed. A small and miniaturized patch radiator with a response frequency of 5.8 GHz has been conceiv",
+    "source_id": "section_008",
+    "source_type": "section",
+    "text": "4. Conclusions\nA compact and miniaturized patch radiator for exhibiting a response in the 5.8 GHz frequency range has been designed and developed. A small and miniaturized patch radiator with a response frequency of 5.8 GHz has been conceived and produced. To create a broad bandwidth of 5.8 GHz, a circular slit is carved on the triangular patch. The developed antenna has compact dimensions of 25.5 mm \u00d7 22.5 mm \u00d7 1.6 mm, and denotes the wavelength at the 5.8 GHz center frequency. The suggested radiator is appropriate for ISM band applications. The observed findings corroborate the 100 MHz bandwidth, i.e., a 3% fractional bandwidth. The antenna specifications show that the developed CSTPA is appropriate for ISM band applications. Author Contributions: Conceptualization, A.A. and M.Z.; methodology, M.Z.; software, A.A.; validation, A.M., M.Z. and A.A.; formal analysis, M.Z.; investigation, M.Z.; writing-original draft preparation, A.A.; writing-review and editing, Y.A. All authors have read and agreed to the published version of the manuscript. Funding: This research received no external funding. Institutional Review Board Statement: Not applicable. Informed Consent Statement: Not applicable. Data A"
+  },
+  {
+    "evidence_id": "section:section_009",
+    "metadata": {
+      "section_id": "section_009",
+      "text_excerpt": "Jia, B.; Yan, L.; Fan, Y. Design of a circularly polarized triangular patch antenna with circular slots for the 5.8 GHz ISM band. IEEE Antennas Wirel. Propag. Lett. 2019 , 18 , 644-647. Zhang, J.; Wang, Y.; Wang, J. A broadband circularly polarized triangular patch antenna with circular slots. IEEE Antennas Wirel. Propag. Lett. 2018 , 17 , 1956-1960. Garg, R.; Bharti, G.K. Design and analysis of circular slotted triangular patch antenna for RFID applications. Int. J. Eng. Trends Technol. 2015 , 23 , 307-311. Chen, X.; Xue, Q.; Zhang, J. Wideband circularly polarized antenna with circular slots for WLAN applications. IEEE Access 2018 , 6 , 38816-38821. Bamy, C.L.; Mbango, F.M.; Konditi, D.B.; Mpele, P.M. A compact dual-band Dolly-shaped antenna with parasitic elements for automotive radar and 5G applications. Heliyon 2021 , 7 , e06793. [CrossRef] [PubMed] PShinde, P.N.; Shinde, J.P. Design of compact pentagonal slot antenna with bandwidth enhancement for multiband wireless applications. Int. J. Electron. Commun. 2015 , 69 , 1489-1494. [CrossRef] Kurniawan, F.; Sumantyo, J.T.S.; Prabowo, G.S.; Munir, A. Wide bandwidth lefthanded circularly polarized printed antenna with crescent slot",
+      "title": "References"
+    },
+    "page_number": 6,
+    "snippet": "References Jia, B.; Yan, L.; Fan, Y. Design of a circularly polarized triangular patch antenna with circular slots for the 5.8 GHz ISM band. IEEE Antennas Wirel. Propag. Lett. 2019 , 18 , 644-647. Zhang, J.; Wang, Y.; Wang, J. A broadband c",
+    "source_id": "section_009",
+    "source_type": "section",
+    "text": "References\nJia, B.; Yan, L.; Fan, Y. Design of a circularly polarized triangular patch antenna with circular slots for the 5.8 GHz ISM band. IEEE Antennas Wirel. Propag. Lett. 2019 , 18 , 644-647. Zhang, J.; Wang, Y.; Wang, J. A broadband circularly polarized triangular patch antenna with circular slots. IEEE Antennas Wirel. Propag. Lett. 2018 , 17 , 1956-1960. Garg, R.; Bharti, G.K. Design and analysis of circular slotted triangular patch antenna for RFID applications. Int. J. Eng. Trends Technol. 2015 , 23 , 307-311. Chen, X.; Xue, Q.; Zhang, J. Wideband circularly polarized antenna with circular slots for WLAN applications. IEEE Access 2018 , 6 , 38816-38821. Bamy, C.L.; Mbango, F.M.; Konditi, D.B.; Mpele, P.M. A compact dual-band Dolly-shaped antenna with parasitic elements for automotive radar and 5G applications. Heliyon 2021 , 7 , e06793. [CrossRef] [PubMed] PShinde, P.N.; Shinde, J.P. Design of compact pentagonal slot antenna with bandwidth enhancement for multiband wireless applications. Int. J. Electron. Commun. 2015 , 69 , 1489-1494. [CrossRef] Kurniawan, F.; Sumantyo, J.T.S.; Prabowo, G.S.; Munir, A. Wide bandwidth lefthanded circularly polarized printed antenna with crescent slot"
+  },
+  {
+    "evidence_id": "table:table_001",
+    "metadata": {
+      "artifact_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260421T091437985264Z\\bundle\\tables\\table_001.md",
+      "caption": "Table 1. Simulated dimensions of various configurations",
+      "extraction_method": "pymupdf4llm_markdown",
+      "structured": true
+    },
+    "page_number": 3,
+    "snippet": "Table 1. Simulated dimensions of various configurations | Parameters | Step 1 (mm) | Step 2 (mm) | Step 3 (mm) | Step 4 (mm) | | --- | --- | --- | --- | --- | | Overall thickness (t) | 1.6 | 1.6 | 1.6 | 1.6 | | Substrate side length (sl) | ",
+    "source_id": "table_001",
+    "source_type": "table",
+    "text": "Table 1. Simulated dimensions of various configurations\n| Parameters | Step 1 (mm) | Step 2 (mm) | Step 3 (mm) | Step 4 (mm) |\n| --- | --- | --- | --- | --- |\n| Overall thickness (t) | 1.6 | 1.6 | 1.6 | 1.6 |\n| Substrate side length (sl) | 25.5 | 25.5 | 25.5 | 25.5 |\n| Substrate width(sw) | 25.5 | 25.5 | 25.5 | 22.5 |\n| Dimensions (W \u00d7 L \u00d7 H) | 25.5 \u00d7 25.5 \u00d7 1.6 | 25.5 \u00d7 25.5 \u00d7 1.6 | 25.5 \u00d7 25.5 \u00d7 1.6 | 25.5 \u00d7 22.5 \u00d7 1.6 |\n| Triangular patch (x), (y) | 5.76, 12.03 | 5.76, 12.03 | 5.76, 12.03 | 9.5, 16.08 |\n| Ellipse slot radius (er) | - | 1 | - | - |\n| Radius of circular slot (cr) | - | - | - | 3 |\n| Length of rectangular slot (rl) | - | - | 2 | - |\n| Width of rectangular slot (rw) | - | - | 5 | - |\n| Feedline length (fl) | 9.3 | 9.3 | 9.3 | 14 |\n| Feedline width (fw) | 0.5 | 0.5 | 0.5 | 3.11 |\n| Ground length (gl) | 25.5 | 25.5 | 25.5 | 25.5 |\n| Ground width (gw) | 25.5 | 25.5 | 25.5 | 22.5 |"
+  },
+  {
+    "evidence_id": "table:table_002",
+    "metadata": {
+      "artifact_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260421T091437985264Z\\bundle\\tables\\table_002.md",
+      "caption": "Table 2. Simulated gain, frequencies, and bandwidth",
+      "extraction_method": "pymupdf4llm_markdown",
+      "structured": true
+    },
+    "page_number": 3,
+    "snippet": "Table 2. Simulated gain, frequencies, and bandwidth | Output Factors | Step 1 | Step 2 | Step 3 | Step 4 | | --- | --- | --- | --- | --- | | Highest frequency | Non-radiating | 6.23 GHz | 6.37 GHz | 5.88 GHz | | Lowest frequency | Non-radia",
+    "source_id": "table_002",
+    "source_type": "table",
+    "text": "Table 2. Simulated gain, frequencies, and bandwidth\n| Output Factors | Step 1 | Step 2 | Step 3 | Step 4 |\n| --- | --- | --- | --- | --- |\n| Highest frequency | Non-radiating | 6.23 GHz | 6.37 GHz | 5.88 GHz |\n| Lowest frequency | Non-radiating | 6.05 GHz | 6.25 GHz | 5.72 GHz |\n| Bandwidth | Non-radiating | 180MHz | 120MHz | 160MHz |\n| Gain (dB) | - | 2.00 | 2.45 | 1.49 |"
+  },
+  {
+    "evidence_id": "table:table_003",
+    "metadata": {
+      "artifact_path": "C:\\Users\\Lenovo\\SynologyDrive\\PhD\\02.antennaAuto\\runs\\run_20260421T091437985264Z\\bundle\\tables\\table_003.md",
+      "caption": "Table 3. Comparison table . Table 3. Comparison table",
+      "extraction_method": "pymupdf4llm_markdown",
+      "structured": true
+    },
+    "page_number": 5,
+    "snippet": "Table 3. Comparison table . Table 3. Comparison table | Reference | Reference Dielectric Constant | Dielectric Constant Size | Size Frequency (GHz) | Frequency (GHz) Bandwidth Bandwidth (GHz) | (GHz) Gain (dBi) | | --- | --- | --- | --- | -",
+    "source_id": "table_003",
+    "source_type": "table",
+    "text": "Table 3. Comparison table . Table 3. Comparison table\n| Reference | Reference Dielectric Constant | Dielectric Constant Size | Size Frequency (GHz) | Frequency (GHz) Bandwidth Bandwidth (GHz) | (GHz) Gain (dBi) |\n| --- | --- | --- | --- | --- | --- |\n| [30] | [30] 4.4 | 4.4 0.35 \u03bb 0.35 l \u00d7 0.35 l \u00d7 0.009 l | 0.35 \u03bb \u00d7 0.009 \u03bb 3.5/5.5 5.2/5.8 | 3.5/5.5 3.4-7.62 | 3.4-7.62 4 |\n| [31] | 4.4 | 0.83 l \u00d7 0.5 l \u00d7 0.006 l | 5.5 | 5.2/5.8 5.2-5.8 | 3.93 |\n| [32] | [31] 4.4 | 4.4 0.83 0.55 l \u00d7 0.55 l \u00d7 0.03 l | \u00d7 0.5 \u03bb \u00d7 0.006 \u03bb 5.8 | 5.71-5.9 | 5.2-5.8 3.93 4.76 |\n| Proposed | 4.4 | 0.5 l \u00d7 0.44 l \u00d7 0.03 l | 5.79 | 5.5 5.70-5.88 | 1.49 |"
+  }
+]
