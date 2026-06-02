@@ -35,6 +35,8 @@
   "tests/test_extraction_prompting.py::test_prompt_builder_includes_extraction_rules",
   "tests/test_extraction_prompting.py::test_repair_prompt_includes_validation_errors",
   "tests/test_extraction_prompting.py::test_schema_construction_input_includes_canonical_record_and_linked_evidence",
+  "tests/test_extraction_schema.py::test_schema_autocorrects_nested_evidence_ids_without_prefix",
+  "tests/test_extraction_schema.py::test_schema_autocorrects_top_level_evidence_used_without_prefix",
   "tests/test_extraction_schema.py::test_schema_rejects_bad_internal_reference",
   "tests/test_extraction_schema.py::test_schema_rejects_missing_evidence_used_subset",
   "tests/test_extraction_schema.py::test_schema_validation_and_clean_dump",
