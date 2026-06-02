@@ -1,9 +1,38 @@
-# Ignorar pastas de resultados e caches
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local environment and secrets
+.env
+.env.*
+
+# Generated project outputs
+runs/
 old_runs/
 reports/
-.pytest_cache/
 
-# Ignorar ambiente virtual e configurações locais
-.venv/
-.env
-.python-version
+# Debug outputs
+debug/
+outputs/debug/
+**/outputs/debug/
+
+# Temporary/local data
+data/tmp/
+data/raw/private/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
